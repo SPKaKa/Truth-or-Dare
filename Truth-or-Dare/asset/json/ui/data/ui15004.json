@@ -1,0 +1,222 @@
+{
+    "root": {
+        "children": [
+            {
+                "id": "102375275293_0.4718559565037852",
+                "condition": [],
+                "type": "UIRoot",
+                "name": "window",
+                "x": 797,
+                "y": 16,
+                "width": 388,
+                "height": 378,
+                "opacity": 1,
+                "rotation": 0,
+                "show": true,
+                "mouseEventEnabledData": true,
+                "materialData": [
+                    {
+                        "materials": []
+                    }
+                ],
+                "mouseEventEnabledInEditor": true,
+                "showOnEditor": true,
+                "hasCommand": [],
+                "isOpen": true,
+                "enabledLimitView": null,
+                "scrollShowType": 2,
+                "hScrollBar": "",
+                "hScrollBg": "",
+                "vScrollBar": "",
+                "vScrollBg": "",
+                "scrollWidth": 16,
+                "slowmotionType": 0,
+                "enabledWheel": true,
+                "hScrollValue": 0,
+                "vScrollValue": 0,
+                "children": [
+                    {
+                        "id": "102375286884_0.9522918243542904",
+                        "condition": [],
+                        "type": "UIRoot",
+                        "name": "frame",
+                        "x": 0,
+                        "y": 0,
+                        "width": 381,
+                        "height": 33,
+                        "opacity": 1,
+                        "rotation": 0,
+                        "show": true,
+                        "mouseEventEnabledData": true,
+                        "materialData": [
+                            {
+                                "materials": []
+                            }
+                        ],
+                        "mouseEventEnabledInEditor": true,
+                        "showOnEditor": true,
+                        "hasCommand": [],
+                        "isOpen": false,
+                        "enabledLimitView": null,
+                        "scrollShowType": 2,
+                        "hScrollBar": "",
+                        "hScrollBg": "",
+                        "vScrollBar": "",
+                        "vScrollBg": "",
+                        "scrollWidth": 16,
+                        "slowmotionType": 0,
+                        "enabledWheel": true,
+                        "hScrollValue": 0,
+                        "vScrollValue": 0,
+                        "children": [
+                            {
+                                "id": "102375322493_0.12532343607294671",
+                                "condition": [],
+                                "type": "UIBitmap",
+                                "name": "图片",
+                                "x": 0,
+                                "y": 0,
+                                "width": 378,
+                                "height": 34,
+                                "opacity": 1,
+                                "rotation": 0,
+                                "show": true,
+                                "mouseEventEnabledData": true,
+                                "materialData": [
+                                    {
+                                        "materials": []
+                                    }
+                                ],
+                                "mouseEventEnabledInEditor": true,
+                                "showOnEditor": true,
+                                "hasCommand": [],
+                                "isOpen": true,
+                                "image": "asset/image/W26_varMonitor/s.png",
+                                "grid9": "0,0,0,0,0",
+                                "flip": null,
+                                "pivotType": 0
+                            }
+                        ]
+                    },
+                    {
+                        "id": "83043002906_0.23374040370591986",
+                        "condition": [],
+                        "type": "UIBitmap",
+                        "name": "rect",
+                        "x": 0,
+                        "y": 34,
+                        "width": 384,
+                        "height": 330,
+                        "opacity": 0.56,
+                        "rotation": 0,
+                        "show": true,
+                        "mouseEventEnabledData": true,
+                        "materialData": [
+                            {
+                                "materials": []
+                            }
+                        ],
+                        "mouseEventEnabledInEditor": true,
+                        "showOnEditor": true,
+                        "hasCommand": [],
+                        "isOpen": true,
+                        "image": "asset/image/W26_varMonitor/uibitmap.png",
+                        "grid9": "0,0,0,0,0",
+                        "flip": null,
+                        "pivotType": 0
+                    },
+                    {
+                        "id": "83039324059_0.5485107156626534",
+                        "condition": [],
+                        "type": "UIList",
+                        "name": "varList",
+                        "x": 6.744680851063777,
+                        "y": 40.74468085106383,
+                        "width": 369,
+                        "height": 322,
+                        "opacity": 1,
+                        "rotation": 0,
+                        "show": true,
+                        "mouseEventEnabledData": true,
+                        "materialData": [
+                            {
+                                "materials": []
+                            }
+                        ],
+                        "mouseEventEnabledInEditor": false,
+                        "showOnEditor": true,
+                        "hasCommand": [],
+                        "isOpen": true,
+                        "itemModelGUI": 15002,
+                        "previewSize": 16,
+                        "selectEnable": true,
+                        "repeatX": 1,
+                        "itemWidth": 277,
+                        "itemHeight": 32,
+                        "spaceX": 0,
+                        "spaceY": 1,
+                        "scrollShowType": 2,
+                        "hScrollBar": "",
+                        "hScrollBg": "",
+                        "vScrollBar": "asset/image/W26_varMonitor/s.png",
+                        "vScrollBg": "asset/image/W26_varMonitor/uibitmap.png",
+                        "scrollWidth": 16,
+                        "selectImageURL": "",
+                        "selectImageGrid9": "1,1,1,1,0",
+                        "selectedImageAlpha": 0.5,
+                        "selectedImageOnTop": true,
+                        "overImageURL": "",
+                        "overImageGrid9": "1,1,1,1,0",
+                        "overImageAlpha": 0.5,
+                        "overImageOnTop": true,
+                        "overSelectMode": true,
+                        "slowmotionType": 0
+                    },
+                    {
+                        "id": "102375396152_0.7577180943205037",
+                        "condition": [],
+                        "type": "UIString",
+                        "name": "文本",
+                        "x": 121,
+                        "y": 7,
+                        "width": 146,
+                        "height": 25,
+                        "opacity": 1,
+                        "rotation": 0,
+                        "show": true,
+                        "mouseEventEnabledData": false,
+                        "materialData": [
+                            {
+                                "materials": []
+                            }
+                        ],
+                        "mouseEventEnabledInEditor": true,
+                        "showOnEditor": true,
+                        "hasCommand": [],
+                        "isOpen": true,
+                        "text": "鼠标点击这里拖拽",
+                        "fontSize": 16,
+                        "color": "#000000",
+                        "bold": false,
+                        "italic": false,
+                        "align": 0,
+                        "valign": 0,
+                        "leading": 0,
+                        "letterSpacing": 0,
+                        "font": "思源黑体",
+                        "wordWrap": true,
+                        "overflow": 0,
+                        "shadowColor": "#000000",
+                        "shadowDx": 1,
+                        "shadowDy": 1,
+                        "stroke": 0,
+                        "strokeColor": "#000000"
+                    }
+                ]
+            }
+        ]
+    },
+    "id": 15004,
+    "instanceClassName": "W26_GUI_MonitorVar",
+    "hasRootCommand": []
+}

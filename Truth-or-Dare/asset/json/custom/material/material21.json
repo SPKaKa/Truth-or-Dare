@@ -1,0 +1,96 @@
+{
+    "compAutoOrderLimitHeight": 0,
+    "id": 21,
+    "blockList": [
+        {
+            "name": "未命名块",
+            "blockAttrs": [
+                {
+                    "attr": {
+                        "id": "126906372312_0.30115850617004236",
+                        "varName": "speed",
+                        "varType": 0,
+                        "compData": {
+                            "compType": 0,
+                            "compParam": {}
+                        },
+                        "defaultValue": "1",
+                        "hideMode": false,
+                        "useCommand": false,
+                        "onlyPointTo": false,
+                        "moduleID": 1,
+                        "dataStructureID": 1,
+                        "arrayMode": false,
+                        "arrayLength": 100,
+                        "arrayAllowDelete": false,
+                        "arrayAllowSwap": false,
+                        "arrayAllowUpdate": false,
+                        "accessMode": 1,
+                        "syncMode": 0,
+                        "attrTips": "",
+                        "alias": "",
+                        "onlyConfig": false,
+                        "preview": false,
+                        "autoTitleWidth": true,
+                        "titleWidth": 100,
+                        "eyeShow": true,
+                        "lockBlock": false,
+                        "enumEnable_get": true,
+                        "enumEnable_set": true
+                    },
+                    "attrConditions": [],
+                    "y": 9,
+                    "x": 16,
+                    "width": 200,
+                    "height": 32
+                },
+                {
+                    "attr": {
+                        "id": "128899967551_0.8238534316386712",
+                        "varName": "startTime",
+                        "varType": 0,
+                        "compData": {
+                            "compType": 0,
+                            "compParam": {}
+                        },
+                        "defaultValue": "",
+                        "hideMode": false,
+                        "useCommand": false,
+                        "onlyPointTo": false,
+                        "moduleID": 1,
+                        "dataStructureID": 1,
+                        "arrayMode": false,
+                        "arrayLength": 100,
+                        "arrayAllowDelete": false,
+                        "arrayAllowSwap": false,
+                        "arrayAllowUpdate": false,
+                        "accessMode": 1,
+                        "syncMode": 0,
+                        "attrTips": "",
+                        "alias": "",
+                        "onlyConfig": false,
+                        "preview": false,
+                        "autoTitleWidth": true,
+                        "titleWidth": 100,
+                        "eyeShow": true,
+                        "lockBlock": false,
+                        "enumEnable_get": true,
+                        "enumEnable_set": true
+                    },
+                    "attrConditions": [],
+                    "y": 49,
+                    "x": 17,
+                    "width": 200,
+                    "height": 32
+                }
+            ],
+            "blockCondition": [],
+            "blockHeight": 300,
+            "autoOrder": true
+        }
+    ],
+    "shaderTime": true,
+    "customShader": "//======================================================================================================\n// SYSTEM START 该段注释由系统自动生成，请勿删改\n//======================================================================================================\n//------------------------------------------------------------------------------------------------------\n// 固定参数\n//------------------------------------------------------------------------------------------------------\n// varying vec2 v_texcoord; //  原始贴图UV坐标\n// uniform sampler2D texture; // 原始贴图\n// uniform float alpha; // 当前对象实际渲染的透明度\n// uniform float time; // 逐帧递增1.0\n//------------------------------------------------------------------------------------------------------\n// 该材质的自定义参数 判定该变量存在的宏：MU材质编号_变量名称\n//------------------------------------------------------------------------------------------------------\n// uniform float mu21_speed; // MU21_speed\n// uniform float mu21_startTime; // MU21_startTime\n//------------------------------------------------------------------------------------------------------\n// shader 代码规则：\n// 1.由于多材质合并shader代码运行，函数名必须以mf${材质ID}_开头以避免函数名称冲突，如 mf21_myFunc\n// 2.入口函数vec4 mf${材质ID}_main 如 vec4 mf21_main(){return gl_FragColor;}\n// 3.原图采样坐标获取：vec2 texCoord = getInRangeTextureCoord(v_texcoord);\n// 4.原图采样：vec4 color = getTextureColor(texCoord);\n// 5.关于自定义贴图的坐标信息：自定义贴图可能是图集中的一部分，提供了相关信息（mu材质编号_变量名_UVInfo）\n//   相对于0~1的坐标系提供了图集的映射信息 vec4 [UV宽度缩放比例, UV高度缩放比例, UV水平偏移量, UV垂直偏移量]\n// 6.变量宏（可用于判定该变量是否满足出现条件）：#ifdef MU材质编号_变量名称、#else、#endif\n// 7.系统宏 IN_GC_EDITOR=是否在编辑器中运行\n// 8.语法：C语言 更多资料请参考GLSL Shader\n//======================================================================================================\n// SYSTEM END\n//======================================================================================================\nvec4 mf21_main(){\n   float a = (sin(mu21_speed*(time+mu21_startTime)*0.01)+1.0)/2.0;\n   gl_FragColor.a*=a;\n   gl_FragColor.rgb*=a;\n   return gl_FragColor;\n}",
+    "shaderSize": false,
+    "name": "富文本淡入淡出2"
+}

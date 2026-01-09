@@ -1,0 +1,379 @@
+{
+    "root": {
+        "children": [
+            {
+                "id": "82956503240_0.5354141319426082",
+                "condition": [],
+                "type": "UIRoot",
+                "name": "rootControl",
+                "x": -4,
+                "y": 0,
+                "width": 1200,
+                "height": 720,
+                "opacity": 1,
+                "rotation": 0,
+                "show": true,
+                "mouseEventEnabledData": false,
+                "materialData": [
+                    {
+                        "materials": []
+                    }
+                ],
+                "mouseEventEnabledInEditor": true,
+                "showOnEditor": true,
+                "hasCommand": [],
+                "isOpen": true,
+                "enabledLimitView": null,
+                "scrollShowType": 2,
+                "hScrollBar": "",
+                "hScrollBg": "",
+                "vScrollBar": "",
+                "vScrollBg": "",
+                "scrollWidth": 16,
+                "slowmotionType": 0,
+                "enabledWheel": true,
+                "hScrollValue": 0,
+                "vScrollValue": 0
+            },
+            {
+                "id": "102374981399_0.26233614614457346",
+                "condition": [],
+                "type": "UIRoot",
+                "name": "window",
+                "x": 0,
+                "y": 0,
+                "width": 410,
+                "height": 706,
+                "opacity": 1,
+                "rotation": 0,
+                "show": true,
+                "mouseEventEnabledData": true,
+                "materialData": [
+                    {
+                        "materials": []
+                    }
+                ],
+                "mouseEventEnabledInEditor": true,
+                "showOnEditor": true,
+                "hasCommand": [],
+                "isOpen": true,
+                "scrollShowType": 2,
+                "hScrollBar": "",
+                "hScrollBg": "",
+                "vScrollBar": "",
+                "vScrollBg": "",
+                "scrollWidth": 16,
+                "slowmotionType": 0,
+                "enabledWheel": true,
+                "hScrollValue": 0,
+                "vScrollValue": 0,
+                "children": [
+                    {
+                        "id": "82958774137_0.814663676632976",
+                        "condition": [],
+                        "type": "UITabBox",
+                        "name": "UITabBox",
+                        "x": 13,
+                        "y": 48,
+                        "width": 385,
+                        "height": 41,
+                        "opacity": 1,
+                        "rotation": 0,
+                        "show": true,
+                        "mouseEventEnabledData": true,
+                        "materialData": [
+                            {
+                                "materials": []
+                            }
+                        ],
+                        "mouseEventEnabledInEditor": true,
+                        "showOnEditor": true,
+                        "hasCommand": [],
+                        "isOpen": false,
+                        "selectedIndex": 0,
+                        "itemImage1": "asset/image/W26_varMonitor/uibitmap.png",
+                        "grid9img1": "0,0,0,0,0",
+                        "itemImage2": "asset/image/W26_varMonitor/select2.png",
+                        "grid9img2": "1,1,1,1,0",
+                        "itemWidth": 60,
+                        "itemHeight": 41,
+                        "items": "数值,开关,字符串,二周目数值,二周目开关,二周目字符串",
+                        "rowMode": false,
+                        "spacing": 5,
+                        "labelSize": 16,
+                        "labelColor": "#666666",
+                        "labelFont": "思源黑体",
+                        "labelBold": null,
+                        "labelItalic": null,
+                        "smooth": null,
+                        "labelAlign": 1,
+                        "labelValign": 1,
+                        "labelLetterSpacing": 0,
+                        "labelSelectedColor": "#FFFFFF",
+                        "labelDx": 0,
+                        "labelDy": 0,
+                        "labelStroke": 0,
+                        "labelStrokeColor": "#000000",
+                        "onChangeFragEvent": null,
+                        "children": [
+                            {
+                                "id": "82957893317_0.9068923845236216",
+                                "condition": [],
+                                "type": "UIGUI",
+                                "name": "numberPanel",
+                                "x": -19,
+                                "y": 43,
+                                "width": 0,
+                                "height": 0,
+                                "opacity": 1,
+                                "rotation": 0,
+                                "show": true,
+                                "mouseEventEnabledData": true,
+                                "materialData": [
+                                    {
+                                        "materials": []
+                                    }
+                                ],
+                                "mouseEventEnabledInEditor": true,
+                                "showOnEditor": true,
+                                "hasCommand": [],
+                                "isOpen": true,
+                                "guiID": 15003,
+                                "instanceClassName": ""
+                            },
+                            {
+                                "id": "82966547955_0.04713818095748756",
+                                "condition": [],
+                                "type": "UIGUI",
+                                "name": "switchPanel",
+                                "x": -19,
+                                "y": 43,
+                                "width": 0,
+                                "height": 0,
+                                "opacity": 1,
+                                "rotation": 0,
+                                "show": true,
+                                "mouseEventEnabledData": true,
+                                "materialData": [
+                                    {
+                                        "materials": []
+                                    }
+                                ],
+                                "mouseEventEnabledInEditor": true,
+                                "showOnEditor": false,
+                                "hasCommand": [],
+                                "isOpen": true,
+                                "guiID": 15003,
+                                "instanceClassName": ""
+                            },
+                            {
+                                "id": "82966548559_0.8551840641497641",
+                                "condition": [],
+                                "type": "UIGUI",
+                                "name": "stringPanel",
+                                "x": -19,
+                                "y": 43,
+                                "width": 0,
+                                "height": 0,
+                                "opacity": 1,
+                                "rotation": 0,
+                                "show": true,
+                                "mouseEventEnabledData": true,
+                                "materialData": [
+                                    {
+                                        "materials": []
+                                    }
+                                ],
+                                "mouseEventEnabledInEditor": true,
+                                "showOnEditor": false,
+                                "hasCommand": [],
+                                "isOpen": true,
+                                "guiID": 15003,
+                                "instanceClassName": ""
+                            },
+                            {
+                                "id": "89579492734_0.11355413076634235",
+                                "condition": [],
+                                "type": "UIGUI",
+                                "name": "numberPanel2",
+                                "x": -19,
+                                "y": 43,
+                                "width": 0,
+                                "height": 0,
+                                "opacity": 1,
+                                "rotation": 0,
+                                "show": true,
+                                "mouseEventEnabledData": true,
+                                "materialData": [
+                                    {
+                                        "materials": []
+                                    }
+                                ],
+                                "mouseEventEnabledInEditor": true,
+                                "showOnEditor": true,
+                                "hasCommand": [],
+                                "isOpen": true,
+                                "guiID": 15003,
+                                "instanceClassName": ""
+                            },
+                            {
+                                "id": "89579497958_0.884512587374658",
+                                "condition": [],
+                                "type": "UIGUI",
+                                "name": "switchPanel2",
+                                "x": -19,
+                                "y": 43,
+                                "width": 0,
+                                "height": 0,
+                                "opacity": 1,
+                                "rotation": 0,
+                                "show": true,
+                                "mouseEventEnabledData": true,
+                                "materialData": [
+                                    {
+                                        "materials": []
+                                    }
+                                ],
+                                "mouseEventEnabledInEditor": true,
+                                "showOnEditor": false,
+                                "hasCommand": [],
+                                "isOpen": true,
+                                "guiID": 15003,
+                                "instanceClassName": ""
+                            },
+                            {
+                                "id": "89579502513_0.20914935275292046",
+                                "condition": [],
+                                "type": "UIGUI",
+                                "name": "stringPanel2",
+                                "x": -19,
+                                "y": 43,
+                                "width": 0,
+                                "height": 0,
+                                "opacity": 1,
+                                "rotation": 0,
+                                "show": true,
+                                "mouseEventEnabledData": true,
+                                "materialData": [
+                                    {
+                                        "materials": []
+                                    }
+                                ],
+                                "mouseEventEnabledInEditor": true,
+                                "showOnEditor": false,
+                                "hasCommand": [],
+                                "isOpen": true,
+                                "guiID": 15003,
+                                "instanceClassName": ""
+                            }
+                        ]
+                    },
+                    {
+                        "id": "102375009296_0.9856118421166826",
+                        "condition": [],
+                        "type": "UIRoot",
+                        "name": "frame",
+                        "x": 0,
+                        "y": 0,
+                        "width": 413,
+                        "height": 40,
+                        "opacity": 1,
+                        "rotation": 0,
+                        "show": true,
+                        "mouseEventEnabledData": true,
+                        "materialData": [
+                            {
+                                "materials": []
+                            }
+                        ],
+                        "mouseEventEnabledInEditor": true,
+                        "showOnEditor": true,
+                        "hasCommand": [],
+                        "isOpen": false,
+                        "scrollShowType": 2,
+                        "hScrollBar": "",
+                        "hScrollBg": "",
+                        "vScrollBar": "",
+                        "vScrollBg": "",
+                        "scrollWidth": 16,
+                        "slowmotionType": 0,
+                        "enabledWheel": true,
+                        "hScrollValue": 0,
+                        "vScrollValue": 0,
+                        "children": [
+                            {
+                                "id": "102375044823_0.7844266403130657",
+                                "condition": [],
+                                "type": "UIBitmap",
+                                "name": "图片",
+                                "x": 0,
+                                "y": 0,
+                                "width": 411,
+                                "height": 32,
+                                "opacity": 1,
+                                "rotation": 0,
+                                "show": true,
+                                "mouseEventEnabledData": false,
+                                "materialData": [
+                                    {
+                                        "materials": []
+                                    }
+                                ],
+                                "mouseEventEnabledInEditor": true,
+                                "showOnEditor": true,
+                                "hasCommand": [],
+                                "isOpen": true,
+                                "image": "asset/image/W26_varMonitor/s.png",
+                                "grid9": "0,0,0,0,0",
+                                "pivotType": 0
+                            },
+                            {
+                                "id": "102375071091_0.7347257075705751",
+                                "condition": [],
+                                "type": "UIString",
+                                "name": "文本",
+                                "x": 121,
+                                "y": 7,
+                                "width": 146,
+                                "height": 25,
+                                "opacity": 1,
+                                "rotation": 0,
+                                "show": true,
+                                "mouseEventEnabledData": false,
+                                "materialData": [
+                                    {
+                                        "materials": []
+                                    }
+                                ],
+                                "mouseEventEnabledInEditor": true,
+                                "showOnEditor": true,
+                                "hasCommand": [],
+                                "isOpen": true,
+                                "text": "鼠标点击这里拖拽",
+                                "fontSize": 16,
+                                "color": "#000000",
+                                "bold": false,
+                                "italic": false,
+                                "align": 0,
+                                "valign": 0,
+                                "leading": 0,
+                                "letterSpacing": 0,
+                                "font": "思源黑体",
+                                "wordWrap": true,
+                                "overflow": 0,
+                                "shadowColor": "#000000",
+                                "shadowDx": 1,
+                                "shadowDy": 1,
+                                "stroke": 0,
+                                "strokeColor": "#000000"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "id": 15001,
+    "hasRootCommand": [],
+    "instanceClassName": "W26_GUI_VarMonitor"
+}

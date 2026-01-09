@@ -1,0 +1,360 @@
+[
+    {
+        "allPlugUseData": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            [],
+            [],
+            [
+                9
+            ],
+            [],
+            [],
+            [],
+            [
+                [
+                    "SEmap",
+                    "DefaultFootStep",
+                    "bUseDefaultFootStep"
+                ]
+            ],
+            null,
+            [],
+            [
+                {
+                    "filePath": "Game/GCplug/624/TMC_FootStepModule.ts",
+                    "isServer": false
+                }
+            ],
+            null,
+            null,
+            [],
+            [],
+            [
+                7
+            ]
+        ],
+        "id": 624,
+        "name": "地形脚步音效插件",
+        "lastUpdateTime": 1680336643,
+        "author": "我不懂代码",
+        "gcver": null
+    },
+    {
+        "allPlugUseData": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            [],
+            [
+                21
+            ],
+            [],
+            [],
+            [
+                15001,
+                15002
+            ],
+            [
+                10
+            ],
+            [
+                [
+                    "orzi_language_packages",
+                    "orzi_language_isChangeAsset",
+                    "orzi_language_isForceChange",
+                    "orzi_language_isReload",
+                    "orzi_language_isReloadFont",
+                    "orzi_language_isShowStatistics"
+                ]
+            ],
+            null,
+            [],
+            [
+                {
+                    "filePath": "Game/GCplug/1021/Command.ts",
+                    "isServer": false
+                },
+                {
+                    "filePath": "Game/GCplug/1021/Judge.ts",
+                    "isServer": false
+                },
+                {
+                    "filePath": "Game/GCplug/1021/Language.ts",
+                    "isServer": false
+                },
+                {
+                    "filePath": "Game/GCplug/1021/Rewrite.ts",
+                    "isServer": false
+                },
+                {
+                    "filePath": "Game/GCplug/1021/Statistics.ts",
+                    "isServer": false
+                }
+            ],
+            null,
+            null,
+            [],
+            [],
+            []
+        ],
+        "id": 1021,
+        "name": "[Orzi!]多语言(语言切换) v1.6.7",
+        "lastUpdateTime": 1761055322,
+        "author": "orzi",
+        "gcver": null
+    },
+    {
+        "allPlugUseData": [
+            null,
+            null,
+            null,
+            [
+                15001,
+                15002,
+                15003,
+                15004
+            ],
+            null,
+            null,
+            null,
+            [
+                "asset/image/W26_varMonitor/uibitmap.png",
+                "asset/image/W26_varMonitor/select2.png",
+                "asset/image/W26_varMonitor/s.png",
+                "asset/image/W26_varMonitor/select.png"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [
+                [
+                    "W26_isTrace",
+                    "W26recordCount",
+                    "w26VarShowKey",
+                    "w26VarShowMiniKey"
+                ]
+            ],
+            null,
+            [],
+            [
+                {
+                    "filePath": "Game/GCplug/340/W26_GUI_VarMonitor.ts",
+                    "isServer": false
+                },
+                {
+                    "filePath": "Game/GCplug/340/W26_GUI_VarShow.ts",
+                    "isServer": false
+                },
+                {
+                    "filePath": "Game/GCplug/340/W26_GUI_VarItem.ts",
+                    "isServer": false
+                },
+                {
+                    "filePath": "Game/GCplug/340/W26_GUI_MonitorVar.ts",
+                    "isServer": false
+                },
+                {
+                    "filePath": "Game/GCplug/340/W26_varMonitor.ts",
+                    "isServer": false
+                }
+            ],
+            null,
+            null,
+            [],
+            [],
+            []
+        ],
+        "id": 340,
+        "name": "变量监控 V1.013",
+        "lastUpdateTime": 1659930503,
+        "author": "woziji00226",
+        "gcver": null
+    },
+    {
+        "allPlugUseData": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            [],
+            [],
+            [],
+            [],
+            [
+                15003
+            ],
+            [],
+            null,
+            null,
+            [],
+            [
+                {
+                    "filePath": "Game/GCplug/145/ImageShake_kds1.ts",
+                    "isServer": false
+                }
+            ],
+            null,
+            null,
+            [],
+            [],
+            []
+        ],
+        "id": 145,
+        "name": "图像震动指令",
+        "lastUpdateTime": 1657162779,
+        "author": "Karson.DS",
+        "gcver": null
+    },
+    {
+        "allPlugUseData": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            [],
+            [
+                22
+            ],
+            [
+                15001
+            ],
+            [],
+            [
+                15004
+            ],
+            [],
+            null,
+            null,
+            [],
+            [
+                {
+                    "filePath": "Game/GCplug/1199/W26_FontMap.ts",
+                    "isServer": false
+                }
+            ],
+            null,
+            null,
+            [],
+            [],
+            []
+        ],
+        "id": 1199,
+        "name": "字体映射-改变字体",
+        "lastUpdateTime": 1729329803,
+        "author": "woziji00226",
+        "gcver": null
+    },
+    {
+        "allPlugUseData": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            null,
+            null,
+            [],
+            [
+                {
+                    "filePath": "Game/GCplug/428/SoModule_AvatarBlendMode.ts",
+                    "isServer": false
+                }
+            ],
+            null,
+            null,
+            [],
+            [],
+            [
+                8
+            ]
+        ],
+        "id": 428,
+        "name": "场景灯光效果",
+        "lastUpdateTime": 1657162779,
+        "author": "Karson.DS",
+        "gcver": null
+    },
+    {
+        "allPlugUseData": [
+            null,
+            null,
+            null,
+            [
+                15005
+            ],
+            null,
+            null,
+            null,
+            null,
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            null,
+            null,
+            [],
+            [
+                {
+                    "filePath": "Game/GCplug/734/W26_GUI_RichTextTest.ts",
+                    "isServer": false
+                },
+                {
+                    "filePath": "Game/GCplug/734/W26_RichTextLabel.ts",
+                    "isServer": false
+                }
+            ],
+            null,
+            null,
+            [
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25
+            ],
+            [],
+            []
+        ],
+        "id": 734,
+        "name": "简易富文本V0.94",
+        "lastUpdateTime": 1723115299,
+        "author": "woziji00226",
+        "gcver": null
+    }
+]
