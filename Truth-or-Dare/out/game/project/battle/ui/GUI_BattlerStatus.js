@@ -16,9 +16,9 @@
 var GUI_BattlerStatus = (function (_super) {
     __extends(GUI_BattlerStatus, _super);
     function GUI_BattlerStatus() {
-        var _this_1 = _super.call(this) || this;
-        _this_1.on(EventObject.DISPLAY, _this_1, _this_1.onDisplay);
-        return _this_1;
+        var _this_2 = _super.call(this) || this;
+        _this_2.on(EventObject.DISPLAY, _this_2, _this_2.onDisplay);
+        return _this_2;
     }
     GUI_BattlerStatus.prototype.onDisplay = function () {
         this.refreshActorDataPanel();

@@ -1,15 +1,14 @@
-var _this = this;
 (function () {
     var GCClound_SupporterData = (function () {
         function GCClound_SupporterData() {
         }
         GCClound_SupporterData.init = function () {
-            var _this = this;
+            var _this_2 = this;
             this.initCommand();
             window.addEventListener("message", function (event) {
                 var allow = false;
-                for (var i in _this.whiteOrigins) {
-                    var origin = _this.whiteOrigins[i];
+                for (var i in _this_2.whiteOrigins) {
+                    var origin = _this_2.whiteOrigins[i];
                     if (event.origin.indexOf(origin) != -1) {
                         allow = true;
                         break;
@@ -22,7 +21,7 @@ var _this = this;
                     return;
                 switch (data.msgType) {
                     case 100001:
-                        _this.syncFPValue(data.fp_user, data.fp_game);
+                        _this_2.syncFPValue(data.fp_user, data.fp_game);
                         break;
                     case 1002:
                         break;
@@ -76,11 +75,11 @@ var _this = this;
             this.lock_fp_game = fp_game;
         };
         GCClound_SupporterData.initCommand = function () {
-            var _this = this;
+            var _this_2 = this;
             CommandExecute.customCommand_14001 = function (commandPage, cmd, trigger, triggerPlayer, playerInput, p) {
                 if (!trigger || !(trigger instanceof CommandTrigger) || !triggerPlayer || !(triggerPlayer instanceof ClientPlayer))
                     return;
-                var safelyFP_cost = _this.safelyFP_cost;
+                var safelyFP_cost = _this_2.safelyFP_cost;
                 if (ClientWorld.variable.getVariable(WorldData.const_fp_cost_value) != safelyFP_cost)
                     ClientWorld.variable.setVariable(WorldData.const_fp_cost_value, safelyFP_cost);
                 var cost = Math.floor(p.cost);
@@ -88,7 +87,7 @@ var _this = this;
                     return;
                 var newValue = safelyFP_cost - cost;
                 ClientWorld.variable.setVariable(WorldData.const_fp_cost_value, newValue);
-                _this.lock_fp_cost = newValue;
+                _this_2.lock_fp_cost = newValue;
             };
             Object.defineProperty(CommandExecute, 'customCommand_14001', {
                 value: CommandExecute.customCommand_14001,
@@ -134,9 +133,8 @@ var _this = this;
             GCClound_SupporterData.init();
             parent.postMessage({ msgType: 1002 }, '*');
         }
-    }, _this), true);
+    }, _this_2), true);
 })();
-var CommandExecute;
 (function (CommandExecute) {
     function customCommand_14001(commandPage, cmd, trigger, triggerPlayer, playerInput, p) { }
     CommandExecute.customCommand_14001 = customCommand_14001;

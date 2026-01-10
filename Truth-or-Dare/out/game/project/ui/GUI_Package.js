@@ -16,18 +16,18 @@
 var GUI_Package = (function (_super) {
     __extends(GUI_Package, _super);
     function GUI_Package() {
-        var _this_1 = _super.call(this) || this;
-        _this_1.itemNameInitColor = _this_1.itemName.color;
-        GUI_Manager.standardList(_this_1.list, false);
-        GUI_Manager.standardList(_this_1.actorList, false);
-        _this_1.on(EventObject.DISPLAY, _this_1, _this_1.onDisplay);
-        _this_1.list.on(EventObject.CHANGE, _this_1, _this_1.refreshItemInfo);
-        _this_1.list.on(UIList.ITEM_CLICK, _this_1, _this_1.onItemClick);
-        _this_1.list.on(UIList.ITEM_CREATE, _this_1, _this_1.onItemCreate);
-        EventUtils.addEventListenerFunction(ProjectPlayer, ProjectPlayer.EVENT_CHANGE_ITEM_NUMBER, _this_1.onItemChange, _this_1);
-        _this_1.list.on(UIList.ITEM_CREATE, _this_1, _this_1.onCreateItemUI);
-        _this_1.actorList.on(UIList.ITEM_CLICK, _this_1, _this_1.onActorItemClick);
-        return _this_1;
+        var _this_2 = _super.call(this) || this;
+        _this_2.itemNameInitColor = _this_2.itemName.color;
+        GUI_Manager.standardList(_this_2.list, false);
+        GUI_Manager.standardList(_this_2.actorList, false);
+        _this_2.on(EventObject.DISPLAY, _this_2, _this_2.onDisplay);
+        _this_2.list.on(EventObject.CHANGE, _this_2, _this_2.refreshItemInfo);
+        _this_2.list.on(UIList.ITEM_CLICK, _this_2, _this_2.onItemClick);
+        _this_2.list.on(UIList.ITEM_CREATE, _this_2, _this_2.onItemCreate);
+        EventUtils.addEventListenerFunction(ProjectPlayer, ProjectPlayer.EVENT_CHANGE_ITEM_NUMBER, _this_2.onItemChange, _this_2);
+        _this_2.list.on(UIList.ITEM_CREATE, _this_2, _this_2.onCreateItemUI);
+        _this_2.actorList.on(UIList.ITEM_CLICK, _this_2, _this_2.onActorItemClick);
+        return _this_2;
     }
     Object.defineProperty(GUI_Package.prototype, "actorList", {
         get: function () {
@@ -59,7 +59,7 @@ var GUI_Package = (function (_super) {
         }
     };
     GUI_Package.prototype.onItemClick = function () {
-        var _this_1 = this;
+        var _this_2 = this;
         if (this.useItemLock)
             return;
         var selectedItem = this.list.selectedItem;
@@ -72,7 +72,7 @@ var GUI_Package = (function (_super) {
             var item = itemDS_1.item;
             if (item.isUse && item.useType != 2 && itemDS_1.number > 0) {
                 if (item.isSingleTarget) {
-                    this.startSelectTarget(function () { _this_1.onUseItem(itemDS_1); });
+                    this.startSelectTarget(function () { _this_2.onUseItem(itemDS_1); });
                 }
                 else {
                     this.onUseItem(itemDS_1);
@@ -85,7 +85,7 @@ var GUI_Package = (function (_super) {
         }
     };
     GUI_Package.prototype.onUseItem = function (itemDS) {
-        var _this_1 = this;
+        var _this_2 = this;
         if (itemDS.number <= 0) {
             GameAudio.playSE(WorldData.disalbeSE);
             return;
@@ -123,8 +123,8 @@ var GUI_Package = (function (_super) {
                 }
                 Game.refreshActorAttribute(targetActor, targetActorDS.lv);
             }
-            _this_1.targetUI.refreshTargetPanel();
-            _this_1.useItemLock = false;
+            _this_2.targetUI.refreshTargetPanel();
+            _this_2.useItemLock = false;
         }, this));
         if (!trigger)
             this.useItemLock = false;

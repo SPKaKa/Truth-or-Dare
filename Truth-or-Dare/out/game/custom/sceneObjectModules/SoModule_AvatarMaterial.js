@@ -16,14 +16,14 @@
 var SoModule_AvatarMaterial = (function (_super) {
     __extends(SoModule_AvatarMaterial, _super);
     function SoModule_AvatarMaterial(installCB) {
-        var _this_1 = _super.call(this, installCB) || this;
-        for (var i = 0; i < _this_1.materialData.length; i++) {
-            var materials = _this_1.materialData[i].materials;
+        var _this_2 = _super.call(this, installCB) || this;
+        for (var i = 0; i < _this_2.materialData.length; i++) {
+            var materials = _this_2.materialData[i].materials;
             for (var s = 0; s < materials.length; s++) {
-                _this_1.so.avatar.addMaterial(materials[s]);
+                _this_2.so.avatar.addMaterial(materials[s]);
             }
         }
-        return _this_1;
+        return _this_2;
     }
     SoModule_AvatarMaterial.prototype.onRemoved = function () {
         for (var i = 0; i < this.materialData.length; i++) {

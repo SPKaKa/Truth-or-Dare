@@ -18,13 +18,13 @@ var ProjectSceneObjectBehaviors = (function (_super) {
     function ProjectSceneObjectBehaviors(so, loop, targetSceneObject, onOver, startIndex, executor) {
         if (startIndex === void 0) { startIndex = 0; }
         if (executor === void 0) { executor = null; }
-        var _this_1 = _super.call(this, so, loop, targetSceneObject, onOver, startIndex, executor) || this;
+        var _this_2 = _super.call(this, so, loop, targetSceneObject, onOver, startIndex, executor) || this;
         if (Config.BEHAVIOR_EDIT_MODE) {
-            var soModule_shadow = _this_1.so.getModule(1);
+            var soModule_shadow = _this_2.so.getModule(1);
             if (soModule_shadow)
-                _this_1.soModule_shadow_default = [soModule_shadow.shadowWidth, soModule_shadow.shadowHeight, soModule_shadow.shadowAlpha];
+                _this_2.soModule_shadow_default = [soModule_shadow.shadowWidth, soModule_shadow.shadowHeight, soModule_shadow.shadowAlpha];
         }
-        return _this_1;
+        return _this_2;
     }
     Object.defineProperty(ProjectSceneObjectBehaviors.prototype, "logicPause", {
         get: function () {
@@ -325,7 +325,7 @@ var ProjectSceneObjectBehaviors = (function (_super) {
         }
     };
     ProjectSceneObjectBehaviors.prototype.behavior34 = function (aniID, showHitEffect, loop, fps, useVar, varID, waitOver) {
-        var _this_1 = this;
+        var _this_2 = this;
         if (useVar) {
             aniID = Game.player.variable.getVariable(varID);
             if (Config.BEHAVIOR_EDIT_MODE)
@@ -335,8 +335,8 @@ var ProjectSceneObjectBehaviors = (function (_super) {
         if (ani && waitOver) {
             this.isWaitingActionOver = true;
             ani.once(GCAnimation.PLAY_COMPLETED, this, function () {
-                _this_1.isWaitingActionOver = false;
-                _this_1.update();
+                _this_2.isWaitingActionOver = false;
+                _this_2.update();
             });
         }
     };
@@ -387,7 +387,7 @@ var ProjectSceneObjectBehaviors = (function (_super) {
         this.so.avatarID = useVar ? Game.player.variable.getVariable(avatarIDVarID) : avatarID;
     };
     ProjectSceneObjectBehaviors.prototype.behavior47 = function (useVar, actionID, actionIDVarID, once, waitOver) {
-        var _this_1 = this;
+        var _this_2 = this;
         var actID = useVar ? Game.player.variable.getVariable(actionIDVarID) : actionID;
         if (once) {
             if (this.so.avatar.hasActionID(actID)) {
@@ -396,9 +396,9 @@ var ProjectSceneObjectBehaviors = (function (_super) {
                 }
                 this.so.avatar.currentFrame = this.so.avatar.currentFrame % this.so.avatar.totalFrame;
                 this.so.avatar.once(Avatar.ACTION_PLAY_COMPLETED, this, function () {
-                    _this_1.so.avatarFrame = _this_1.so.avatar.totalFrame;
-                    _this_1.so.autoPlayEnable = false;
-                    _this_1.isWaitingActionOver = false;
+                    _this_2.so.avatarFrame = _this_2.so.avatar.totalFrame;
+                    _this_2.so.autoPlayEnable = false;
+                    _this_2.isWaitingActionOver = false;
                 });
             }
         }
@@ -408,13 +408,13 @@ var ProjectSceneObjectBehaviors = (function (_super) {
         this.so.avatarFrame = useVar ? Game.player.variable.getVariable(frameVarID) : frame;
     };
     ProjectSceneObjectBehaviors.prototype.behavior49 = function (feData) {
-        var _this_1 = this;
+        var _this_2 = this;
         if (Config.BEHAVIOR_EDIT_MODE)
             return;
         this.executeCommandPageFragment = true;
         CommandPage.startTriggerFragmentEvent(feData, this.targetSceneObject, this.executor, Callback.New(function () {
-            _this_1.executeCommandPageFragment = false;
-            _this_1.sceneObjectUpdate();
+            _this_2.executeCommandPageFragment = false;
+            _this_2.sceneObjectUpdate();
         }, this));
     };
     ProjectSceneObjectBehaviors.prototype.behavior50 = function (x, y, avatarID, actionID, ori, usePos, useAvatarID, useActionID, useOri, isGrid) {

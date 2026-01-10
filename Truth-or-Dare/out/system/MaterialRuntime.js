@@ -1,18 +1,18 @@
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    };
-    return function (d, b) {
-        if (typeof b !== "function" && b !== null)
-            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 var MaterialData = (function () {
     function MaterialData() {
         this.____timeInfo = {};
@@ -22,324 +22,324 @@ var MaterialData = (function () {
 var MaterialData1 = (function (_super) {
     __extends(MaterialData1, _super);
     function MaterialData1() {
-        var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.id = 1;
-        _this.r = 0;
-        _this.g = 0;
-        _this.b = 0;
-        _this.gray = 0;
-        _this.mr = 1;
-        _this.mg = 1;
-        _this.mb = 1;
-        _this.useTime = false;
-        _this.time = "";
-        return _this;
+        var _this_2 = _super !== null && _super.apply(this, arguments) || this;
+        _this_2.id = 1;
+        _this_2.r = 0;
+        _this_2.g = 0;
+        _this_2.b = 0;
+        _this_2.gray = 0;
+        _this_2.mr = 1;
+        _this_2.mg = 1;
+        _this_2.mb = 1;
+        _this_2.useTime = false;
+        _this_2.time = "";
+        return _this_2;
     }
     return MaterialData1;
 }(MaterialData));
 var MaterialData2 = (function (_super) {
     __extends(MaterialData2, _super);
     function MaterialData2() {
-        var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.id = 2;
-        _this.hue = 0;
-        return _this;
+        var _this_2 = _super !== null && _super.apply(this, arguments) || this;
+        _this_2.id = 2;
+        _this_2.hue = 0;
+        return _this_2;
     }
     return MaterialData2;
 }(MaterialData));
 var MaterialData3 = (function (_super) {
     __extends(MaterialData3, _super);
     function MaterialData3() {
-        var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.id = 3;
-        _this.strength = 0;
-        _this.useTime = false;
-        _this.time = "";
-        return _this;
+        var _this_2 = _super !== null && _super.apply(this, arguments) || this;
+        _this_2.id = 3;
+        _this_2.strength = 0;
+        _this_2.useTime = false;
+        _this_2.time = "";
+        return _this_2;
     }
     return MaterialData3;
 }(MaterialData));
 var MaterialData4 = (function (_super) {
     __extends(MaterialData4, _super);
     function MaterialData4() {
-        var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.id = 4;
-        _this.color = "#00FF00";
-        _this.blur = 2;
-        _this.offsetX = 0;
-        _this.offsetY = 0;
-        return _this;
+        var _this_2 = _super !== null && _super.apply(this, arguments) || this;
+        _this_2.id = 4;
+        _this_2.color = "#00FF00";
+        _this_2.blur = 2;
+        _this_2.offsetX = 0;
+        _this_2.offsetY = 0;
+        return _this_2;
     }
     return MaterialData4;
 }(MaterialData));
 var MaterialData5 = (function (_super) {
     __extends(MaterialData5, _super);
     function MaterialData5() {
-        var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.id = 5;
-        _this.useTrans = false;
-        _this.sigma = 0.2;
-        _this.trans = "";
-        _this.aspect = 1.7;
-        return _this;
+        var _this_2 = _super !== null && _super.apply(this, arguments) || this;
+        _this_2.id = 5;
+        _this_2.useTrans = false;
+        _this_2.sigma = 0.2;
+        _this_2.trans = "";
+        _this_2.aspect = 1.7;
+        return _this_2;
     }
     return MaterialData5;
 }(MaterialData));
 var MaterialData6 = (function (_super) {
     __extends(MaterialData6, _super);
     function MaterialData6() {
-        var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.id = 6;
-        _this.useTrans = false;
-        _this.time = 0;
-        _this.trans = "";
-        _this.useTrans1 = false;
-        _this.sigma = 0.2;
-        _this.trans1 = "";
-        _this.useTrans2 = false;
-        _this.strength = 0.02;
-        _this.trans2 = "";
-        _this.aspect = 1.7;
-        return _this;
+        var _this_2 = _super !== null && _super.apply(this, arguments) || this;
+        _this_2.id = 6;
+        _this_2.useTrans = false;
+        _this_2.time = 0;
+        _this_2.trans = "";
+        _this_2.useTrans1 = false;
+        _this_2.sigma = 0.2;
+        _this_2.trans1 = "";
+        _this_2.useTrans2 = false;
+        _this_2.strength = 0.02;
+        _this_2.trans2 = "";
+        _this_2.aspect = 1.7;
+        return _this_2;
     }
     return MaterialData6;
 }(MaterialData));
 var MaterialData7 = (function (_super) {
     __extends(MaterialData7, _super);
     function MaterialData7() {
-        var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.id = 7;
-        _this.tex2 = "";
-        _this.useTrans = false;
-        _this.time = 1;
-        _this.trans = "";
-        return _this;
+        var _this_2 = _super !== null && _super.apply(this, arguments) || this;
+        _this_2.id = 7;
+        _this_2.tex2 = "";
+        _this_2.useTrans = false;
+        _this_2.time = 1;
+        _this_2.trans = "";
+        return _this_2;
     }
     return MaterialData7;
 }(MaterialData));
 var MaterialData8 = (function (_super) {
     __extends(MaterialData8, _super);
     function MaterialData8() {
-        var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.id = 8;
-        _this.useTrans = false;
-        _this.time = 0;
-        _this.trans = "";
-        _this.zoom = 0.5;
-        _this.multiplier = 0.5;
-        _this.centerX = 0.5;
-        _this.centerY = 0.5;
-        return _this;
+        var _this_2 = _super !== null && _super.apply(this, arguments) || this;
+        _this_2.id = 8;
+        _this_2.useTrans = false;
+        _this_2.time = 0;
+        _this_2.trans = "";
+        _this_2.zoom = 0.5;
+        _this_2.multiplier = 0.5;
+        _this_2.centerX = 0.5;
+        _this_2.centerY = 0.5;
+        return _this_2;
     }
     return MaterialData8;
 }(MaterialData));
 var MaterialData9 = (function (_super) {
     __extends(MaterialData9, _super);
     function MaterialData9() {
-        var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.id = 9;
-        _this.tex2 = "";
-        _this.useTrans = false;
-        _this.time = 0;
-        _this.trans = "";
-        return _this;
+        var _this_2 = _super !== null && _super.apply(this, arguments) || this;
+        _this_2.id = 9;
+        _this_2.tex2 = "";
+        _this_2.useTrans = false;
+        _this_2.time = 0;
+        _this_2.trans = "";
+        return _this_2;
     }
     return MaterialData9;
 }(MaterialData));
 var MaterialData10 = (function (_super) {
     __extends(MaterialData10, _super);
     function MaterialData10() {
-        var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.id = 10;
-        _this.mask = "";
-        _this.useTrans = false;
-        _this.time = 0;
-        _this.trans = "";
-        _this.vagueness = 0.25;
-        _this.invertMask = 0;
-        return _this;
+        var _this_2 = _super !== null && _super.apply(this, arguments) || this;
+        _this_2.id = 10;
+        _this_2.mask = "";
+        _this_2.useTrans = false;
+        _this_2.time = 0;
+        _this_2.trans = "";
+        _this_2.vagueness = 0.25;
+        _this_2.invertMask = 0;
+        return _this_2;
     }
     return MaterialData10;
 }(MaterialData));
 var MaterialData11 = (function (_super) {
     __extends(MaterialData11, _super);
     function MaterialData11() {
-        var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.id = 11;
-        _this.tex2 = "";
-        _this.useTrans = false;
-        _this.time = 0;
-        _this.trans = "";
-        _this.colorMulR = 1;
-        _this.colorMulG = 1;
-        _this.colorMulB = 1;
-        _this.colorMulA = 1;
-        _this.colorAddR = 0;
-        _this.colorAddG = 0;
-        _this.colorAddB = 0;
-        _this.colorAddA = 0;
-        _this.invertMask = 0;
-        _this.alphaFactor = 0;
-        return _this;
+        var _this_2 = _super !== null && _super.apply(this, arguments) || this;
+        _this_2.id = 11;
+        _this_2.tex2 = "";
+        _this_2.useTrans = false;
+        _this_2.time = 0;
+        _this_2.trans = "";
+        _this_2.colorMulR = 1;
+        _this_2.colorMulG = 1;
+        _this_2.colorMulB = 1;
+        _this_2.colorMulA = 1;
+        _this_2.colorAddR = 0;
+        _this_2.colorAddG = 0;
+        _this_2.colorAddB = 0;
+        _this_2.colorAddA = 0;
+        _this_2.invertMask = 0;
+        _this_2.alphaFactor = 0;
+        return _this_2;
     }
     return MaterialData11;
 }(MaterialData));
 var MaterialData12 = (function (_super) {
     __extends(MaterialData12, _super);
     function MaterialData12() {
-        var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.id = 12;
-        _this.trans = "false";
-        _this.pixelSize = 64;
-        return _this;
+        var _this_2 = _super !== null && _super.apply(this, arguments) || this;
+        _this_2.id = 12;
+        _this_2.trans = "false";
+        _this_2.pixelSize = 64;
+        return _this_2;
     }
     return MaterialData12;
 }(MaterialData));
 var MaterialData13 = (function (_super) {
     __extends(MaterialData13, _super);
     function MaterialData13() {
-        var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.id = 13;
-        _this.t = "";
-        _this.amplitude = 0.3;
-        _this.angularVelocity = 10;
-        _this.speed = 10;
-        return _this;
+        var _this_2 = _super !== null && _super.apply(this, arguments) || this;
+        _this_2.id = 13;
+        _this_2.t = "";
+        _this_2.amplitude = 0.3;
+        _this_2.angularVelocity = 10;
+        _this_2.speed = 10;
+        return _this_2;
     }
     return MaterialData13;
 }(MaterialData));
 var MaterialData14 = (function (_super) {
     __extends(MaterialData14, _super);
     function MaterialData14() {
-        var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.id = 14;
-        _this.t = "";
-        _this.timeScale = 1;
-        return _this;
+        var _this_2 = _super !== null && _super.apply(this, arguments) || this;
+        _this_2.id = 14;
+        _this_2.t = "";
+        _this_2.timeScale = 1;
+        return _this_2;
     }
     return MaterialData14;
 }(MaterialData));
 var MaterialData15 = (function (_super) {
     __extends(MaterialData15, _super);
     function MaterialData15() {
-        var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.id = 15;
-        _this.tex2 = "";
-        _this.uvScale = 1;
-        _this.noiseTimeScale = 1;
-        _this.t = "";
-        return _this;
+        var _this_2 = _super !== null && _super.apply(this, arguments) || this;
+        _this_2.id = 15;
+        _this_2.tex2 = "";
+        _this_2.uvScale = 1;
+        _this_2.noiseTimeScale = 1;
+        _this_2.t = "";
+        return _this_2;
     }
     return MaterialData15;
 }(MaterialData));
 var MaterialData16 = (function (_super) {
     __extends(MaterialData16, _super);
     function MaterialData16() {
-        var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.id = 16;
-        _this.tex2 = "";
-        _this.t = "";
-        _this.dissolveSpeed = 1;
-        _this.edgeWidth = 1;
-        _this.edgeColorR = 1;
-        _this.edgeColorG = 1;
-        _this.edgeColorB = 1;
-        _this.edgeColorA = 1;
-        _this.startTime = 0;
-        return _this;
+        var _this_2 = _super !== null && _super.apply(this, arguments) || this;
+        _this_2.id = 16;
+        _this_2.tex2 = "";
+        _this_2.t = "";
+        _this_2.dissolveSpeed = 1;
+        _this_2.edgeWidth = 1;
+        _this_2.edgeColorR = 1;
+        _this_2.edgeColorG = 1;
+        _this_2.edgeColorB = 1;
+        _this_2.edgeColorA = 1;
+        _this_2.startTime = 0;
+        return _this_2;
     }
     return MaterialData16;
 }(MaterialData));
 var MaterialData17 = (function (_super) {
     __extends(MaterialData17, _super);
     function MaterialData17() {
-        var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.id = 17;
-        _this.lineColorR = 0;
-        _this.lineColorG = 0;
-        _this.lineColorB = 0;
-        _this.lineColorA = 0;
-        _this.lineWidth = 0.1;
-        _this.rangeX = "";
-        return _this;
+        var _this_2 = _super !== null && _super.apply(this, arguments) || this;
+        _this_2.id = 17;
+        _this_2.lineColorR = 0;
+        _this_2.lineColorG = 0;
+        _this_2.lineColorB = 0;
+        _this_2.lineColorA = 0;
+        _this_2.lineWidth = 0.1;
+        _this_2.rangeX = "";
+        return _this_2;
     }
     return MaterialData17;
 }(MaterialData));
 var MaterialData18 = (function (_super) {
     __extends(MaterialData18, _super);
     function MaterialData18() {
-        var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.id = 18;
-        _this.xSpeed = 1;
-        _this.ySpeed = 0;
-        return _this;
+        var _this_2 = _super !== null && _super.apply(this, arguments) || this;
+        _this_2.id = 18;
+        _this_2.xSpeed = 1;
+        _this_2.ySpeed = 0;
+        return _this_2;
     }
     return MaterialData18;
 }(MaterialData));
 var MaterialData19 = (function (_super) {
     __extends(MaterialData19, _super);
     function MaterialData19() {
-        var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.id = 19;
-        return _this;
+        var _this_2 = _super !== null && _super.apply(this, arguments) || this;
+        _this_2.id = 19;
+        return _this_2;
     }
     return MaterialData19;
 }(MaterialData));
 var MaterialData20 = (function (_super) {
     __extends(MaterialData20, _super);
     function MaterialData20() {
-        var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.id = 20;
-        _this.speed = 1;
-        return _this;
+        var _this_2 = _super !== null && _super.apply(this, arguments) || this;
+        _this_2.id = 20;
+        _this_2.speed = 1;
+        return _this_2;
     }
     return MaterialData20;
 }(MaterialData));
 var MaterialData21 = (function (_super) {
     __extends(MaterialData21, _super);
     function MaterialData21() {
-        var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.id = 21;
-        _this.speed = 1;
-        return _this;
+        var _this_2 = _super !== null && _super.apply(this, arguments) || this;
+        _this_2.id = 21;
+        _this_2.speed = 1;
+        return _this_2;
     }
     return MaterialData21;
 }(MaterialData));
 var MaterialData22 = (function (_super) {
     __extends(MaterialData22, _super);
     function MaterialData22() {
-        var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.id = 22;
-        _this.frequency = 1;
-        return _this;
+        var _this_2 = _super !== null && _super.apply(this, arguments) || this;
+        _this_2.id = 22;
+        _this_2.frequency = 1;
+        return _this_2;
     }
     return MaterialData22;
 }(MaterialData));
 var MaterialData23 = (function (_super) {
     __extends(MaterialData23, _super);
     function MaterialData23() {
-        var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.id = 23;
-        return _this;
+        var _this_2 = _super !== null && _super.apply(this, arguments) || this;
+        _this_2.id = 23;
+        return _this_2;
     }
     return MaterialData23;
 }(MaterialData));
 var MaterialData24 = (function (_super) {
     __extends(MaterialData24, _super);
     function MaterialData24() {
-        var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.id = 24;
-        return _this;
+        var _this_2 = _super !== null && _super.apply(this, arguments) || this;
+        _this_2.id = 24;
+        return _this_2;
     }
     return MaterialData24;
 }(MaterialData));
 var MaterialData25 = (function (_super) {
     __extends(MaterialData25, _super);
     function MaterialData25() {
-        var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.id = 25;
-        _this.pixelSize = 0.1;
-        return _this;
+        var _this_2 = _super !== null && _super.apply(this, arguments) || this;
+        _this_2.id = 25;
+        _this_2.pixelSize = 0.1;
+        return _this_2;
     }
     return MaterialData25;
 }(MaterialData));

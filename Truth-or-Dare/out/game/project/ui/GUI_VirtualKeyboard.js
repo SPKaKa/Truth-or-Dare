@@ -16,15 +16,15 @@
 var GUI_VirtualKeyboard = (function (_super) {
     __extends(GUI_VirtualKeyboard, _super);
     function GUI_VirtualKeyboard() {
-        var _this_1 = _super.call(this) || this;
-        _this_1.rockerCenterPoint = new Point;
-        _this_1.lastMenuDir = 0;
-        GUI_VirtualKeyboard.self = _this_1;
-        _this_1.init();
-        return _this_1;
+        var _this_2 = _super.call(this) || this;
+        _this_2.rockerCenterPoint = new Point;
+        _this_2.lastMenuDir = 0;
+        GUI_VirtualKeyboard.self = _this_2;
+        _this_2.init();
+        return _this_2;
     }
     GUI_VirtualKeyboard.prototype.init = function () {
-        var _this_1 = this;
+        var _this_2 = this;
         if (!this.rocker || !this.rockerBg)
             return;
         this.rockerCenterPoint = new Point(Math.floor(this.rockerBg.width / 2), Math.floor(this.rockerBg.height / 2));
@@ -35,12 +35,12 @@ var GUI_VirtualKeyboard = (function (_super) {
         this.on(GUI_VirtualKeyboard.VIRTUALKEYBOARD_DIR4_CHANGE, this, this.onVirtualKeyboardMenuDirChange);
         EventUtils.addEventListenerFunction(GameUI, GameUI.EVENT_OPEN_SYSTEM_UI, function (uiID) {
             if (uiID != 12) {
-                if (_this_1.stage)
+                if (_this_2.stage)
                     GameUI.show(12);
             }
         }, this);
         EventUtils.addEventListenerFunction(GameDialog, GameDialog.EVENT_DIALOG_START, function (isOption, content, options, name, head, expression, audioURL, speed) {
-            if (_this_1.stage)
+            if (_this_2.stage)
                 GameUI.show(12);
         }, this);
     };
@@ -136,7 +136,7 @@ var GUI_VirtualKeyboard = (function (_super) {
         document.removeEventListener(this.mouseMoveType, this.doCheckBeyondBoundaries);
     };
     GUI_VirtualKeyboard.prototype.doCheckBeyondBoundaries = function (e) {
-        var _a, _b;
+        var _c, _d;
         var _this = GUI_VirtualKeyboard.self;
         for (var i = 0; i < e.changedTouches.length; i++) {
             var touch = e.changedTouches[i];
@@ -146,8 +146,8 @@ var GUI_VirtualKeyboard = (function (_super) {
                 var per = GameUtils.getAutoFitSizePre(new Rectangle(0, 0, stage.width, stage.height), new Rectangle(0, 0, winW, winH));
                 var stageW = per * stage.width;
                 var stageH = per * stage.height;
-                var clientX = Browser.onPC ? e.clientX : (_a = e.changedTouches[_this.touchId]) === null || _a === void 0 ? void 0 : _a.clientX;
-                var clientY = Browser.onPC ? e.clientY : (_b = e.changedTouches[_this.touchId]) === null || _b === void 0 ? void 0 : _b.clientY;
+                var clientX = Browser.onPC ? e.clientX : (_c = e.changedTouches[_this.touchId]) === null || _c === void 0 ? void 0 : _c.clientX;
+                var clientY = Browser.onPC ? e.clientY : (_d = e.changedTouches[_this.touchId]) === null || _d === void 0 ? void 0 : _d.clientY;
                 var gameClientX = _this.getClientX(e, _this.touchId);
                 var gameClientY = _this.getClientY(e, _this.touchId);
                 _this.lockRockerMouseX = _this.startRockerBgMouseX + (gameClientX - _this.startClientX);
@@ -205,28 +205,28 @@ var GUI_VirtualKeyboard = (function (_super) {
         configurable: true
     });
     GUI_VirtualKeyboard.prototype.getClientX = function (nativeE, touchId) {
-        var _a, _b;
+        var _c, _d;
         var isOri = (!this.isNativeAPP && stage.screenMode == "horizontal" && stage.width > stage.height);
         var oClientX;
         if (isOri) {
-            oClientX = Browser.onPC ? nativeE.clientY : (_a = this.getChangedTouches(nativeE, touchId)) === null || _a === void 0 ? void 0 : _a.clientY;
+            oClientX = Browser.onPC ? nativeE.clientY : (_c = this.getChangedTouches(nativeE, touchId)) === null || _c === void 0 ? void 0 : _c.clientY;
         }
         else {
-            oClientX = Browser.onPC ? nativeE.clientX : (_b = this.getChangedTouches(nativeE, touchId)) === null || _b === void 0 ? void 0 : _b.clientX;
+            oClientX = Browser.onPC ? nativeE.clientX : (_d = this.getChangedTouches(nativeE, touchId)) === null || _d === void 0 ? void 0 : _d.clientX;
         }
         oClientX = oClientX * Browser.pixelRatio / stage.clientScaleX;
         return oClientX;
     };
     GUI_VirtualKeyboard.prototype.getClientY = function (nativeE, touchId) {
-        var _a, _b;
+        var _c, _d;
         var isOri = (!this.isNativeAPP && stage.screenMode == "horizontal" && stage.width > stage.height);
         var oClientY;
         if (isOri) {
-            oClientY = Browser.onPC ? nativeE.clientX : (_a = this.getChangedTouches(nativeE, touchId)) === null || _a === void 0 ? void 0 : _a.clientX;
+            oClientY = Browser.onPC ? nativeE.clientX : (_c = this.getChangedTouches(nativeE, touchId)) === null || _c === void 0 ? void 0 : _c.clientX;
             oClientY = stage.height / stage.clientScaleY - oClientY;
         }
         else {
-            oClientY = Browser.onPC ? nativeE.clientY : (_b = this.getChangedTouches(nativeE, touchId)) === null || _b === void 0 ? void 0 : _b.clientY;
+            oClientY = Browser.onPC ? nativeE.clientY : (_d = this.getChangedTouches(nativeE, touchId)) === null || _d === void 0 ? void 0 : _d.clientY;
         }
         oClientY = oClientY * Browser.pixelRatio / stage.clientScaleY;
         return oClientY;

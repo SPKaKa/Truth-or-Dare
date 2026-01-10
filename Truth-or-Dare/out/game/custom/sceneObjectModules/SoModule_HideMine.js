@@ -16,9 +16,9 @@
 var SoModule_HideMine = (function (_super) {
     __extends(SoModule_HideMine, _super);
     function SoModule_HideMine(installCB) {
-        var _this_1 = _super.call(this, installCB) || this;
-        _this_1.init();
-        return _this_1;
+        var _this_2 = _super.call(this, installCB) || this;
+        _this_2.init();
+        return _this_2;
     }
     SoModule_HideMine.prototype.onRemoved = function () {
         os.remove_ENTERFRAME(this.onUpdate, this);
@@ -66,7 +66,7 @@ var SoModule_HideMine = (function (_super) {
         this.nextBattleFrameCount++;
     };
     SoModule_HideMine.prototype.happenEvent = function () {
-        var _this_1 = this;
+        var _this_2 = this;
         this.determineNextBattleTime();
         if (this.enemyType == 0) {
             var perCount = 0;
@@ -109,7 +109,7 @@ var SoModule_HideMine = (function (_super) {
         else if (this.enemyType == 1) {
             this.systemPause = true;
             CommandPage.startTriggerFragmentEvent(this.event, Game.player.sceneObject, this.so, Callback.New(function () {
-                _this_1.systemPause = false;
+                _this_2.systemPause = false;
             }, this));
         }
     };

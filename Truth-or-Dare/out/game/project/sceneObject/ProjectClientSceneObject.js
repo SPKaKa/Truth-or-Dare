@@ -16,24 +16,24 @@
 var ProjectClientSceneObject = (function (_super) {
     __extends(ProjectClientSceneObject, _super);
     function ProjectClientSceneObject(soData, scene) {
-        var _this_1 = _super.call(this, soData, scene) || this;
-        _this_1.sid = ObjectUtils.getInstanceID();
-        _this_1.pos = new Point();
-        _this_1.posGrid = new Point(-1, -1);
-        _this_1.posRect = new Rectangle();
-        _this_1.behaviors = [];
-        _this_1.myLastTouchObjects = [];
-        _this_1.supportPause = true;
-        _this_1.tempGridPosHelper = new Point();
-        if (!_this_1.root)
-            return _this_1;
+        var _this_2 = _super.call(this, soData, scene) || this;
+        _this_2.sid = ObjectUtils.getInstanceID();
+        _this_2.pos = new Point();
+        _this_2.posGrid = new Point(-1, -1);
+        _this_2.posRect = new Rectangle();
+        _this_2.behaviors = [];
+        _this_2.myLastTouchObjects = [];
+        _this_2.supportPause = true;
+        _this_2.tempGridPosHelper = new Point();
+        if (!_this_2.root)
+            return _this_2;
         if (GameGate.gateState >= GameGate.STATE_3_IN_SCENE_COMPLETE) {
-            _this_1.init();
+            _this_2.init();
         }
         else {
-            EventUtils.addEventListenerFunction(GameGate, GameGate.EVENT_IN_SCENE_STATE_CHANGE, _this_1.initState3, _this_1);
+            EventUtils.addEventListenerFunction(GameGate, GameGate.EVENT_IN_SCENE_STATE_CHANGE, _this_2.initState3, _this_2);
         }
-        return _this_1;
+        return _this_2;
     }
     ProjectClientSceneObject.prototype.initState3 = function () {
         if (GameGate.gateState == GameGate.STATE_3_IN_SCENE_COMPLETE) {
@@ -66,10 +66,10 @@ var ProjectClientSceneObject = (function (_super) {
         return o;
     };
     ProjectClientSceneObject.prototype.retorySaveData = function (o) {
-        var _this_1 = this;
+        var _this_2 = this;
         this.isFromRecorySaveData = true;
         this.fromRecorySaveDataGameFrame = __fCount;
-        Callback.CallLaterBeforeRender(function () { _this_1.isFromRecorySaveData = false; }, this);
+        Callback.CallLaterBeforeRender(function () { _this_2.isFromRecorySaveData = false; }, this);
         for (var i = 0; i < o.myLastTouchObjects.length; i++) {
             var myLastTouchSoIndex = o.myLastTouchObjects[i];
             if (myLastTouchSoIndex != null) {
@@ -93,7 +93,7 @@ var ProjectClientSceneObject = (function (_super) {
         this.parallelEventUpdate();
     };
     ProjectClientSceneObject.prototype.addBehavior = function (behaviorData, loop, targetSceneObject, onOver, cover, startIndex, Immediate, forceStopLastBehavior, delayFrame, executor) {
-        var _this_1 = this;
+        var _this_2 = this;
         if (startIndex === void 0) { startIndex = 0; }
         if (Immediate === void 0) { Immediate = true; }
         if (forceStopLastBehavior === void 0) { forceStopLastBehavior = false; }
@@ -101,12 +101,12 @@ var ProjectClientSceneObject = (function (_super) {
         if (executor === void 0) { executor = null; }
         GameCommand.startCommonCommand(14016, [], null, this, this);
         var soBehavior = new ProjectSceneObjectBehaviors(this, loop, targetSceneObject, Callback.New(function (onOver, soBehavior) {
-            GameCommand.startCommonCommand(14017, [], null, _this_1, _this_1);
-            var idx = _this_1.behaviors.indexOf(soBehavior);
+            GameCommand.startCommonCommand(14017, [], null, _this_2, _this_2);
+            var idx = _this_2.behaviors.indexOf(soBehavior);
             if (idx != -1)
-                _this_1.behaviors.splice(idx, 1);
+                _this_2.behaviors.splice(idx, 1);
             onOver && onOver.run();
-            _this_1.updateBehavior();
+            _this_2.updateBehavior();
         }, this, [onOver]), startIndex, executor);
         soBehavior.setBehaviors(behaviorData, delayFrame);
         if (forceStopLastBehavior) {
@@ -317,7 +317,7 @@ var ProjectClientSceneObject = (function (_super) {
         }
     };
     ProjectClientSceneObject.prototype.jumpTo = function (x, y, costFrame) {
-        var _this_1 = this;
+        var _this_2 = this;
         if (costFrame === void 0) { costFrame = 0; }
         if (this.isJumping)
             return;
@@ -340,40 +340,40 @@ var ProjectClientSceneObject = (function (_super) {
         var frameTotal = Math.ceil(ClientWorld.data.jumpTimeCost * 1000 / Game.oneFrame);
         var frameHalf = frameTotal / 2;
         os.add_ENTERFRAME(function () {
-            if (_this_1.isDisposed) {
-                os.remove_ENTERFRAME(arguments.callee, _this_1);
+            if (_this_2.isDisposed) {
+                os.remove_ENTERFRAME(arguments.callee, _this_2);
                 return;
             }
-            if (_this_1.supportPause && Game.pause)
+            if (_this_2.supportPause && Game.pause)
                 return;
-            _this_1.currentJumpFrame++;
-            if (_this_1.currentJumpFrame > frameTotal) {
-                os.remove_ENTERFRAME(arguments.callee, _this_1);
-                _this_1.isJumping = false;
-                if (_this_1.inScene) {
-                    _this_1.refreshCoordinate();
-                    _this_1.event(ProjectClientSceneObject.JUMP_OVER);
+            _this_2.currentJumpFrame++;
+            if (_this_2.currentJumpFrame > frameTotal) {
+                os.remove_ENTERFRAME(arguments.callee, _this_2);
+                _this_2.isJumping = false;
+                if (_this_2.inScene) {
+                    _this_2.refreshCoordinate();
+                    _this_2.event(ProjectClientSceneObject.JUMP_OVER);
                 }
                 return;
             }
-            var per1 = _this_1.currentJumpFrame / frameTotal;
+            var per1 = _this_2.currentJumpFrame / frameTotal;
             var func1 = Ease.linearNone;
-            _this_1.x = func1(per1, oldX, x - oldX, 1);
-            _this_1.y = func1(per1, oldY, y - oldY, 1);
+            _this_2.x = func1(per1, oldX, x - oldX, 1);
+            _this_2.y = func1(per1, oldY, y - oldY, 1);
             var per2, func2, toJumpY;
-            if (_this_1.currentJumpFrame <= frameHalf) {
-                per2 = _this_1.currentJumpFrame / frameHalf;
+            if (_this_2.currentJumpFrame <= frameHalf) {
+                per2 = _this_2.currentJumpFrame / frameHalf;
                 func2 = Ease.quintOut;
                 toJumpY = toJumpUpY;
             }
             else {
-                per2 = (_this_1.currentJumpFrame - frameHalf) / frameHalf;
+                per2 = (_this_2.currentJumpFrame - frameHalf) / frameHalf;
                 func2 = Ease.quintIn;
                 toJumpY = toJumpDownY;
                 oldJumpY = toJumpUpY;
             }
             var jumpY = func2(per2, oldJumpY, toJumpY - oldJumpY, 1);
-            _this_1.jumpY = jumpY;
+            _this_2.jumpY = jumpY;
         }, this);
     };
     ProjectClientSceneObject.prototype.getRecordMoveState = function () {
@@ -800,7 +800,7 @@ var ProjectClientSceneObject = (function (_super) {
         }
     };
     ProjectClientSceneObject.prototype.init = function () {
-        var _this_1 = this;
+        var _this_2 = this;
         this.refreshCoordinate(false, false, true, false);
         EventUtils.addEventListenerFunction(this, SceneObjectEntity.EVENT_CHANGE_STATUS_PAGE_FOR_INSTANCE, this.onStausPageChange, this, [false]);
         EventUtils.addEventListenerFunction(Game, Game.EVENT_PAUSE_CHANGE, this.onGamePauseChangeHandle, this);
@@ -809,7 +809,7 @@ var ProjectClientSceneObject = (function (_super) {
         }
         else {
             this.once(EventObject.ADDED, this, function () {
-                _this_1.onStausPageChange(true);
+                _this_2.onStausPageChange(true);
             });
         }
     };
@@ -869,7 +869,7 @@ var ProjectClientSceneObject = (function (_super) {
         }
     };
     ProjectClientSceneObject.prototype.retryAutoFindRoadMove = function (toX, toY, ifObstacleHandleMode, costTime, useAstar, whenCantMoveRetry, useGridObstacle, touchRes) {
-        var _this_1 = this;
+        var _this_2 = this;
         if (ifObstacleHandleMode === void 0) { ifObstacleHandleMode = 0; }
         if (costTime === void 0) { costTime = 0; }
         if (useAstar === void 0) { useAstar = true; }
@@ -880,9 +880,9 @@ var ProjectClientSceneObject = (function (_super) {
             return;
         this.clearRetryAutoFindRoadMove(false);
         this.needRetryAutoFindRoadMoveSign = setFrameout(function () {
-            if (_this_1.isDisposed || !_this_1.inScene)
+            if (_this_2.isDisposed || !_this_2.inScene)
                 return;
-            _this_1.autoFindRoadMove(toX, toY, ifObstacleHandleMode, costTime, useAstar, whenCantMoveRetry, useGridObstacle, false, true);
+            _this_2.autoFindRoadMove(toX, toY, ifObstacleHandleMode, costTime, useAstar, whenCantMoveRetry, useGridObstacle, false, true);
         }, 16);
     };
     ProjectClientSceneObject.prototype.clearRetryAutoFindRoadMove = function (offCollisionEvent) {

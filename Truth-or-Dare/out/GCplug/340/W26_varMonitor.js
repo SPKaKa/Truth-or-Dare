@@ -1,5 +1,5 @@
 (function () {
-    var _this = this;
+    var _this_2 = this;
     if (!Config.BEHAVIOR_EDIT_MODE && !Config.EDIT_MODE && !Config.RELEASE_GAME) {
         EventUtils.addEventListener(ClientWorld, ClientWorld.EVENT_INITED, Callback.New(function () {
             if (Config.RELEASE_GAME)
@@ -10,7 +10,7 @@
                     W26_varMonitor.start();
                     W26_varMonitor.allRecord();
                 }
-            }, _this));
+            }, _this_2));
             W26_varMonitor.loadJson();
         }, this));
     }
@@ -174,7 +174,7 @@ var W26_varMonitor = (function () {
             W26_VisualArray;
             return true;
         }
-        catch (_b) {
+        catch (_c) {
             return false;
         }
     };
@@ -183,7 +183,7 @@ var W26_varMonitor = (function () {
             W26_Struct;
             return true;
         }
-        catch (_b) {
+        catch (_c) {
             return false;
         }
     };
@@ -244,8 +244,8 @@ var W26_varMonitor = (function () {
             return "";
         return result;
     };
-    var _a;
-    _a = W26_varMonitor;
+    var _b;
+    _b = W26_varMonitor;
     W26_varMonitor.LOAD_COMPLETED = "LOAD_COMPLETED";
     W26_varMonitor.completedLen = 0;
     W26_varMonitor.modeType = new Dictionary();
@@ -253,10 +253,10 @@ var W26_varMonitor = (function () {
     W26_varMonitor.records2 = new Dictionary();
     W26_varMonitor.recordFunction = Callback.New(function (typeID, varID, value) {
         W26_varMonitor.addRecord(typeID, false, varID, value);
-    }, _a);
+    }, _b);
     W26_varMonitor.recordFunction2 = Callback.New(function (typeID, varID, value) {
         W26_varMonitor.addRecord(typeID, true, varID, value);
-    }, _a);
+    }, _b);
     return W26_varMonitor;
 }());
 //# sourceMappingURL=W26_varMonitor.js.map

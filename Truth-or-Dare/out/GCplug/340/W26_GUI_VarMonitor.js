@@ -1,34 +1,34 @@
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    };
-    return function (d, b) {
-        if (typeof b !== "function" && b !== null)
-            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 var W26_GUI_VarMonitor = (function (_super) {
     __extends(W26_GUI_VarMonitor, _super);
     function W26_GUI_VarMonitor() {
-        var _this = _super.call(this) || this;
-        _this.loadAllVar();
-        _this.UITabBox.on(EventObject.CHANGE, _this, _this.changeTabPage);
-        _this.changeTabPage();
-        _this.currentPoint = new Point();
-        _this.currentScale = new Point();
-        _this.frame.on(EventObject.MOUSE_DOWN, _this, function () {
-            _this.window.startDrag();
-            stage.once(EventObject.MOUSE_UP, _this, function () {
-                _this.window.stopDrag();
+        var _this_2 = _super.call(this) || this;
+        _this_2.loadAllVar();
+        _this_2.UITabBox.on(EventObject.CHANGE, _this_2, _this_2.changeTabPage);
+        _this_2.changeTabPage();
+        _this_2.currentPoint = new Point();
+        _this_2.currentScale = new Point();
+        _this_2.frame.on(EventObject.MOUSE_DOWN, _this_2, function () {
+            _this_2.window.startDrag();
+            stage.once(EventObject.MOUSE_UP, _this_2, function () {
+                _this_2.window.stopDrag();
             });
         });
-        return _this;
+        return _this_2;
     }
     W26_GUI_VarMonitor.prototype.onScaleMouseMove = function () {
         var sx = stage.mouseX - this.currentPoint.x;

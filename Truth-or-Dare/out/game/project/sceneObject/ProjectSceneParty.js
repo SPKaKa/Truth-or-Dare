@@ -29,20 +29,20 @@ var ProjectSceneParty = (function () {
         this.members.length = 0;
     };
     ProjectSceneParty.collectQueueMembers = function (clearMembers, onFin) {
-        var _this_1 = this;
+        var _this_2 = this;
         if (onFin === void 0) { onFin = null; }
         var frameCount = this.members.length * Game.player.data.partyMemberDis;
         var fixedFrameCount = frameCount;
         this.pause = true;
         os.add_ENTERFRAME(function () {
-            _this_1.refreshMembersPos(fixedFrameCount - frameCount);
+            _this_2.refreshMembersPos(fixedFrameCount - frameCount);
             frameCount--;
             if (frameCount <= 0) {
-                os.remove_ENTERFRAME(arguments.callee, _this_1);
-                _this_1.pause = false;
-                _this_1.playerTrack.length = 0;
+                os.remove_ENTERFRAME(arguments.callee, _this_2);
+                _this_2.pause = false;
+                _this_2.playerTrack.length = 0;
                 if (clearMembers) {
-                    _this_1.clearPartMemberEntity();
+                    _this_2.clearPartMemberEntity();
                     Game.player.data.showPartyMember = false;
                 }
                 onFin && onFin();
@@ -163,7 +163,7 @@ EventUtils.addEventListener(ClientWorld, ClientWorld.EVENT_INITED, Callback.New(
         else if (GameGate.gateState == GameGate.STATE_0_START_EXECUTE_LEAVE_SCENE_EVENT) {
             ProjectSceneParty.stop();
         }
-    }, _this_1, null);
+    }, _this_2, null);
 }, this), true);
 SinglePlayerGame.regSaveCustomData("__ProjectScenePartyData", Callback.New(function () {
     return ProjectSceneParty.getSaveData();

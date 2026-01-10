@@ -165,7 +165,7 @@ var ProjectClientScene = (function (_super) {
         return soCustomDatas;
     };
     ProjectClientScene.beforeRetorySaveData = function () {
-        var _this_1 = this;
+        var _this_2 = this;
         EventUtils.addEventListener(SinglePlayerGame, SinglePlayerGame.EVENT_RECOVER_TRIGGER, Callback.New(function (trigger) {
             if ((trigger.mainType == CommandTrigger.COMMAND_MAIN_TYPE_SCENE && trigger.indexType == 0) ||
                 (trigger.mainType == CommandTrigger.COMMAND_MAIN_TYPE_SCENE_OBJECT && trigger.indexType == 0) ||
@@ -176,7 +176,7 @@ var ProjectClientScene = (function (_super) {
                     if (trigger.executor != Game.player.sceneObject)
                         trigger.executor.eventCompleteContinue();
                     Controller.start();
-                }, _this_1, [trigger]), true);
+                }, _this_2, [trigger]), true);
             }
         }, this));
     };

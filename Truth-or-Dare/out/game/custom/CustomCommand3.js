@@ -25,7 +25,7 @@
     }
     CommandExecute.customCommand_9001 = customCommand_9001;
     function customCommand_9002(commandPage, cmd, trigger, triggerPlayer, playerInput, cp) {
-        var _this_1 = this;
+        var _this_2 = this;
         if (GameBattle.state == 0)
             return;
         overHandle = true;
@@ -54,7 +54,7 @@
                 if (CommandExecute.recordBeforeBattleState.battleSceneID == Game.currentScene.id) {
                     GameCommand.inputMessageAndContinueExecute([], true, 0, CommandExecute.recordBeforeBattleState.battleTriggerID);
                 }
-            }, _this_1), Game.player.sceneObject, Game.player.sceneObject);
+            }, _this_2), Game.player.sceneObject, Game.player.sceneObject);
         });
     }
     CommandExecute.customCommand_9002 = customCommand_9002;
@@ -194,7 +194,7 @@
     }
     CommandExecute.customCommand_9008 = customCommand_9008;
     function customCommand_9009(commandPage, cmd, trigger, triggerPlayer, playerInput, cp) {
-        var _a;
+        var _b;
         if (!GameBattleHelper.isInBattle)
             return;
         if (GameBattleAction.inAction)
@@ -232,7 +232,7 @@
             var itemID = cp.itemUseVar ? Game.player.variable.getVariable(cp.itemIDVarID) : cp.itemID;
             var item = void 0;
             if (battler.isEnemy) {
-                item = (_a = ArrayUtils.matchAttributesD2(GameBattle.enemyParty.takeItems, "item", { id: itemID }, true)[0]) === null || _a === void 0 ? void 0 : _a.item;
+                item = (_b = ArrayUtils.matchAttributesD2(GameBattle.enemyParty.takeItems, "item", { id: itemID }, true)[0]) === null || _b === void 0 ? void 0 : _b.item;
             }
             else {
                 item = ProjectPlayer.getItem(itemID);

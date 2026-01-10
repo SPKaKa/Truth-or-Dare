@@ -2,13 +2,13 @@ var ProjectUtils = (function () {
     function ProjectUtils() {
     }
     ProjectUtils.init = function () {
-        var _this_1 = this;
+        var _this_2 = this;
         stage.on(EventObject.MOUSE_WHEEL, this, function (e) { ProjectUtils.mouseWhileValue = e.delta; });
         stage.on(EventObject.MOUSE_MOVE, this, function (e) { ProjectUtils.lastControl = 0; });
-        stage.on(EventObject.KEY_DOWN, this, function (e) { ProjectUtils.lastControl = ProjectUtils.fromGamePad ? 2 : 1; ProjectUtils.fromGamePad = false; _this_1.keyboardEvent = e; if (ArrayUtils.matchAttributes(_this_1.keyboardEvents, { keyCode: e.keyCode }, true).length == 0) {
-            _this_1.keyboardEvents.push({ keyCode: e.keyCode });
+        stage.on(EventObject.KEY_DOWN, this, function (e) { ProjectUtils.lastControl = ProjectUtils.fromGamePad ? 2 : 1; ProjectUtils.fromGamePad = false; _this_2.keyboardEvent = e; if (ArrayUtils.matchAttributes(_this_2.keyboardEvents, { keyCode: e.keyCode }, true).length == 0) {
+            _this_2.keyboardEvents.push({ keyCode: e.keyCode });
         } });
-        stage.on(EventObject.KEY_UP, this, function (e) { ArrayUtils.remove(_this_1.keyboardEvents, ArrayUtils.matchAttributes(_this_1.keyboardEvents, { keyCode: e.keyCode }, true)[0]); _this_1.keyboardEvent = null; });
+        stage.on(EventObject.KEY_UP, this, function (e) { ArrayUtils.remove(_this_2.keyboardEvents, ArrayUtils.matchAttributes(_this_2.keyboardEvents, { keyCode: e.keyCode }, true)[0]); _this_2.keyboardEvent = null; });
     };
     ProjectUtils.takeoutRect = function () {
         return ProjectUtils.rectanglePool.takeout();

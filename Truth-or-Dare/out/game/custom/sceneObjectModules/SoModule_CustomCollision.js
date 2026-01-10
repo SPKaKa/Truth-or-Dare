@@ -16,10 +16,10 @@
 var SoModule_CustomCollision = (function (_super) {
     __extends(SoModule_CustomCollision, _super);
     function SoModule_CustomCollision(installCB) {
-        var _this_1 = _super.call(this, installCB) || this;
-        _this_1.init();
-        SoModule_CustomCollision.arr.push(_this_1);
-        return _this_1;
+        var _this_2 = _super.call(this, installCB) || this;
+        _this_2.init();
+        SoModule_CustomCollision.arr.push(_this_2);
+        return _this_2;
     }
     SoModule_CustomCollision.prototype.onRemoved = function () {
         os.remove_ENTERFRAME(this.onDebugUpdate, this);

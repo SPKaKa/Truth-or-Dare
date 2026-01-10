@@ -1,4 +1,3 @@
-var Orzi_Tools;
 (function (Orzi_Tools) {
     var Statistics = (function () {
         function Statistics() {
@@ -38,11 +37,11 @@ var Orzi_Tools;
             this.saveTexts.push(text.join(' '));
         };
         Statistics.save = function () {
-            var _this = this;
+            var _this_2 = this;
             if (os.platform === 2) {
                 FileUtils.save(this.saveTexts.join('\n'), Orzi_Tools.Language.path + '_statistics.txt', Callback.New(function () {
                     trace('orzi_language_statistics is saved!');
-                    _this.init();
+                    _this_2.init();
                 }, this), true, false);
             }
         };

@@ -16,9 +16,9 @@
 var GUI_TargetActor = (function (_super) {
     __extends(GUI_TargetActor, _super);
     function GUI_TargetActor() {
-        var _this_1 = _super.call(this) || this;
-        _this_1.actorList.on(UIList.ITEM_CREATE, _this_1, _this_1.onActorItemCreate);
-        return _this_1;
+        var _this_2 = _super.call(this) || this;
+        _this_2.actorList.on(UIList.ITEM_CREATE, _this_2, _this_2.onActorItemCreate);
+        return _this_2;
     }
     GUI_TargetActor.prototype.refreshTargetPanel = function () {
         var items = [];

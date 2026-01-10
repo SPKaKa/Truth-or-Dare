@@ -14,7 +14,7 @@ var W26_FontMap = (function () {
         this.reflushAllText();
     };
     W26_FontMap.prototype.setCurrentMap = function (moduleId) {
-        var _this = this;
+        var _this_2 = this;
         var _module = GameData.getModuleData(W26_FontMap.PLUGIN_MODULE_TYPE_FONTMAP, moduleId);
         if (_module == null) {
             console.error("切换失败,不能存在该模块 ", moduleId);
@@ -22,7 +22,7 @@ var W26_FontMap = (function () {
         }
         this._fontMap = {};
         _module.fontMap.forEach(function (element) {
-            _this._fontMap[element.oriFont] = new W26_FontMapData(element.font, element.fontSizeDt);
+            _this_2._fontMap[element.oriFont] = new W26_FontMapData(element.font, element.fontSizeDt);
         });
         this.reflushAllText();
     };
@@ -74,7 +74,6 @@ var W26_FontMap = (function () {
     W26_FontMap.PLUGIN_MODULE_TYPE_FONTMAP = 22;
     return W26_FontMap;
 }());
-var CommandExecute;
 (function (CommandExecute) {
     function customCommand_15004(commandPage, cmd, trigger, triggerPlayer, playerInput, p) {
         if (p.restoreOriFont) {
@@ -87,7 +86,7 @@ var CommandExecute;
     CommandExecute.customCommand_15004 = customCommand_15004;
 })(CommandExecute || (CommandExecute = {}));
 (function () {
-    var _this = this;
+    var _this_2 = this;
     if (!Config.BEHAVIOR_EDIT_MODE && !Config.EDIT_MODE) {
         EventUtils.addEventListenerFunction(ClientWorld, ClientWorld.EVENT_INITED, function () {
             laya.display.Text.prototype.setFontNoChange = function (value) {
@@ -136,7 +135,7 @@ var CommandExecute;
                     }
                     fontData = null;
                 };
-            }, _this).delayRun(5, setTimeout);
+            }, _this_2).delayRun(5, setTimeout);
         }, this);
     }
 })();

@@ -16,17 +16,17 @@
 var ProjectGame = (function (_super) {
     __extends(ProjectGame, _super);
     function ProjectGame() {
-        var _this_1 = _super.call(this) || this;
-        _this_1.EVENT_REMOVE_ACTOR_ITEM = "GameEVENT_REMOVE_ACTOR_ITEM";
-        _this_1.EVENT_CARRY_ACTOR_ITEM = "GameEVENT_CARRY_ACTOR_ITEM";
-        _this_1.EVENT_LEARN_SKILL = "GameEVENT_LEARN_SKILL";
-        _this_1.EVENT_FORGET_SKILL = "GameEVENT_FORGET_SKILL";
-        _this_1.EVENT_REPLACE_ATTACK_SKILL = "GameEVENT_REPLACE_ATTACK_SKILL";
-        _this_1.EVENT_WEAR_ACTOR_EQUIP = "GameEVENT_WEAR_ACTOR_EQUIP";
-        _this_1.EVENT_TAKE_OFF_ACTOR_EQUIP = "GameEVENT_TAKE_OFF_ACTOR_EQUIP";
-        _this_1.extendAttributeSettings = [];
-        EventUtils.addEventListenerFunction(GameGate, GameGate.EVENT_IN_SCENE_STATE_CHANGE, _this_1.onInSceneStateChange, _this_1);
-        return _this_1;
+        var _this_2 = _super.call(this) || this;
+        _this_2.EVENT_REMOVE_ACTOR_ITEM = "GameEVENT_REMOVE_ACTOR_ITEM";
+        _this_2.EVENT_CARRY_ACTOR_ITEM = "GameEVENT_CARRY_ACTOR_ITEM";
+        _this_2.EVENT_LEARN_SKILL = "GameEVENT_LEARN_SKILL";
+        _this_2.EVENT_FORGET_SKILL = "GameEVENT_FORGET_SKILL";
+        _this_2.EVENT_REPLACE_ATTACK_SKILL = "GameEVENT_REPLACE_ATTACK_SKILL";
+        _this_2.EVENT_WEAR_ACTOR_EQUIP = "GameEVENT_WEAR_ACTOR_EQUIP";
+        _this_2.EVENT_TAKE_OFF_ACTOR_EQUIP = "GameEVENT_TAKE_OFF_ACTOR_EQUIP";
+        _this_2.extendAttributeSettings = [];
+        EventUtils.addEventListenerFunction(GameGate, GameGate.EVENT_IN_SCENE_STATE_CHANGE, _this_2.onInSceneStateChange, _this_2);
+        return _this_2;
     }
     ProjectGame.prototype.init = function () {
         this.player = new ProjectPlayer();

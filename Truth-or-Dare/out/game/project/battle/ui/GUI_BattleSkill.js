@@ -16,14 +16,14 @@
 var GUI_BattleSkill = (function (_super) {
     __extends(GUI_BattleSkill, _super);
     function GUI_BattleSkill() {
-        var _this_1 = _super.call(this) || this;
-        GUI_Manager.standardList(_this_1.skillList, false);
-        _this_1.on(EventObject.DISPLAY, _this_1, _this_1.onDisplay);
-        _this_1.on(EventObject.UNDISPLAY, _this_1, _this_1.onUnDisplay);
-        _this_1.skillList.on(EventObject.CHANGE, _this_1, _this_1.onActorSkillChange);
-        _this_1.skillList.on(UIList.ITEM_CLICK, _this_1, _this_1.onSkillItemClick);
-        _this_1.skillList.onCreateItem = Callback.New(_this_1.onCreateSkillItem, _this_1);
-        return _this_1;
+        var _this_2 = _super.call(this) || this;
+        GUI_Manager.standardList(_this_2.skillList, false);
+        _this_2.on(EventObject.DISPLAY, _this_2, _this_2.onDisplay);
+        _this_2.on(EventObject.UNDISPLAY, _this_2, _this_2.onUnDisplay);
+        _this_2.skillList.on(EventObject.CHANGE, _this_2, _this_2.onActorSkillChange);
+        _this_2.skillList.on(UIList.ITEM_CLICK, _this_2, _this_2.onSkillItemClick);
+        _this_2.skillList.onCreateItem = Callback.New(_this_2.onCreateSkillItem, _this_2);
+        return _this_2;
     }
     GUI_BattleSkill.prototype.onDisplay = function () {
         this.refreshSkillList();

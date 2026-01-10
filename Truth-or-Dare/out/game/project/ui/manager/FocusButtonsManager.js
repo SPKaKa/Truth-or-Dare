@@ -194,7 +194,7 @@ var FocusButtonsManager = (function () {
         selBtnInfo.btn.event(EventObject.MOUSE_OVER, [e]);
     };
     FocusButtonsManager.prototype.activate = function (lastFocus) {
-        var _this_1 = this;
+        var _this_2 = this;
         if (lastFocus === void 0) { lastFocus = null; }
         var buttons = this.realButtons;
         var ui = this.ui;
@@ -227,8 +227,8 @@ var FocusButtonsManager = (function () {
             this.lastFocus = lastFocus;
             this.onExitBackLastFocusCB = Callback.New(function (myUI, lastFocus, uiID) {
                 if (uiID == myUI.guiID) {
-                    _this_1.recoveryLastFocus();
-                    EventUtils.removeEventListener(GameUI, GameUI.EVENT_CLOSE_SYSTEM_UI, _this_1.onExitBackLastFocusCB);
+                    _this_2.recoveryLastFocus();
+                    EventUtils.removeEventListener(GameUI, GameUI.EVENT_CLOSE_SYSTEM_UI, _this_2.onExitBackLastFocusCB);
                 }
             }, this, [this.ui, lastFocus]);
             EventUtils.addEventListener(GameUI, GameUI.EVENT_CLOSE_SYSTEM_UI, this.onExitBackLastFocusCB);

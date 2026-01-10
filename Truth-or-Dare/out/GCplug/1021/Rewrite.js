@@ -1,14 +1,13 @@
-var _this = this;
 EventUtils.addEventListenerFunction(ClientWorld, ClientWorld.EVENT_INITED, function () {
     Orzi_Tools.Language.init();
-    var languageName = WorldData.orzi_language_packages.map((function (v) { var _a; return (_a = GameData.getModuleData(Orzi_Tools.Language.PLUGIN_MODULE_TYPE_OrziLanguage, v)) === null || _a === void 0 ? void 0 : _a.name; }));
+    var languageName = WorldData.orzi_language_packages.map((function (v) { var _b; return (_b = GameData.getModuleData(Orzi_Tools.Language.PLUGIN_MODULE_TYPE_OrziLanguage, v)) === null || _b === void 0 ? void 0 : _b.name; }));
     trace('orzi_language is running!', languageName, Orzi_Tools.Language.instance.local);
     var _timer = setTimeout(function () {
         if (os.platform === 2) {
             AssetManager.loadText(Orzi_Tools.Language.path + '_local.txt', Callback.New(function (data) {
                 if (data)
                     Orzi_Tools.Language.setLanguage(JSON.parse(data));
-            }, _this));
+            }, _this_2));
         }
         else {
             var _local = LocalStorage.getItem('__orzi_language_local__');

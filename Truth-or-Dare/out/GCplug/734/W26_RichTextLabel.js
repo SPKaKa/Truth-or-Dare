@@ -1,27 +1,18 @@
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    };
-    return function (d, b) {
-        if (typeof b !== "function" && b !== null)
-            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
-    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
-        if (ar || !(i in from)) {
-            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
-            ar[i] = from[i];
-        }
-    }
-    return to.concat(ar || Array.prototype.slice.call(from));
-};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 var W26_BBCodeColor = (function () {
     function W26_BBCodeColor() {
     }
@@ -863,45 +854,45 @@ var W26_RichTextAnimation = (function () {
 var W26_RichText = (function (_super) {
     __extends(W26_RichText, _super);
     function W26_RichText() {
-        var _this = _super.call(this) || this;
-        _this.oriX = 0;
-        _this.oriY = 0;
-        _this.richTexts = [];
-        _this.onInit();
-        _this.on(EventObject.MOUSE_OUT, _this, _this.onOut);
-        _this.on(EventObject.MOUSE_OVER, _this, _this.onOver);
-        _this.on(EventObject.CLICK, _this, _this.onClick);
-        _this.once(GameSprite.ON_DISPOSE, _this, function () {
-            _this.icon.dispose();
-            _this.animation.dispose();
-            _this.background.dispose();
-            _this.front.dispose();
-            _this.noteUiString.dispose();
-            _this.richTexts.length = 0;
-            _this.style = null;
-            _this.disposeUpdate();
-            _this.offAll();
-            _this.removeMaterialAll();
+        var _this_2 = _super.call(this) || this;
+        _this_2.oriX = 0;
+        _this_2.oriY = 0;
+        _this_2.richTexts = [];
+        _this_2.onInit();
+        _this_2.on(EventObject.MOUSE_OUT, _this_2, _this_2.onOut);
+        _this_2.on(EventObject.MOUSE_OVER, _this_2, _this_2.onOver);
+        _this_2.on(EventObject.CLICK, _this_2, _this_2.onClick);
+        _this_2.once(GameSprite.ON_DISPOSE, _this_2, function () {
+            _this_2.icon.dispose();
+            _this_2.animation.dispose();
+            _this_2.background.dispose();
+            _this_2.front.dispose();
+            _this_2.noteUiString.dispose();
+            _this_2.richTexts.length = 0;
+            _this_2.style = null;
+            _this_2.disposeUpdate();
+            _this_2.offAll();
+            _this_2.removeMaterialAll();
         });
-        _this.on(EventObject.CHANGE, _this, function () {
-            if (_this.isImageOrAni()) {
-                if (_this.text == "") {
-                    _this.icon.visible = false;
-                    _this.animation.visible = false;
-                    _this.animation.stop();
+        _this_2.on(EventObject.CHANGE, _this_2, function () {
+            if (_this_2.isImageOrAni()) {
+                if (_this_2.text == "") {
+                    _this_2.icon.visible = false;
+                    _this_2.animation.visible = false;
+                    _this_2.animation.stop();
                 }
                 else {
-                    _this.icon.visible = true;
-                    _this.animation.visible = true;
-                    _this.animation.gotoAndPlay();
+                    _this_2.icon.visible = true;
+                    _this_2.animation.visible = true;
+                    _this_2.animation.gotoAndPlay();
                 }
             }
-            _this.refleshDraw();
+            _this_2.refleshDraw();
         });
-        _this.on(EventObject.CHANGE, _this, function () {
-            _this.shaderReflesh();
+        _this_2.on(EventObject.CHANGE, _this_2, function () {
+            _this_2.shaderReflesh();
         });
-        return _this;
+        return _this_2;
     }
     W26_RichText.prototype.shaderReflesh = function () {
         if (!this.hasShaderAni())
@@ -1328,23 +1319,23 @@ var W26_RichText = (function (_super) {
         this.setMaterialValueFast(param);
     };
     W26_RichText.prototype.shake = function (power, time) {
-        var _this = this;
+        var _this_2 = this;
         this.shaderTempParam.shake.time = time;
         this.shaderTempParam.shake.power = power;
         this.shaderTempParam.shake.oriPower = power;
         this.removeMaterialByID(W26_RichTextLabel.PLUGIN_MATERIAL_SHAKE);
         this.addMaterialByID(W26_RichTextLabel.PLUGIN_MATERIAL_SHAKE);
         var tween = Tween.to(this.shaderTempParam.shake, { "power": 0 }, time * 1000, Ease.cubicOut, Callback.New(function () {
-            _this.removeMaterialByID(W26_RichTextLabel.PLUGIN_MATERIAL_SHAKE);
+            _this_2.removeMaterialByID(W26_RichTextLabel.PLUGIN_MATERIAL_SHAKE);
         }, this));
         tween.update = Callback.New(function (tween) {
-            if (!_this.getMaterialByID(W26_RichTextLabel.PLUGIN_MATERIAL_SHAKE)) {
+            if (!_this_2.getMaterialByID(W26_RichTextLabel.PLUGIN_MATERIAL_SHAKE)) {
                 tween.clear();
             }
             var param = {};
             var speedParam = "mu" + W26_RichTextLabel.PLUGIN_MATERIAL_SHAKE + "_frequency";
-            param[speedParam] = _this.shaderTempParam.shake.power;
-            _this.setMaterialValueFast(param);
+            param[speedParam] = _this_2.shaderTempParam.shake.power;
+            _this_2.setMaterialValueFast(param);
         }, this, [tween]);
     };
     W26_RichText.prototype.a_fade = function (speed, textIndex) {
@@ -1396,50 +1387,50 @@ var W26_RichText = (function (_super) {
 var W26_RichTextLabel = (function (_super) {
     __extends(W26_RichTextLabel, _super);
     function W26_RichTextLabel() {
-        var _this = _super.call(this) || this;
-        _this.splitText = false;
-        _this._font = Config.DEFAULT_FONT;
-        _this._fontSize = 24;
-        _this.width = 200;
-        _this.height = 30;
-        _this._color = W26_BBCodeColor.colorMap.white;
-        _this._wordWrap = true;
-        _this._leading = 0;
-        _this._letterspacing = 0;
-        _this._smooth = false;
-        _this._align = 0;
-        _this._valign = 0;
-        _this.tempData = { lines: [] };
-        _this._texts = new W26_RichPool(W26_RichText, _this);
-        _this._rootPaddingTop = 2;
-        _this._root = new UIRoot();
-        _this._root.enabledLimitView = false;
-        _this._root.scrollShowType = 0;
-        _this.addChildAt(_this._root, 0);
-        _this._root.width = _this.width;
-        _this._root.height = _this.height;
-        _this._root.x = 0;
-        _this._root.y = -_this._rootPaddingTop;
-        _this.on(GameSprite.ON_DISPOSE, _this, function () {
-            _this._resetInitTempData();
-            _this._texts.dipose();
-            _this._texts = null;
-            _this._root.removeSelf();
-            _this._root.dispose();
-            _this._root = null;
+        var _this_2 = _super.call(this) || this;
+        _this_2.splitText = false;
+        _this_2._font = Config.DEFAULT_FONT;
+        _this_2._fontSize = 24;
+        _this_2.width = 200;
+        _this_2.height = 30;
+        _this_2._color = W26_BBCodeColor.colorMap.white;
+        _this_2._wordWrap = true;
+        _this_2._leading = 0;
+        _this_2._letterspacing = 0;
+        _this_2._smooth = false;
+        _this_2._align = 0;
+        _this_2._valign = 0;
+        _this_2.tempData = { lines: [] };
+        _this_2._texts = new W26_RichPool(W26_RichText, _this_2);
+        _this_2._rootPaddingTop = 2;
+        _this_2._root = new UIRoot();
+        _this_2._root.enabledLimitView = false;
+        _this_2._root.scrollShowType = 0;
+        _this_2.addChildAt(_this_2._root, 0);
+        _this_2._root.width = _this_2.width;
+        _this_2._root.height = _this_2.height;
+        _this_2._root.x = 0;
+        _this_2._root.y = -_this_2._rootPaddingTop;
+        _this_2.on(GameSprite.ON_DISPOSE, _this_2, function () {
+            _this_2._resetInitTempData();
+            _this_2._texts.dipose();
+            _this_2._texts = null;
+            _this_2._root.removeSelf();
+            _this_2._root.dispose();
+            _this_2._root = null;
         });
-        _this._onVarChange = Callback.New(_this.onVarChange, _this);
-        _this.once(EventObject.LOADED, _this, function () {
+        _this_2._onVarChange = Callback.New(_this_2.onVarChange, _this_2);
+        _this_2.once(EventObject.LOADED, _this_2, function () {
         });
-        _this.on(EventObject.RESIZE, _this, function () {
-            _this._root.width = _this.width + _this._rootPaddingTop;
-            _this._root.height = _this.height;
-            if (_this._wordWrap) {
-                _this._handleText();
+        _this_2.on(EventObject.RESIZE, _this_2, function () {
+            _this_2._root.width = _this_2.width + _this_2._rootPaddingTop;
+            _this_2._root.height = _this_2.height;
+            if (_this_2._wordWrap) {
+                _this_2._handleText();
             }
         });
-        _this.overflow = 0;
-        return _this;
+        _this_2.overflow = 0;
+        return _this_2;
     }
     W26_RichTextLabel.prototype.linkVar = function (id) {
         if (this._lastVarID != 0) {
@@ -1816,7 +1807,7 @@ var W26_RichTextLabel = (function (_super) {
         func.call(this);
     };
     W26_RichTextLabel.prototype.preLoadAllImages = function (func) {
-        var _this = this;
+        var _this_2 = this;
         var images = [];
         var infoes = this._getBbCodeStyles();
         if (infoes == null) {
@@ -1830,7 +1821,7 @@ var W26_RichTextLabel = (function (_super) {
         }
         if (images.length > 0) {
             AssetManager.loadImages(images, Callback.New(function () {
-                func.call(_this);
+                func.call(_this_2);
             }, this), false, false);
         }
         else {
@@ -2315,8 +2306,8 @@ var W26_RichTextLabel = (function (_super) {
     W26_RichTextLabel.prototype.addRichTextSameLine = function (_lastText, uiString) {
         if (_lastText != null) {
             if (_lastText.richTexts.length > 0) {
-                for (var _i = 0, _a = _lastText.richTexts; _i < _a.length; _i++) {
-                    var t = _a[_i];
+                for (var _i = 0, _c = _lastText.richTexts; _i < _c.length; _i++) {
+                    var t = _c[_i];
                     if (this.checkSameEvent(t, uiString)) {
                         uiString.richTexts.push(t);
                         t.richTexts.push(uiString);
@@ -2625,7 +2616,7 @@ var W26_RichTextLabel = (function (_super) {
     return W26_RichTextLabel;
 }(UIBase));
 (function () {
-    var _this = this;
+    var _this_2 = this;
     if (!Config.BEHAVIOR_EDIT_MODE && !Config.EDIT_MODE) {
         EventUtils.addEventListener(ClientWorld, ClientWorld.EVENT_INITED, Callback.New(function () {
             function setRichText(item, ui, force) {
@@ -2731,7 +2722,7 @@ var W26_RichTextLabel = (function (_super) {
             }
             EventUtils.addEventListenerFunction(GameUI, GameUI.EVENT_CREATE_UI, function (ui) {
                 checkRichTextLable(ui, ui);
-            }, _this);
+            }, _this_2);
         }, null));
     }
 })();
@@ -2789,7 +2780,7 @@ var W26_GameDialog_RichText = (function () {
     return W26_GameDialog_RichText;
 }());
 (function () {
-    var _this = this;
+    var _this_2 = this;
     if (!Config.BEHAVIOR_EDIT_MODE && !Config.EDIT_MODE) {
         EventUtils.addEventListenerFunction(ClientWorld, ClientWorld.EVENT_INITED, function () {
             GameDialog.prototype.clearTextMaterials = function () {
@@ -2834,7 +2825,7 @@ var W26_GameDialog_RichText = (function () {
                     nameText.removeSelf();
                     nameText.dispose();
                 }
-            }, _this));
+            }, _this_2));
             EventUtils.addEventListener(GameDialog, GameDialog.EVENT_AFTER_DIALOG_START, Callback.New(function (isOption) {
                 if (isOption)
                     return;
@@ -2919,7 +2910,7 @@ var W26_GameDialog_RichText = (function () {
                     _this_1["playTextLabelIndex"] = 0;
                     _this_1["playText"](false);
                 }
-            }, _this));
+            }, _this_2));
         }, null));
         EventUtils.addEventListener(ClientWorld, ClientWorld.EVENT_INITED, Callback.New(function () {
             if (typeof W26_DialogOpt != "undefined") {

@@ -16,11 +16,11 @@
 var SoModule_Shadow = (function (_super) {
     __extends(SoModule_Shadow, _super);
     function SoModule_Shadow(installCB) {
-        var _this_1 = _super.call(this, installCB) || this;
-        _this_1.so.on(ProjectClientSceneObject.JUMP_START, _this_1, _this_1.startUpdateDraw);
-        _this_1.so.on(ProjectClientSceneObject.JUMP_OVER, _this_1, _this_1.stopUpdateDraw);
-        _this_1.drawShadow();
-        return _this_1;
+        var _this_2 = _super.call(this, installCB) || this;
+        _this_2.so.on(ProjectClientSceneObject.JUMP_START, _this_2, _this_2.startUpdateDraw);
+        _this_2.so.on(ProjectClientSceneObject.JUMP_OVER, _this_2, _this_2.stopUpdateDraw);
+        _this_2.drawShadow();
+        return _this_2;
     }
     SoModule_Shadow.prototype.onRemoved = function () {
         this.so.off(ProjectClientSceneObject.JUMP_START, this, this.startUpdateDraw);

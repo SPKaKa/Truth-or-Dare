@@ -10,7 +10,7 @@ var GUI_SaveFileManager = (function () {
         stage.on(EventObject.KEY_DOWN, list, GUI_SaveFileManager.onKeyDown, [list]);
     };
     GUI_SaveFileManager.saveFile = function (id, executeEvent, onFin, waitEventCompleteCallback) {
-        var _this_1 = this;
+        var _this_2 = this;
         if (executeEvent === void 0) { executeEvent = true; }
         if (onFin === void 0) { onFin = null; }
         if (waitEventCompleteCallback === void 0) { waitEventCompleteCallback = true; }
@@ -31,12 +31,12 @@ var GUI_SaveFileManager = (function () {
                         GUI_SaveFileManager.currentSveFileIndexInfo = currentSveFileIndexInfo;
                     GameCommand.startCommonCommand(14008, [], Callback.New(function (onFin) {
                         onFin && onFin.run();
-                    }, _this_1, [waitEventCompleteCallback ? onFin : null]));
+                    }, _this_2, [waitEventCompleteCallback ? onFin : null]));
                 }
                 else {
                     GameCommand.startCommonCommand(14009, [], Callback.New(function (onFin) {
                         onFin && onFin.run();
-                    }, _this_1, [waitEventCompleteCallback ? onFin : null]));
+                    }, _this_2, [waitEventCompleteCallback ? onFin : null]));
                 }
             }
             else {
@@ -46,7 +46,7 @@ var GUI_SaveFileManager = (function () {
         }, this), this.getCustomSaveIndexInfo());
     };
     GUI_SaveFileManager.loadFile = function (id, onFin) {
-        var _this_1 = this;
+        var _this_2 = this;
         if (onFin === void 0) { onFin = null; }
         if (GUI_SaveFileManager.isLoading)
             return;
@@ -65,7 +65,7 @@ var GUI_SaveFileManager = (function () {
                     if (GameGate.gateState == GameGate.STATE_3_IN_SCENE_COMPLETE) {
                         GUI_SaveFileManager.isLoading = false;
                     }
-                }, _this_1));
+                }, _this_2));
             }
             else {
                 GameCommand.startCommonCommand(14007);

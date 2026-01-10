@@ -16,16 +16,16 @@
 var GUI_Shop = (function (_super) {
     __extends(GUI_Shop, _super);
     function GUI_Shop() {
-        var _this_1 = _super.call(this) || this;
-        GUI_Manager.standardList(_this_1.goodsList, false);
-        GUI_Manager.standardList(_this_1.sellItemList, false);
-        _this_1.preTypeTabItem = _this_1.typeTab.items;
-        _this_1.itemInitColor = _this_1.itemName.color;
-        _this_1.listenQueue();
-        return _this_1;
+        var _this_2 = _super.call(this) || this;
+        GUI_Manager.standardList(_this_2.goodsList, false);
+        GUI_Manager.standardList(_this_2.sellItemList, false);
+        _this_2.preTypeTabItem = _this_2.typeTab.items;
+        _this_2.itemInitColor = _this_2.itemName.color;
+        _this_2.listenQueue();
+        return _this_2;
     }
     GUI_Shop.prototype.listenQueue = function () {
-        var _this_1 = this;
+        var _this_2 = this;
         this.on(EventObject.DISPLAY, this, this.onDisplay);
         this.on(EventObject.UNDISPLAY, this, this.onUndisplay);
         this.goodsList.on(EventObject.CHANGE, this, this.refreshItemInfo, [this.goodsList]);
@@ -37,7 +37,7 @@ var GUI_Shop = (function (_super) {
         this.typeTab.on(EventObject.CHANGE, this, this.onTypeTabChange);
         this.closeBtn.on(EventObject.CLICK, this, function () {
             GameAudio.playSE(WorldData.cancelSE);
-            GameUI.hide(_this_1.guiID);
+            GameUI.hide(_this_2.guiID);
         });
         this.subNumBtn.on(EventObject.CLICK, this, this.onSubNumChange);
         this.addNumBtn.on(EventObject.CLICK, this, this.onAddNumChange);
@@ -106,7 +106,7 @@ var GUI_Shop = (function (_super) {
         }
     };
     GUI_Shop.prototype.onDisplay = function () {
-        var _this_1 = this;
+        var _this_2 = this;
         if (!this.shopEventData)
             return;
         this.preMenuEnabled = WorldData.menuEnabled;
@@ -119,7 +119,7 @@ var GUI_Shop = (function (_super) {
         }
         this.buyBoxArea.visible = false;
         this.initGoodsList();
-        setFrameout(function () { UIList.focus = _this_1.goodsList; }, 1);
+        setFrameout(function () { UIList.focus = _this_2.goodsList; }, 1);
         this.focusState = 0;
         this.refreshItemInfo();
         stage.on(EventObject.KEY_DOWN, this, this.onKeyDown);

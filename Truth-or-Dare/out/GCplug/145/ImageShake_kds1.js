@@ -1,4 +1,3 @@
-var CommandExecute;
 (function (CommandExecute) {
     var imageLayerModePassageID = 2005631;
     var uiLayerModePassageID = 2005632;

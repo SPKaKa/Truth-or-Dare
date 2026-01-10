@@ -16,14 +16,14 @@
 var GUI_BattleItem = (function (_super) {
     __extends(GUI_BattleItem, _super);
     function GUI_BattleItem() {
-        var _this_1 = _super.call(this) || this;
-        GUI_Manager.standardList(_this_1.itemList);
-        _this_1.on(EventObject.DISPLAY, _this_1, _this_1.onDisplay);
-        _this_1.on(EventObject.UNDISPLAY, _this_1, _this_1.onUnDisplay);
-        _this_1.itemList.on(EventObject.CHANGE, _this_1, _this_1.onActorItemChange);
-        _this_1.itemList.on(UIList.ITEM_CLICK, _this_1, _this_1.onItemUIItemClick);
-        _this_1.itemList.onCreateItem = Callback.New(_this_1.onCreateItemUIItem, _this_1);
-        return _this_1;
+        var _this_2 = _super.call(this) || this;
+        GUI_Manager.standardList(_this_2.itemList);
+        _this_2.on(EventObject.DISPLAY, _this_2, _this_2.onDisplay);
+        _this_2.on(EventObject.UNDISPLAY, _this_2, _this_2.onUnDisplay);
+        _this_2.itemList.on(EventObject.CHANGE, _this_2, _this_2.onActorItemChange);
+        _this_2.itemList.on(UIList.ITEM_CLICK, _this_2, _this_2.onItemUIItemClick);
+        _this_2.itemList.onCreateItem = Callback.New(_this_2.onCreateItemUIItem, _this_2);
+        return _this_2;
     }
     GUI_BattleItem.prototype.onDisplay = function () {
         this.refreshItemList();

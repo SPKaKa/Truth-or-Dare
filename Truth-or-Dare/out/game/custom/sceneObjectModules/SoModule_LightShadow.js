@@ -16,10 +16,10 @@
 var SoModule_LightShadow = (function (_super) {
     __extends(SoModule_LightShadow, _super);
     function SoModule_LightShadow(installCB) {
-        var _this_1 = _super.call(this, installCB) || this;
-        _this_1.lightShineTransI = 0;
-        _this_1.init();
-        return _this_1;
+        var _this_2 = _super.call(this, installCB) || this;
+        _this_2.lightShineTransI = 0;
+        _this_2.init();
+        return _this_2;
     }
     SoModule_LightShadow.prototype.onRemoved = function () {
         this.clear();
@@ -129,31 +129,31 @@ var SoModule_LightShadow = (function (_super) {
         os.add_ENTERFRAME(this.lightBrightenUpdate, this, [lightRange2]);
     };
     SoModule_LightShadow.prototype.lightBrightenUpdate = function (lightRange2) {
-        var _this_1 = this;
+        var _this_2 = this;
         Callback.CallLaterBeforeRender(function () {
-            if (_this_1.isDisposed)
+            if (_this_2.isDisposed)
                 return;
             var shineValue;
-            if (_this_1.lightShineEnable) {
-                if (!_this_1.lightShineTransData)
+            if (_this_2.lightShineEnable) {
+                if (!_this_2.lightShineTransData)
                     return;
-                var per = (_this_1.lightShineTransI % _this_1.lightShineTransData.totalTime) / _this_1.lightShineTransData.totalTime;
-                shineValue = GameUtils.getValueByTransData(_this_1.lightShineTransData, per) * _this_1.lightShineValue + 1;
-                _this_1.lightShineTransI++;
+                var per = (_this_2.lightShineTransI % _this_2.lightShineTransData.totalTime) / _this_2.lightShineTransData.totalTime;
+                shineValue = GameUtils.getValueByTransData(_this_2.lightShineTransData, per) * _this_2.lightShineValue + 1;
+                _this_2.lightShineTransI++;
             }
             else {
                 shineValue = 1;
             }
-            var shadowGroup = SoModule_LightShadow.shadowArr[_this_1.groupID];
+            var shadowGroup = SoModule_LightShadow.shadowArr[_this_2.groupID];
             if (shadowGroup) {
                 for (var i = 0; i < shadowGroup.length; i++) {
                     var soModuleShadow = shadowGroup[i];
                     if (soModuleShadow.shadowType == 1 && soModuleShadow.brightenFrame != Game.frameCount) {
-                        var dis2 = Point.distanceSquare2(_this_1.so.x, _this_1.so.y, soModuleShadow.so.x, soModuleShadow.so.y);
+                        var dis2 = Point.distanceSquare2(_this_2.so.x, _this_2.so.y, soModuleShadow.so.x, soModuleShadow.so.y);
                         if (dis2 <= lightRange2) {
                             soModuleShadow.brightenFrame = Game.frameCount;
                             var lightStrength = 1 - dis2 / lightRange2;
-                            var shadowRotation = MathUtils.direction360(_this_1.so.x, _this_1.so.y, soModuleShadow.so.x, soModuleShadow.so.y);
+                            var shadowRotation = MathUtils.direction360(_this_2.so.x, _this_2.so.y, soModuleShadow.so.x, soModuleShadow.so.y);
                             var shadowAlpha = soModuleShadow.shadowOpacity * lightStrength * soModuleShadow.shadowOpacityFactor * shineValue;
                             var shadowScaleChangeValue = soModuleShadow.shadowMaxScale - soModuleShadow.shadowMinScale;
                             var shadowScaleY = (shadowScaleChangeValue * (1 - lightStrength) * soModuleShadow.shadowScaleFactor) * shineValue + soModuleShadow.shadowMinScale;

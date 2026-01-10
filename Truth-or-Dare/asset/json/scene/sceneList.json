@@ -2,8 +2,8 @@
     "list": [
         null,
         "临时场景",
-        "KVT室",
         null,
+        "KTV",
         null,
         null,
         null,
@@ -38,9 +38,10 @@
             "isOpen": true
         },
         {
-            "id": 2,
-            "name": "KVT室",
-            "children": []
+            "id": 3,
+            "name": "KTV",
+            "children": [],
+            "isOpen": true
         }
     ]
 }

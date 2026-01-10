@@ -123,7 +123,7 @@ var Controller = (function () {
         Game.player.sceneObject.off(ProjectClientSceneObject.COLLISION, this, this.onJoyCollision);
     };
     Controller.startSceneObjectClickEvent = function (target, playerFaceToTarget) {
-        var _this_1 = this;
+        var _this_2 = this;
         if (playerFaceToTarget === void 0) { playerFaceToTarget = false; }
         if (Game.pause)
             return;
@@ -146,7 +146,7 @@ var Controller = (function () {
                     GameCommand.startSceneObjectCommand(target.index, 0, null, Callback.New(function (target) {
                         target.eventCompleteContinue();
                         EventUtils.happen(Controller, Controller.EVENT_SCENE_OBJECT_CLICK_COMMAND, [false]);
-                    }, _this_1, [target]), Game.player.sceneObject);
+                    }, _this_2, [target]), Game.player.sceneObject);
                 }, this), Game.player.sceneObject, target);
             }
         }

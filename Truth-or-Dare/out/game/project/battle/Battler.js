@@ -16,12 +16,12 @@
 var Battler = (function (_super) {
     __extends(Battler, _super);
     function Battler(soData, scene) {
-        var _this_1 = _super.call(this, soData, scene) || this;
-        _this_1.battlerUI = new GUI_Battler();
-        _this_1.battlerUI.battler = _this_1;
-        _this_1.animationHighLayer.addChild(_this_1.battlerUI);
-        _this_1.supportPause = false;
-        return _this_1;
+        var _this_2 = _super.call(this, soData, scene) || this;
+        _this_2.battlerUI = new GUI_Battler();
+        _this_2.battlerUI.battler = _this_2;
+        _this_2.animationHighLayer.addChild(_this_2.battlerUI);
+        _this_2.supportPause = false;
+        return _this_2;
     }
     Battler.createBattler = function (sign, refBattlerUI) {
         var battler = Battler.cacheBattlers[sign];
@@ -122,7 +122,7 @@ var Battler = (function (_super) {
         configurable: true
     });
     Battler.prototype.playAnimation = function (aniID, loop, isHit, fps, superposition, isReset) {
-        var _this_1 = this;
+        var _this_2 = this;
         var animation;
         if (superposition) {
             animation = new GCAnimation();
@@ -148,10 +148,10 @@ var Battler = (function (_super) {
             if (animation.isDisposed)
                 return;
             if (animation.isParticle) {
-                _this_1.animationHighLayer.addChild(animation);
+                _this_2.animationHighLayer.addChild(animation);
             }
             else {
-                animation.addToGameSprite(_this_1.avatarContainer, _this_1.animationLowLayer, _this_1.animationHighLayer);
+                animation.addToGameSprite(_this_2.avatarContainer, _this_2.animationLowLayer, _this_2.animationHighLayer);
             }
         }, [animation]);
         animation.id = aniID;

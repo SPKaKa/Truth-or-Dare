@@ -1,7 +1,7 @@
-;var _this_1 = this;;var CommandExecute;
+;var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {;    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {;        if (ar || !(i in from)) {;            if (!ar) ar = Array.prototype.slice.call(from, 0, i);;            ar[i] = from[i];;        };    };    return to.concat(ar || Array.prototype.slice.call(from));;};;var _this_2 = this;;var CommandExecute;
 (function (CommandExecute) {
     function customCommand_1(commandPage, cmd, trigger, triggerPlayer, playerInput, p) {
-        var _this_1 = this;
+        var _this_2 = this;
         if (p.preloadAssets.length == 0)
             return;
         trigger.pause = true;
@@ -35,7 +35,7 @@
         if (p.isShowLoadingUI && p.bindingUI && p.bindingUI.uiID) {
             AssetManager.preLoadUIAsset(p.bindingUI.uiID, Callback.New(function () {
                 var loadingUI = GameUI.show(p.bindingUI.uiID);
-                doLoadAsset.apply(_this_1, [loadingUI]);
+                doLoadAsset.apply(_this_2, [loadingUI]);
             }, this), true, true, true);
         }
         else {
@@ -50,7 +50,7 @@
             }, this).delayRun(100);
         }
         function doLoadAsset(loadingUI) {
-            var _this_1 = this;
+            var _this_2 = this;
             var displayProgressComp = null;
             if (loadingUI && p.bindingUI && p.bindingUI.uiID && p.bindingUI.compName && p.bindingUI.varName) {
                 displayProgressComp = loadingUI[p.bindingUI.compName];
@@ -60,16 +60,16 @@
             }
             AssetManager.batchPreLoadAsset(Callback.New(function () {
                 if (hasFont) {
-                    AssetManager.preloadFonts(Callback.New(onLoadComplete, _this_1, [displayProgressComp]));
+                    AssetManager.preloadFonts(Callback.New(onLoadComplete, _this_2, [displayProgressComp]));
                 }
                 else {
-                    onLoadComplete.apply(_this_1, [displayProgressComp]);
+                    onLoadComplete.apply(_this_2, [displayProgressComp]);
                 }
             }, this, [1, true]), Callback.New(function (current, count) {
                 if (hasFont)
                     count += 1;
                 var progressStr = Math.floor(current * 100 / count).toString();
-                setProgressUI.apply(_this_1, [displayProgressComp, progressStr]);
+                setProgressUI.apply(_this_2, [displayProgressComp, progressStr]);
             }, this), imageArr, sceneArr, avatarArr, g(3), g(4), g(5), [], g(1), g(6));
         }
         function getAssetValues(assetType) {
@@ -88,7 +88,7 @@
     }
     CommandExecute.customCommand_1 = customCommand_1;
     function customCommand_2(commandPage, cmd, trigger, triggerPlayer, playerInput, p) {
-        var _this_1 = this;
+        var _this_2 = this;
         if (p.inputUI == 0)
             return;
         var inputUI = GameUI.show(p.inputUI);
@@ -103,7 +103,7 @@
         inputUI.once(EventObject.REMOVED, this, function () {
             trigger.offset(1);
             Callback.CallLaterBeforeRender(function () {
-                CommandPage.executeEvent.apply(_this_1, arguments);
+                CommandPage.executeEvent.apply(_this_2, arguments);
             }, CommandPage, [trigger, [inputText ? inputText.text : ""]]);
         }, []);
     }
@@ -632,7 +632,7 @@
     }
     CommandExecute.customCommand_1006 = customCommand_1006;
     function customCommand_1007(commandPage, cmd, trigger, triggerPlayer, playerInput, p) {
-        var _this_1 = this;
+        var _this_2 = this;
         if (!Game.currentScene)
             return;
         if (p.useTrans) {
@@ -648,7 +648,7 @@
                 if (Game.pause)
                     return;
                 if (scene_1 != Game.currentScene) {
-                    os.remove_ENTERFRAME(f, _this_1);
+                    os.remove_ENTERFRAME(f, _this_2);
                     return;
                 }
                 frameCount_1--;
@@ -661,7 +661,7 @@
                     Game.currentScene.camera.scaleY = (sy_1 - oldsy_1) * value + oldsy_1;
                 }
                 if (frameCount_1 == 0) {
-                    os.remove_ENTERFRAME(f, _this_1);
+                    os.remove_ENTERFRAME(f, _this_2);
                 }
             }, this, [f]);
         }
@@ -678,7 +678,7 @@
     }
     CommandExecute.customCommand_1007 = customCommand_1007;
     function customCommand_1008(commandPage, cmd, trigger, triggerPlayer, playerInput, p) {
-        var _this_1 = this;
+        var _this_2 = this;
         if (!Game.currentScene)
             return;
         var ro = p.useVar ? Game.player.variable.getVariable(p.rotationVarID) : p.rotation;
@@ -692,7 +692,7 @@
                 if (Game.pause)
                     return;
                 if (scene_2 != Game.currentScene) {
-                    os.remove_ENTERFRAME(f, _this_1);
+                    os.remove_ENTERFRAME(f, _this_2);
                     return;
                 }
                 frameCount_2--;
@@ -700,7 +700,7 @@
                 var value = GameUtils.getValueByTransData(transData_2, per);
                 Game.currentScene.camera.rotation = (ro - oldro_1) * value + oldro_1;
                 if (frameCount_2 == 0) {
-                    os.remove_ENTERFRAME(f, _this_1);
+                    os.remove_ENTERFRAME(f, _this_2);
                 }
             }, this, [f]);
         }
@@ -721,7 +721,7 @@
     }
     CommandExecute.customCommand_2002 = customCommand_2002;
     function customCommand_2003(commandPage, cmd, trigger, triggerPlayer, playerInput, p) {
-        var _this_1 = this;
+        var _this_2 = this;
         var sceneID = p.sceneID;
         var soIndexID = p.useVar ? Game.player.variable.getVariable(p.noVarID) : p.no;
         var toScene = Game.currentScene;
@@ -746,7 +746,7 @@
                 if (p.waitEventComplete) {
                     eventCB = Callback.New(function () {
                         continueExecute(trigger);
-                    }, _this_1);
+                    }, _this_2);
                 }
                 CommandPage.startTriggerFragmentEvent(p.newSoExecuteEvent, trigger.trigger, newSoc, eventCB);
             }

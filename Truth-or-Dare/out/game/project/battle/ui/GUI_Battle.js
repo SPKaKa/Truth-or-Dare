@@ -16,15 +16,15 @@
 var GUI_Battle = (function (_super) {
     __extends(GUI_Battle, _super);
     function GUI_Battle() {
-        var _this_1 = _super.call(this) || this;
-        _this_1._selectedPlayerBattlerIndex = -1;
-        _this_1.battleSceneCaches = [];
-        _this_1.background.image = "";
-        _this_1.actorInfoList.on(UIList.ITEM_CREATE, _this_1, _this_1.onCreateActorPanelItem);
-        _this_1.actorInfoList.mouseEnabled = true;
-        EventUtils.addEventListenerFunction(GameBattleData, GameBattleData.EVENT_ADD_STATUS, _this_1.onAddStatus, _this_1);
-        EventUtils.addEventListenerFunction(GameBattleData, GameBattleData.EVENT_REMOVE_STATUS, _this_1.onRemoveStatus, _this_1);
-        return _this_1;
+        var _this_2 = _super.call(this) || this;
+        _this_2._selectedPlayerBattlerIndex = -1;
+        _this_2.battleSceneCaches = [];
+        _this_2.background.image = "";
+        _this_2.actorInfoList.on(UIList.ITEM_CREATE, _this_2, _this_2.onCreateActorPanelItem);
+        _this_2.actorInfoList.mouseEnabled = true;
+        EventUtils.addEventListenerFunction(GameBattleData, GameBattleData.EVENT_ADD_STATUS, _this_2.onAddStatus, _this_2);
+        EventUtils.addEventListenerFunction(GameBattleData, GameBattleData.EVENT_REMOVE_STATUS, _this_2.onRemoveStatus, _this_2);
+        return _this_2;
     }
     GUI_Battle.prototype.init = function () {
         this.background.image = GameBattle.enemyParty.background;
@@ -43,11 +43,11 @@ var GUI_Battle = (function (_super) {
         this.actorInfoList.items = arr;
     };
     GUI_Battle.prototype.createBattleScene = function (onFin, enemyParty) {
-        var _this_1 = this;
+        var _this_2 = this;
         var onComplete = function () {
-            _this_1.battlerRoot.addChild(_this_1.currentBattleScene.displayObject);
-            _this_1.currentBattleScene.mapSupportPause = false;
-            _this_1.currentBattleScene.startRender();
+            _this_2.battlerRoot.addChild(_this_2.currentBattleScene.displayObject);
+            _this_2.currentBattleScene.mapSupportPause = false;
+            _this_2.currentBattleScene.startRender();
             onFin();
         };
         if (enemyParty.battlerBgType == 0) {
@@ -70,9 +70,9 @@ var GUI_Battle = (function (_super) {
         else {
             if (!this.battleSceneCaches[enemyParty.battleScene]) {
                 ClientScene.createScene(enemyParty.battleScene, null, Callback.New(function (scene) {
-                    _this_1.currentBattleScene = _this_1.battleSceneCaches[enemyParty.battleScene] = scene;
-                    _this_1.battlerRoot.addChild(_this_1.currentBattleScene.displayObject);
-                    onComplete.apply(_this_1);
+                    _this_2.currentBattleScene = _this_2.battleSceneCaches[enemyParty.battleScene] = scene;
+                    _this_2.battlerRoot.addChild(_this_2.currentBattleScene.displayObject);
+                    onComplete.apply(_this_2);
                 }, this), true);
             }
             else {

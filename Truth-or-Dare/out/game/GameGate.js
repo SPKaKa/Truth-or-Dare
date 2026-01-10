@@ -67,7 +67,7 @@ var GameGate = (function () {
                 loadNewScene.apply(this);
         }
         function loadNewScene() {
-            var _this_1 = this;
+            var _this_2 = this;
             AssetManager.preLoadSceneAsset(sceneID, Callback.New(function () {
                 ClientScene.createScene(sceneID, Callback.New(function (scene) {
                     if ((scene.bgm && (GameAudio.lastBgmURL != scene.bgm || GameAudio.lastBGMPitch != scene.bgmPitch)) || inNewSceneState != 0) {
@@ -82,7 +82,7 @@ var GameGate = (function () {
                             Callback.New(SyncTask.taskOver, SyncTask, [GameGate.bgsSyncTaskName]).delayRun(ClientWorld.data.sceneBGSGradientTime * 1000);
                         });
                     }
-                }, _this_1), Callback.New(onLoadedNewScene, _this_1), true);
+                }, _this_2), Callback.New(onLoadedNewScene, _this_2), true);
             }, this), true, false, true);
         }
         function onLoadedNewScene(scene) {

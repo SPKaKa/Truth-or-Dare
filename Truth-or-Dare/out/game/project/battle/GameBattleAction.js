@@ -11,7 +11,7 @@ var GameBattleAction = (function () {
         EventUtils.clear(GameBattleAction, GameBattleAction.EVENT_ONCE_ACTION_COMPLETE);
     };
     GameBattleAction.doAction = function (battler, onComplete) {
-        var _this_1 = this;
+        var _this_2 = this;
         this.inAction = true;
         this.fromBattler = battler;
         this.onComplete = onComplete;
@@ -22,9 +22,9 @@ var GameBattleAction = (function () {
         }
         EventUtils.happen(GameBattleAction, GameBattleAction.EVENT_ACTION_START);
         GameCommand.startCommonCommand(14029, [], Callback.New(function () {
-            var forceAction = GameBattleHelper.getForceActionType(_this_1.fromBattler);
+            var forceAction = GameBattleHelper.getForceActionType(_this_2.fromBattler);
             if (forceAction == 1) {
-                var myTeam = GameBattleHelper.getTeamBattlers(_this_1.fromBattler, false);
+                var myTeam = GameBattleHelper.getTeamBattlers(_this_2.fromBattler, false);
                 if (myTeam.length == 0) {
                     battler.battleCommandType == -1;
                 }
@@ -35,19 +35,19 @@ var GameBattleAction = (function () {
                 }
             }
             else if (forceAction == 2) {
-                var hostileBattlers = GameBattleHelper.getHostileBattlers(_this_1.fromBattler);
+                var hostileBattlers = GameBattleHelper.getHostileBattlers(_this_2.fromBattler);
                 var hostileBattler = hostileBattlers[MathUtils.rand(hostileBattlers.length)];
                 battler.battleCommandType = 0;
                 battler.battleCommandApplyTarget = hostileBattler;
             }
             if (battler.battleCommandType == 0) {
-                _this_1.attack();
+                _this_2.attack();
             }
             else if (battler.battleCommandType == 1) {
-                _this_1.useSkill();
+                _this_2.useSkill();
             }
             else if (battler.battleCommandType == 2) {
-                _this_1.useItem();
+                _this_2.useItem();
             }
             else {
                 onComplete.run();
@@ -55,7 +55,7 @@ var GameBattleAction = (function () {
         }, this), battler, battler);
     };
     GameBattleAction.attack = function (firstUse, forceTarget) {
-        var _this_1 = this;
+        var _this_2 = this;
         if (firstUse === void 0) { firstUse = true; }
         if (forceTarget === void 0) { forceTarget = null; }
         this.currentHitTarget = 0;
@@ -80,97 +80,97 @@ var GameBattleAction = (function () {
         EventUtils.happen(GameBattleAction, GameBattleAction.EVENT_ACTION_ATTACK, [this.fromBattler, this.fromBattler.battleCommandApplyTarget]);
         GameBattle.battleUI.actionText.text = WorldData.word_useAtk.replace("$1", this.fromBattler.actor.name);
         this.moveTo(this.fromBattler, this.fromBattler.battleCommandApplyTarget, function () {
-            GameBattleAction.releaseAction(_this_1.fromBattler, 3, _this_1.fromBattler.actor.hitFrame, 1, function () {
-                _this_1.hitTarget(_this_1.fromBattler, _this_1.fromBattler.battleCommandApplyTarget, 0, null, null, null, true);
+            GameBattleAction.releaseAction(_this_2.fromBattler, 3, _this_2.fromBattler.actor.hitFrame, 1, function () {
+                _this_2.hitTarget(_this_2.fromBattler, _this_2.fromBattler.battleCommandApplyTarget, 0, null, null, null, true);
             }, 0);
         });
     };
     GameBattleAction.useSkill = function (firstUse, forceTarget) {
-        var _this_1 = this;
+        var _this_2 = this;
         if (firstUse === void 0) { firstUse = true; }
         if (forceTarget === void 0) { forceTarget = null; }
         var skill = this.fromBattler.battleCommandUseSkill;
         var doUseSkill = function () {
             var ifNoTargetGetOtherTarget = firstUse || !(GameBattleHelper.isMeleeSkill(skill) && GameBattleHelper.canMultipleHitSkill(skill));
-            var targets = GameBattleHelper.getSkillTargets(_this_1.fromBattler, _this_1.fromBattler.battleCommandUseSkill, ifNoTargetGetOtherTarget);
+            var targets = GameBattleHelper.getSkillTargets(_this_2.fromBattler, _this_2.fromBattler.battleCommandUseSkill, ifNoTargetGetOtherTarget);
             if (targets) {
                 if (firstUse && targets.length != 0) {
-                    _this_1.fromBattler.battleCommandApplyTarget = targets[0];
+                    _this_2.fromBattler.battleCommandApplyTarget = targets[0];
                 }
-                for (var i = 0; i < _this_1.alreadyHitTargets.length; i++) {
-                    ArrayUtils.remove(targets, _this_1.alreadyHitTargets[i]);
+                for (var i = 0; i < _this_2.alreadyHitTargets.length; i++) {
+                    ArrayUtils.remove(targets, _this_2.alreadyHitTargets[i]);
                 }
             }
             if (!targets || targets.length == 0) {
-                _this_1.actionComplete(true, true);
+                _this_2.actionComplete(true, true);
                 return;
             }
             if (forceTarget && forceTarget != targets[0]) {
-                _this_1.actionComplete(true, true);
+                _this_2.actionComplete(true, true);
                 return;
             }
             if (firstUse) {
-                if (!GameBattleHelper.canUseOneSkill(_this_1.fromBattler, skill)) {
-                    _this_1.actionComplete(true, true);
+                if (!GameBattleHelper.canUseOneSkill(_this_2.fromBattler, skill)) {
+                    _this_2.actionComplete(true, true);
                     return;
                 }
-                if (_this_1.fromBattler.battleCommandUseSkillFromItem) {
-                    if (!GameBattleData.costItem(_this_1.fromBattler, _this_1.fromBattler.battleCommandUseSkillFromItem)) {
-                        _this_1.actionComplete(true, true);
+                if (_this_2.fromBattler.battleCommandUseSkillFromItem) {
+                    if (!GameBattleData.costItem(_this_2.fromBattler, _this_2.fromBattler.battleCommandUseSkillFromItem)) {
+                        _this_2.actionComplete(true, true);
                         return;
                     }
-                    _this_1.fromBattler.battleCommandUseSkillFromItem = null;
+                    _this_2.fromBattler.battleCommandUseSkillFromItem = null;
                 }
                 else {
-                    GameBattleData.useSkill(_this_1.fromBattler, skill);
+                    GameBattleData.useSkill(_this_2.fromBattler, skill);
                 }
-                if (skill == _this_1.fromBattler.actor.atkSkill) {
-                    GameBattle.battleUI.actionText.text = WorldData.word_useAtk.replace("$1", _this_1.fromBattler.actor.name);
+                if (skill == _this_2.fromBattler.actor.atkSkill) {
+                    GameBattle.battleUI.actionText.text = WorldData.word_useAtk.replace("$1", _this_2.fromBattler.actor.name);
                 }
                 else {
-                    GameBattle.battleUI.actionText.text = WorldData.word_useSkill.replace("$1", _this_1.fromBattler.actor.name).replace("$2", skill.name);
+                    GameBattle.battleUI.actionText.text = WorldData.word_useSkill.replace("$1", _this_2.fromBattler.actor.name).replace("$2", skill.name);
                 }
             }
             GameBattle.battlerfieldDetermineHandle(function () {
-                if (_this_1.fromBattler.isDead) {
-                    _this_1.actionComplete(true, true);
+                if (_this_2.fromBattler.isDead) {
+                    _this_2.actionComplete(true, true);
                     return;
                 }
                 if (GameBattleHelper.isMeleeSkill(skill)) {
                     var oneTarget_1 = targets[0];
                     if (firstUse) {
-                        _this_1.currentHitTarget = 0;
-                        _this_1.totalHitTarget = 1;
-                        _this_1.currentHitTimes = 0;
-                        _this_1.totalHitTimes = 1;
+                        _this_2.currentHitTarget = 0;
+                        _this_2.totalHitTarget = 1;
+                        _this_2.currentHitTimes = 0;
+                        _this_2.totalHitTimes = 1;
                     }
                     if (GameBattleHelper.canMultipleHitSkill(skill)) {
                         if (firstUse)
-                            _this_1.totalHitTimes = skill.releaseTimes;
+                            _this_2.totalHitTimes = skill.releaseTimes;
                     }
                     if (targets.length <= 1) {
-                        if (firstUse && _this_1.totalHitTimes == 1 && skill == _this_1.fromBattler.actor.atkSkill) {
-                            _this_1.totalHitTimes = GameBattleHelper.getNormalAttackTimes(_this_1.fromBattler);
+                        if (firstUse && _this_2.totalHitTimes == 1 && skill == _this_2.fromBattler.actor.atkSkill) {
+                            _this_2.totalHitTimes = GameBattleHelper.getNormalAttackTimes(_this_2.fromBattler);
                         }
                     }
                     else {
                         if (firstUse)
-                            _this_1.totalHitTarget = targets.length;
-                        _this_1.alreadyHitTargets.push(oneTarget_1);
+                            _this_2.totalHitTarget = targets.length;
+                        _this_2.alreadyHitTargets.push(oneTarget_1);
                     }
-                    _this_1.moveTo(_this_1.fromBattler, oneTarget_1, function () {
-                        GameBattleAction.releaseAction(_this_1.fromBattler, skill.releaseActionID, skill.releaseFrame, 1, function () {
-                            _this_1.hitTarget(_this_1.fromBattler, oneTarget_1, 1, skill, null, null, true);
+                    _this_2.moveTo(_this_2.fromBattler, oneTarget_1, function () {
+                        GameBattleAction.releaseAction(_this_2.fromBattler, skill.releaseActionID, skill.releaseFrame, 1, function () {
+                            _this_2.hitTarget(_this_2.fromBattler, oneTarget_1, 1, skill, null, null, true);
                         }, 0);
                     });
                 }
                 else {
-                    GameBattleAction.releaseAction(_this_1.fromBattler, skill.releaseActionID, skill.releaseFrame, 1, function () {
-                        _this_1.releaseSkill(targets, firstUse);
+                    GameBattleAction.releaseAction(_this_2.fromBattler, skill.releaseActionID, skill.releaseFrame, 1, function () {
+                        _this_2.releaseSkill(targets, firstUse);
                     }, 0);
                 }
                 if (skill.releaseAnimation) {
-                    _this_1.fromBattler.playAnimation(skill.releaseAnimation, false, true);
+                    _this_2.fromBattler.playAnimation(skill.releaseAnimation, false, true);
                 }
             });
         };
@@ -186,7 +186,7 @@ var GameBattleAction = (function () {
         }
     };
     GameBattleAction.useItem = function () {
-        var _this_1 = this;
+        var _this_2 = this;
         var item = this.fromBattler.battleCommandUseItem;
         this.currentHitTarget = 0;
         this.totalHitTarget = 1;
@@ -206,8 +206,8 @@ var GameBattleAction = (function () {
         var hasUseItemAction = this.fromBattler.avatar.hasActionID(WorldData.useItemActID);
         if (hasUseItemAction) {
             this.fromBattler.avatar.once(Avatar.ACTION_PLAY_COMPLETED, this, function () {
-                _this_1.fromBattler.avatar.actionID = 1;
-                _this_1.hitTarget(_this_1.fromBattler, target, 2, null, item);
+                _this_2.fromBattler.avatar.actionID = 1;
+                _this_2.hitTarget(_this_2.fromBattler, target, 2, null, item);
             });
             this.fromBattler.avatar.currentFrame = 1;
             this.fromBattler.avatar.actionID = WorldData.useItemActID;
@@ -240,24 +240,24 @@ var GameBattleAction = (function () {
         onComplete.delayRun(needWait ? GameBattle.settlementWaitTime * 2 : GameBattle.settlementWaitTime);
     };
     GameBattleAction.releaseSkill = function (targets, firstUse) {
-        var _this_1 = this;
+        var _this_2 = this;
         var fromBattler = this.fromBattler;
         var skill = fromBattler.battleCommandUseSkill;
         var doReleaseSkill = function () {
-            _this_1.currentHitTarget = 0;
-            _this_1.totalHitTarget = targets.length;
+            _this_2.currentHitTarget = 0;
+            _this_2.totalHitTarget = targets.length;
             if (firstUse) {
-                _this_1.currentHitTimes = 0;
-                _this_1.totalHitTimes = skill.releaseTimes;
+                _this_2.currentHitTimes = 0;
+                _this_2.totalHitTimes = skill.releaseTimes;
             }
             if (skill.skillType == 0) {
                 for (var i = 0; i < targets.length; i++) {
-                    _this_1.hitTarget(fromBattler, targets[i], 1, skill);
+                    _this_2.hitTarget(fromBattler, targets[i], 1, skill);
                 }
             }
             else if (skill.skillType == 1) {
                 for (var i = 0; i < targets.length; i++) {
-                    _this_1.releaseBullet(targets[i]);
+                    _this_2.releaseBullet(targets[i]);
                 }
             }
         };
@@ -268,7 +268,7 @@ var GameBattleAction = (function () {
             doReleaseSkill.apply(this);
     };
     GameBattleAction.releaseBullet = function (targetBattler) {
-        var _this_1 = this;
+        var _this_2 = this;
         if (targetBattler === void 0) { targetBattler = null; }
         var fromBattler = this.fromBattler;
         var skill = fromBattler.battleCommandUseSkill;
@@ -299,15 +299,15 @@ var GameBattleAction = (function () {
             bullet.y = (destinationPoint.y - startPoint.y) * per + startPoint.y;
             currentFrame++;
             if (currentFrame > totalFrame) {
-                EventUtils.happen(GameBattleAction, GameBattleAction.EVENT_ACTION_RELEASE_BULLET_OVER, [_this_1.fromBattler, targetBattler, bullet]);
-                os.remove_ENTERFRAME(arguments.callee, _this_1);
+                EventUtils.happen(GameBattleAction, GameBattleAction.EVENT_ACTION_RELEASE_BULLET_OVER, [_this_2.fromBattler, targetBattler, bullet]);
+                os.remove_ENTERFRAME(arguments.callee, _this_2);
                 bullet.dispose();
-                _this_1.hitTarget(fromBattler, targetBattler, 1, skill);
+                _this_2.hitTarget(fromBattler, targetBattler, 1, skill);
             }
         }, this);
     };
     GameBattleAction.hitTarget = function (fromBattler, targetBattler, actionType, skill, item, status, isMelee) {
-        var _this_1 = this;
+        var _this_2 = this;
         if (skill === void 0) { skill = null; }
         if (item === void 0) { item = null; }
         if (status === void 0) { status = null; }
@@ -333,14 +333,14 @@ var GameBattleAction = (function () {
         }
         var callNextStep = function () {
             if (GameBattle.state == 0 || GameBattle.state == 3) {
-                _this_1.actionComplete();
+                _this_2.actionComplete();
             }
             else if (targetBattler.isDead &&
                 ((actionType != 1 && actionType != 2) || (actionType == 2 && !item.applyDeadBattler) || (actionType == 1 && !GameBattleHelper.isResurrectionSkill(skill)))) {
-                _this_1.actionComplete();
+                _this_2.actionComplete();
             }
             else {
-                _this_1.hitResult(fromBattler, targetBattler, isHitSuccess, actionType, skill, item, status);
+                _this_2.hitResult(fromBattler, targetBattler, isHitSuccess, actionType, skill, item, status);
             }
         };
         var keepHurtAni = null;
@@ -354,14 +354,14 @@ var GameBattleAction = (function () {
             if (keepHurtAni) {
                 targetBattler.stopAnimation(keepHurtAni);
             }
-            _this_1.hitBattler = targetBattler;
+            _this_2.hitBattler = targetBattler;
             EventUtils.happen(GameBattleAction, GameBattleAction.EVENT_ACTION_HIT_TARGET, [isHitSuccess, fromBattler, targetBattler, actionType, skill, item, status, isMelee]);
             if (actionType == 1 && isHitSuccess && skill.eventSetting && skill.hitEvent)
-                CommandPage.startTriggerFragmentEvent(skill.hitEvent, fromBattler, targetBattler, Callback.New(callNextStep, _this_1));
+                CommandPage.startTriggerFragmentEvent(skill.hitEvent, fromBattler, targetBattler, Callback.New(callNextStep, _this_2));
             else if (actionType == 2 && item.callEvent)
-                CommandPage.startTriggerFragmentEvent(item.callEvent, fromBattler, targetBattler, Callback.New(callNextStep, _this_1));
+                CommandPage.startTriggerFragmentEvent(item.callEvent, fromBattler, targetBattler, Callback.New(callNextStep, _this_2));
             else
-                callNextStep.apply(_this_1);
+                callNextStep.apply(_this_2);
         };
         if (hitAniID) {
             var alreadyInShowDamageStage_1 = false;
@@ -398,7 +398,7 @@ var GameBattleAction = (function () {
             var hitAni = targetBattler.playAnimation(hitAniID, false, isHitSuccess, Config.ANIMATION_FPS, true);
             hitAni.once(GCAnimation.PLAY_COMPLETED, this, function () {
                 if (!alreadyInShowDamageStage_1 && !isMelee) {
-                    callHitEvent.apply(_this_1);
+                    callHitEvent.apply(_this_2);
                 }
             });
             if (!keepHurtAction) {
@@ -406,7 +406,7 @@ var GameBattleAction = (function () {
                     if (signalID == 1) {
                         alreadyInShowDamageStage_1 = true;
                         if (!isMelee)
-                            callHitEvent.apply(_this_1);
+                            callHitEvent.apply(_this_2);
                     }
                 });
             }
@@ -418,7 +418,7 @@ var GameBattleAction = (function () {
         }
     };
     GameBattleAction.hitResult = function (fromBattler, targetBattler, isHitSuccess, actionType, skill, item, status) {
-        var _this_1 = this;
+        var _this_2 = this;
         if (skill === void 0) { skill = null; }
         if (item === void 0) { item = null; }
         if (status === void 0) { status = null; }
@@ -427,16 +427,16 @@ var GameBattleAction = (function () {
         var onAnimationCompleteCallback = Callback.New(function () {
             animationCount--;
             if (animationCount == 0) {
-                if (_this_1.currentHitTimes == _this_1.totalHitTimes - 1) {
-                    if (!_this_1.seCounterattack) {
-                        if (GameBattleHelper.isMeleeAction(_this_1.fromBattler, actionType, skill)) {
+                if (_this_2.currentHitTimes == _this_2.totalHitTimes - 1) {
+                    if (!_this_2.seCounterattack) {
+                        if (GameBattleHelper.isMeleeAction(_this_2.fromBattler, actionType, skill)) {
                             if (!targetBattler.isDead && !fromBattler.isDead) {
                                 var counterattackDmagePer = GameBattleHelper.getCounterattackDamagePer(fromBattler, targetBattler);
                                 if (counterattackDmagePer != null) {
-                                    _this_1.seCounterattack = true;
-                                    _this_1.seCounterattackDamagePer = counterattackDmagePer;
+                                    _this_2.seCounterattack = true;
+                                    _this_2.seCounterattackDamagePer = counterattackDmagePer;
                                     GameBattleAction.releaseAction(targetBattler, 3, targetBattler.actor.hitFrame, 1, function () {
-                                        _this_1.hitTarget(targetBattler, fromBattler, 0, null, null, null, true);
+                                        _this_2.hitTarget(targetBattler, fromBattler, 0, null, null, null, true);
                                     });
                                     return;
                                 }
@@ -444,11 +444,11 @@ var GameBattleAction = (function () {
                         }
                     }
                     else {
-                        _this_1.seCounterattack = false;
-                        _this_1.seCounterattackDamagePer = null;
+                        _this_2.seCounterattack = false;
+                        _this_2.seCounterattackDamagePer = null;
                     }
                 }
-                _this_1.actionComplete(false, false, actionType <= 1);
+                _this_2.actionComplete(false, false, actionType <= 1);
             }
         }, this);
         var res = GameBattleData.calculationHitResult(fromBattler, targetBattler, isHitSuccess, actionType, skill, item, status, this.seCounterattackDamagePer);
@@ -510,18 +510,18 @@ var GameBattleAction = (function () {
         });
     };
     GameBattleAction.actionComplete = function (skipHitMultipleTarget, skipHitTimes, allowReleaseAgain) {
-        var _this_1 = this;
+        var _this_2 = this;
         if (skipHitMultipleTarget === void 0) { skipHitMultipleTarget = false; }
         if (skipHitTimes === void 0) { skipHitTimes = false; }
         if (allowReleaseAgain === void 0) { allowReleaseAgain = true; }
         var doMoveBack = function () {
-            _this_1.moveBack(_this_1.fromBattler, function () {
+            _this_2.moveBack(_this_2.fromBattler, function () {
                 GameBattle.battlerfieldDetermineHandle(function () {
                     GameCommand.startCommonCommand(14030, [], Callback.New(function () {
-                        _this_1.inAction = false;
+                        _this_2.inAction = false;
                         EventUtils.happen(GameBattleAction, GameBattleAction.EVENT_ONCE_ACTION_COMPLETE);
-                        _this_1.onComplete && _this_1.onComplete.run();
-                    }, _this_1), _this_1.fromBattler, _this_1.fromBattler);
+                        _this_2.onComplete && _this_2.onComplete.run();
+                    }, _this_2), _this_2.fromBattler, _this_2.fromBattler);
                 }, function () {
                     EventUtils.happen(GameBattleAction, GameBattleAction.EVENT_ONCE_ACTION_COMPLETE);
                 });
@@ -536,23 +536,23 @@ var GameBattleAction = (function () {
             if (allowReleaseAgain && !this.fromBattler.isDead && this.fromBattler.battleCommandType <= 1 && !skipHitTimes && this.currentHitTimes != this.totalHitTimes) {
                 if (this.fromBattler.battleCommandType == 0) {
                     setTimeout(function () {
-                        _this_1.attack(false, _this_1.fromBattler.battleCommandApplyTarget);
+                        _this_2.attack(false, _this_2.fromBattler.battleCommandApplyTarget);
                     }, battlerMultipleTimesAttackTime);
                 }
                 else if (this.fromBattler.battleCommandType == 1 && this.fromBattler.battleCommandUseSkill == this.fromBattler.actor.atkSkill) {
                     setTimeout(function () {
-                        _this_1.useSkill(false, _this_1.fromBattler.battleCommandApplyTarget);
+                        _this_2.useSkill(false, _this_2.fromBattler.battleCommandApplyTarget);
                     }, battlerMultipleTimesAttackTime);
                 }
                 else {
                     if (this.alreadyHitTargets.length > 0) {
                         this.moveBack(this.fromBattler, function () {
-                            _this_1.useSkill(false, _this_1.fromBattler.battleCommandApplyTarget);
+                            _this_2.useSkill(false, _this_2.fromBattler.battleCommandApplyTarget);
                         });
                     }
                     else {
                         setTimeout(function () {
-                            _this_1.useSkill(false, _this_1.fromBattler.battleCommandApplyTarget);
+                            _this_2.useSkill(false, _this_2.fromBattler.battleCommandApplyTarget);
                         }, battlerMultipleTimesAttackTime);
                     }
                 }
@@ -562,7 +562,7 @@ var GameBattleAction = (function () {
         }
         else if (this.currentHitTarget != this.totalHitTarget && this.isMelee) {
             this.moveBack(this.fromBattler, function () {
-                _this_1.useSkill(false);
+                _this_2.useSkill(false);
             });
         }
     };
@@ -630,7 +630,7 @@ var GameBattleAction = (function () {
     GameBattleAction.moveTo = function (fromBattler, targetBattler, onFin) {
         var actionCompleteTask = "releaseAction" + fromBattler.inBattleID;
         new SyncTask(actionCompleteTask, function () {
-            var _this_1 = this;
+            var _this_2 = this;
             var nearPostion = targetBattler.nearPostion;
             if (fromBattler.x == nearPostion.x && fromBattler.y == nearPostion.y) {
                 onFin.apply(this);
@@ -644,9 +644,9 @@ var GameBattleAction = (function () {
                 fromBattler.avatar.actionID = 2;
             EventUtils.happen(GameBattleAction, GameBattleAction.EVENT_ACTION_MOVE_TO_START, [this.fromBattler, nearPostion.x, nearPostion.y]);
             Tween.to(fromBattler, { x: nearPostion.x, y: nearPostion.y }, WorldData.battleMoveToTime * 1000, null, Callback.New(function () {
-                EventUtils.happen(GameBattleAction, GameBattleAction.EVENT_ACTION_MOVE_TO_OVER, [_this_1.fromBattler, nearPostion.x, nearPostion.y]);
+                EventUtils.happen(GameBattleAction, GameBattleAction.EVENT_ACTION_MOVE_TO_OVER, [_this_2.fromBattler, nearPostion.x, nearPostion.y]);
                 fromBattler.avatar.actionID = 1;
-                onFin.apply(_this_1);
+                onFin.apply(_this_2);
                 SyncTask.taskOver(actionCompleteTask);
             }, this));
         });
@@ -654,7 +654,7 @@ var GameBattleAction = (function () {
     GameBattleAction.moveBack = function (fromBattler, onFin) {
         var actionCompleteTask = "releaseAction" + fromBattler.inBattleID;
         new SyncTask(actionCompleteTask, function () {
-            var _this_1 = this;
+            var _this_2 = this;
             if (fromBattler.isDead) {
                 onFin.apply(this);
                 SyncTask.taskOver(actionCompleteTask);
@@ -670,23 +670,23 @@ var GameBattleAction = (function () {
                 fromBattler.avatar.actionID = 2;
             EventUtils.happen(GameBattleAction, GameBattleAction.EVENT_ACTION_MOVE_BACK_START, [this.fromBattler, oriPostion.x, oriPostion.y]);
             Tween.to(fromBattler, { x: oriPostion.x, y: oriPostion.y }, WorldData.battleMoveBackTime * 1000, null, Callback.New(function () {
-                EventUtils.happen(GameBattleAction, GameBattleAction.EVENT_ACTION_MOVE_BACK_OVER, [_this_1.fromBattler, oriPostion.x, oriPostion.y]);
+                EventUtils.happen(GameBattleAction, GameBattleAction.EVENT_ACTION_MOVE_BACK_OVER, [_this_2.fromBattler, oriPostion.x, oriPostion.y]);
                 fromBattler.avatar.actionID = 1;
                 fromBattler.avatar.orientation = fromBattler.oriOrientation;
-                onFin.apply(_this_1);
+                onFin.apply(_this_2);
                 SyncTask.taskOver(actionCompleteTask);
             }, this));
         });
     };
     GameBattleAction.releaseAction = function (battler, actionID, releaseFrame, whenCompleteActionID, onRelease, voice) {
-        var _this_1 = this;
+        var _this_2 = this;
         if (whenCompleteActionID === void 0) { whenCompleteActionID = null; }
         if (onRelease === void 0) { onRelease = null; }
         if (voice === void 0) { voice = -1; }
         var taskName = "releaseAction" + battler.inBattleID;
         new SyncTask(taskName, function () {
             if (voice != -1)
-                _this_1.playBattlerVoice(battler, voice);
+                _this_2.playBattlerVoice(battler, voice);
             var avatar = battler.avatar;
             var hasAtkAction = avatar.hasActionID(actionID);
             if (hasAtkAction) {
@@ -699,7 +699,7 @@ var GameBattleAction = (function () {
                         isReleaseAction_1 = true;
                     }
                 };
-                avatar.once(Avatar.ACTION_PLAY_COMPLETED, _this_1, function () {
+                avatar.once(Avatar.ACTION_PLAY_COMPLETED, _this_2, function () {
                     if (battler.isDisposed) {
                         SyncTask.taskOver(taskName);
                         return;

@@ -88,7 +88,7 @@ var GamepadControl = (function () {
             stage.event(EventObject.KEY_DOWN, [{ keyCode: transKeyCode }]);
     };
     GamepadControl.onGamepadKeyDown = function (keyboardEventType, keyCode) {
-        var _a;
+        var _b;
         ProjectUtils.fromGamePad = true;
         if (GUI_Setting.IS_INPUT_KEY_MODE)
             return;
@@ -102,22 +102,22 @@ var GamepadControl = (function () {
             case GCGamepad.upKeyIndex:
                 return this.onGamepadMenuDirChange(true, 8);
         }
-        var mapping = (_a = {},
-            _a[GUI_Setting.GAMEPAD.X.key] = GUI_Setting.KEY_BOARD.X,
-            _a[GUI_Setting.GAMEPAD.Y.key] = GUI_Setting.KEY_BOARD.Y,
-            _a[GUI_Setting.GAMEPAD.A.key] = GUI_Setting.KEY_BOARD.A,
-            _a[GUI_Setting.GAMEPAD.B.key] = GUI_Setting.KEY_BOARD.B,
-            _a[GUI_Setting.GAMEPAD.L1.key] = GUI_Setting.KEY_BOARD.L1,
-            _a[GUI_Setting.GAMEPAD.L2.key] = GUI_Setting.KEY_BOARD.L2,
-            _a[GUI_Setting.GAMEPAD.R1.key] = GUI_Setting.KEY_BOARD.R1,
-            _a[GUI_Setting.GAMEPAD.R2.key] = GUI_Setting.KEY_BOARD.R2,
-            _a[GUI_Setting.GAMEPAD.BACK.key] = GUI_Setting.KEY_BOARD.BACK,
-            _a[GUI_Setting.GAMEPAD.START.key] = GUI_Setting.KEY_BOARD.START,
-            _a[GCGamepad.leftKeyIndex] = GUI_Setting.KEY_BOARD.LEFT,
-            _a[GCGamepad.rightKeyIndex] = GUI_Setting.KEY_BOARD.RIGHT,
-            _a[GCGamepad.downKeyIndex] = GUI_Setting.KEY_BOARD.DOWN,
-            _a[GCGamepad.upKeyIndex] = GUI_Setting.KEY_BOARD.UP,
-            _a);
+        var mapping = (_b = {},
+            _b[GUI_Setting.GAMEPAD.X.key] = GUI_Setting.KEY_BOARD.X,
+            _b[GUI_Setting.GAMEPAD.Y.key] = GUI_Setting.KEY_BOARD.Y,
+            _b[GUI_Setting.GAMEPAD.A.key] = GUI_Setting.KEY_BOARD.A,
+            _b[GUI_Setting.GAMEPAD.B.key] = GUI_Setting.KEY_BOARD.B,
+            _b[GUI_Setting.GAMEPAD.L1.key] = GUI_Setting.KEY_BOARD.L1,
+            _b[GUI_Setting.GAMEPAD.L2.key] = GUI_Setting.KEY_BOARD.L2,
+            _b[GUI_Setting.GAMEPAD.R1.key] = GUI_Setting.KEY_BOARD.R1,
+            _b[GUI_Setting.GAMEPAD.R2.key] = GUI_Setting.KEY_BOARD.R2,
+            _b[GUI_Setting.GAMEPAD.BACK.key] = GUI_Setting.KEY_BOARD.BACK,
+            _b[GUI_Setting.GAMEPAD.START.key] = GUI_Setting.KEY_BOARD.START,
+            _b[GCGamepad.leftKeyIndex] = GUI_Setting.KEY_BOARD.LEFT,
+            _b[GCGamepad.rightKeyIndex] = GUI_Setting.KEY_BOARD.RIGHT,
+            _b[GCGamepad.downKeyIndex] = GUI_Setting.KEY_BOARD.DOWN,
+            _b[GCGamepad.upKeyIndex] = GUI_Setting.KEY_BOARD.UP,
+            _b);
         var keyboardInfo = mapping[keyCode];
         if (!keyboardInfo)
             return;

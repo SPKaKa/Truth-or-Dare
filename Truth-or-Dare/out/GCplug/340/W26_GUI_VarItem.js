@@ -1,94 +1,94 @@
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    };
-    return function (d, b) {
-        if (typeof b !== "function" && b !== null)
-            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 var W26_GUI_VarItem = (function (_super) {
     __extends(W26_GUI_VarItem, _super);
     function W26_GUI_VarItem() {
-        var _this = _super.call(this) || this;
-        _this.canChange = true;
-        _this.numberInput.on(EventObject.MOUSE_DOWN, _this, function () {
-            _this.numberInput.select();
+        var _this_2 = _super.call(this) || this;
+        _this_2.canChange = true;
+        _this_2.numberInput.on(EventObject.MOUSE_DOWN, _this_2, function () {
+            _this_2.numberInput.select();
         });
-        _this.strInput.on(EventObject.MOUSE_DOWN, _this, function () {
-            _this.strInput.select();
+        _this_2.strInput.on(EventObject.MOUSE_DOWN, _this_2, function () {
+            _this_2.strInput.select();
         });
-        _this.numberInput.on(EventObject.ENTER, _this, _this.onNumberInput);
-        _this.switchInput.on(EventObject.CHANGE, _this, _this.onChange);
-        _this.strInput.on(EventObject.ENTER, _this, _this.onStrInput);
-        _this.numberInput.on(EventObject.BLUR, _this, function () {
-            if (_this.globalVar) {
-                var value = ClientWorld.variable.getVariable(_this.index2);
+        _this_2.numberInput.on(EventObject.ENTER, _this_2, _this_2.onNumberInput);
+        _this_2.switchInput.on(EventObject.CHANGE, _this_2, _this_2.onChange);
+        _this_2.strInput.on(EventObject.ENTER, _this_2, _this_2.onStrInput);
+        _this_2.numberInput.on(EventObject.BLUR, _this_2, function () {
+            if (_this_2.globalVar) {
+                var value = ClientWorld.variable.getVariable(_this_2.index2);
             }
             else {
-                var value = Game.player.variable.getVariable(_this.index2);
+                var value = Game.player.variable.getVariable(_this_2.index2);
             }
-            _this.setShowValue(value);
-            _this.canChange = true;
-            _this.numberInput.italic = false;
+            _this_2.setShowValue(value);
+            _this_2.canChange = true;
+            _this_2.numberInput.italic = false;
         });
-        _this.strInput.on(EventObject.BLUR, _this, function () {
-            if (_this.globalVar) {
-                var value = ClientWorld.variable.getString(_this.index2);
+        _this_2.strInput.on(EventObject.BLUR, _this_2, function () {
+            if (_this_2.globalVar) {
+                var value = ClientWorld.variable.getString(_this_2.index2);
             }
             else {
-                var value = Game.player.variable.getString(_this.index2);
+                var value = Game.player.variable.getString(_this_2.index2);
             }
-            _this.setShowValue(value);
-            _this.canChange = true;
-            _this.strInput.italic = false;
+            _this_2.setShowValue(value);
+            _this_2.canChange = true;
+            _this_2.strInput.italic = false;
         });
-        _this.numberInput.on(EventObject.FOCUS, _this, function () {
-            _this.canChange = false;
-            _this.numberInput.italic = true;
+        _this_2.numberInput.on(EventObject.FOCUS, _this_2, function () {
+            _this_2.canChange = false;
+            _this_2.numberInput.italic = true;
         });
-        _this.strInput.on(EventObject.FOCUS, _this, function () {
-            _this.canChange = false;
-            _this.strInput.italic = true;
+        _this_2.strInput.on(EventObject.FOCUS, _this_2, function () {
+            _this_2.canChange = false;
+            _this_2.strInput.italic = true;
         });
-        _this.changeType.on(EventObject.CHANGE, _this, function (c) {
+        _this_2.changeType.on(EventObject.CHANGE, _this_2, function (c) {
             if (c === void 0) { c = true; }
-            W26_varMonitor.setMode(_this.index2, _this.changeType.selectedIndex);
-            if (W26_varMonitor.getMode(_this.index2) == 1 || W26_varMonitor.getMode(_this.index2) == 2) {
-                _this.strInput.visible = false;
-                _this.numberInput.mouseEnabled = false;
-                _this.switchInput.visible = false;
-                _this.button.visible = true;
+            W26_varMonitor.setMode(_this_2.index2, _this_2.changeType.selectedIndex);
+            if (W26_varMonitor.getMode(_this_2.index2) == 1 || W26_varMonitor.getMode(_this_2.index2) == 2) {
+                _this_2.strInput.visible = false;
+                _this_2.numberInput.mouseEnabled = false;
+                _this_2.switchInput.visible = false;
+                _this_2.button.visible = true;
             }
             else {
-                _this.button.visible = false;
-                _this.strInput.visible = false;
-                _this.numberInput.mouseEnabled = true;
-                _this.switchInput.visible = false;
-                if (_this.varType == 0) {
-                    _this.numberInput.visible = true;
+                _this_2.button.visible = false;
+                _this_2.strInput.visible = false;
+                _this_2.numberInput.mouseEnabled = true;
+                _this_2.switchInput.visible = false;
+                if (_this_2.varType == 0) {
+                    _this_2.numberInput.visible = true;
                 }
-                else if (_this.varType == 1) {
-                    _this.switchInput.visible = true;
+                else if (_this_2.varType == 1) {
+                    _this_2.switchInput.visible = true;
                 }
-                else if (_this.varType == 2) {
-                    _this.strInput.visible = true;
+                else if (_this_2.varType == 2) {
+                    _this_2.strInput.visible = true;
                 }
             }
             if (!c)
                 return;
-            if (_this.monitor && W26_varMonitor.UI) {
+            if (_this_2.monitor && W26_varMonitor.UI) {
                 if (W26_varMonitor.UI.UITabBox.selectedIndex == 0 && W26_varMonitor.getArrayPluginV() == 0) {
                     for (var i = 0; i < W26_varMonitor.UI.numberPanel.varList.items.length; i++) {
                         var mui = W26_varMonitor.UI.numberPanel.varList.getItemUI(i);
-                        if (mui.index2 == _this.index2) {
-                            mui.changeType._selectedIndex = _this.changeType.selectedIndex;
+                        if (mui.index2 == _this_2.index2) {
+                            mui.changeType._selectedIndex = _this_2.changeType.selectedIndex;
                             mui.changeType._tf.text = mui.changeType._itemLabelArr[mui.changeType._selectedIndex];
                             mui.changeType.event(EventObject.CHANGE, [false]);
                             return;
@@ -98,8 +98,8 @@ var W26_GUI_VarItem = (function (_super) {
                 else if (W26_varMonitor.UI.UITabBox.selectedIndex == 2 && W26_varMonitor.getPluginsV()) {
                     for (var i = 0; i < W26_varMonitor.UI.stringPanel.varList.items.length; i++) {
                         var mui = W26_varMonitor.UI.stringPanel.varList.getItemUI(i);
-                        if (mui.index2 == _this.index2) {
-                            mui.changeType._selectedIndex = _this.changeType.selectedIndex;
+                        if (mui.index2 == _this_2.index2) {
+                            mui.changeType._selectedIndex = _this_2.changeType.selectedIndex;
                             mui.changeType._tf.text = mui.changeType._itemLabelArr[mui.changeType._selectedIndex];
                             mui.changeType.event(EventObject.CHANGE, [false]);
                             return;
@@ -110,8 +110,8 @@ var W26_GUI_VarItem = (function (_super) {
             else if (W26_varMonitor.UIsimple) {
                 for (var i = 0; i < W26_varMonitor.UIsimple.varList.items.length; i++) {
                     var mui = W26_varMonitor.UIsimple.varList.getItemUI(i);
-                    if (mui.index2 == _this.index2) {
-                        mui.changeType._selectedIndex = _this.changeType.selectedIndex;
+                    if (mui.index2 == _this_2.index2) {
+                        mui.changeType._selectedIndex = _this_2.changeType.selectedIndex;
                         mui.changeType._tf.text = mui.changeType._itemLabelArr[mui.changeType._selectedIndex];
                         mui.changeType.event(EventObject.CHANGE, [false]);
                         return;
@@ -119,63 +119,63 @@ var W26_GUI_VarItem = (function (_super) {
                 }
             }
         });
-        _this.button.on(EventObject.CLICK, _this, function () {
-            if (_this.changeType.selectedIndex == 1) {
+        _this_2.button.on(EventObject.CLICK, _this_2, function () {
+            if (_this_2.changeType.selectedIndex == 1) {
                 if (W26_varMonitor.checkArrayPlugin()) {
                     try {
-                        var arr = W26_VisualArray.getArrayByVarId(_this.index2);
+                        var arr = W26_VisualArray.getArrayByVarId(_this_2.index2);
                         if (arr == null)
                             return;
                         if (W26_varMonitor.getArrayPluginV() == 0) {
-                            W26_GUI_ArrayPanel.arrayPanel.changeArrayShow(Game.player.variable.getVariable(_this.index2));
+                            W26_GUI_ArrayPanel.arrayPanel.changeArrayShow(Game.player.variable.getVariable(_this_2.index2));
                         }
                         else if (W26_varMonitor.getArrayPluginV() == 4.0) {
-                            W26_GUI_ArrayPanel.arrayPanel.changeArrayShow(Game.player.variable.getString(_this.index2));
+                            W26_GUI_ArrayPanel.arrayPanel.changeArrayShow(Game.player.variable.getString(_this_2.index2));
                         }
                     }
-                    catch (_a) {
+                    catch (_c) {
                     }
                 }
             }
-            else if (_this.changeType.selectedIndex == 2) {
+            else if (_this_2.changeType.selectedIndex == 2) {
                 if (W26_varMonitor.checkStructPlugin()) {
                     try {
-                        var arr = W26_Struct.getStructByVarID(_this.index2);
+                        var arr = W26_Struct.getStructByVarID(_this_2.index2);
                         if (arr == null)
                             return;
                         if (W26_varMonitor.getStructPluginV() == 2.0) {
-                            W26_GUI_StructShow.arrayShow.changeArrayShow(Game.player.variable.getString(_this.index2));
+                            W26_GUI_StructShow.arrayShow.changeArrayShow(Game.player.variable.getString(_this_2.index2));
                         }
                     }
-                    catch (_b) {
+                    catch (_d) {
                     }
                 }
             }
         });
-        _this.updateCallback = Callback.New(function (typeID, varID, value) {
-            if (_this.canChange) {
-                _this.setShowValue(value);
-                if (_this.checkTrace(_this.globalVar) && WorldData.W26_isTrace && _this.debug && _this.monitor) {
-                    trace(_this.index.text, _this.varName.text, _this.getShowValue());
-                    trace("[", W26_varMonitor.getRecord(typeID, _this.globalVar, varID), "]");
+        _this_2.updateCallback = Callback.New(function (typeID, varID, value) {
+            if (_this_2.canChange) {
+                _this_2.setShowValue(value);
+                if (_this_2.checkTrace(_this_2.globalVar) && WorldData.W26_isTrace && _this_2.debug && _this_2.monitor) {
+                    trace(_this_2.index.text, _this_2.varName.text, _this_2.getShowValue());
+                    trace("[", W26_varMonitor.getRecord(typeID, _this_2.globalVar, varID), "]");
                 }
             }
-        }, _this);
-        _this.traceSelect.on(EventObject.CHANGE, _this, _this.onChanegTrace, [_this.globalVar]);
-        _this.once(GameSprite.ON_DISPOSE, _this, function () {
-            _this.numberInput.offAll();
-            _this.switchInput.offAll();
-            _this.strInput.offAll();
-            if (_this.globalVar) {
-                ClientWorld.removeListenerVariable(_this.varType, _this.index2, _this.updateCallback);
+        }, _this_2);
+        _this_2.traceSelect.on(EventObject.CHANGE, _this_2, _this_2.onChanegTrace, [_this_2.globalVar]);
+        _this_2.once(GameSprite.ON_DISPOSE, _this_2, function () {
+            _this_2.numberInput.offAll();
+            _this_2.switchInput.offAll();
+            _this_2.strInput.offAll();
+            if (_this_2.globalVar) {
+                ClientWorld.removeListenerVariable(_this_2.varType, _this_2.index2, _this_2.updateCallback);
             }
             else {
-                Game.player.removeListenerPlayerVariable(_this.varType, _this.index2, _this.updateCallback);
+                Game.player.removeListenerPlayerVariable(_this_2.varType, _this_2.index2, _this_2.updateCallback);
             }
         });
-        _this.once(EventObject.LOADED, _this, function () {
+        _this_2.once(EventObject.LOADED, _this_2, function () {
         });
-        return _this;
+        return _this_2;
     }
     W26_GUI_VarItem.prototype.firstUpdate = function (typeID, varID, value) {
         if (this.canChange) {

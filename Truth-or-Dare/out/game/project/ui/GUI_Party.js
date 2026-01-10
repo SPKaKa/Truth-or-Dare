@@ -16,37 +16,37 @@
 var GUI_Party = (function (_super) {
     __extends(GUI_Party, _super);
     function GUI_Party() {
-        var _this_1 = _super.call(this) || this;
-        _this_1.descNameInitColor = _this_1.descName.color;
-        _this_1.on(EventObject.DISPLAY, _this_1, _this_1.onDisplay);
-        _this_1.actorList.on(EventObject.CHANGE, _this_1, _this_1.onActorListChange);
-        _this_1.actorList.on(UIList.ITEM_CLICK, _this_1, _this_1.onActorItemClick);
-        GUI_Manager.standardList(_this_1.actorList);
-        GUI_Manager.standardList(_this_1.actorEquipList);
-        GUI_Manager.standardList(_this_1.equipPackageList, false);
-        GUI_Manager.standardList(_this_1.actorSkillList, false);
-        GUI_Manager.standardList(_this_1.targetUI.actorList, false);
-        _this_1.actorPanelTab.on(EventObject.CHANGE, _this_1, _this_1.onActorPanelTabChange);
-        _this_1.actorList.on(UIList.ITEM_CREATE, _this_1, _this_1.onCreateActorItem);
-        _this_1.actorSkillList.on(UIList.ITEM_CREATE, _this_1, _this_1.onCreateActorSkillItem);
-        _this_1.equipPackageList.on(UIList.ITEM_CREATE, _this_1, _this_1.onCreateEquipPackageItem);
-        _this_1.actorSkillList.on(EventObject.CHANGE, _this_1, _this_1.onActorSkillChange);
-        _this_1.actorSkillList.on(UIList.ITEM_CLICK, _this_1, _this_1.onActorSkillClick);
-        _this_1.actorEquipList.on(EventObject.CHANGE, _this_1, _this_1.onActorEquipChange);
-        _this_1.actorEquipList.on(UIList.ITEM_CLICK, _this_1, _this_1.onActorEquipItemClick);
-        _this_1.equipPackageList.on(EventObject.CHANGE, _this_1, _this_1.onEquipPackageChage);
-        _this_1.equipPackageList.on(UIList.ITEM_CLICK, _this_1, _this_1.onEquipPackageItemClick);
-        _this_1.targetUI.actorList.on(UIList.ITEM_CLICK, _this_1, _this_1.onTargetActorItemClick);
-        _this_1.ai.on(EventObject.CHANGE, _this_1, _this_1.onChangeActorAI);
-        stage.on(EventObject.KEY_DOWN, _this_1, _this_1.onKeyDown);
-        GUI_Manager.regHitAreaFocusList(_this_1.actorPanel, _this_1.actorList, true, FocusButtonsManager.closeFocus);
-        GUI_Manager.regHitAreaFocusList(_this_1.skillPanel, _this_1.actorSkillList);
-        GUI_Manager.regHitAreaFocusList(_this_1.actorEquipPanel, _this_1.actorEquipList);
-        GUI_Manager.regHitAreaFocusList(_this_1.equipPackagePanel, _this_1.equipPackageList, false);
-        EventUtils.addEventListenerFunction(UIList, UIList.EVENT_FOCUS_CHANGE, _this_1.onListFocusChange, _this_1);
-        EventUtils.addEventListenerFunction(Game, Game.EVENT_LEARN_SKILL, _this_1.refreshActorSkillPanel, _this_1);
-        EventUtils.addEventListenerFunction(Game, Game.EVENT_FORGET_SKILL, _this_1.refreshActorSkillPanel, _this_1);
-        return _this_1;
+        var _this_2 = _super.call(this) || this;
+        _this_2.descNameInitColor = _this_2.descName.color;
+        _this_2.on(EventObject.DISPLAY, _this_2, _this_2.onDisplay);
+        _this_2.actorList.on(EventObject.CHANGE, _this_2, _this_2.onActorListChange);
+        _this_2.actorList.on(UIList.ITEM_CLICK, _this_2, _this_2.onActorItemClick);
+        GUI_Manager.standardList(_this_2.actorList);
+        GUI_Manager.standardList(_this_2.actorEquipList);
+        GUI_Manager.standardList(_this_2.equipPackageList, false);
+        GUI_Manager.standardList(_this_2.actorSkillList, false);
+        GUI_Manager.standardList(_this_2.targetUI.actorList, false);
+        _this_2.actorPanelTab.on(EventObject.CHANGE, _this_2, _this_2.onActorPanelTabChange);
+        _this_2.actorList.on(UIList.ITEM_CREATE, _this_2, _this_2.onCreateActorItem);
+        _this_2.actorSkillList.on(UIList.ITEM_CREATE, _this_2, _this_2.onCreateActorSkillItem);
+        _this_2.equipPackageList.on(UIList.ITEM_CREATE, _this_2, _this_2.onCreateEquipPackageItem);
+        _this_2.actorSkillList.on(EventObject.CHANGE, _this_2, _this_2.onActorSkillChange);
+        _this_2.actorSkillList.on(UIList.ITEM_CLICK, _this_2, _this_2.onActorSkillClick);
+        _this_2.actorEquipList.on(EventObject.CHANGE, _this_2, _this_2.onActorEquipChange);
+        _this_2.actorEquipList.on(UIList.ITEM_CLICK, _this_2, _this_2.onActorEquipItemClick);
+        _this_2.equipPackageList.on(EventObject.CHANGE, _this_2, _this_2.onEquipPackageChage);
+        _this_2.equipPackageList.on(UIList.ITEM_CLICK, _this_2, _this_2.onEquipPackageItemClick);
+        _this_2.targetUI.actorList.on(UIList.ITEM_CLICK, _this_2, _this_2.onTargetActorItemClick);
+        _this_2.ai.on(EventObject.CHANGE, _this_2, _this_2.onChangeActorAI);
+        stage.on(EventObject.KEY_DOWN, _this_2, _this_2.onKeyDown);
+        GUI_Manager.regHitAreaFocusList(_this_2.actorPanel, _this_2.actorList, true, FocusButtonsManager.closeFocus);
+        GUI_Manager.regHitAreaFocusList(_this_2.skillPanel, _this_2.actorSkillList);
+        GUI_Manager.regHitAreaFocusList(_this_2.actorEquipPanel, _this_2.actorEquipList);
+        GUI_Manager.regHitAreaFocusList(_this_2.equipPackagePanel, _this_2.equipPackageList, false);
+        EventUtils.addEventListenerFunction(UIList, UIList.EVENT_FOCUS_CHANGE, _this_2.onListFocusChange, _this_2);
+        EventUtils.addEventListenerFunction(Game, Game.EVENT_LEARN_SKILL, _this_2.refreshActorSkillPanel, _this_2);
+        EventUtils.addEventListenerFunction(Game, Game.EVENT_FORGET_SKILL, _this_2.refreshActorSkillPanel, _this_2);
+        return _this_2;
     }
     Object.defineProperty(GUI_Party, "skillSelectedActorIndex", {
         get: function () {
@@ -295,8 +295,8 @@ var GUI_Party = (function (_super) {
         this.onUseSkill();
     };
     GUI_Party.prototype.onUseSkill = function () {
-        var _a;
-        var skill = (_a = this.actorSkillList.selectedItem) === null || _a === void 0 ? void 0 : _a.data;
+        var _c;
+        var skill = (_c = this.actorSkillList.selectedItem) === null || _c === void 0 ? void 0 : _c.data;
         if (!skill)
             return;
         if (!this.isCanUsedInMenuSkill(skill)) {
@@ -590,7 +590,7 @@ var GUI_Party = (function (_super) {
         this.onCreateActorItem(actorItemUI, this.actorList.selectedItem, this.actorList.selectedIndex);
     };
     GUI_Party.prototype.refreshDescribe = function () {
-        var _a;
+        var _c;
         var name = "";
         var desc = "";
         this.descName.color = this.descNameInitColor;
@@ -603,7 +603,7 @@ var GUI_Party = (function (_super) {
             }
         }
         else if (UIList.focus == this.actorEquipList) {
-            var equip = (_a = this.actorEquipList.selectedItem) === null || _a === void 0 ? void 0 : _a.data;
+            var equip = (_c = this.actorEquipList.selectedItem) === null || _c === void 0 ? void 0 : _c.data;
             if (equip) {
                 name = equip.name;
                 desc = GUI_Manager.equipDesc(equip);

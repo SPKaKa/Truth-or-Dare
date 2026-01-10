@@ -1,34 +1,34 @@
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    };
-    return function (d, b) {
-        if (typeof b !== "function" && b !== null)
-            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 var W26_GUI_MonitorVar = (function (_super) {
     __extends(W26_GUI_MonitorVar, _super);
     function W26_GUI_MonitorVar() {
-        var _this = _super.call(this) || this;
-        _this.varList.on(UIList.ITEM_CREATE, _this, _this.onItemCreate);
-        _this.rect.on(EventObject.MOUSE_MOVE, _this, function () {
-            if (UIList.focus != _this.varList)
-                UIList.focus = _this.varList;
+        var _this_2 = _super.call(this) || this;
+        _this_2.varList.on(UIList.ITEM_CREATE, _this_2, _this_2.onItemCreate);
+        _this_2.rect.on(EventObject.MOUSE_MOVE, _this_2, function () {
+            if (UIList.focus != _this_2.varList)
+                UIList.focus = _this_2.varList;
         });
-        _this.frame.on(EventObject.MOUSE_DOWN, _this, function () {
-            _this.window.startDrag();
-            stage.once(EventObject.MOUSE_UP, _this, function () {
-                _this.window.stopDrag();
+        _this_2.frame.on(EventObject.MOUSE_DOWN, _this_2, function () {
+            _this_2.window.startDrag();
+            stage.once(EventObject.MOUSE_UP, _this_2, function () {
+                _this_2.window.stopDrag();
             });
         });
-        return _this;
+        return _this_2;
     }
     W26_GUI_MonitorVar.prototype.updateMonitorVar = function () {
     };

@@ -400,13 +400,13 @@
         }
     ],
     "BORN": {
-        "sceneID": 1,
+        "sceneID": 3,
         "so": {
             "modelID": 1,
             "index": 0,
             "name": "玩家对象",
-            "x": 888,
-            "y": 432,
+            "x": 767,
+            "y": 583,
             "z": 0,
             "materialData": [
                 {
@@ -475,7 +475,7 @@
             },
             "selectEnabled": {
                 "varType": 2,
-                "value": true,
+                "value": false,
                 "copy": false
             },
             "ignoreCantMove": {

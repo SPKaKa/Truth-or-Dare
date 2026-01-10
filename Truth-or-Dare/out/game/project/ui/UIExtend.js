@@ -204,9 +204,9 @@ UIList["onListKeyDown"] = function (e) {
 };
 var UIListitemInit = UIList.prototype["itemInit"];
 UIList.prototype["itemInit"] = function (ui, data, index) {
-    var _this_1 = this;
+    var _this_2 = this;
     ui.on(EventObject.MOUSE_DOWN, this, function (ui, data, index) {
-        if (_this_1.selectedItem != data) {
+        if (_this_2.selectedItem != data) {
             GameAudio.playSE(ClientWorld.data.selectSE);
         }
     }, [ui, data, index]);

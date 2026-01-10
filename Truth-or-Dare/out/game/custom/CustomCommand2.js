@@ -816,7 +816,7 @@
     CommandExecute.customCommand_3016 = customCommand_3016;
     var startVideo;
     function customCommand_3018(commandPage, cmd, trigger, triggerPlayer, playerInput, cp) {
-        var _this_1 = this;
+        var _this_2 = this;
         var passageID = cp.passageIDUseVar ? Game.player.variable.getVariable(cp.passageIDVar) : cp.passageID;
         passageID = MathUtils.int(passageID);
         var video = cp.objectUseVar ? Game.player.variable.getString(cp.videoVar) : cp.video;
@@ -879,9 +879,9 @@
                             a.visible = true;
                             a.event("Video_Real_Loaded");
                         }, 1);
-                        os.remove_ENTERFRAME(arguments.callee, _this_1);
+                        os.remove_ENTERFRAME(arguments.callee, _this_2);
                     }
-                }, _this_1);
+                }, _this_2);
             }
         });
         a.useDPCoord = true;
@@ -1002,7 +1002,7 @@
             }
         }
         function doWaitVideo(realLoaded) {
-            var _this_1 = this;
+            var _this_2 = this;
             if (realLoaded === void 0) { realLoaded = false; }
             a.once("___deletePassage", this, doNext);
             if (realLoaded) {
@@ -1012,7 +1012,7 @@
             }
             else if (isNaN(a.duration)) {
                 a.once(EventObject.LOADED, this, function () {
-                    a.once(EventObject.COMPLETE, _this_1, doNext, [trigger]);
+                    a.once(EventObject.COMPLETE, _this_2, doNext, [trigger]);
                 });
             }
             else if (a.isPlaying) {
@@ -1054,13 +1054,13 @@
         }
     }, null));
     function listenerWhenUIClose(uiID, trigger) {
-        var _this_1 = this;
+        var _this_2 = this;
         var t = { uiID: uiID, triggerMainType: trigger.mainType, triggerIndexType: trigger.indexType, triggerFrom: trigger.from };
         isWaitingUICloseInfos.push(t);
         EventUtils.addEventListenerFunction(GameUI, GameUI.EVENT_CLOSE_SYSTEM_UI, function (closeUIID) {
             if (closeUIID == uiID) {
                 ArrayUtils.remove(isWaitingUICloseInfos, t);
-                EventUtils.removeEventListenerFunction(GameUI, GameUI.EVENT_CLOSE_SYSTEM_UI, arguments.callee, _this_1);
+                EventUtils.removeEventListenerFunction(GameUI, GameUI.EVENT_CLOSE_SYSTEM_UI, arguments.callee, _this_2);
                 CommandPage.executeEvent(trigger, []);
             }
         }, this);

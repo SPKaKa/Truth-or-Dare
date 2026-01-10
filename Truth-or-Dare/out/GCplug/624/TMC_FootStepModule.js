@@ -1,25 +1,25 @@
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    };
-    return function (d, b) {
-        if (typeof b !== "function" && b !== null)
-            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 var TMC_FootStepModule = (function (_super) {
     __extends(TMC_FootStepModule, _super);
     function TMC_FootStepModule(installCB) {
-        var _this = _super.call(this, installCB) || this;
-        _this.lastSE = "";
-        os.add_ENTERFRAME(_this.onUpdate, _this);
-        return _this;
+        var _this_2 = _super.call(this, installCB) || this;
+        _this_2.lastSE = "";
+        os.add_ENTERFRAME(_this_2.onUpdate, _this_2);
+        return _this_2;
     }
     TMC_FootStepModule.prototype.onRemoved = function () {
         os.remove_ENTERFRAME(this.onUpdate, this);
@@ -29,10 +29,10 @@ var TMC_FootStepModule = (function (_super) {
     TMC_FootStepModule.prototype.onUpdate = function () {
         if (this.ModuleActive && this.so.isMoving) {
             var settingList = ObjectUtils.depthClone(WorldData.SEmap);
-            for (var _i = 0, _a = this.OverrideSEsetting; _i < _a.length; _i++) {
-                var overridSEData = _a[_i];
-                for (var _b = 0, settingList_1 = settingList; _b < settingList_1.length; _b++) {
-                    var seData = settingList_1[_b];
+            for (var _i = 0, _c = this.OverrideSEsetting; _i < _c.length; _i++) {
+                var overridSEData = _c[_i];
+                for (var _d = 0, settingList_1 = settingList; _d < settingList_1.length; _d++) {
+                    var seData = settingList_1[_d];
                     if (seData.MapDataIndex == overridSEData.MapDataIndex) {
                         seData.SEurl = overridSEData.SEurl;
                         break;
@@ -42,8 +42,8 @@ var TMC_FootStepModule = (function (_super) {
                 settingList.push(newData);
             }
             var seURL = "";
-            for (var _c = 0, settingList_2 = settingList; _c < settingList_2.length; _c++) {
-                var seData = settingList_2[_c];
+            for (var _e = 0, settingList_2 = settingList; _e < settingList_2.length; _e++) {
+                var seData = settingList_2[_e];
                 if (Game.currentScene.getDataGridState(seData.MapDataIndex, this.so.posGrid.x, this.so.posGrid.y) > 0) {
                     seURL = seData.SEurl;
                     break;

@@ -16,15 +16,15 @@
 var GUI_Setting = (function (_super) {
     __extends(GUI_Setting, _super);
     function GUI_Setting() {
-        var _this_1 = _super.call(this) || this;
-        GUI_Manager.standardTab(_this_1.typeTab);
-        GUI_Manager.standardList(_this_1.keyboardList);
-        GUI_Manager.standardList(_this_1.gamepadList);
-        _this_1.initKeyboardSetting();
-        _this_1.initGamepadSetting();
-        _this_1.typeTab.on(EventObject.CHANGE, _this_1, _this_1.refreshFocus);
-        _this_1.on(EventObject.DISPLAY, _this_1, _this_1.onDisplay);
-        return _this_1;
+        var _this_2 = _super.call(this) || this;
+        GUI_Manager.standardTab(_this_2.typeTab);
+        GUI_Manager.standardList(_this_2.keyboardList);
+        GUI_Manager.standardList(_this_2.gamepadList);
+        _this_2.initKeyboardSetting();
+        _this_2.initGamepadSetting();
+        _this_2.typeTab.on(EventObject.CHANGE, _this_2, _this_2.refreshFocus);
+        _this_2.on(EventObject.DISPLAY, _this_2, _this_2.onDisplay);
+        return _this_2;
     }
     GUI_Setting.prototype.onDisplay = function () {
         this.refreshFocus();
@@ -100,17 +100,17 @@ var GUI_Setting = (function (_super) {
         configurable: true
     });
     GUI_Setting.prototype.initKeyboardSetting = function () {
-        var _this_1 = this;
+        var _this_2 = this;
         this.keyboardList.onCreateItem = Callback.New(function (ui, data, index) {
             var keyBoardInfo = data.data;
             ui.key1.label = GUI_Setting.getKeyBoardName(keyBoardInfo.keys[0]);
             ui.key2.label = GUI_Setting.getKeyBoardName(keyBoardInfo.keys[1]);
             ui.key3.label = GUI_Setting.getKeyBoardName(keyBoardInfo.keys[2]);
             ui.key4.label = GUI_Setting.getKeyBoardName(keyBoardInfo.keys[3]);
-            ui.key1.on(EventObject.CLICK, _this_1, _this_1.openWaitInputKeyboard, [0]);
-            ui.key2.on(EventObject.CLICK, _this_1, _this_1.openWaitInputKeyboard, [1]);
-            ui.key3.on(EventObject.CLICK, _this_1, _this_1.openWaitInputKeyboard, [2]);
-            ui.key4.on(EventObject.CLICK, _this_1, _this_1.openWaitInputKeyboard, [3]);
+            ui.key1.on(EventObject.CLICK, _this_2, _this_2.openWaitInputKeyboard, [0]);
+            ui.key2.on(EventObject.CLICK, _this_2, _this_2.openWaitInputKeyboard, [1]);
+            ui.key3.on(EventObject.CLICK, _this_2, _this_2.openWaitInputKeyboard, [2]);
+            ui.key4.on(EventObject.CLICK, _this_2, _this_2.openWaitInputKeyboard, [3]);
         }, this);
         this.refreshKeyboardList();
         stage.on(EventObject.KEY_DOWN, this, this.onSetKeyboardByHotKey);
@@ -188,11 +188,11 @@ var GUI_Setting = (function (_super) {
         GUI_Setting.syncListKeyDownSetting();
     };
     GUI_Setting.prototype.initGamepadSetting = function () {
-        var _this_1 = this;
+        var _this_2 = this;
         this.gamepadList.onCreateItem = Callback.New(function (ui, data, index) {
             var gamepadInfo = data.data;
-            ui.key1.label = _this_1.getGamepadName(gamepadInfo.key);
-            ui.key1.on(EventObject.CLICK, _this_1, _this_1.openWaitInputGamepad);
+            ui.key1.label = _this_2.getGamepadName(gamepadInfo.key);
+            ui.key1.on(EventObject.CLICK, _this_2, _this_2.openWaitInputGamepad);
         }, this);
         this.refreshGamepadList();
         stage.on(EventObject.KEY_DOWN, this, this.onSetGamepadByHotKey);

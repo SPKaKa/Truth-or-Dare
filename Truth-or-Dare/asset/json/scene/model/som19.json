@@ -1,0 +1,13 @@
+{
+    "preLayer": [],
+    "varAttributes": [],
+    "attrConditions": [],
+    "presetModules": [],
+    "serverInstanceClassName": "ServerSceneObject",
+    "clientInstanceClassName": "ClientSceneObject",
+    "supportTriggerTypes": [],
+    "supportStatusPage": true,
+    "hidePublicAttributes": [],
+    "editorListPresetData": [],
+    "id": 19
+}

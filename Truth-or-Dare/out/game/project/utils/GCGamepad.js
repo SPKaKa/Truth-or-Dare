@@ -16,41 +16,41 @@
 var GCGamepad = (function (_super) {
     __extends(GCGamepad, _super);
     function GCGamepad(index) {
-        var _this_1 = _super.call(this) || this;
-        _this_1.leftJoy1 = 0;
-        _this_1.leftJoy2 = 1;
-        _this_1.leftKey = 9;
-        _this_1.rightJoy1 = 2;
-        _this_1.rightJoy2 = 3;
-        _this_1.keyMappings = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
-        _this_1.xKey = 2;
-        _this_1.yKey = 3;
-        _this_1.aKey = 0;
-        _this_1.bKey = 1;
-        _this_1.LBKey = 4;
-        _this_1.LTKey = 6;
-        _this_1.RBKey = 5;
-        _this_1.RTKey = 7;
-        _this_1.backKey = 8;
-        _this_1.startKey = 9;
-        _this_1.leftJoyDownKey = 10;
-        _this_1.rightJoyDownKey = 11;
-        _this_1.joyDefValue = 0.003921627998352051;
-        _this_1.dirKeyMapping = {
+        var _this_2 = _super.call(this) || this;
+        _this_2.leftJoy1 = 0;
+        _this_2.leftJoy2 = 1;
+        _this_2.leftKey = 9;
+        _this_2.rightJoy1 = 2;
+        _this_2.rightJoy2 = 3;
+        _this_2.keyMappings = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+        _this_2.xKey = 2;
+        _this_2.yKey = 3;
+        _this_2.aKey = 0;
+        _this_2.bKey = 1;
+        _this_2.LBKey = 4;
+        _this_2.LTKey = 6;
+        _this_2.RBKey = 5;
+        _this_2.RTKey = 7;
+        _this_2.backKey = 8;
+        _this_2.startKey = 9;
+        _this_2.leftJoyDownKey = 10;
+        _this_2.rightJoyDownKey = 11;
+        _this_2.joyDefValue = 0.003921627998352051;
+        _this_2.dirKeyMapping = {
             "1": 7, "-1": 8, "-0.7142857313156128": 9, "-0.4285714030265808": 6, "-0.1428571343421936": 3, "0.14285719394683838": 2, "0.4285714626312256": 1, "0.7142857313156128": 4
         };
-        _this_1.leftJoyPoint = new Point();
-        _this_1.rightJoyPoint = new Point();
-        _this_1.leftKeyDir = 0;
-        _this_1.buttons = [false, false, false, false, false, false, false, false, false, false, false, false];
-        _this_1.tempPoint = new Point();
-        _this_1.lastDir4Info = [
+        _this_2.leftJoyPoint = new Point();
+        _this_2.rightJoyPoint = new Point();
+        _this_2.leftKeyDir = 0;
+        _this_2.buttons = [false, false, false, false, false, false, false, false, false, false, false, false];
+        _this_2.tempPoint = new Point();
+        _this_2.lastDir4Info = [
             { lastMenuJoyTime: 0, lastMenuClick: null, lastJoy: [0, 0] },
             { lastMenuJoyTime: 0, lastMenuClick: null, lastJoy: [0, 0] }
         ];
-        _this_1.index = index;
-        os.add_ENTERFRAME(_this_1.update, _this_1);
-        return _this_1;
+        _this_2.index = index;
+        os.add_ENTERFRAME(_this_2.update, _this_2);
+        return _this_2;
     }
     GCGamepad.getPad = function (index) {
         var pad = GCGamepad.pads[index];

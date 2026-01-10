@@ -1,4 +1,3 @@
-var CustomCondition;
 (function (CustomCondition) {
     function f10(trigger, p) {
         if (p.type === 0)

@@ -1,4 +1,3 @@
-var CommandExecute;
 (function (CommandExecute) {
     function customCommand_15001(commandPage, cmd, trigger, triggerPlayer, playerInput, p) {
         if (p.local && p.local > 0) {

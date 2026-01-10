@@ -60,15 +60,15 @@ var Orzi_Tools;
             return key;
         };
         Language.prototype._getOriginText = function (value) {
-            var _this = this;
-            var _loop_1 = function (p) {
-                var key = Object.keys(this_1.packages[p]).find(function (c) { return _this.packages[p][c] === value || Language.clearSpan(_this.packages[p][c]) === value; });
+            var _this_2 = this;
+            var _loop_3 = function (p) {
+                var key = Object.keys(this_1.packages[p]).find(function (c) { return _this_2.packages[p][c] === value || Language.clearSpan(_this_2.packages[p][c]) === value; });
                 if (key)
                     return { value: key };
             };
             var this_1 = this;
             for (var p in this.packages) {
-                var state_1 = _loop_1(p);
+                var state_1 = _loop_3(p);
                 if (typeof state_1 === "object")
                     return state_1.value;
             }
@@ -150,53 +150,53 @@ var Orzi_Tools;
         Language.getPackages = function () {
         };
         Language.resetPackages = function () {
-            var _this = this;
+            var _this_2 = this;
             Language.instance.packages = {};
             WorldData.orzi_language_packages.forEach(function (v) {
                 var _b;
                 var languageName = (_b = GameData.getModuleData(Orzi_Tools.Language.PLUGIN_MODULE_TYPE_OrziLanguage, v)) === null || _b === void 0 ? void 0 : _b.name;
                 Language.instance.packages[languageName] = {};
-                FileUtils.exists(_this.path + languageName + '.json', Callback.New(function (is_exit) {
+                FileUtils.exists(_this_2.path + languageName + '.json', Callback.New(function (is_exit) {
                     if (is_exit) {
-                        AssetManager.loadJson(_this.path + languageName + '.json', Callback.New(function (data) {
+                        AssetManager.loadJson(_this_2.path + languageName + '.json', Callback.New(function (data) {
                             if (data)
                                 Language.instance.packages[languageName] = data;
-                            AssetManager.disposeJson(_this.path + languageName + '.json');
-                            FileUtils.exists(_this.path + languageName + '.csv', Callback.New(function (is_exit) {
+                            AssetManager.disposeJson(_this_2.path + languageName + '.json');
+                            FileUtils.exists(_this_2.path + languageName + '.csv', Callback.New(function (is_exit) {
                                 if (is_exit) {
-                                    AssetManager.loadText(_this.path + languageName + '.csv', Callback.New(function (csvData) {
+                                    AssetManager.loadText(_this_2.path + languageName + '.csv', Callback.New(function (csvData) {
                                         if (csvData)
                                             Language.instance.packages[languageName] = Object.assign(Language.instance.packages[languageName] || {}, Language.getCsvJson(csvData));
-                                        AssetManager.disposeText(_this.path + languageName + '.csv');
-                                    }, _this));
+                                        AssetManager.disposeText(_this_2.path + languageName + '.csv');
+                                    }, _this_2));
                                 }
-                            }, _this));
-                        }, _this));
+                            }, _this_2));
+                        }, _this_2));
                     }
                     else {
-                        FileUtils.exists(_this.path + languageName + '.csv', Callback.New(function (is_exit) {
+                        FileUtils.exists(_this_2.path + languageName + '.csv', Callback.New(function (is_exit) {
                             if (is_exit) {
-                                AssetManager.loadText(_this.path + languageName + '.csv', Callback.New(function (csvData) {
+                                AssetManager.loadText(_this_2.path + languageName + '.csv', Callback.New(function (csvData) {
                                     if (csvData)
                                         Language.instance.packages[languageName] = Language.getCsvJson(csvData);
-                                    AssetManager.disposeText(_this.path + languageName + '.csv');
-                                }, _this));
+                                    AssetManager.disposeText(_this_2.path + languageName + '.csv');
+                                }, _this_2));
                             }
-                        }, _this));
+                        }, _this_2));
                     }
-                }, _this));
+                }, _this_2));
             });
         };
         Language.getAllText = function (json, strs, isClearHTML) {
-            var _this = this;
+            var _this_2 = this;
             if (isClearHTML === void 0) { isClearHTML = false; }
             var isHasSpan = false;
             var matchVar = function (str) {
                 var _a = str.replace(/([\s\S]*?)\[(\@|\$)([\s\S]*?)\]/g, function (match, _p1, _p2, _p3) {
-                    strs.add(_this.ol2str(_p1));
+                    strs.add(_this_2.ol2str(_p1));
                     return '';
                 });
-                strs.add(_this.ol2str(_a));
+                strs.add(_this_2.ol2str(_a));
             };
             if (Array.isArray(json)) {
                 if (json.length === 8 && json[0] === 4 && typeof json[1] === 'string') {
@@ -227,10 +227,10 @@ var Orzi_Tools;
                 if (WorldData.orzi_language_isShowStatistics && this.checkHasSpan(json)) {
                     json.replace(/<span([\s\S]*?)>([\s\S]*?)<\/span>/g, function (match, p1, p2) {
                         var _a = p2.replace(/([\s\S]*?)\[(\@|\$)([\s\S]*?)\]/g, function (match, _p1, _p2, _p3) {
-                            Orzi_Tools.Statistics.text += _this.ol2str(_p1);
+                            Orzi_Tools.Statistics.text += _this_2.ol2str(_p1);
                             return '';
                         });
-                        Orzi_Tools.Statistics.text += _this.ol2str(_a);
+                        Orzi_Tools.Statistics.text += _this_2.ol2str(_a);
                         return '';
                     });
                 }
@@ -277,7 +277,7 @@ var Orzi_Tools;
             });
         };
         Language.backup = function () {
-            var _this = this;
+            var _this_2 = this;
             return new Promise(function (resolve, reject) {
                 var _num = 0;
                 var _date = new Date();
@@ -286,7 +286,7 @@ var Orzi_Tools;
                 for (var c in Language.instance.packages)
                     _num += 2;
                 FileUtils.createDirectoryForce(_backupPath, Callback.New(function (success, path) {
-                    var _loop_2 = function (c) {
+                    var _loop_4 = function (c) {
                         FileUtils.exists(Language.path + c + '.json', Callback.New(function (is_exit) {
                             if (is_exit) {
                                 FileUtils.cloneFile(Language.path + c + '.json', _backupPath + '/' + c + '.json', Callback.New(function (success, fromPath, toPath) {
@@ -294,12 +294,12 @@ var Orzi_Tools;
                                     _num--;
                                     if (_num <= 0)
                                         resolve(true);
-                                }, _this));
+                                }, _this_2));
                             }
                             _num--;
                             if (_num <= 0)
                                 resolve(true);
-                        }, _this));
+                        }, _this_2));
                         FileUtils.exists(Language.path + c + '.csv', Callback.New(function (is_exit) {
                             if (is_exit) {
                                 FileUtils.cloneFile(Language.path + c + '.csv', _backupPath + '/' + c + '.csv', Callback.New(function (success, fromPath, toPath) {
@@ -307,24 +307,24 @@ var Orzi_Tools;
                                     _num--;
                                     if (_num <= 0)
                                         resolve(true);
-                                }, _this));
+                                }, _this_2));
                             }
                             _num--;
                             if (_num <= 0)
                                 resolve(true);
-                        }, _this));
+                        }, _this_2));
                     };
                     for (var c in Language.instance.packages) {
-                        _loop_2(c);
+                        _loop_4(c);
                     }
-                }, _this));
+                }, _this_2));
             });
         };
         Language.save = function (_arr, type) {
-            var _this = this;
+            var _this_2 = this;
             if (type === void 0) { type = 0; }
             this.backup().then(function () {
-                var _loop_3 = function (c) {
+                var _loop_5 = function (c) {
                     if (c === '__evIdx2')
                         return "continue";
                     var _data = Language.instance.packages[c];
@@ -337,20 +337,20 @@ var Orzi_Tools;
                         var _text = '';
                         for (var k in _data) {
                             if (k)
-                                _text += _this.toCsvStr(k) + ',' + _this.toCsvStr(_data[k]) + "\n";
+                                _text += _this_2.toCsvStr(k) + ',' + _this_2.toCsvStr(_data[k]) + "\n";
                         }
                         FileUtils.save(_text, Language.path + c + '.csv', Callback.New(function () {
                             trace("orzi_language:" + c + ".csv is saved!");
-                        }, _this), false, false);
+                        }, _this_2), false, false);
                     }
                     else {
                         FileUtils.save(_data, Language.path + c + '.json', Callback.New(function () {
                             trace("orzi_language:" + c + ".json is saved!");
-                        }, _this), true);
+                        }, _this_2), true);
                     }
                 };
                 for (var c in Language.instance.packages) {
-                    _loop_3(c);
+                    _loop_5(c);
                 }
                 if (WorldData.orzi_language_isShowStatistics)
                     Orzi_Tools.Statistics.show();
@@ -451,7 +451,7 @@ var Orzi_Tools;
             return _arr;
         };
         Language.getAllTextAndSave = function (type, isClearHTML) {
-            var _this = this;
+            var _this_2 = this;
             if (type === void 0) { type = 0; }
             if (isClearHTML === void 0) { isClearHTML = false; }
             Orzi_Tools.Statistics.init();
@@ -469,7 +469,7 @@ var Orzi_Tools;
                             AssetManager.disposeJson(v.localPath);
                             if (_num <= 0)
                                 Orzi_Tools.Language.save(_arr, type);
-                        }, _this));
+                        }, _this_2));
                     }
                     else
                         _num--;
