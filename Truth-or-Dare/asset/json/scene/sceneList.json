@@ -1,8 +1,8 @@
 {
     "list": [
         null,
-        "新的场景1",
-        "聚会厅",
+        "临时场景",
+        "KVT室",
         null,
         null,
         null,
@@ -33,15 +33,14 @@
     "node": [
         {
             "id": 1,
-            "name": "新的场景1",
-            "children": [
-                {
-                    "id": 2,
-                    "name": "聚会厅",
-                    "children": []
-                }
-            ],
+            "name": "临时场景",
+            "children": [],
             "isOpen": true
+        },
+        {
+            "id": 2,
+            "name": "KVT室",
+            "children": []
         }
     ]
 }

@@ -1,6 +1,9 @@
 {
     "url": "asset/image/tile/autotiles/Surface_10.png",
-    "dataLayers": [],
+    "dataLayers": [
+        null,
+        1
+    ],
     "GCATMode": 0,
     "id": 10
 }

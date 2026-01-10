@@ -1557,13 +1557,14 @@
             ]
         ]
     ],
+    "TreeLayerMode": 0,
     "sceneObjects": [],
     "customCommandPages": [],
     "preLoadAssets": [],
     "serverInstanceClassName": "ServerScene",
     "clientInstanceClassName": "ProjectClientScene",
     "id": 1,
-    "name": "新的场景1",
+    "name": "临时场景",
     "width": 1632,
     "height": 912,
     "LayerDatas": [
