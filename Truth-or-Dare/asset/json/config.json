@@ -405,7 +405,7 @@
             "modelID": 1,
             "index": 0,
             "name": "玩家对象",
-            "x": 767,
+            "x": 859,
             "y": 583,
             "z": 0,
             "materialData": [
@@ -414,7 +414,7 @@
                 }
             ],
             "avatarID": 1,
-            "avatarOri": 8,
+            "avatarOri": 6,
             "avatarAct": 1,
             "avatarFPS": 12,
             "avatarFrame": 1,
