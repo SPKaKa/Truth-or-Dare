@@ -128,7 +128,46 @@
             ],
             "hideOriBox": null
         },
-        null,
+        {
+            "modelID": 1,
+            "index": 3,
+            "name": "演出-辣妹",
+            "x": 456,
+            "y": 312,
+            "z": 0,
+            "materialData": [
+                {
+                    "materials": []
+                }
+            ],
+            "avatarID": 2,
+            "avatarOri": 2,
+            "avatarAct": 1,
+            "avatarFPS": 12,
+            "avatarFrame": 1,
+            "avatarAlpha": 1,
+            "avatarHue": 0,
+            "shadowEnable": false,
+            "shadowWidth": 30,
+            "shadowHeight": 15,
+            "shadowAlpha": 0.5,
+            "displayList": {
+                "avatar": {
+                    "type": 1,
+                    "id": 2
+                }
+            },
+            "moduleDisplayList": [],
+            "layerLevel": 1,
+            "autoPlayEnable": true,
+            "scale": 1,
+            "showOnEditor": true,
+            "mouseEventEnabledInEditor": true,
+            "playerUID": 0,
+            "hasCommand": [],
+            "moduleIDs": [],
+            "hideOriBox": null
+        },
         {
             "modelID": 1,
             "index": 4,
@@ -168,7 +207,128 @@
             "hasCommand": [],
             "moduleIDs": [],
             "hideOriBox": null
-        }
+        },
+        {
+            "modelID": 1,
+            "index": 5,
+            "name": "演出-女主",
+            "x": 552,
+            "y": 312,
+            "z": 0,
+            "materialData": [
+                {
+                    "materials": []
+                }
+            ],
+            "avatarID": 4,
+            "avatarOri": 2,
+            "avatarAct": 1,
+            "avatarFPS": 12,
+            "avatarFrame": 1,
+            "avatarAlpha": 1,
+            "avatarHue": 0,
+            "shadowEnable": false,
+            "shadowWidth": 30,
+            "shadowHeight": 15,
+            "shadowAlpha": 0.5,
+            "displayList": {
+                "avatar": {
+                    "type": 1,
+                    "id": 4
+                }
+            },
+            "moduleDisplayList": [],
+            "layerLevel": 1,
+            "autoPlayEnable": true,
+            "scale": 1,
+            "showOnEditor": true,
+            "mouseEventEnabledInEditor": true,
+            "playerUID": 0,
+            "hasCommand": [],
+            "moduleIDs": [],
+            "hideOriBox": null
+        },
+        {
+            "modelID": 1,
+            "index": 6,
+            "name": "手机-演出用",
+            "x": 454,
+            "y": 390,
+            "z": 0,
+            "materialData": [
+                {
+                    "materials": []
+                }
+            ],
+            "avatarID": 12002,
+            "avatarOri": 2,
+            "avatarAct": 1,
+            "avatarFPS": 12,
+            "avatarFrame": 1,
+            "avatarAlpha": 1,
+            "avatarHue": 0,
+            "shadowEnable": false,
+            "shadowWidth": 30,
+            "shadowHeight": 15,
+            "shadowAlpha": 0.5,
+            "displayList": {
+                "avatar": {
+                    "type": 1,
+                    "id": 12002
+                }
+            },
+            "moduleDisplayList": [],
+            "layerLevel": 1,
+            "autoPlayEnable": true,
+            "scale": 1,
+            "showOnEditor": true,
+            "mouseEventEnabledInEditor": true,
+            "playerUID": 0,
+            "hasCommand": [],
+            "moduleIDs": [],
+            "hideOriBox": null
+        },
+        {
+            "modelID": 1,
+            "index": 7,
+            "name": "演出-黄毛",
+            "x": 504,
+            "y": 312,
+            "z": 0,
+            "materialData": [
+                {
+                    "materials": []
+                }
+            ],
+            "avatarID": 3,
+            "avatarOri": 2,
+            "avatarAct": 1,
+            "avatarFPS": 12,
+            "avatarFrame": 1,
+            "avatarAlpha": 1,
+            "avatarHue": 0,
+            "shadowEnable": false,
+            "shadowWidth": 30,
+            "shadowHeight": 15,
+            "shadowAlpha": 0.5,
+            "displayList": {
+                "avatar": {
+                    "type": 1,
+                    "id": 3
+                }
+            },
+            "moduleDisplayList": [],
+            "layerLevel": 1,
+            "autoPlayEnable": true,
+            "scale": 1,
+            "showOnEditor": true,
+            "mouseEventEnabledInEditor": true,
+            "playerUID": 0,
+            "hasCommand": [],
+            "moduleIDs": [],
+            "hideOriBox": null
+        },
+        null
     ],
     "customCommands": [
         [
@@ -185,6 +345,620 @@
                 -1,
                 {
                     "___cmdID": "210640110494_0.33265143795467367"
+                }
+            ],
+            [
+                18,
+                "===DEBUG用，快速进入事件===",
+                {
+                    "___cmdID": "210675105725_0.38172904881684544"
+                }
+            ],
+            [
+                13,
+                3,
+                2,
+                0,
+                0,
+                3,
+                1,
+                1,
+                [
+                    0,
+                    100
+                ],
+                0,
+                -1,
+                [],
+                0,
+                0,
+                0,
+                null,
+                null,
+                null,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                {
+                    "___cmdID": "210675098701_0.24973262367735116"
+                }
+            ],
+            [
+                18,
+                "===DEBUG用 END===",
+                {
+                    "___cmdID": "210675122396_0.5515052201420609"
+                }
+            ],
+            [
+                0,
+                0,
+                2,
+                [
+                    0,
+                    1,
+                    2,
+                    0
+                ],
+                0,
+                0,
+                [
+                    3,
+                    1,
+                    1,
+                    0
+                ],
+                0,
+                [
+                    1,
+                    1,
+                    [
+                        0,
+                        0,
+                        1,
+                        1
+                    ]
+                ],
+                0,
+                0,
+                [
+                    1,
+                    1
+                ],
+                "",
+                "",
+                false,
+                null,
+                null,
+                null,
+                null,
+                0,
+                null,
+                0,
+                0,
+                [
+                    0,
+                    {},
+                    ""
+                ],
+                [
+                    0,
+                    {},
+                    ""
+                ],
+                {
+                    "___cmdID": "210673650925_0.2023665057923636"
+                }
+            ],
+            [
+                32,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                -1,
+                {
+                    "___cmdID": "210673749845_0.36628379759900653"
+                }
+            ],
+            [
+                17,
+                30,
+                0,
+                false,
+                0,
+                {
+                    "___cmdID": "210673749845_0.9993274814523978"
+                }
+            ],
+            [
+                13,
+                3,
+                2,
+                0,
+                0,
+                100,
+                1,
+                1,
+                [
+                    0,
+                    100
+                ],
+                0,
+                -1,
+                [],
+                0,
+                0,
+                0,
+                null,
+                null,
+                null,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                {
+                    "___cmdID": "210673885205_0.3581240252710003"
+                }
+            ],
+            [
+                13,
+                3,
+                3,
+                0,
+                0,
+                1,
+                1,
+                1,
+                [
+                    0,
+                    100
+                ],
+                0,
+                -1,
+                [],
+                0,
+                0,
+                0,
+                null,
+                null,
+                null,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                {
+                    "___cmdID": "210673878424_0.29055472716860065"
+                }
+            ],
+            [
+                16,
+                3,
+                false,
+                null,
+                0,
+                {
+                    "mode": 0,
+                    "value": 1
+                },
+                {
+                    "___cmdID": "210673847020_0.22359171138884304"
+                }
+            ],
+            [
+                16,
+                6,
+                false,
+                null,
+                0,
+                {
+                    "mode": 0,
+                    "value": 1
+                },
+                {
+                    "___cmdID": "210673834598_0.5808643521701198"
+                }
+            ],
+            [
+                22,
+                -2,
+                0,
+                [
+                    [
+                        14,
+                        0,
+                        8,
+                        6,
+                        0,
+                        0,
+                        true,
+                        false,
+                        0,
+                        true
+                    ],
+                    [
+                        16
+                    ]
+                ],
+                true,
+                1,
+                false,
+                1,
+                {
+                    "___cmdID": "210673749845_0.5772721064872754"
+                }
+            ],
+            [
+                17,
+                60,
+                0,
+                false,
+                0,
+                {
+                    "___cmdID": "210673749845_0.9275099467059154"
+                }
+            ],
+            [
+                32,
+                0,
+                0,
+                0,
+                0,
+                60,
+                0.7,
+                0.5,
+                0.5,
+                -1,
+                {
+                    "___cmdID": "210673749845_0.0921925131465029"
+                }
+            ],
+            [
+                11,
+                1,
+                null,
+                "",
+                3,
+                -3,
+                "<span style='color:#FfFffF'>辣妹玩手机，说要再喊一个人来。</span>",
+                null,
+                1,
+                0,
+                null,
+                {
+                    "id": 1,
+                    "atts": [],
+                    "time": 60,
+                    "transitionMode": null,
+                    "nonTweenType": 0,
+                    "mode": 0
+                },
+                {
+                    "___cmdID": "210673927363_0.6032283224784218"
+                }
+            ],
+            [
+                13,
+                3,
+                3,
+                0,
+                0,
+                2,
+                1,
+                1,
+                [
+                    0,
+                    100
+                ],
+                0,
+                -1,
+                [],
+                0,
+                0,
+                0,
+                null,
+                null,
+                null,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                {
+                    "___cmdID": "210674384036_0.5515221890898605"
+                }
+            ],
+            [
+                11,
+                1,
+                null,
+                "",
+                3,
+                -3,
+                "<span style='color:#FfFffF'>主角说没关系。</span>",
+                null,
+                1,
+                0,
+                null,
+                {
+                    "id": 1,
+                    "atts": [],
+                    "time": 60,
+                    "transitionMode": null,
+                    "nonTweenType": 0,
+                    "mode": 0
+                },
+                {
+                    "___cmdID": "210674389125_0.5755784834266935"
+                }
+            ],
+            [
+                13,
+                3,
+                4,
+                0,
+                0,
+                1,
+                1,
+                1,
+                [
+                    0,
+                    100
+                ],
+                0,
+                -1,
+                [],
+                0,
+                0,
+                0,
+                null,
+                null,
+                null,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                {
+                    "___cmdID": "210675467500_0.036263713677922915"
+                }
+            ],
+            [
+                13,
+                3,
+                3,
+                0,
+                0,
+                3,
+                1,
+                1,
+                [
+                    0,
+                    100
+                ],
+                0,
+                -1,
+                [],
+                0,
+                0,
+                0,
+                null,
+                null,
+                null,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                {
+                    "___cmdID": "210675229452_0.47801711058541274"
+                }
+            ],
+            [
+                13,
+                4,
+                2001,
+                0,
+                0,
+                1,
+                1,
+                1,
+                [
+                    0,
+                    100
+                ],
+                0,
+                -1,
+                [],
+                0,
+                0,
+                0,
+                null,
+                null,
+                null,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                {
+                    "___cmdID": "210675240627_0.7205873348231622"
+                }
+            ],
+            [
+                11,
+                1,
+                null,
+                "",
+                3,
+                -3,
+                "<span style='color:#FfFffF'>黄毛来了</span>",
+                null,
+                1,
+                0,
+                null,
+                {
+                    "id": 1,
+                    "atts": [],
+                    "time": 60,
+                    "transitionMode": null,
+                    "nonTweenType": 0,
+                    "mode": 0
+                },
+                {
+                    "___cmdID": "210674811791_0.8683839131063182"
+                }
+            ],
+            [
+                11,
+                1,
+                null,
+                "",
+                3,
+                -3,
+                "<span style='color:#FfFffF'>让主角打扫</span>",
+                null,
+                1,
+                0,
+                null,
+                {
+                    "id": 1,
+                    "atts": [],
+                    "time": 60,
+                    "transitionMode": null,
+                    "nonTweenType": 0,
+                    "mode": 0
+                },
+                {
+                    "___cmdID": "210674444028_0.2765599339933258"
+                }
+            ],
+            [
+                13,
+                3,
+                4,
+                0,
+                0,
+                2,
+                1,
+                1,
+                [
+                    0,
+                    100
+                ],
+                0,
+                -1,
+                [],
+                0,
+                0,
+                0,
+                null,
+                null,
+                null,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                {
+                    "___cmdID": "210675478935_0.6591822446137519"
+                }
+            ],
+            [
+                13,
+                3,
+                3,
+                0,
+                0,
+                4,
+                1,
+                1,
+                [
+                    0,
+                    100
+                ],
+                0,
+                -1,
+                [],
+                0,
+                0,
+                0,
+                null,
+                null,
+                null,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                {
+                    "___cmdID": "210674821827_0.8832719063683743"
+                }
+            ],
+            [
+                18,
+                "===做出类似else if的效果===",
+                {
+                    "___cmdID": "210673752437_0.28566856211866765"
+                }
+            ],
+            [
+                9,
+                "结束",
+                {
+                    "___cmdID": "210673752437_0.5039210482928114"
+                }
+            ],
+            [
+                -1,
+                {
+                    "___cmdID": "210673650925_0.6351988488294247"
+                }
+            ],
+            [
+                2,
+                {
+                    "___cmdID": "210673650925_0.45916330596324917"
+                }
+            ],
+            [
+                18,
+                "===做出类似else if的效果===",
+                {
+                    "___cmdID": "210673650925_0.763446320306914"
+                }
+            ],
+            [
+                8,
+                "结束",
+                {
+                    "___cmdID": "210673650924_0.30339990926224614"
                 }
             ],
             [
@@ -442,7 +1216,6 @@
                 "copy": false
             }
         },
-        null,
         {
             "selectEnabled": {
                 "varType": 2,
@@ -524,7 +1297,336 @@
                 "value": 0,
                 "copy": false
             }
-        }
+        },
+        {
+            "selectEnabled": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "through": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "bridge": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "fixOri": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "ignoreCantMove": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "moveAutoChangeAction": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "lockBehaviorLayer": {
+                "varType": 0,
+                "value": 0,
+                "copy": false
+            },
+            "keepMoveActWhenCollsionObstacleAndIgnoreCantMove": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "behaviorDir4": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "repeatedTouchEnabled": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "onlyPlayerTouch": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "waitTouchEvent": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "clickEventNoDistance": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "moveSpeed": {
+                "varType": 0,
+                "value": 150,
+                "copy": false
+            },
+            "defBehavior": {
+                "varType": 1,
+                "value": "",
+                "copy": false
+            },
+            "collisionGroup": {
+                "varType": 0,
+                "value": 0,
+                "copy": false
+            }
+        },
+        {
+            "selectEnabled": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "through": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "bridge": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "fixOri": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "ignoreCantMove": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "moveAutoChangeAction": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "lockBehaviorLayer": {
+                "varType": 0,
+                "value": 0,
+                "copy": false
+            },
+            "keepMoveActWhenCollsionObstacleAndIgnoreCantMove": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "behaviorDir4": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "repeatedTouchEnabled": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "onlyPlayerTouch": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "waitTouchEvent": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "clickEventNoDistance": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "moveSpeed": {
+                "varType": 0,
+                "value": 150,
+                "copy": false
+            },
+            "defBehavior": {
+                "varType": 1,
+                "value": "",
+                "copy": false
+            },
+            "collisionGroup": {
+                "varType": 0,
+                "value": 0,
+                "copy": false
+            }
+        },
+        {
+            "selectEnabled": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "through": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "bridge": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "fixOri": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "ignoreCantMove": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "moveAutoChangeAction": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "lockBehaviorLayer": {
+                "varType": 0,
+                "value": 0,
+                "copy": false
+            },
+            "keepMoveActWhenCollsionObstacleAndIgnoreCantMove": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "behaviorDir4": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "repeatedTouchEnabled": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "onlyPlayerTouch": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "waitTouchEvent": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "clickEventNoDistance": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "moveSpeed": {
+                "varType": 0,
+                "value": 150,
+                "copy": false
+            },
+            "defBehavior": {
+                "varType": 1,
+                "value": "",
+                "copy": false
+            },
+            "collisionGroup": {
+                "varType": 0,
+                "value": 0,
+                "copy": false
+            }
+        },
+        {
+            "selectEnabled": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "through": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "bridge": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "fixOri": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "ignoreCantMove": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "moveAutoChangeAction": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "lockBehaviorLayer": {
+                "varType": 0,
+                "value": 0,
+                "copy": false
+            },
+            "keepMoveActWhenCollsionObstacleAndIgnoreCantMove": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "behaviorDir4": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "repeatedTouchEnabled": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "onlyPlayerTouch": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "waitTouchEvent": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "clickEventNoDistance": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "moveSpeed": {
+                "varType": 0,
+                "value": 150,
+                "copy": false
+            },
+            "defBehavior": {
+                "varType": 1,
+                "value": "",
+                "copy": false
+            },
+            "collisionGroup": {
+                "varType": 0,
+                "value": 0,
+                "copy": false
+            }
+        },
+        null
     ],
     "modulesCustomAttributes": [
         [],
@@ -546,7 +1648,11 @@
                 }
             }
         ],
-        null,
+        [],
+        [],
+        [],
+        [],
+        [],
         []
     ],
     "customAttributesCaches": [],
@@ -620,7 +1726,6 @@
                 []
             ]
         },
-        null,
         {
             "condition": [],
             "customCommands": [
@@ -630,13 +1735,75 @@
                 [],
                 []
             ]
-        }
+        },
+        {
+            "condition": [],
+            "customCommands": [
+                [],
+                [],
+                [],
+                [],
+                []
+            ]
+        },
+        {
+            "condition": [],
+            "customCommands": [
+                [],
+                [],
+                [],
+                [],
+                []
+            ]
+        },
+        {
+            "condition": [
+                {
+                    "type": 1,
+                    "varID": 4,
+                    "compare": 0,
+                    "value": 1
+                }
+            ],
+            "customCommands": [
+                [
+                    [
+                        -1,
+                        {
+                            "___cmdID": "210674794487_0.31494547859736555"
+                        }
+                    ]
+                ],
+                [],
+                [],
+                [],
+                []
+            ]
+        },
+        {
+            "condition": [
+                {
+                    "type": 0,
+                    "varID": 2001,
+                    "compare": 1,
+                    "value": 1
+                }
+            ],
+            "customCommands": [
+                [],
+                [],
+                [],
+                [],
+                []
+            ]
+        },
+        null
     ],
     "statusPages": [
         [],
         [],
         [],
-        null,
+        [],
         [
             {
                 "so": {
@@ -771,8 +1938,415 @@
                 },
                 "modulesCustomAttribute": []
             }
-        ]
+        ],
+        [],
+        [
+            {
+                "so": {
+                    "modelID": 1,
+                    "index": 6,
+                    "name": "手机-演出用",
+                    "x": 312,
+                    "y": 264,
+                    "z": 0,
+                    "materialData": [
+                        {
+                            "materials": []
+                        }
+                    ],
+                    "avatarID": 12003,
+                    "avatarOri": 2,
+                    "avatarAct": 1,
+                    "avatarFPS": 12,
+                    "avatarFrame": 1,
+                    "avatarAlpha": 1,
+                    "avatarHue": 0,
+                    "shadowEnable": false,
+                    "shadowWidth": 30,
+                    "shadowHeight": 15,
+                    "shadowAlpha": 0.5,
+                    "displayList": {
+                        "avatar": {
+                            "type": 1,
+                            "id": 12002
+                        }
+                    },
+                    "moduleDisplayList": [],
+                    "layerLevel": 1,
+                    "autoPlayEnable": true,
+                    "scale": 1,
+                    "showOnEditor": true,
+                    "mouseEventEnabledInEditor": true,
+                    "playerUID": 0,
+                    "hasCommand": [],
+                    "moduleIDs": [],
+                    "hideOriBox": null
+                },
+                "customAttribute": {
+                    "selectEnabled": {
+                        "varType": 2,
+                        "value": false,
+                        "copy": false
+                    },
+                    "through": {
+                        "varType": 2,
+                        "value": false,
+                        "copy": false
+                    },
+                    "bridge": {
+                        "varType": 2,
+                        "value": false,
+                        "copy": false
+                    },
+                    "fixOri": {
+                        "varType": 2,
+                        "value": false,
+                        "copy": false
+                    },
+                    "ignoreCantMove": {
+                        "varType": 2,
+                        "value": false,
+                        "copy": false
+                    },
+                    "moveAutoChangeAction": {
+                        "varType": 2,
+                        "value": true,
+                        "copy": false
+                    },
+                    "lockBehaviorLayer": {
+                        "varType": 0,
+                        "value": 0,
+                        "copy": false
+                    },
+                    "keepMoveActWhenCollsionObstacleAndIgnoreCantMove": {
+                        "varType": 2,
+                        "value": false,
+                        "copy": false
+                    },
+                    "behaviorDir4": {
+                        "varType": 2,
+                        "value": false,
+                        "copy": false
+                    },
+                    "repeatedTouchEnabled": {
+                        "varType": 2,
+                        "value": false,
+                        "copy": false
+                    },
+                    "onlyPlayerTouch": {
+                        "varType": 2,
+                        "value": true,
+                        "copy": false
+                    },
+                    "waitTouchEvent": {
+                        "varType": 2,
+                        "value": true,
+                        "copy": false
+                    },
+                    "clickEventNoDistance": {
+                        "varType": 2,
+                        "value": false,
+                        "copy": false
+                    },
+                    "moveSpeed": {
+                        "varType": 0,
+                        "value": 150,
+                        "copy": false
+                    },
+                    "defBehavior": {
+                        "varType": 1,
+                        "value": "",
+                        "copy": false
+                    },
+                    "collisionGroup": {
+                        "varType": 0,
+                        "value": 0,
+                        "copy": false
+                    }
+                },
+                "event": {
+                    "condition": [
+                        {
+                            "type": 1,
+                            "varID": 4,
+                            "compare": 0,
+                            "value": 2
+                        }
+                    ],
+                    "customCommands": [
+                        [
+                            [
+                                11,
+                                1,
+                                null,
+                                "",
+                                3,
+                                -3,
+                                "<span style='color:#FfFffF'>看了辣妹手机，看到正在放一首很久以前的动画歌曲。</span>",
+                                null,
+                                1,
+                                0,
+                                null,
+                                {
+                                    "id": 1,
+                                    "atts": [],
+                                    "time": 60,
+                                    "transitionMode": null,
+                                    "nonTweenType": 0,
+                                    "mode": 0
+                                },
+                                {
+                                    "___cmdID": "210674641556_0.6501264093748624"
+                                }
+                            ],
+                            [
+                                11,
+                                1,
+                                null,
+                                "",
+                                3,
+                                -3,
+                                "<span style='color:#FfFffF'>并且看到一个未读信息，内容是去里面的KTV。</span>",
+                                null,
+                                1,
+                                0,
+                                null,
+                                {
+                                    "id": 1,
+                                    "atts": [],
+                                    "time": 60,
+                                    "transitionMode": null,
+                                    "nonTweenType": 0,
+                                    "mode": 0
+                                },
+                                {
+                                    "___cmdID": "210674610252_0.9988990583174633"
+                                }
+                            ],
+                            [
+                                11,
+                                1,
+                                null,
+                                "",
+                                3,
+                                -3,
+                                "<span style='color:#FfFffF'>辣妹抱怨，不要看她手机。</span>",
+                                null,
+                                1,
+                                0,
+                                null,
+                                {
+                                    "id": 1,
+                                    "atts": [],
+                                    "time": 60,
+                                    "transitionMode": null,
+                                    "nonTweenType": 0,
+                                    "mode": 0
+                                },
+                                {
+                                    "___cmdID": "210674676236_0.8908830283204254"
+                                }
+                            ],
+                            [
+                                13,
+                                3,
+                                4,
+                                0,
+                                0,
+                                0,
+                                1,
+                                1,
+                                [
+                                    0,
+                                    100
+                                ],
+                                0,
+                                -1,
+                                [],
+                                0,
+                                0,
+                                0,
+                                null,
+                                null,
+                                null,
+                                0,
+                                0,
+                                0,
+                                1,
+                                1,
+                                1,
+                                0,
+                                {
+                                    "___cmdID": "210675402755_0.6526893983071964"
+                                }
+                            ],
+                            [
+                                -1,
+                                {
+                                    "___cmdID": "210674408443_0.059498846111502246"
+                                }
+                            ]
+                        ],
+                        [],
+                        [],
+                        [],
+                        []
+                    ]
+                },
+                "modulesCustomAttribute": []
+            },
+            {
+                "so": {
+                    "modelID": 1,
+                    "index": 0,
+                    "name": "手机-演出用",
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "materialData": [
+                        {
+                            "materials": []
+                        }
+                    ],
+                    "avatarID": 0,
+                    "avatarOri": 2,
+                    "avatarAct": 1,
+                    "avatarFPS": 12,
+                    "avatarFrame": 1,
+                    "avatarAlpha": 1,
+                    "avatarHue": 0,
+                    "shadowEnable": false,
+                    "shadowWidth": 30,
+                    "shadowHeight": 15,
+                    "shadowAlpha": 0.5,
+                    "displayList": {
+                        "avatar": {
+                            "type": 1
+                        }
+                    },
+                    "moduleDisplayList": [],
+                    "layerLevel": 1,
+                    "autoPlayEnable": true,
+                    "scale": 1,
+                    "showOnEditor": true,
+                    "mouseEventEnabledInEditor": true,
+                    "playerUID": 0,
+                    "hasCommand": [],
+                    "moduleIDs": []
+                },
+                "customAttribute": {
+                    "selectEnabled": {
+                        "varType": 2,
+                        "value": false,
+                        "copy": false
+                    },
+                    "through": {
+                        "varType": 2,
+                        "value": false,
+                        "copy": false
+                    },
+                    "bridge": {
+                        "varType": 2,
+                        "value": false,
+                        "copy": false
+                    },
+                    "fixOri": {
+                        "varType": 2,
+                        "value": false,
+                        "copy": false
+                    },
+                    "ignoreCantMove": {
+                        "varType": 2,
+                        "value": false,
+                        "copy": false
+                    },
+                    "moveAutoChangeAction": {
+                        "varType": 2,
+                        "value": true,
+                        "copy": false
+                    },
+                    "lockBehaviorLayer": {
+                        "varType": 0,
+                        "value": 0,
+                        "copy": false
+                    },
+                    "keepMoveActWhenCollsionObstacleAndIgnoreCantMove": {
+                        "varType": 2,
+                        "value": false,
+                        "copy": false
+                    },
+                    "behaviorDir4": {
+                        "varType": 2,
+                        "value": false,
+                        "copy": false
+                    },
+                    "repeatedTouchEnabled": {
+                        "varType": 2,
+                        "value": false,
+                        "copy": false
+                    },
+                    "onlyPlayerTouch": {
+                        "varType": 2,
+                        "value": true,
+                        "copy": false
+                    },
+                    "waitTouchEvent": {
+                        "varType": 2,
+                        "value": true,
+                        "copy": false
+                    },
+                    "clickEventNoDistance": {
+                        "varType": 2,
+                        "value": false,
+                        "copy": false
+                    },
+                    "moveSpeed": {
+                        "varType": 0,
+                        "value": 150,
+                        "copy": false
+                    },
+                    "defBehavior": {
+                        "varType": 1,
+                        "value": "",
+                        "copy": false
+                    },
+                    "collisionGroup": {
+                        "varType": 0,
+                        "value": 0,
+                        "copy": false
+                    }
+                },
+                "event": {
+                    "condition": [
+                        {
+                            "type": 1,
+                            "varID": 4,
+                            "compare": 0,
+                            "value": 0
+                        }
+                    ],
+                    "customCommands": [
+                        [],
+                        [],
+                        [],
+                        [],
+                        []
+                    ]
+                },
+                "modulesCustomAttribute": []
+            }
+        ],
+        [],
+        null
     ],
-    "statusPagesSelectedIndexs": [],
+    "statusPagesSelectedIndexs": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        0
+    ],
     "id": 4
 }
