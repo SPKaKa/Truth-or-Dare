@@ -400,13 +400,13 @@
         }
     ],
     "BORN": {
-        "sceneID": 3,
+        "sceneID": 4,
         "so": {
             "modelID": 1,
-            "index": 0,
+            "index": 3,
             "name": "玩家对象",
-            "x": 859,
-            "y": 583,
+            "x": 648,
+            "y": 408,
             "z": 0,
             "materialData": [
                 {
@@ -430,7 +430,9 @@
                     "id": 0
                 }
             },
-            "moduleDisplayList": [],
+            "moduleDisplayList": [
+                {}
+            ],
             "layerLevel": 1,
             "autoPlayEnable": true,
             "scale": 1,
@@ -438,7 +440,9 @@
             "mouseEventEnabledInEditor": true,
             "playerUID": 0,
             "hasCommand": [],
-            "moduleIDs": [],
+            "moduleIDs": [
+                7
+            ],
             "hideOriBox": null
         },
         "event": {
@@ -529,7 +533,30 @@
                 "copy": false
             }
         },
-        "bornModulesCustomAttribute": []
+        "bornModulesCustomAttribute": [
+            {
+                "ModuleActive": {
+                    "varType": 2,
+                    "value": true,
+                    "copy": false
+                },
+                "OverrideSEsetting": {
+                    "varType": 9,
+                    "value": [],
+                    "copy": false
+                },
+                "bOverrideDefault": {
+                    "varType": 2,
+                    "value": false,
+                    "copy": false
+                },
+                "OverrideDefaultSE": {
+                    "varType": 1,
+                    "value": "",
+                    "copy": false
+                }
+            }
+        ]
     },
     "WHEN_NO_SCENE": {
         "sceneID": 1,

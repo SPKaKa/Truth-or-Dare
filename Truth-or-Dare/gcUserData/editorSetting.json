@@ -17,14 +17,14 @@
         "scriptSystem": true,
         "mainArea": 0,
         "sceneState": {
-            "lastSceneMapID": 3,
-            "lastSceneElementIndex": 0,
+            "lastSceneMapID": 4,
+            "lastSceneElementIndex": 1,
             "lastSceneElementSelectedIndex": 0,
             "lastSceneElementBlockset": true
         },
         "viewState": {
-            "showGrid": false,
-            "alignGrid": false,
+            "showGrid": true,
+            "alignGrid": true,
             "dimLayer": 1,
             "render": true,
             "dataGridShow": [

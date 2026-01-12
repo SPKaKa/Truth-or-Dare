@@ -1,6 +1,6 @@
 {
     "picUrls": [
-        "editorAsset/img/empty.png"
+        "asset/image/animation/FD/!Flame.png"
     ],
     "oriMode": 4,
     "autoFlip": true,
@@ -13,13 +13,407 @@
         {
             "id": 0,
             "showOnEditor": true,
-            "mouseEventEnabledInEditor": true
+            "mouseEventEnabledInEditor": true,
+            "__partImgIndex": 0
         }
     ],
     "actionListArr": [
         {
             "id": 1,
-            "frameImageInfo": []
+            "frameImageInfo": [
+                [
+                    {
+                        "picUrlIndex": 0,
+                        "rect": [
+                            -336,
+                            -192,
+                            48,
+                            48
+                        ],
+                        "x": -24,
+                        "y": -48,
+                        "width": 48,
+                        "height": 48,
+                        "rotation": 0,
+                        "alpha": 1,
+                        "hue": 0,
+                        "blur": 0,
+                        "tonal_r": 0,
+                        "tonal_g": 0,
+                        "tonal_b": 0,
+                        "tonal_gray": 0,
+                        "tonal_mr": 1,
+                        "tonal_mg": 1,
+                        "tonal_mb": 1
+                    },
+                    {
+                        "picUrlIndex": 0,
+                        "rect": [
+                            -336,
+                            -240,
+                            48,
+                            48
+                        ],
+                        "x": -24,
+                        "y": -48,
+                        "width": 48,
+                        "height": 48,
+                        "rotation": 0,
+                        "alpha": 1,
+                        "hue": 0,
+                        "blur": 0,
+                        "tonal_r": 0,
+                        "tonal_g": 0,
+                        "tonal_b": 0,
+                        "tonal_gray": 0,
+                        "tonal_mr": 1,
+                        "tonal_mg": 1,
+                        "tonal_mb": 1
+                    },
+                    {
+                        "picUrlIndex": 0,
+                        "rect": [
+                            -336,
+                            -288,
+                            48,
+                            48
+                        ],
+                        "x": -24,
+                        "y": -48,
+                        "width": 48,
+                        "height": 48,
+                        "rotation": 0,
+                        "alpha": 1,
+                        "hue": 0,
+                        "blur": 0,
+                        "tonal_r": 0,
+                        "tonal_g": 0,
+                        "tonal_b": 0,
+                        "tonal_gray": 0,
+                        "tonal_mr": 1,
+                        "tonal_mg": 1,
+                        "tonal_mb": 1
+                    },
+                    {
+                        "picUrlIndex": 0,
+                        "rect": [
+                            -336,
+                            -336,
+                            48,
+                            48
+                        ],
+                        "x": -24,
+                        "y": -48,
+                        "width": 48,
+                        "height": 48,
+                        "rotation": 0,
+                        "alpha": 1,
+                        "hue": 0,
+                        "blur": 0,
+                        "tonal_r": 0,
+                        "tonal_g": 0,
+                        "tonal_b": 0,
+                        "tonal_gray": 0,
+                        "tonal_mr": 1,
+                        "tonal_mg": 1,
+                        "tonal_mb": 1
+                    }
+                ],
+                [
+                    {
+                        "picUrlIndex": 0,
+                        "rect": [
+                            -336,
+                            -192,
+                            48,
+                            48
+                        ],
+                        "x": -24,
+                        "y": -48,
+                        "width": 48,
+                        "height": 48,
+                        "rotation": 0,
+                        "alpha": 1,
+                        "hue": 0,
+                        "blur": 0,
+                        "tonal_r": 0,
+                        "tonal_g": 0,
+                        "tonal_b": 0,
+                        "tonal_gray": 0,
+                        "tonal_mr": 1,
+                        "tonal_mg": 1,
+                        "tonal_mb": 1
+                    },
+                    {
+                        "picUrlIndex": 0,
+                        "rect": [
+                            -336,
+                            -240,
+                            48,
+                            48
+                        ],
+                        "x": -24,
+                        "y": -48,
+                        "width": 48,
+                        "height": 48,
+                        "rotation": 0,
+                        "alpha": 1,
+                        "hue": 0,
+                        "blur": 0,
+                        "tonal_r": 0,
+                        "tonal_g": 0,
+                        "tonal_b": 0,
+                        "tonal_gray": 0,
+                        "tonal_mr": 1,
+                        "tonal_mg": 1,
+                        "tonal_mb": 1
+                    },
+                    {
+                        "picUrlIndex": 0,
+                        "rect": [
+                            -336,
+                            -288,
+                            48,
+                            48
+                        ],
+                        "x": -24,
+                        "y": -48,
+                        "width": 48,
+                        "height": 48,
+                        "rotation": 0,
+                        "alpha": 1,
+                        "hue": 0,
+                        "blur": 0,
+                        "tonal_r": 0,
+                        "tonal_g": 0,
+                        "tonal_b": 0,
+                        "tonal_gray": 0,
+                        "tonal_mr": 1,
+                        "tonal_mg": 1,
+                        "tonal_mb": 1
+                    },
+                    {
+                        "picUrlIndex": 0,
+                        "rect": [
+                            -336,
+                            -336,
+                            48,
+                            48
+                        ],
+                        "x": -24,
+                        "y": -48,
+                        "width": 48,
+                        "height": 48,
+                        "rotation": 0,
+                        "alpha": 1,
+                        "hue": 0,
+                        "blur": 0,
+                        "tonal_r": 0,
+                        "tonal_g": 0,
+                        "tonal_b": 0,
+                        "tonal_gray": 0,
+                        "tonal_mr": 1,
+                        "tonal_mg": 1,
+                        "tonal_mb": 1
+                    }
+                ],
+                [
+                    {
+                        "picUrlIndex": 0,
+                        "rect": [
+                            -336,
+                            -192,
+                            48,
+                            48
+                        ],
+                        "x": -24,
+                        "y": -48,
+                        "width": 48,
+                        "height": 48,
+                        "rotation": 0,
+                        "alpha": 1,
+                        "hue": 0,
+                        "blur": 0,
+                        "tonal_r": 0,
+                        "tonal_g": 0,
+                        "tonal_b": 0,
+                        "tonal_gray": 0,
+                        "tonal_mr": 1,
+                        "tonal_mg": 1,
+                        "tonal_mb": 1
+                    },
+                    {
+                        "picUrlIndex": 0,
+                        "rect": [
+                            -336,
+                            -240,
+                            48,
+                            48
+                        ],
+                        "x": -24,
+                        "y": -48,
+                        "width": 48,
+                        "height": 48,
+                        "rotation": 0,
+                        "alpha": 1,
+                        "hue": 0,
+                        "blur": 0,
+                        "tonal_r": 0,
+                        "tonal_g": 0,
+                        "tonal_b": 0,
+                        "tonal_gray": 0,
+                        "tonal_mr": 1,
+                        "tonal_mg": 1,
+                        "tonal_mb": 1
+                    },
+                    {
+                        "picUrlIndex": 0,
+                        "rect": [
+                            -336,
+                            -288,
+                            48,
+                            48
+                        ],
+                        "x": -24,
+                        "y": -48,
+                        "width": 48,
+                        "height": 48,
+                        "rotation": 0,
+                        "alpha": 1,
+                        "hue": 0,
+                        "blur": 0,
+                        "tonal_r": 0,
+                        "tonal_g": 0,
+                        "tonal_b": 0,
+                        "tonal_gray": 0,
+                        "tonal_mr": 1,
+                        "tonal_mg": 1,
+                        "tonal_mb": 1
+                    },
+                    {
+                        "picUrlIndex": 0,
+                        "rect": [
+                            -336,
+                            -336,
+                            48,
+                            48
+                        ],
+                        "x": -24,
+                        "y": -48,
+                        "width": 48,
+                        "height": 48,
+                        "rotation": 0,
+                        "alpha": 1,
+                        "hue": 0,
+                        "blur": 0,
+                        "tonal_r": 0,
+                        "tonal_g": 0,
+                        "tonal_b": 0,
+                        "tonal_gray": 0,
+                        "tonal_mr": 1,
+                        "tonal_mg": 1,
+                        "tonal_mb": 1
+                    }
+                ],
+                [
+                    {
+                        "picUrlIndex": 0,
+                        "rect": [
+                            -336,
+                            -192,
+                            48,
+                            48
+                        ],
+                        "x": -24,
+                        "y": -48,
+                        "width": 48,
+                        "height": 48,
+                        "rotation": 0,
+                        "alpha": 1,
+                        "hue": 0,
+                        "blur": 0,
+                        "tonal_r": 0,
+                        "tonal_g": 0,
+                        "tonal_b": 0,
+                        "tonal_gray": 0,
+                        "tonal_mr": 1,
+                        "tonal_mg": 1,
+                        "tonal_mb": 1
+                    },
+                    {
+                        "picUrlIndex": 0,
+                        "rect": [
+                            -336,
+                            -240,
+                            48,
+                            48
+                        ],
+                        "x": -24,
+                        "y": -48,
+                        "width": 48,
+                        "height": 48,
+                        "rotation": 0,
+                        "alpha": 1,
+                        "hue": 0,
+                        "blur": 0,
+                        "tonal_r": 0,
+                        "tonal_g": 0,
+                        "tonal_b": 0,
+                        "tonal_gray": 0,
+                        "tonal_mr": 1,
+                        "tonal_mg": 1,
+                        "tonal_mb": 1
+                    },
+                    {
+                        "picUrlIndex": 0,
+                        "rect": [
+                            -336,
+                            -288,
+                            48,
+                            48
+                        ],
+                        "x": -24,
+                        "y": -48,
+                        "width": 48,
+                        "height": 48,
+                        "rotation": 0,
+                        "alpha": 1,
+                        "hue": 0,
+                        "blur": 0,
+                        "tonal_r": 0,
+                        "tonal_g": 0,
+                        "tonal_b": 0,
+                        "tonal_gray": 0,
+                        "tonal_mr": 1,
+                        "tonal_mg": 1,
+                        "tonal_mb": 1
+                    },
+                    {
+                        "picUrlIndex": 0,
+                        "rect": [
+                            -336,
+                            -336,
+                            48,
+                            48
+                        ],
+                        "x": -24,
+                        "y": -48,
+                        "width": 48,
+                        "height": 48,
+                        "rotation": 0,
+                        "alpha": 1,
+                        "hue": 0,
+                        "blur": 0,
+                        "tonal_r": 0,
+                        "tonal_g": 0,
+                        "tonal_b": 0,
+                        "tonal_gray": 0,
+                        "tonal_mr": 1,
+                        "tonal_mg": 1,
+                        "tonal_mb": 1
+                    }
+                ]
+            ]
         }
     ],
     "id": 5023

@@ -1890,7 +1890,7 @@
         },
         "showPartyMember": {
             "varType": 2,
-            "value": false,
+            "value": true,
             "copy": false
         },
         "partyMemberDis": {
@@ -1900,20 +1900,7 @@
         },
         "partyFPSSetting": {
             "varType": 9,
-            "value": [
-                {
-                    "actor": {
-                        "varType": 0,
-                        "value": 2,
-                        "copy": false
-                    },
-                    "fps": {
-                        "varType": 0,
-                        "value": 12,
-                        "copy": false
-                    }
-                }
-            ],
+            "value": [],
             "copy": false
         },
         "actorRecords": {

@@ -13,7 +13,7 @@
                 "opacity": 1,
                 "blend": 0,
                 "rotation": 0,
-                "show": true,
+                "show": false,
                 "mouseEventEnabledData": true,
                 "materialData": [
                     {
@@ -25,11 +25,12 @@
                 "showOnEditor": true,
                 "hasCommand": [],
                 "isOpen": true,
-                "image": "asset/image/picture/other/White.png",
+                "image": "asset/image/picture/other/Black.png",
                 "grid9": "3,3,3,3,0",
                 "flip": false,
                 "isTile": false,
-                "pivotType": 0
+                "pivotType": 0,
+                "isAdaptiveSize": false
             }
         ]
     },

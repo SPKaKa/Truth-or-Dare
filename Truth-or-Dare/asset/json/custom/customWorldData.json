@@ -52,12 +52,12 @@
         },
         "moveToGridCenter": {
             "varType": 2,
-            "value": false,
+            "value": true,
             "copy": false
         },
         "moveDir4": {
             "varType": 2,
-            "value": false,
+            "value": true,
             "copy": false
         },
         "jumpTimeCost": {
@@ -996,6 +996,73 @@
         "const_fp_info1": {
             "varType": 1,
             "value": "",
+            "copy": false
+        },
+        "SEmap": {
+            "varType": 9,
+            "value": [],
+            "copy": false
+        },
+        "DefaultFootStep": {
+            "varType": 1,
+            "value": "asset/audio/se/footstep/footstep_ground_2.mp3,1,1",
+            "copy": false,
+            "volume": "1",
+            "pitch": "1"
+        },
+        "bUseDefaultFootStep": {
+            "varType": 2,
+            "value": true,
+            "copy": false
+        },
+        "orzi_language_packages": {
+            "varType": 6,
+            "value": [],
+            "copy": false
+        },
+        "orzi_language_isChangeAsset": {
+            "varType": 2,
+            "value": false,
+            "copy": false
+        },
+        "orzi_language_isForceChange": {
+            "varType": 2,
+            "value": false,
+            "copy": false
+        },
+        "orzi_language_isReload": {
+            "varType": 2,
+            "value": false,
+            "copy": false
+        },
+        "orzi_language_isReloadFont": {
+            "varType": 2,
+            "value": false,
+            "copy": false
+        },
+        "orzi_language_isShowStatistics": {
+            "varType": 2,
+            "value": false,
+            "copy": false
+        },
+        "W26_isTrace": {
+            "varType": 2,
+            "value": false,
+            "copy": false
+        },
+        "W26recordCount": {
+            "varType": 0,
+            "value": 10,
+            "copy": false
+        },
+        "w26VarShowKey": {
+            "varType": 0,
+            "value": 0,
+            "copy": false
+        },
+        "w26VarShowMiniKey": {
+            "varType": 0,
+            "value": 0,
             "copy": false
         }
     }

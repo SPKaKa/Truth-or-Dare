@@ -1,0 +1,1342 @@
+{
+    "sceneObjects": [
+        {
+            "modelID": 6,
+            "index": 0,
+            "name": "厕所门-2",
+            "x": 264,
+            "y": 408,
+            "z": 0,
+            "materialData": [
+                {
+                    "materials": []
+                }
+            ],
+            "avatarID": 4057,
+            "avatarOri": 6,
+            "avatarAct": 1,
+            "avatarFPS": 12,
+            "avatarFrame": 1,
+            "avatarAlpha": 1,
+            "avatarHue": 0,
+            "shadowEnable": false,
+            "shadowWidth": 30,
+            "shadowHeight": 15,
+            "shadowAlpha": 0.5,
+            "displayList": {
+                "avatar": {
+                    "type": 1,
+                    "id": 4057
+                }
+            },
+            "moduleDisplayList": [],
+            "layerLevel": 1,
+            "autoPlayEnable": true,
+            "scale": 1,
+            "showOnEditor": true,
+            "mouseEventEnabledInEditor": true,
+            "playerUID": 0,
+            "hasCommand": [],
+            "moduleIDs": [],
+            "hideOriBox": null
+        },
+        {
+            "modelID": 6,
+            "index": 1,
+            "name": "厕所门-1",
+            "x": 168,
+            "y": 408,
+            "z": 0,
+            "materialData": [
+                {
+                    "materials": []
+                }
+            ],
+            "avatarID": 4057,
+            "avatarOri": 6,
+            "avatarAct": 1,
+            "avatarFPS": 12,
+            "avatarFrame": 1,
+            "avatarAlpha": 1,
+            "avatarHue": 0,
+            "shadowEnable": false,
+            "shadowWidth": 30,
+            "shadowHeight": 15,
+            "shadowAlpha": 0.5,
+            "displayList": {
+                "avatar": {
+                    "type": 1,
+                    "id": 4057
+                }
+            },
+            "moduleDisplayList": [],
+            "layerLevel": 1,
+            "autoPlayEnable": true,
+            "scale": 1,
+            "showOnEditor": true,
+            "mouseEventEnabledInEditor": true,
+            "playerUID": 0,
+            "hasCommand": [],
+            "moduleIDs": [],
+            "hideOriBox": null
+        },
+        {
+            "modelID": 6,
+            "index": 2,
+            "name": "厕所门-3",
+            "x": 360,
+            "y": 408,
+            "z": 0,
+            "materialData": [
+                {
+                    "materials": []
+                }
+            ],
+            "avatarID": 4057,
+            "avatarOri": 6,
+            "avatarAct": 1,
+            "avatarFPS": 12,
+            "avatarFrame": 1,
+            "avatarAlpha": 1,
+            "avatarHue": 0,
+            "shadowEnable": false,
+            "shadowWidth": 30,
+            "shadowHeight": 15,
+            "shadowAlpha": 0.5,
+            "displayList": {
+                "avatar": {
+                    "type": 1,
+                    "id": 4057
+                }
+            },
+            "moduleDisplayList": [],
+            "layerLevel": 1,
+            "autoPlayEnable": true,
+            "scale": 1,
+            "showOnEditor": true,
+            "mouseEventEnabledInEditor": true,
+            "playerUID": 0,
+            "hasCommand": [],
+            "moduleIDs": [],
+            "hideOriBox": null
+        },
+        null,
+        {
+            "modelID": 7,
+            "index": 4,
+            "name": "门-KTV-大厅",
+            "x": 456,
+            "y": 744,
+            "z": 0,
+            "materialData": [
+                {
+                    "materials": []
+                }
+            ],
+            "avatarID": 5025,
+            "avatarOri": 1,
+            "avatarAct": 1,
+            "avatarFPS": 12,
+            "avatarFrame": 1,
+            "avatarAlpha": 0.56,
+            "avatarHue": 0,
+            "shadowEnable": false,
+            "shadowWidth": 30,
+            "shadowHeight": 15,
+            "shadowAlpha": 0.5,
+            "displayList": {
+                "avatar": {
+                    "type": 1,
+                    "id": 5025
+                }
+            },
+            "moduleDisplayList": [],
+            "layerLevel": 1,
+            "autoPlayEnable": true,
+            "scale": 1,
+            "showOnEditor": true,
+            "mouseEventEnabledInEditor": true,
+            "playerUID": 0,
+            "hasCommand": [],
+            "moduleIDs": [],
+            "hideOriBox": null
+        }
+    ],
+    "customCommands": [
+        [
+            [
+                18,
+                "=========场景初始化===========",
+                {
+                    "___cmdID": "210645908781_0.3528526170803412"
+                }
+            ],
+            [
+                18,
+                "厕所门自动全关起来",
+                {
+                    "___cmdID": "210645873812_0.5248545623241181"
+                }
+            ],
+            [
+                13,
+                6,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                [
+                    0,
+                    100
+                ],
+                0,
+                1,
+                [],
+                0,
+                0,
+                0,
+                null,
+                null,
+                null,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                {
+                    "___cmdID": "210645898300_0.43445934027672006"
+                }
+            ],
+            [
+                13,
+                6,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                [
+                    0,
+                    100
+                ],
+                0,
+                0,
+                [],
+                0,
+                0,
+                0,
+                null,
+                null,
+                null,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                {
+                    "___cmdID": "210645906044_0.20515578866250772"
+                }
+            ],
+            [
+                13,
+                6,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                [
+                    0,
+                    100
+                ],
+                0,
+                2,
+                [],
+                0,
+                0,
+                0,
+                null,
+                null,
+                null,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                {
+                    "___cmdID": "210645907476_0.15435888888437654"
+                }
+            ],
+            [
+                -1,
+                {
+                    "___cmdID": "210645865821_0.8964549172548477"
+                }
+            ]
+        ]
+    ],
+    "customAttributes": [
+        {
+            "selectEnabled": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "through": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "bridge": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "fixOri": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "ignoreCantMove": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "moveAutoChangeAction": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "lockBehaviorLayer": {
+                "varType": 0,
+                "value": 0,
+                "copy": false
+            },
+            "keepMoveActWhenCollsionObstacleAndIgnoreCantMove": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "behaviorDir4": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "repeatedTouchEnabled": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "onlyPlayerTouch": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "waitTouchEvent": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "clickEventNoDistance": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "moveSpeed": {
+                "varType": 0,
+                "value": 150,
+                "copy": false
+            },
+            "defBehavior": {
+                "varType": 1,
+                "value": "",
+                "copy": false
+            },
+            "collisionGroup": {
+                "varType": 0,
+                "value": 0,
+                "copy": false
+            }
+        },
+        {
+            "selectEnabled": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "through": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "bridge": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "fixOri": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "ignoreCantMove": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "moveAutoChangeAction": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "lockBehaviorLayer": {
+                "varType": 0,
+                "value": 0,
+                "copy": false
+            },
+            "keepMoveActWhenCollsionObstacleAndIgnoreCantMove": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "behaviorDir4": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "repeatedTouchEnabled": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "onlyPlayerTouch": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "waitTouchEvent": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "clickEventNoDistance": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "moveSpeed": {
+                "varType": 0,
+                "value": 150,
+                "copy": false
+            },
+            "defBehavior": {
+                "varType": 1,
+                "value": "",
+                "copy": false
+            },
+            "collisionGroup": {
+                "varType": 0,
+                "value": 0,
+                "copy": false
+            }
+        },
+        {
+            "selectEnabled": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "through": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "bridge": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "fixOri": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "ignoreCantMove": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "moveAutoChangeAction": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "lockBehaviorLayer": {
+                "varType": 0,
+                "value": 0,
+                "copy": false
+            },
+            "keepMoveActWhenCollsionObstacleAndIgnoreCantMove": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "behaviorDir4": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "repeatedTouchEnabled": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "onlyPlayerTouch": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "waitTouchEvent": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "clickEventNoDistance": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "moveSpeed": {
+                "varType": 0,
+                "value": 150,
+                "copy": false
+            },
+            "defBehavior": {
+                "varType": 1,
+                "value": "",
+                "copy": false
+            },
+            "collisionGroup": {
+                "varType": 0,
+                "value": 0,
+                "copy": false
+            }
+        },
+        null,
+        {
+            "selectEnabled": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "through": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "bridge": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "fixOri": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "ignoreCantMove": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "moveAutoChangeAction": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "lockBehaviorLayer": {
+                "varType": 0,
+                "value": 0,
+                "copy": false
+            },
+            "keepMoveActWhenCollsionObstacleAndIgnoreCantMove": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "behaviorDir4": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "repeatedTouchEnabled": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "onlyPlayerTouch": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "waitTouchEvent": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "clickEventNoDistance": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "moveSpeed": {
+                "varType": 0,
+                "value": 150,
+                "copy": false
+            },
+            "defBehavior": {
+                "varType": 1,
+                "value": "",
+                "copy": false
+            },
+            "collisionGroup": {
+                "varType": 0,
+                "value": 0,
+                "copy": false
+            }
+        }
+    ],
+    "modulesCustomAttributes": [
+        [],
+        [],
+        [],
+        null,
+        []
+    ],
+    "customAttributesCaches": [],
+    "modulesCustomAttributesCaches": [],
+    "events": [
+        {
+            "condition": [
+                {
+                    "type": 2,
+                    "varID": 0,
+                    "compare": 1,
+                    "value": 0
+                }
+            ],
+            "customCommands": [
+                [
+                    [
+                        60005,
+                        {
+                            "74577032484_0.13493609495640202": "asset/audio/se/action/Open_door_7_2.ogg,1,1",
+                            "74578579319_0.15291120828407134": 1,
+                            "91116691228_0.19588751423957396": 1,
+                            "91116362027_0.0524615397494288": false,
+                            "74587606222_0.5579985331498136": false,
+                            "74587987674_0.5977703161602927": false
+                        },
+                        "210645601661_0.278511586699977"
+                    ],
+                    [
+                        13,
+                        6,
+                        0,
+                        0,
+                        0,
+                        1,
+                        1,
+                        1,
+                        [
+                            0,
+                            100
+                        ],
+                        0,
+                        -1,
+                        [],
+                        0,
+                        0,
+                        0,
+                        null,
+                        null,
+                        null,
+                        0,
+                        0,
+                        0,
+                        1,
+                        1,
+                        1,
+                        0,
+                        {
+                            "___cmdID": "210645645677_0.8358951502912491"
+                        }
+                    ],
+                    [
+                        -1,
+                        {
+                            "___cmdID": "210645240566_0.011772224731561254"
+                        }
+                    ]
+                ],
+                [],
+                [],
+                [],
+                []
+            ]
+        },
+        {
+            "condition": [
+                {
+                    "type": 2,
+                    "varID": 0,
+                    "compare": 1,
+                    "value": 0
+                }
+            ],
+            "customCommands": [
+                [
+                    [
+                        60005,
+                        {
+                            "74577032484_0.13493609495640202": "asset/audio/se/action/Open_door_7_2.ogg,1,1",
+                            "74578579319_0.15291120828407134": 1,
+                            "91116691228_0.19588751423957396": 1,
+                            "91116362027_0.0524615397494288": false,
+                            "74587606222_0.5579985331498136": false,
+                            "74587987674_0.5977703161602927": false
+                        },
+                        "210645611444_0.09166893280236721"
+                    ],
+                    [
+                        13,
+                        6,
+                        0,
+                        0,
+                        0,
+                        1,
+                        1,
+                        1,
+                        [
+                            0,
+                            100
+                        ],
+                        0,
+                        -1,
+                        [],
+                        0,
+                        0,
+                        0,
+                        null,
+                        null,
+                        null,
+                        0,
+                        0,
+                        0,
+                        1,
+                        1,
+                        1,
+                        0,
+                        {
+                            "___cmdID": "210645324088_0.8365229830546164"
+                        }
+                    ],
+                    [
+                        -1,
+                        {
+                            "___cmdID": "210645240566_0.011772224731561254"
+                        }
+                    ]
+                ],
+                [],
+                [],
+                [],
+                []
+            ]
+        },
+        {
+            "condition": [
+                {
+                    "type": 2,
+                    "varID": 0,
+                    "compare": 1,
+                    "value": 0
+                }
+            ],
+            "customCommands": [
+                [
+                    [
+                        60005,
+                        {
+                            "74577032484_0.13493609495640202": "asset/audio/se/action/Open_door_7_2.ogg,1,1",
+                            "74578579319_0.15291120828407134": 1,
+                            "91116691228_0.19588751423957396": 1,
+                            "91116362027_0.0524615397494288": false,
+                            "74587606222_0.5579985331498136": false,
+                            "74587987674_0.5977703161602927": false
+                        },
+                        "210645597241_0.1505845411562725"
+                    ],
+                    [
+                        13,
+                        6,
+                        0,
+                        0,
+                        0,
+                        1,
+                        1,
+                        1,
+                        [
+                            0,
+                            100
+                        ],
+                        0,
+                        -1,
+                        [],
+                        0,
+                        0,
+                        0,
+                        null,
+                        null,
+                        null,
+                        0,
+                        0,
+                        0,
+                        1,
+                        1,
+                        1,
+                        0,
+                        {
+                            "___cmdID": "210645598933_0.6974376275789662"
+                        }
+                    ],
+                    [
+                        -1,
+                        {
+                            "___cmdID": "210645240566_0.011772224731561254"
+                        }
+                    ]
+                ],
+                [],
+                [],
+                [],
+                []
+            ]
+        },
+        null,
+        {
+            "condition": [],
+            "customCommands": [
+                [],
+                [
+                    [
+                        60005,
+                        {
+                            "74577032484_0.13493609495640202": "asset/audio/se/FD/SE_Move1.ogg,1,1",
+                            "74578579319_0.15291120828407134": 1,
+                            "91116691228_0.19588751423957396": 1,
+                            "91116362027_0.0524615397494288": false,
+                            "74587606222_0.5579985331498136": false,
+                            "74587987674_0.5977703161602927": false
+                        },
+                        "210645974053_0.3312096374248319"
+                    ],
+                    [
+                        21,
+                        false,
+                        3,
+                        888,
+                        120,
+                        true,
+                        1,
+                        {
+                            "___cmdID": "210645980317_0.8567493380297035"
+                        }
+                    ],
+                    [
+                        -1,
+                        {
+                            "___cmdID": "210645935066_0.2754987495442016"
+                        }
+                    ]
+                ],
+                [],
+                [],
+                []
+            ]
+        }
+    ],
+    "statusPages": [
+        [
+            {
+                "so": {
+                    "modelID": 6,
+                    "index": 2,
+                    "name": "厕所门-2",
+                    "x": 360,
+                    "y": 360,
+                    "z": 0,
+                    "materialData": [
+                        {
+                            "materials": []
+                        }
+                    ],
+                    "avatarID": 4057,
+                    "avatarOri": 6,
+                    "avatarAct": 2,
+                    "avatarFPS": 12,
+                    "avatarFrame": 5,
+                    "avatarAlpha": 1,
+                    "avatarHue": 0,
+                    "shadowEnable": false,
+                    "shadowWidth": 30,
+                    "shadowHeight": 15,
+                    "shadowAlpha": 0.5,
+                    "displayList": {
+                        "avatar": {
+                            "type": 1,
+                            "id": 4057
+                        }
+                    },
+                    "moduleDisplayList": [],
+                    "layerLevel": 2,
+                    "autoPlayEnable": false,
+                    "scale": 1,
+                    "showOnEditor": true,
+                    "mouseEventEnabledInEditor": true,
+                    "playerUID": 0,
+                    "hasCommand": [],
+                    "moduleIDs": [],
+                    "hideOriBox": null
+                },
+                "event": {
+                    "condition": [
+                        {
+                            "type": 2,
+                            "varID": 0,
+                            "compare": 1,
+                            "value": 1
+                        }
+                    ],
+                    "customCommands": [
+                        [
+                            [
+                                -1,
+                                {
+                                    "___cmdID": "210645240566_0.011772224731561254"
+                                }
+                            ]
+                        ],
+                        [],
+                        [],
+                        [],
+                        []
+                    ]
+                },
+                "customAttribute": {
+                    "selectEnabled": {
+                        "varType": 2,
+                        "value": false,
+                        "copy": false
+                    },
+                    "through": {
+                        "varType": 2,
+                        "value": true,
+                        "copy": false
+                    },
+                    "bridge": {
+                        "varType": 2,
+                        "value": false,
+                        "copy": false
+                    },
+                    "fixOri": {
+                        "varType": 2,
+                        "value": false,
+                        "copy": false
+                    },
+                    "ignoreCantMove": {
+                        "varType": 2,
+                        "value": false,
+                        "copy": false
+                    },
+                    "moveAutoChangeAction": {
+                        "varType": 2,
+                        "value": true,
+                        "copy": false
+                    },
+                    "lockBehaviorLayer": {
+                        "varType": 0,
+                        "value": 0,
+                        "copy": false
+                    },
+                    "keepMoveActWhenCollsionObstacleAndIgnoreCantMove": {
+                        "varType": 2,
+                        "value": false,
+                        "copy": false
+                    },
+                    "behaviorDir4": {
+                        "varType": 2,
+                        "value": false,
+                        "copy": false
+                    },
+                    "repeatedTouchEnabled": {
+                        "varType": 2,
+                        "value": false,
+                        "copy": false
+                    },
+                    "onlyPlayerTouch": {
+                        "varType": 2,
+                        "value": true,
+                        "copy": false
+                    },
+                    "waitTouchEvent": {
+                        "varType": 2,
+                        "value": true,
+                        "copy": false
+                    },
+                    "clickEventNoDistance": {
+                        "varType": 2,
+                        "value": false,
+                        "copy": false
+                    },
+                    "moveSpeed": {
+                        "varType": 0,
+                        "value": 150,
+                        "copy": false
+                    },
+                    "defBehavior": {
+                        "varType": 1,
+                        "value": "",
+                        "copy": false
+                    },
+                    "collisionGroup": {
+                        "varType": 0,
+                        "value": 0,
+                        "copy": false
+                    }
+                },
+                "modulesCustomAttribute": []
+            }
+        ],
+        [
+            {
+                "so": {
+                    "modelID": 6,
+                    "index": 2,
+                    "name": "厕所门-1",
+                    "x": 360,
+                    "y": 360,
+                    "z": 0,
+                    "materialData": [
+                        {
+                            "materials": []
+                        }
+                    ],
+                    "avatarID": 4057,
+                    "avatarOri": 6,
+                    "avatarAct": 2,
+                    "avatarFPS": 12,
+                    "avatarFrame": 5,
+                    "avatarAlpha": 1,
+                    "avatarHue": 0,
+                    "shadowEnable": false,
+                    "shadowWidth": 30,
+                    "shadowHeight": 15,
+                    "shadowAlpha": 0.5,
+                    "displayList": {
+                        "avatar": {
+                            "type": 1,
+                            "id": 4057
+                        }
+                    },
+                    "moduleDisplayList": [],
+                    "layerLevel": 2,
+                    "autoPlayEnable": false,
+                    "scale": 1,
+                    "showOnEditor": true,
+                    "mouseEventEnabledInEditor": true,
+                    "playerUID": 0,
+                    "hasCommand": [],
+                    "moduleIDs": [],
+                    "hideOriBox": null
+                },
+                "event": {
+                    "condition": [
+                        {
+                            "type": 2,
+                            "varID": 0,
+                            "compare": 1,
+                            "value": 1
+                        }
+                    ],
+                    "customCommands": [
+                        [
+                            [
+                                -1,
+                                {
+                                    "___cmdID": "210645240566_0.011772224731561254"
+                                }
+                            ]
+                        ],
+                        [],
+                        [],
+                        [],
+                        []
+                    ]
+                },
+                "customAttribute": {
+                    "selectEnabled": {
+                        "varType": 2,
+                        "value": false,
+                        "copy": false
+                    },
+                    "through": {
+                        "varType": 2,
+                        "value": true,
+                        "copy": false
+                    },
+                    "bridge": {
+                        "varType": 2,
+                        "value": false,
+                        "copy": false
+                    },
+                    "fixOri": {
+                        "varType": 2,
+                        "value": false,
+                        "copy": false
+                    },
+                    "ignoreCantMove": {
+                        "varType": 2,
+                        "value": false,
+                        "copy": false
+                    },
+                    "moveAutoChangeAction": {
+                        "varType": 2,
+                        "value": true,
+                        "copy": false
+                    },
+                    "lockBehaviorLayer": {
+                        "varType": 0,
+                        "value": 0,
+                        "copy": false
+                    },
+                    "keepMoveActWhenCollsionObstacleAndIgnoreCantMove": {
+                        "varType": 2,
+                        "value": false,
+                        "copy": false
+                    },
+                    "behaviorDir4": {
+                        "varType": 2,
+                        "value": false,
+                        "copy": false
+                    },
+                    "repeatedTouchEnabled": {
+                        "varType": 2,
+                        "value": false,
+                        "copy": false
+                    },
+                    "onlyPlayerTouch": {
+                        "varType": 2,
+                        "value": true,
+                        "copy": false
+                    },
+                    "waitTouchEvent": {
+                        "varType": 2,
+                        "value": true,
+                        "copy": false
+                    },
+                    "clickEventNoDistance": {
+                        "varType": 2,
+                        "value": false,
+                        "copy": false
+                    },
+                    "moveSpeed": {
+                        "varType": 0,
+                        "value": 150,
+                        "copy": false
+                    },
+                    "defBehavior": {
+                        "varType": 1,
+                        "value": "",
+                        "copy": false
+                    },
+                    "collisionGroup": {
+                        "varType": 0,
+                        "value": 0,
+                        "copy": false
+                    }
+                },
+                "modulesCustomAttribute": []
+            }
+        ],
+        [
+            {
+                "so": {
+                    "modelID": 6,
+                    "index": 2,
+                    "name": "厕所门-3",
+                    "x": 360,
+                    "y": 360,
+                    "z": 0,
+                    "materialData": [
+                        {
+                            "materials": []
+                        }
+                    ],
+                    "avatarID": 4057,
+                    "avatarOri": 6,
+                    "avatarAct": 2,
+                    "avatarFPS": 12,
+                    "avatarFrame": 5,
+                    "avatarAlpha": 1,
+                    "avatarHue": 0,
+                    "shadowEnable": false,
+                    "shadowWidth": 30,
+                    "shadowHeight": 15,
+                    "shadowAlpha": 0.5,
+                    "displayList": {
+                        "avatar": {
+                            "type": 1,
+                            "id": 4057
+                        }
+                    },
+                    "moduleDisplayList": [],
+                    "layerLevel": 2,
+                    "autoPlayEnable": false,
+                    "scale": 1,
+                    "showOnEditor": true,
+                    "mouseEventEnabledInEditor": true,
+                    "playerUID": 0,
+                    "hasCommand": [],
+                    "moduleIDs": [],
+                    "hideOriBox": null
+                },
+                "customAttribute": {
+                    "selectEnabled": {
+                        "varType": 2,
+                        "value": false,
+                        "copy": false
+                    },
+                    "through": {
+                        "varType": 2,
+                        "value": true,
+                        "copy": false
+                    },
+                    "bridge": {
+                        "varType": 2,
+                        "value": false,
+                        "copy": false
+                    },
+                    "fixOri": {
+                        "varType": 2,
+                        "value": false,
+                        "copy": false
+                    },
+                    "ignoreCantMove": {
+                        "varType": 2,
+                        "value": false,
+                        "copy": false
+                    },
+                    "moveAutoChangeAction": {
+                        "varType": 2,
+                        "value": true,
+                        "copy": false
+                    },
+                    "lockBehaviorLayer": {
+                        "varType": 0,
+                        "value": 0,
+                        "copy": false
+                    },
+                    "keepMoveActWhenCollsionObstacleAndIgnoreCantMove": {
+                        "varType": 2,
+                        "value": false,
+                        "copy": false
+                    },
+                    "behaviorDir4": {
+                        "varType": 2,
+                        "value": false,
+                        "copy": false
+                    },
+                    "repeatedTouchEnabled": {
+                        "varType": 2,
+                        "value": false,
+                        "copy": false
+                    },
+                    "onlyPlayerTouch": {
+                        "varType": 2,
+                        "value": true,
+                        "copy": false
+                    },
+                    "waitTouchEvent": {
+                        "varType": 2,
+                        "value": true,
+                        "copy": false
+                    },
+                    "clickEventNoDistance": {
+                        "varType": 2,
+                        "value": false,
+                        "copy": false
+                    },
+                    "moveSpeed": {
+                        "varType": 0,
+                        "value": 150,
+                        "copy": false
+                    },
+                    "defBehavior": {
+                        "varType": 1,
+                        "value": "",
+                        "copy": false
+                    },
+                    "collisionGroup": {
+                        "varType": 0,
+                        "value": 0,
+                        "copy": false
+                    }
+                },
+                "event": {
+                    "condition": [
+                        {
+                            "type": 2,
+                            "varID": 0,
+                            "compare": 1,
+                            "value": 1
+                        }
+                    ],
+                    "customCommands": [
+                        [
+                            [
+                                -1,
+                                {
+                                    "___cmdID": "210645240566_0.011772224731561254"
+                                }
+                            ]
+                        ],
+                        [],
+                        [],
+                        [],
+                        []
+                    ]
+                },
+                "modulesCustomAttribute": []
+            }
+        ],
+        null,
+        []
+    ],
+    "statusPagesSelectedIndexs": [
+        1,
+        1,
+        1
+    ],
+    "id": 2
+}

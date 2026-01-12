@@ -2,9 +2,9 @@
     "list": [
         null,
         "临时场景",
-        null,
-        "KTV",
-        null,
+        "KTV-男厕所",
+        "KTV-大厅",
+        "KTV-房间-主角",
         null,
         null,
         null,
@@ -39,8 +39,19 @@
         },
         {
             "id": 3,
-            "name": "KTV",
-            "children": [],
+            "name": "KTV-大厅",
+            "children": [
+                {
+                    "id": 4,
+                    "name": "KTV-房间-主角",
+                    "children": []
+                },
+                {
+                    "id": 2,
+                    "name": "KTV-男厕所",
+                    "children": []
+                }
+            ],
             "isOpen": true
         }
     ]

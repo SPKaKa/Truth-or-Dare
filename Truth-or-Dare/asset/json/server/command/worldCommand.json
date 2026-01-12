@@ -3,7 +3,14 @@
         "1": [
             null,
             "初始化-系统设置",
-            ""
+            "队伍-女主角加入队伍",
+            "队伍-女主角离开队伍",
+            "队伍-女主角临时离开队伍",
+            "队伍-辣妹加入队伍",
+            "队伍-辣妹离开队伍",
+            "队伍-辣妹临时离开队伍",
+            "队伍-女主角临时离开队伍-再次回到队伍",
+            "队伍-辣妹临时离开队伍-再次回到队伍"
         ],
         "15": [
             null,
@@ -448,7 +455,64 @@
                     },
                     {
                         "isDirectory": true,
-                        "children": [],
+                        "children": [
+                            {
+                                "isDirectory": true,
+                                "children": [
+                                    {
+                                        "id": 2,
+                                        "children": [],
+                                        "isOpen": true,
+                                        "name": "队伍-女主角加入队伍"
+                                    },
+                                    {
+                                        "id": 3,
+                                        "children": [],
+                                        "isOpen": true,
+                                        "name": "队伍-女主角离开队伍"
+                                    },
+                                    {
+                                        "id": 4,
+                                        "children": [],
+                                        "isOpen": true,
+                                        "name": "队伍-女主角临时离开队伍"
+                                    },
+                                    {
+                                        "id": 8,
+                                        "children": [],
+                                        "isOpen": true,
+                                        "name": "队伍-女主角临时离开队伍-再次回到队伍"
+                                    },
+                                    {
+                                        "id": 5,
+                                        "children": [],
+                                        "isOpen": true,
+                                        "name": "队伍-辣妹加入队伍"
+                                    },
+                                    {
+                                        "id": 6,
+                                        "children": [],
+                                        "isOpen": true,
+                                        "name": "队伍-辣妹离开队伍"
+                                    },
+                                    {
+                                        "id": 7,
+                                        "children": [],
+                                        "isOpen": true,
+                                        "name": "队伍-辣妹临时离开队伍"
+                                    },
+                                    {
+                                        "id": 9,
+                                        "children": [],
+                                        "isOpen": true,
+                                        "name": "队伍-辣妹临时离开队伍-再次回到队伍"
+                                    }
+                                ],
+                                "isOpen": true,
+                                "name": "队伍相关",
+                                "id": null
+                            }
+                        ],
                         "isOpen": true,
                         "name": "通用事件",
                         "id": null
