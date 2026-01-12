@@ -1,6 +1,6 @@
 {
     "picUrls": [
-        "asset/image/picture/FD/item/HeroinePhone_LuminousState.png"
+        "asset/image/picture/FD/item/SF_Janitors_E_14_5.png"
     ],
     "oriMode": 4,
     "autoFlip": true,
@@ -27,13 +27,13 @@
                         "rect": [
                             0,
                             0,
-                            299,
-                            399
+                            48,
+                            48
                         ],
-                        "x": -10,
-                        "y": -15,
-                        "width": 20,
-                        "height": 30,
+                        "x": -13,
+                        "y": -24,
+                        "width": 48,
+                        "height": 48,
                         "rotation": 0,
                         "alpha": 1,
                         "hue": 0,
@@ -56,13 +56,13 @@
                         "rect": [
                             0,
                             0,
-                            299,
-                            399
+                            48,
+                            48
                         ],
-                        "x": -10,
-                        "y": -15,
-                        "width": 20,
-                        "height": 30,
+                        "x": -13,
+                        "y": -24,
+                        "width": 48,
+                        "height": 48,
                         "rotation": 0,
                         "alpha": 1,
                         "hue": 0,
@@ -85,13 +85,13 @@
                         "rect": [
                             0,
                             0,
-                            299,
-                            399
+                            48,
+                            48
                         ],
-                        "x": -10,
-                        "y": -15,
-                        "width": 20,
-                        "height": 30,
+                        "x": -13,
+                        "y": -24,
+                        "width": 48,
+                        "height": 48,
                         "rotation": 0,
                         "alpha": 1,
                         "hue": 0,
@@ -114,13 +114,13 @@
                         "rect": [
                             0,
                             0,
-                            299,
-                            399
+                            48,
+                            48
                         ],
-                        "x": -10,
-                        "y": -15,
-                        "width": 20,
-                        "height": 30,
+                        "x": -13,
+                        "y": -24,
+                        "width": 48,
+                        "height": 48,
                         "rotation": 0,
                         "alpha": 1,
                         "hue": 0,
@@ -140,5 +140,5 @@
             ]
         }
     ],
-    "id": 12003
+    "id": 13002
 }

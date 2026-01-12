@@ -10,7 +10,8 @@
             "队伍-辣妹离开队伍",
             "队伍-辣妹临时离开队伍",
             "队伍-女主角临时离开队伍-再次回到队伍",
-            "队伍-辣妹临时离开队伍-再次回到队伍"
+            "队伍-辣妹临时离开队伍-再次回到队伍",
+            "KTV收拾垃圾后判断是否全部收拾完"
         ],
         "15": [
             null,
@@ -449,7 +450,6 @@
                                 "name": "初始化-系统设置"
                             }
                         ],
-                        "isOpen": true,
                         "name": "系统事件",
                         "id": null
                     },
@@ -508,13 +508,33 @@
                                         "name": "队伍-辣妹临时离开队伍-再次回到队伍"
                                     }
                                 ],
-                                "isOpen": true,
                                 "name": "队伍相关",
                                 "id": null
                             }
                         ],
-                        "isOpen": true,
                         "name": "通用事件",
+                        "id": null
+                    },
+                    {
+                        "isDirectory": true,
+                        "children": [
+                            {
+                                "isDirectory": true,
+                                "children": [
+                                    {
+                                        "id": 10,
+                                        "children": [],
+                                        "isOpen": true,
+                                        "name": "KTV收拾垃圾后判断是否全部收拾完"
+                                    }
+                                ],
+                                "isOpen": true,
+                                "name": "KTV",
+                                "id": null
+                            }
+                        ],
+                        "isOpen": true,
+                        "name": "场景事件",
                         "id": null
                     }
                 ],

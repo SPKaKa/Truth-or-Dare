@@ -1,6 +1,6 @@
 {
     "picUrls": [
-        "asset/image/picture/FD/item/HeroinePhone_LuminousState.png"
+        "asset/image/picture/FD/item/SF_Janitors_E_7_8.png"
     ],
     "oriMode": 4,
     "autoFlip": true,
@@ -27,13 +27,13 @@
                         "rect": [
                             0,
                             0,
-                            299,
-                            399
+                            48,
+                            48
                         ],
-                        "x": -10,
-                        "y": -15,
-                        "width": 20,
-                        "height": 30,
+                        "x": -24,
+                        "y": -38,
+                        "width": 48,
+                        "height": 48,
                         "rotation": 0,
                         "alpha": 1,
                         "hue": 0,
@@ -56,13 +56,13 @@
                         "rect": [
                             0,
                             0,
-                            299,
-                            399
+                            48,
+                            48
                         ],
-                        "x": -10,
-                        "y": -15,
-                        "width": 20,
-                        "height": 30,
+                        "x": -24,
+                        "y": -38,
+                        "width": 48,
+                        "height": 48,
                         "rotation": 0,
                         "alpha": 1,
                         "hue": 0,
@@ -73,10 +73,7 @@
                         "tonal_gray": 0,
                         "tonal_mr": 1,
                         "tonal_mg": 1,
-                        "tonal_mb": 1,
-                        "isAnchor": false,
-                        "anchorX": 0,
-                        "anchorY": 0
+                        "tonal_mb": 1
                     }
                 ],
                 [
@@ -85,13 +82,13 @@
                         "rect": [
                             0,
                             0,
-                            299,
-                            399
+                            48,
+                            48
                         ],
-                        "x": -10,
-                        "y": -15,
-                        "width": 20,
-                        "height": 30,
+                        "x": -24,
+                        "y": -38,
+                        "width": 48,
+                        "height": 48,
                         "rotation": 0,
                         "alpha": 1,
                         "hue": 0,
@@ -102,10 +99,7 @@
                         "tonal_gray": 0,
                         "tonal_mr": 1,
                         "tonal_mg": 1,
-                        "tonal_mb": 1,
-                        "isAnchor": false,
-                        "anchorX": 0,
-                        "anchorY": 0
+                        "tonal_mb": 1
                     }
                 ],
                 [
@@ -114,13 +108,13 @@
                         "rect": [
                             0,
                             0,
-                            299,
-                            399
+                            48,
+                            48
                         ],
-                        "x": -10,
-                        "y": -15,
-                        "width": 20,
-                        "height": 30,
+                        "x": -24,
+                        "y": -38,
+                        "width": 48,
+                        "height": 48,
                         "rotation": 0,
                         "alpha": 1,
                         "hue": 0,
@@ -131,14 +125,11 @@
                         "tonal_gray": 0,
                         "tonal_mr": 1,
                         "tonal_mg": 1,
-                        "tonal_mb": 1,
-                        "isAnchor": false,
-                        "anchorX": 0,
-                        "anchorY": 0
+                        "tonal_mb": 1
                     }
                 ]
             ]
         }
     ],
-    "id": 12003
+    "id": 13007
 }
