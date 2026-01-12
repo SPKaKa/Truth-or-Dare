@@ -29,7 +29,8 @@
                 "grid9": "3,3,3,3,0",
                 "flip": null,
                 "isTile": false,
-                "pivotType": 0
+                "pivotType": 0,
+                "isAdaptiveSize": false
             },
             {
                 "id": "109736275860_0.7914664290366693",
@@ -59,7 +60,8 @@
                 "grid9": "0,0,0,0,0",
                 "flip": null,
                 "isTile": false,
-                "pivotType": 0
+                "pivotType": 0,
+                "isAdaptiveSize": false
             },
             {
                 "id": "42765603439_0.7258110372364541",
@@ -89,7 +91,8 @@
                 "grid9": "100,100,100,100,0",
                 "flip": null,
                 "isTile": false,
-                "pivotType": 0
+                "pivotType": 0,
+                "isAdaptiveSize": false
             },
             {
                 "id": "43907369984_0.145023178457087",
@@ -119,7 +122,8 @@
                 "grid9": "50,50,50,50,0",
                 "flip": null,
                 "isTile": false,
-                "pivotType": 0
+                "pivotType": 0,
+                "isAdaptiveSize": false
             },
             {
                 "id": "105663239680_0.18497018484838068",
@@ -149,7 +153,8 @@
                 "grid9": "25,25,25,25,0",
                 "flip": null,
                 "isTile": false,
-                "pivotType": 0
+                "pivotType": 0,
+                "isAdaptiveSize": false
             },
             {
                 "id": "43907560192_0.9102572912854323",
@@ -179,7 +184,8 @@
                 "grid9": "25,25,25,25,0",
                 "flip": null,
                 "isTile": false,
-                "pivotType": 0
+                "pivotType": 0,
+                "isAdaptiveSize": false
             },
             {
                 "id": "109736059938_0.7483880936948697",
@@ -209,7 +215,8 @@
                 "grid9": "0,0,0,0,0",
                 "flip": null,
                 "isTile": false,
-                "pivotType": 0
+                "pivotType": 0,
+                "isAdaptiveSize": false
             },
             {
                 "id": "109721142400_0.4778786231098826",
@@ -239,7 +246,8 @@
                 "grid9": "10,0,10,0,0",
                 "flip": null,
                 "isTile": false,
-                "pivotType": 0
+                "pivotType": 0,
+                "isAdaptiveSize": false
             },
             {
                 "id": "111470392638_0.46186582960743716",
@@ -269,7 +277,8 @@
                 "grid9": "10,0,10,0,0",
                 "flip": null,
                 "isTile": false,
-                "pivotType": 0
+                "pivotType": 0,
+                "isAdaptiveSize": false
             },
             {
                 "id": "42770315099_0.10461775593199407",
@@ -348,7 +357,8 @@
                 "grid9": "25,0,25,0,0",
                 "flip": null,
                 "isTile": false,
-                "pivotType": 0
+                "pivotType": 0,
+                "isAdaptiveSize": false
             },
             {
                 "id": "107248342422_0.8217894367238485",
@@ -461,7 +471,8 @@
                 "grid9": "25,0,25,0,0",
                 "flip": null,
                 "isTile": false,
-                "pivotType": 0
+                "pivotType": 0,
+                "isAdaptiveSize": false
             },
             {
                 "id": "42771599233_0.2270527023410709",
@@ -645,7 +656,8 @@
                 "grid9": "0,0,0,0,0",
                 "flip": null,
                 "isTile": false,
-                "pivotType": 0
+                "pivotType": 0,
+                "isAdaptiveSize": false
             },
             {
                 "id": "105662943699_0.44110333938777946",
@@ -671,7 +683,7 @@
                 "showOnEditor": true,
                 "hasCommand": [],
                 "isOpen": true,
-                "text": "我的金币",
+                "text": "MONEY",
                 "fontSize": 20,
                 "color": "#ffffff",
                 "bold": true,
@@ -747,7 +759,8 @@
                 "grid9": "0,0,0,0,0",
                 "flip": null,
                 "isTile": false,
-                "pivotType": 0
+                "pivotType": 0,
+                "isAdaptiveSize": false
             },
             {
                 "id": "109726007792_0.04616074219711441",
@@ -806,7 +819,7 @@
                 "opacity": 1,
                 "blend": 0,
                 "rotation": 0,
-                "show": true,
+                "show": false,
                 "mouseEventEnabledData": false,
                 "materialData": [
                     {
@@ -818,7 +831,7 @@
                 "showOnEditor": true,
                 "hasCommand": [],
                 "isOpen": true,
-                "text": "道具名称",
+                "text": "NAME",
                 "fontSize": 20,
                 "color": "#96b3c8",
                 "bold": true,
@@ -851,7 +864,7 @@
                 "opacity": 1,
                 "blend": 0,
                 "rotation": 0,
-                "show": true,
+                "show": false,
                 "mouseEventEnabledData": false,
                 "materialData": [
                     {
@@ -908,7 +921,7 @@
                 "showOnEditor": true,
                 "hasCommand": [],
                 "isOpen": true,
-                "text": "背包",
+                "text": "ITEM",
                 "fontSize": 24,
                 "color": "#ffffff",
                 "bold": true,

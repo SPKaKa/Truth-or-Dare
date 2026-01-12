@@ -29,7 +29,8 @@
                 "grid9": "15,25,15,25,0",
                 "flip": null,
                 "isTile": false,
-                "pivotType": 0
+                "pivotType": 0,
+                "isAdaptiveSize": false
             },
             {
                 "id": "53053878018_0.7029521473486793",
@@ -239,7 +240,7 @@
                 "opacity": 1,
                 "blend": 0,
                 "rotation": 0,
-                "show": true,
+                "show": false,
                 "mouseEventEnabledData": false,
                 "materialData": [
                     {
@@ -288,7 +289,7 @@
                 "opacity": 1,
                 "blend": 0,
                 "rotation": 0,
-                "show": true,
+                "show": false,
                 "mouseEventEnabledData": false,
                 "materialData": [
                     {

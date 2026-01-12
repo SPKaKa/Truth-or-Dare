@@ -120,7 +120,7 @@
                     true
                 ],
                 "isOpen": true,
-                "label": "背包",
+                "label": "Item",
                 "image1": "asset/image/picture/control/optionBtn_normal.png",
                 "grid9img1": "0,60,0,60,0",
                 "image2": "asset/image/picture/control/optionBtn_over.png",
@@ -169,7 +169,7 @@
                     true
                 ],
                 "isOpen": true,
-                "label": "存档",
+                "label": "SAVE",
                 "image1": "asset/image/picture/control/optionBtn_normal.png",
                 "grid9img1": "0,60,0,60,0",
                 "image2": "asset/image/picture/control/optionBtn_over.png",
@@ -218,7 +218,7 @@
                     true
                 ],
                 "isOpen": true,
-                "label": "读档",
+                "label": "LOAD",
                 "image1": "asset/image/picture/control/optionBtn_normal.png",
                 "grid9img1": "0,60,0,60,0",
                 "image2": "asset/image/picture/control/optionBtn_over.png",
@@ -267,7 +267,7 @@
                     true
                 ],
                 "isOpen": true,
-                "label": "设置",
+                "label": "SETTING",
                 "image1": "asset/image/picture/control/optionBtn_normal.png",
                 "grid9img1": "0,60,0,60,0",
                 "image2": "asset/image/picture/control/optionBtn_over.png",
@@ -316,7 +316,7 @@
                     true
                 ],
                 "isOpen": true,
-                "label": "返回标题",
+                "label": "TITLE",
                 "image1": "asset/image/picture/control/optionBtn_normal.png",
                 "grid9img1": "0,60,0,60,0",
                 "image2": "asset/image/picture/control/optionBtn_over.png",
@@ -365,7 +365,7 @@
                     true
                 ],
                 "isOpen": true,
-                "label": "返回游戏",
+                "label": "BACK",
                 "image1": "asset/image/picture/control/optionBtn_normal.png",
                 "grid9img1": "0,60,0,60,0",
                 "image2": "asset/image/picture/control/optionBtn_over.png",

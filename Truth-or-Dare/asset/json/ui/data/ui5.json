@@ -29,7 +29,8 @@
                 "grid9": "3,3,3,3,0",
                 "flip": null,
                 "isTile": false,
-                "pivotType": 0
+                "pivotType": 0,
+                "isAdaptiveSize": false
             },
             {
                 "id": "109735937716_0.07803873407548911",
@@ -59,7 +60,8 @@
                 "grid9": "0,0,0,0,0",
                 "flip": false,
                 "isTile": false,
-                "pivotType": 0
+                "pivotType": 0,
+                "isAdaptiveSize": false
             },
             {
                 "id": "109655769992_0.9164509697924821",
@@ -89,7 +91,8 @@
                 "grid9": "100,100,100,100,0",
                 "flip": null,
                 "isTile": false,
-                "pivotType": 0
+                "pivotType": 0,
+                "isAdaptiveSize": false
             },
             {
                 "id": "109655892123_0.7939556262626832",
@@ -119,7 +122,8 @@
                 "grid9": "10,0,10,0,0",
                 "flip": null,
                 "isTile": false,
-                "pivotType": 0
+                "pivotType": 0,
+                "isAdaptiveSize": false
             },
             {
                 "id": "42595472268_0.9038562633454412",
@@ -168,7 +172,9 @@
                 "overImageAlpha": 1,
                 "overImageOnTop": false,
                 "overSelectMode": true,
-                "slowmotionType": 0
+                "slowmotionType": 0,
+                "onChangeFragEvent1": null,
+                "onChangeFragEvent2": null
             },
             {
                 "id": "42595472271_0.4125623619521144",
@@ -247,7 +253,8 @@
                 "grid9": "25,0,25,0,0",
                 "flip": null,
                 "isTile": false,
-                "pivotType": 0
+                "pivotType": 0,
+                "isAdaptiveSize": false
             },
             {
                 "id": "109655736602_0.01928479420996343",
@@ -277,7 +284,8 @@
                 "grid9": "15,15,15,15,0",
                 "flip": null,
                 "isTile": false,
-                "pivotType": 0
+                "pivotType": 0,
+                "isAdaptiveSize": false
             },
             {
                 "id": "109655750138_0.6221276095675297",
@@ -303,7 +311,7 @@
                 "showOnEditor": true,
                 "hasCommand": [],
                 "isOpen": true,
-                "text": "保存档案",
+                "text": "SAVE",
                 "fontSize": 24,
                 "color": "#ffffff",
                 "bold": true,

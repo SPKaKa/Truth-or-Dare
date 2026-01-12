@@ -396,6 +396,66 @@
                 "id": 1046,
                 "name": "恢复魔法值数值显示",
                 "children": []
+            },
+            {
+                "id": 13,
+                "name": "计时器",
+                "children": []
+            },
+            {
+                "id": 14,
+                "name": "预留",
+                "children": []
+            },
+            {
+                "id": 15,
+                "name": "预留",
+                "children": []
+            },
+            {
+                "id": 18,
+                "name": "预留",
+                "children": []
+            },
+            {
+                "id": 19,
+                "name": "预留",
+                "children": []
+            },
+            {
+                "id": 1010,
+                "name": "按钮选中效果样式3",
+                "children": []
+            },
+            {
+                "id": 1033,
+                "name": "提示栏",
+                "children": []
+            },
+            {
+                "id": 15001,
+                "name": "变量监视主界面",
+                "children": []
+            },
+            {
+                "id": 15002,
+                "name": "子选项行",
+                "children": []
+            },
+            {
+                "id": 15003,
+                "name": "变量显示(左)",
+                "children": []
+            },
+            {
+                "id": 15004,
+                "name": "变量监控小界面",
+                "children": []
+            },
+            {
+                "id": 15005,
+                "name": "富文本测试12",
+                "children": []
             }
         ],
         "isOpen": true,
