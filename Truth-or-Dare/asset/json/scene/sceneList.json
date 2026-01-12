@@ -5,7 +5,7 @@
         "KTV-男厕所",
         "KTV-大厅",
         "KTV-房间-主角",
-        null,
+        "主角房间",
         null,
         null,
         null,
@@ -53,6 +53,11 @@
                 }
             ],
             "isOpen": true
+        },
+        {
+            "id": 5,
+            "name": "主角房间",
+            "children": []
         }
     ]
 }
