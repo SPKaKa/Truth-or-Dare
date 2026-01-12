@@ -1211,7 +1211,7 @@
                             ],
                             [
                                 34,
-                                3005,
+                                3022,
                                 false,
                                 false,
                                 20,
@@ -1234,7 +1234,7 @@
                                 1
                             ]
                         ],
-                        1,
+                        true,
                         1,
                         false,
                         1,
@@ -1244,7 +1244,7 @@
                     ],
                     [
                         17,
-                        200,
+                        240,
                         0,
                         false,
                         0,
@@ -1254,9 +1254,9 @@
                     ],
                     [
                         11,
-                        1,
-                        null,
-                        "",
+                        3,
+                        3003,
+                        "辣妹",
                         3,
                         -3,
                         "<span style='color:#FfFffF'>哟好久不见！</span>",
@@ -1265,7 +1265,7 @@
                         0,
                         null,
                         {
-                            "id": 1,
+                            "id": 3,
                             "atts": [],
                             "time": 60,
                             "transitionMode": null,
@@ -1489,9 +1489,6 @@
         [],
         []
     ],
-    "statusPagesSelectedIndexs": [
-        null,
-        null
-    ],
+    "statusPagesSelectedIndexs": [],
     "id": 3
 }
