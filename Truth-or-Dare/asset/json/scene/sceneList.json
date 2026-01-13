@@ -7,7 +7,7 @@
         "KTV-房间-主角",
         "主角房间",
         "参考场景",
-        null,
+        "KTV-房间-厕所边上的房间",
         null,
         null,
         null,
@@ -50,11 +50,17 @@
                 {
                     "id": 4,
                     "name": "KTV-房间-主角",
-                    "children": []
+                    "children": [],
+                    "isOpen": true
                 },
                 {
                     "id": 2,
                     "name": "KTV-男厕所",
+                    "children": []
+                },
+                {
+                    "id": 7,
+                    "name": "KTV-房间-厕所边上的房间",
                     "children": []
                 }
             ],

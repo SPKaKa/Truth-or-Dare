@@ -23,7 +23,7 @@
     "languages": "简体中文,繁体中文,English",
     "language": 0,
     "GC_CLOUD_PLATFORM": "https://gamecreator.com.cn",
-    "TEMPLETE_USER_UID": 18323,
+    "TEMPLETE_USER_UID": 0,
     "AI_PAINTING_ID": 1,
     "gridAlignMode": 0,
     "z1": "1|/|5|7|9|4|1|5|:|1|2|7|5|8|:|9|8|5|5|.|2|8|1|3|:|8|8|1|6|9|2|1|6",
@@ -400,13 +400,13 @@
         }
     ],
     "BORN": {
-        "sceneID": 2,
+        "sceneID": 7,
         "so": {
             "modelID": 1,
-            "index": 5,
+            "index": 4,
             "name": "玩家对象",
-            "x": 504,
-            "y": 360,
+            "x": 744,
+            "y": 504,
             "z": 0,
             "materialData": [
                 {

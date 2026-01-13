@@ -1,6 +1,6 @@
 {
     "picUrls": [
-        "editorAsset/img/empty.png"
+        "asset/image/picture/FD/item/IDCard.png"
     ],
     "oriMode": 4,
     "autoFlip": true,
@@ -13,13 +13,131 @@
         {
             "id": 0,
             "showOnEditor": true,
-            "mouseEventEnabledInEditor": true
+            "mouseEventEnabledInEditor": true,
+            "__partImgIndex": 0
         }
     ],
     "actionListArr": [
         {
             "id": 1,
-            "frameImageInfo": []
+            "frameImageInfo": [
+                [
+                    {
+                        "picUrlIndex": 0,
+                        "rect": [
+                            0,
+                            0,
+                            72,
+                            48
+                        ],
+                        "x": -24,
+                        "y": -16,
+                        "width": 48,
+                        "height": 32,
+                        "rotation": 0,
+                        "alpha": 1,
+                        "hue": 0,
+                        "blur": 0,
+                        "tonal_r": 0,
+                        "tonal_g": 0,
+                        "tonal_b": 0,
+                        "tonal_gray": 0,
+                        "tonal_mr": 1,
+                        "tonal_mg": 1,
+                        "tonal_mb": 1,
+                        "isAnchor": false,
+                        "anchorX": 0,
+                        "anchorY": 0
+                    }
+                ],
+                [
+                    {
+                        "picUrlIndex": 0,
+                        "rect": [
+                            0,
+                            0,
+                            72,
+                            48
+                        ],
+                        "x": -24,
+                        "y": -16,
+                        "width": 48,
+                        "height": 32,
+                        "rotation": 0,
+                        "alpha": 1,
+                        "hue": 0,
+                        "blur": 0,
+                        "tonal_r": 0,
+                        "tonal_g": 0,
+                        "tonal_b": 0,
+                        "tonal_gray": 0,
+                        "tonal_mr": 1,
+                        "tonal_mg": 1,
+                        "tonal_mb": 1,
+                        "isAnchor": false,
+                        "anchorX": 0,
+                        "anchorY": 0
+                    }
+                ],
+                [
+                    {
+                        "picUrlIndex": 0,
+                        "rect": [
+                            0,
+                            0,
+                            72,
+                            48
+                        ],
+                        "x": -24,
+                        "y": -16,
+                        "width": 48,
+                        "height": 32,
+                        "rotation": 0,
+                        "alpha": 1,
+                        "hue": 0,
+                        "blur": 0,
+                        "tonal_r": 0,
+                        "tonal_g": 0,
+                        "tonal_b": 0,
+                        "tonal_gray": 0,
+                        "tonal_mr": 1,
+                        "tonal_mg": 1,
+                        "tonal_mb": 1,
+                        "isAnchor": false,
+                        "anchorX": 0,
+                        "anchorY": 0
+                    }
+                ],
+                [
+                    {
+                        "picUrlIndex": 0,
+                        "rect": [
+                            0,
+                            0,
+                            72,
+                            48
+                        ],
+                        "x": -24,
+                        "y": -16,
+                        "width": 48,
+                        "height": 32,
+                        "rotation": 0,
+                        "alpha": 1,
+                        "hue": 0,
+                        "blur": 0,
+                        "tonal_r": 0,
+                        "tonal_g": 0,
+                        "tonal_b": 0,
+                        "tonal_gray": 0,
+                        "tonal_mr": 1,
+                        "tonal_mg": 1,
+                        "tonal_mb": 1,
+                        "isAnchor": false,
+                        "anchorX": 0,
+                        "anchorY": 0
+                    }
+                ]
+            ]
         }
     ],
     "id": 13009
