@@ -1,0 +1,77 @@
+{
+    "allowClient": false,
+    "conditionSwitch": 1,
+    "updateMode": false,
+    "commands": [
+        [
+            11,
+            1,
+            null,
+            "",
+            3,
+            -3,
+            "<span style='color:#FfFffF'>主角起来看到女主角被NTR</span>",
+            null,
+            1,
+            0,
+            null,
+            {
+                "id": 1,
+                "atts": [],
+                "time": 60,
+                "transitionMode": null,
+                "nonTweenType": 0,
+                "mode": 0
+            },
+            {
+                "___cmdID": "210729177085_0.9370820048112012"
+            }
+        ],
+        [
+            11,
+            1,
+            null,
+            "",
+            3,
+            -3,
+            "<span style='color:#FfFffF'>END-睡醒NTR</span>",
+            null,
+            1,
+            0,
+            null,
+            {
+                "id": 1,
+                "atts": [],
+                "time": 60,
+                "transitionMode": null,
+                "nonTweenType": 0,
+                "mode": 0
+            },
+            {
+                "___cmdID": "210729150983_0.5364212814167773"
+            }
+        ],
+        [
+            17,
+            120,
+            0,
+            false,
+            0,
+            {
+                "___cmdID": "210729206073_0.05382882565896474"
+            }
+        ],
+        [
+            50008,
+            null,
+            "210729164326_0.6055527085011756"
+        ],
+        [
+            -1,
+            {
+                "___cmdID": "210729147601_0.8531368306480567"
+            }
+        ]
+    ],
+    "id": 12
+}

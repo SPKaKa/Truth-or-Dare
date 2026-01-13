@@ -11,7 +11,10 @@
             "队伍-辣妹临时离开队伍",
             "队伍-女主角临时离开队伍-再次回到队伍",
             "队伍-辣妹临时离开队伍-再次回到队伍",
-            "KTV收拾垃圾后判断是否全部收拾完"
+            "KTV收拾垃圾后判断是否全部收拾完",
+            "KTV_女主被灌酒",
+            "R18-男主晕过去，起来看到的NTR",
+            ""
         ],
         "15": [
             null,
@@ -451,7 +454,8 @@
                             }
                         ],
                         "name": "系统事件",
-                        "id": null
+                        "id": null,
+                        "isOpen": true
                     },
                     {
                         "isDirectory": true,
@@ -526,15 +530,33 @@
                                         "children": [],
                                         "isOpen": true,
                                         "name": "KTV收拾垃圾后判断是否全部收拾完"
+                                    },
+                                    {
+                                        "id": 11,
+                                        "children": [],
+                                        "isOpen": true,
+                                        "name": "KTV_女主被灌酒"
                                     }
                                 ],
-                                "isOpen": true,
                                 "name": "KTV",
-                                "id": null
+                                "id": null,
+                                "isOpen": true
                             }
                         ],
-                        "isOpen": true,
                         "name": "场景事件",
+                        "id": null
+                    },
+                    {
+                        "isDirectory": true,
+                        "children": [
+                            {
+                                "id": 12,
+                                "children": [],
+                                "isOpen": true,
+                                "name": "R18-男主晕过去，起来看到的NTR"
+                            }
+                        ],
+                        "name": "R18事件",
                         "id": null
                     }
                 ],

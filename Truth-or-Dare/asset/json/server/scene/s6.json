@@ -1,0 +1,635 @@
+{
+    "sceneObjects": [
+        {
+            "modelID": 1,
+            "index": 0,
+            "name": "if else",
+            "x": 456,
+            "y": 408,
+            "z": 0,
+            "materialData": [
+                {
+                    "materials": []
+                }
+            ],
+            "avatarID": 1,
+            "avatarOri": 2,
+            "avatarAct": 1,
+            "avatarFPS": 12,
+            "avatarFrame": 1,
+            "avatarAlpha": 1,
+            "avatarHue": 0,
+            "shadowEnable": false,
+            "shadowWidth": 30,
+            "shadowHeight": 15,
+            "shadowAlpha": 0.5,
+            "displayList": {
+                "avatar": {
+                    "type": 1,
+                    "id": 1
+                }
+            },
+            "moduleDisplayList": [],
+            "layerLevel": 1,
+            "autoPlayEnable": true,
+            "scale": 1,
+            "showOnEditor": true,
+            "mouseEventEnabledInEditor": true,
+            "playerUID": 0,
+            "hasCommand": [],
+            "moduleIDs": [],
+            "hideOriBox": null
+        }
+    ],
+    "customCommands": [
+        []
+    ],
+    "customAttributes": [
+        {
+            "selectEnabled": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "through": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "bridge": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "fixOri": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "ignoreCantMove": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "moveAutoChangeAction": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "lockBehaviorLayer": {
+                "varType": 0,
+                "value": 0,
+                "copy": false
+            },
+            "keepMoveActWhenCollsionObstacleAndIgnoreCantMove": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "behaviorDir4": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "repeatedTouchEnabled": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "onlyPlayerTouch": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "waitTouchEvent": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "clickEventNoDistance": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "moveSpeed": {
+                "varType": 0,
+                "value": 150,
+                "copy": false
+            },
+            "defBehavior": {
+                "varType": 1,
+                "value": "",
+                "copy": false
+            },
+            "collisionGroup": {
+                "varType": 0,
+                "value": 0,
+                "copy": false
+            }
+        }
+    ],
+    "modulesCustomAttributes": [
+        [
+            {
+                "type": {
+                    "varType": 0,
+                    "value": 0,
+                    "copy": false
+                },
+                "color": {
+                    "varType": 1,
+                    "value": "#ff0000",
+                    "copy": false
+                },
+                "opacity": {
+                    "varType": 0,
+                    "value": 0.5,
+                    "copy": false
+                },
+                "layer": {
+                    "varType": 0,
+                    "value": 0,
+                    "copy": false
+                },
+                "hideAvatar": {
+                    "varType": 2,
+                    "value": false,
+                    "copy": false
+                },
+                "alwaysDisplayColor": {
+                    "varType": 2,
+                    "value": true,
+                    "copy": false
+                },
+                "width": {
+                    "varType": 0,
+                    "value": 116,
+                    "copy": false
+                },
+                "height": {
+                    "varType": 0,
+                    "value": 116,
+                    "copy": false
+                },
+                "offsetX": {
+                    "varType": 0,
+                    "value": -24,
+                    "copy": false
+                },
+                "offsetY": {
+                    "varType": 0,
+                    "value": -24,
+                    "copy": false
+                },
+                "radius": {
+                    "varType": 0,
+                    "value": 58,
+                    "copy": false
+                },
+                "pointArr": {
+                    "varType": 9,
+                    "value": [],
+                    "copy": false
+                }
+            },
+            {
+                "type": {
+                    "varType": 0,
+                    "value": 0,
+                    "copy": false
+                },
+                "shadowType": {
+                    "varType": 0,
+                    "value": 0,
+                    "copy": false
+                },
+                "shadowStyle": {
+                    "varType": 0,
+                    "value": 0,
+                    "copy": false
+                },
+                "shadowImage": {
+                    "varType": 1,
+                    "value": "asset/image/animation/shadow/shadow1.png",
+                    "copy": false
+                },
+                "shadowOffsetX": {
+                    "varType": 0,
+                    "value": 0,
+                    "copy": false
+                },
+                "shadowOffsetY": {
+                    "varType": 0,
+                    "value": 0,
+                    "copy": false
+                },
+                "shadowOpacity": {
+                    "varType": 0,
+                    "value": 0.5,
+                    "copy": false
+                },
+                "shadowRotation": {
+                    "varType": 0,
+                    "value": 45,
+                    "copy": false
+                },
+                "shadowScale": {
+                    "varType": 0,
+                    "value": 1,
+                    "copy": false
+                },
+                "shadowMinScale": {
+                    "varType": 0,
+                    "value": 0.5,
+                    "copy": false
+                },
+                "shadowMaxScale": {
+                    "varType": 0,
+                    "value": 5,
+                    "copy": false
+                },
+                "shadowOpacityFactor": {
+                    "varType": 0,
+                    "value": 3,
+                    "copy": false
+                },
+                "shadowScaleFactor": {
+                    "varType": 0,
+                    "value": 2,
+                    "copy": false
+                },
+                "lightStyleType": {
+                    "varType": 0,
+                    "value": 1,
+                    "copy": false
+                },
+                "lightImage": {
+                    "varType": 1,
+                    "value": "asset/image/animation/light/light2.png",
+                    "copy": false
+                },
+                "lightAnimation": {
+                    "varType": 0,
+                    "value": 14001,
+                    "copy": false
+                },
+                "lightAnimationScaleX": {
+                    "varType": 0,
+                    "value": 1,
+                    "copy": false
+                },
+                "lightAnimationScaleY": {
+                    "varType": 0,
+                    "value": 1,
+                    "copy": false
+                },
+                "lightAnimationRotation": {
+                    "varType": 0,
+                    "value": 0,
+                    "copy": false
+                },
+                "lightOpacity": {
+                    "varType": 0,
+                    "value": 1,
+                    "copy": false
+                },
+                "lightBlendMode": {
+                    "varType": 0,
+                    "value": 1,
+                    "copy": false
+                },
+                "lightBrighten": {
+                    "varType": 2,
+                    "value": true,
+                    "copy": false
+                },
+                "lightRange": {
+                    "varType": 0,
+                    "value": 500,
+                    "copy": false
+                },
+                "showLightRange": {
+                    "varType": 2,
+                    "value": true,
+                    "copy": false
+                },
+                "lightShineEnable": {
+                    "varType": 2,
+                    "value": false,
+                    "copy": false
+                },
+                "lightShineValue": {
+                    "varType": 0,
+                    "value": 0.25,
+                    "copy": false
+                },
+                "lightShineTransition": {
+                    "varType": 1,
+                    "value": "",
+                    "copy": false
+                },
+                "groupID": {
+                    "varType": 0,
+                    "value": 1,
+                    "copy": false
+                }
+            },
+            {
+                "type": {
+                    "varType": 0,
+                    "value": 1,
+                    "copy": false
+                },
+                "shadowOpacity": {
+                    "varType": 0,
+                    "value": 0.3,
+                    "copy": false
+                },
+                "shadowType": {
+                    "varType": 0,
+                    "value": 1,
+                    "copy": false
+                },
+                "shadowRotation": {
+                    "varType": 0,
+                    "value": 45,
+                    "copy": false
+                },
+                "shadowScale": {
+                    "varType": 0,
+                    "value": 5,
+                    "copy": false
+                },
+                "shadowMinScale": {
+                    "varType": 0,
+                    "value": 0.5,
+                    "copy": false
+                },
+                "shadowMaxScale": {
+                    "varType": 0,
+                    "value": 5,
+                    "copy": false
+                },
+                "shadowOffsetX": {
+                    "varType": 0,
+                    "value": 0,
+                    "copy": false
+                },
+                "shadowOffsetY": {
+                    "varType": 0,
+                    "value": 0,
+                    "copy": false
+                },
+                "shadowOpacityFactor": {
+                    "varType": 0,
+                    "value": 3,
+                    "copy": false
+                },
+                "shadowScaleFactor": {
+                    "varType": 0,
+                    "value": 2,
+                    "copy": false
+                },
+                "lightBlendMode": {
+                    "varType": 0,
+                    "value": 0,
+                    "copy": false
+                },
+                "lightImage": {
+                    "varType": 1,
+                    "value": "",
+                    "copy": false
+                },
+                "lightStyleType": {
+                    "varType": 0,
+                    "value": 0,
+                    "copy": false
+                },
+                "lightBrighten": {
+                    "varType": 2,
+                    "value": false,
+                    "copy": false
+                },
+                "shadowStyle": {
+                    "varType": 0,
+                    "value": 1,
+                    "copy": false
+                },
+                "shadowImage": {
+                    "varType": 1,
+                    "value": "asset/image/animation/shadow/shadow1.png",
+                    "copy": false
+                },
+                "lightAnimation": {
+                    "varType": 0,
+                    "value": 0,
+                    "copy": false
+                },
+                "tips": {
+                    "varType": 0,
+                    "value": 0,
+                    "copy": false
+                },
+                "groupID": {
+                    "varType": 0,
+                    "value": 1,
+                    "copy": false
+                },
+                "lightRange": {
+                    "varType": 0,
+                    "value": 100,
+                    "copy": false
+                },
+                "lightAnimationScaleX": {
+                    "varType": 0,
+                    "value": 1,
+                    "copy": false
+                },
+                "lightAnimationScaleY": {
+                    "varType": 0,
+                    "value": 1,
+                    "copy": false
+                },
+                "lightAnimationRotation": {
+                    "varType": 0,
+                    "value": 0,
+                    "copy": false
+                },
+                "lightShineEnable": {
+                    "varType": 2,
+                    "value": false,
+                    "copy": false
+                },
+                "lightShineValue": {
+                    "varType": 0,
+                    "value": 0,
+                    "copy": false
+                },
+                "lightShineTransition": {
+                    "varType": 1,
+                    "value": "",
+                    "copy": false
+                },
+                "showLightRange": {
+                    "varType": 2,
+                    "value": true,
+                    "copy": false
+                },
+                "lightOpacity": {
+                    "varType": 0,
+                    "value": 1,
+                    "copy": false
+                }
+            }
+        ]
+    ],
+    "customAttributesCaches": [],
+    "modulesCustomAttributesCaches": [],
+    "events": [
+        {
+            "condition": [],
+            "customCommands": [
+                [
+                    [
+                        0,
+                        0,
+                        2,
+                        [
+                            0,
+                            1,
+                            1,
+                            0
+                        ],
+                        0,
+                        0,
+                        [
+                            0,
+                            1,
+                            1,
+                            0
+                        ],
+                        0,
+                        [
+                            1,
+                            1,
+                            [
+                                0,
+                                0,
+                                1,
+                                1
+                            ]
+                        ],
+                        0,
+                        0,
+                        [
+                            1,
+                            1
+                        ],
+                        "",
+                        "",
+                        false,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        0,
+                        0,
+                        [
+                            0,
+                            {},
+                            ""
+                        ],
+                        [
+                            0,
+                            {},
+                            ""
+                        ],
+                        {
+                            "___cmdID": "210716165847_0.8719645504412252"
+                        }
+                    ],
+                    [
+                        18,
+                        "===做出类似else if的效果===",
+                        {
+                            "___cmdID": "210716172228_0.024490388760037396"
+                        }
+                    ],
+                    [
+                        9,
+                        "结束",
+                        {
+                            "___cmdID": "210716172228_0.7411030834830008"
+                        }
+                    ],
+                    [
+                        -1,
+                        {
+                            "___cmdID": "210716169328_0.9945217700726405"
+                        }
+                    ],
+                    [
+                        2,
+                        {
+                            "___cmdID": "210716169324_0.009329844000801835"
+                        }
+                    ],
+                    [
+                        18,
+                        "===做出类似else if的效果===\n===下方就是else的内容（全部不满足条件的时候，会触发的）===",
+                        {
+                            "___cmdID": "210716157893_0.4070371606838399"
+                        }
+                    ],
+                    [
+                        32,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0.7,
+                        0.5,
+                        0.5,
+                        -1,
+                        {
+                            "___cmdID": "210716157893_0.47948851332886755"
+                        }
+                    ],
+                    [
+                        18,
+                        "===做出类似else if的效果===",
+                        {
+                            "___cmdID": "210716157893_0.23532205428257869"
+                        }
+                    ],
+                    [
+                        8,
+                        "结束",
+                        {
+                            "___cmdID": "210716157893_0.4190515299436748"
+                        }
+                    ],
+                    [
+                        -1,
+                        {
+                            "___cmdID": "210716172993_0.4563065539936304"
+                        }
+                    ]
+                ],
+                [],
+                [],
+                [],
+                []
+            ]
+        }
+    ],
+    "statusPages": [
+        []
+    ],
+    "statusPagesSelectedIndexs": [
+        null
+    ]
+}

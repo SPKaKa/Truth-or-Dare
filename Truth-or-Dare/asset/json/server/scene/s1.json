@@ -1478,9 +1478,9 @@
         {
             "modelID": 1,
             "index": 39,
-            "name": "未命名39",
-            "x": 345,
-            "y": 339,
+            "name": "",
+            "x": 360,
+            "y": 360,
             "z": 0,
             "materialData": [
                 {
@@ -13824,177 +13824,9 @@
             "customCommands": [
                 [
                     [
-                        11,
-                        1,
-                        null,
-                        "",
-                        3,
-                        -3,
-                        "<span style='color:#FfFffF'>1111111111</span>",
-                        null,
-                        1,
-                        0,
-                        "",
-                        {
-                            "id": 1,
-                            "atts": [],
-                            "time": 60,
-                            "transitionMode": null,
-                            "nonTweenType": 0,
-                            "mode": 0
-                        },
-                        {
-                            "___cmdID": "210394287488_0.12215051392566201"
-                        }
-                    ],
-                    [
-                        11,
-                        1,
-                        null,
-                        "",
-                        3,
-                        -3,
-                        "<span style='color:#FfFffF'>22222</span>",
-                        null,
-                        1,
-                        0,
-                        null,
-                        {
-                            "id": 1,
-                            "atts": [],
-                            "time": 60,
-                            "transitionMode": null,
-                            "nonTweenType": 0,
-                            "mode": 0
-                        },
-                        {
-                            "___cmdID": "210394287328_0.28394323499511365"
-                        }
-                    ],
-                    [
-                        11,
-                        1,
-                        null,
-                        "",
-                        3,
-                        -3,
-                        "<span style='color:#FfFffF'>33333</span>",
-                        null,
-                        1,
-                        0,
-                        null,
-                        {
-                            "id": 1,
-                            "atts": [],
-                            "time": 60,
-                            "transitionMode": null,
-                            "nonTweenType": 0,
-                            "mode": 0
-                        },
-                        {
-                            "___cmdID": "210394297432_0.8059607214752851"
-                        }
-                    ],
-                    [
-                        11,
-                        1,
-                        null,
-                        "",
-                        3,
-                        -3,
-                        "<span style='color:#FfFffF'>4444</span>",
-                        null,
-                        1,
-                        0,
-                        null,
-                        {
-                            "id": 1,
-                            "atts": [],
-                            "time": 60,
-                            "transitionMode": null,
-                            "nonTweenType": 0,
-                            "mode": 0
-                        },
-                        {
-                            "___cmdID": "210394297272_0.9175890909215403"
-                        }
-                    ],
-                    [
-                        11,
-                        1,
-                        null,
-                        "",
-                        3,
-                        -3,
-                        "<span style='color:#FfFffF'>5555</span>",
-                        null,
-                        1,
-                        0,
-                        null,
-                        {
-                            "id": 1,
-                            "atts": [],
-                            "time": 60,
-                            "transitionMode": null,
-                            "nonTweenType": 0,
-                            "mode": 0
-                        },
-                        {
-                            "___cmdID": "210394297112_0.6678491228517203"
-                        }
-                    ],
-                    [
-                        11,
-                        1,
-                        null,
-                        "",
-                        3,
-                        -3,
-                        "<span style='color:#FfFffF'>66666</span>",
-                        null,
-                        1,
-                        0,
-                        null,
-                        {
-                            "id": 1,
-                            "atts": [],
-                            "time": 60,
-                            "transitionMode": null,
-                            "nonTweenType": 0,
-                            "mode": 0
-                        },
-                        {
-                            "___cmdID": "210394296920_0.4386144669349594"
-                        }
-                    ],
-                    [
-                        11,
-                        1,
-                        null,
-                        "",
-                        3,
-                        -3,
-                        "<span style='color:#FfFffF'>77777</span>",
-                        null,
-                        1,
-                        0,
-                        null,
-                        {
-                            "id": 1,
-                            "atts": [],
-                            "time": 60,
-                            "transitionMode": null,
-                            "nonTweenType": 0,
-                            "mode": 0
-                        },
-                        {
-                            "___cmdID": "210394287124_0.5652718139759783"
-                        }
-                    ],
-                    [
                         -1,
                         {
-                            "___cmdID": "210394246393_0.3046947373756048"
+                            "___cmdID": "210716097213_0.7385270577262197"
                         }
                     ]
                 ],
@@ -14546,12 +14378,6 @@
         null,
         null
     ],
-    "statusPagesSelectedIndexs": [
-        null,
-        null,
-        null,
-        null,
-        0
-    ],
+    "statusPagesSelectedIndexs": [],
     "id": 1
 }

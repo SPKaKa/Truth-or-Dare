@@ -6,7 +6,7 @@
         "KTV-大厅",
         "KTV-房间-主角",
         "主角房间",
-        null,
+        "参考场景",
         null,
         null,
         null,
@@ -34,7 +34,13 @@
         {
             "id": 1,
             "name": "临时场景",
-            "children": [],
+            "children": [
+                {
+                    "id": 6,
+                    "name": "参考场景",
+                    "children": []
+                }
+            ],
             "isOpen": true
         },
         {

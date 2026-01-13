@@ -657,6 +657,30 @@
                     "mode": 0
                 },
                 {
+                    "___cmdID": "210715254253_0.23097071955919435"
+                }
+            ],
+            [
+                11,
+                1,
+                null,
+                "",
+                3,
+                -3,
+                "<span style='color:#FfFffF'>女主角说想喝点酒，说自己很能喝。</span>",
+                null,
+                1,
+                0,
+                "",
+                {
+                    "id": 1,
+                    "atts": [],
+                    "time": 60,
+                    "transitionMode": null,
+                    "nonTweenType": 0,
+                    "mode": 0
+                },
+                {
                     "___cmdID": "210633543015_0.846029447818206"
                 }
             ],
@@ -3607,19 +3631,6 @@
         [],
         []
     ],
-    "statusPagesSelectedIndexs": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-    ],
+    "statusPagesSelectedIndexs": [],
     "id": 3
 }
