@@ -400,13 +400,13 @@
         }
     ],
     "BORN": {
-        "sceneID": 4,
+        "sceneID": 2,
         "so": {
             "modelID": 1,
-            "index": 8,
+            "index": 5,
             "name": "玩家对象",
-            "x": 744,
-            "y": 408,
+            "x": 504,
+            "y": 360,
             "z": 0,
             "materialData": [
                 {

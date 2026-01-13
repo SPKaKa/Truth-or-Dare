@@ -296,5 +296,9 @@ var CustomCondition;
         return false;
     }
     CustomCondition.f9 = f9;
+    function isInRange(value, min, max) {
+        return value >= min && value <= max;
+    }
+    CustomCondition.isInRange = isInRange;
 })(CustomCondition || (CustomCondition = {}));
 //# sourceMappingURL=CustomCondition.js.map

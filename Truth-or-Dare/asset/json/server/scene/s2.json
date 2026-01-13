@@ -120,7 +120,46 @@
             "moduleIDs": [],
             "hideOriBox": null
         },
-        null,
+        {
+            "modelID": 1,
+            "index": 3,
+            "name": "提示-上厕所",
+            "x": 504,
+            "y": 216,
+            "z": 0,
+            "materialData": [
+                {
+                    "materials": []
+                }
+            ],
+            "avatarID": 5023,
+            "avatarOri": 2,
+            "avatarAct": 1,
+            "avatarFPS": 12,
+            "avatarFrame": 1,
+            "avatarAlpha": 1,
+            "avatarHue": 0,
+            "shadowEnable": false,
+            "shadowWidth": 30,
+            "shadowHeight": 15,
+            "shadowAlpha": 0.5,
+            "displayList": {
+                "avatar": {
+                    "type": 1,
+                    "id": 5023
+                }
+            },
+            "moduleDisplayList": [],
+            "layerLevel": 1,
+            "autoPlayEnable": true,
+            "scale": 1,
+            "showOnEditor": true,
+            "mouseEventEnabledInEditor": true,
+            "playerUID": 0,
+            "hasCommand": [],
+            "moduleIDs": [],
+            "hideOriBox": null
+        },
         {
             "modelID": 7,
             "index": 4,
@@ -160,7 +199,8 @@
             "hasCommand": [],
             "moduleIDs": [],
             "hideOriBox": null
-        }
+        },
+        null
     ],
     "customCommands": [
         [
@@ -532,7 +572,88 @@
                 "copy": false
             }
         },
-        null,
+        {
+            "selectEnabled": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "through": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "bridge": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "fixOri": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "ignoreCantMove": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "moveAutoChangeAction": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "lockBehaviorLayer": {
+                "varType": 0,
+                "value": 0,
+                "copy": false
+            },
+            "keepMoveActWhenCollsionObstacleAndIgnoreCantMove": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "behaviorDir4": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "repeatedTouchEnabled": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "onlyPlayerTouch": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "waitTouchEvent": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "clickEventNoDistance": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "moveSpeed": {
+                "varType": 0,
+                "value": 150,
+                "copy": false
+            },
+            "defBehavior": {
+                "varType": 1,
+                "value": "",
+                "copy": false
+            },
+            "collisionGroup": {
+                "varType": 0,
+                "value": 0,
+                "copy": false
+            }
+        },
         {
             "selectEnabled": {
                 "varType": 2,
@@ -620,7 +741,7 @@
         [],
         [],
         [],
-        null,
+        [],
         []
     ],
     "customAttributesCaches": [],
@@ -833,7 +954,54 @@
                 []
             ]
         },
-        null,
+        {
+            "condition": [],
+            "customCommands": [
+                [
+                    [
+                        11,
+                        1,
+                        null,
+                        "",
+                        3,
+                        -3,
+                        "<span style='color:#FfFffF'>上了厕所</span>",
+                        null,
+                        1,
+                        0,
+                        null,
+                        {
+                            "id": 1,
+                            "atts": [],
+                            "time": 60,
+                            "transitionMode": null,
+                            "nonTweenType": 0,
+                            "mode": 0
+                        },
+                        {
+                            "___cmdID": "210738415719_0.061428790186127014"
+                        }
+                    ],
+                    [
+                        -1,
+                        {
+                            "___cmdID": "210738361411_0.0841527800498838"
+                        }
+                    ]
+                ],
+                [
+                    [
+                        -1,
+                        {
+                            "___cmdID": "210738361412_0.11702403023937635"
+                        }
+                    ]
+                ],
+                [],
+                [],
+                []
+            ]
+        },
         {
             "condition": [],
             "customCommands": [
@@ -1330,13 +1498,9 @@
                 "modulesCustomAttribute": []
             }
         ],
-        null,
+        [],
         []
     ],
-    "statusPagesSelectedIndexs": [
-        1,
-        1,
-        1
-    ],
+    "statusPagesSelectedIndexs": [],
     "id": 2
 }

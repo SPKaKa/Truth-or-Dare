@@ -314,4 +314,15 @@ module CustomCondition {
         }
         return false;
     }
+    /**
+     * 数值区间判断工具函数
+     * 判断数值是否在指定区间内
+     * @param value 要判断的数值
+     * @param min 最小值（包含）
+     * @param max 最大值（包含）
+     * @return [boolean] 是否在区间内
+     */
+    export function isInRange(value: number, min: number, max: number): boolean {
+        return value >= min && value <= max;
+    }
 }

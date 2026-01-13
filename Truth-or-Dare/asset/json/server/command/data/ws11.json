@@ -57,6 +57,78 @@
             "",
             3,
             -3,
+            "<span style='color:#FfFffF'>大家干杯，男主喝了一大口啤酒。</span>",
+            null,
+            1,
+            0,
+            null,
+            {
+                "id": 1,
+                "atts": [],
+                "time": 60,
+                "transitionMode": null,
+                "nonTweenType": 0,
+                "mode": 0
+            },
+            {
+                "___cmdID": "210734343662_0.32312321730746163"
+            }
+        ],
+        [
+            11,
+            1,
+            null,
+            "",
+            3,
+            -3,
+            "<span style='color:#FfFffF'>大家干杯，男主又喝了一大口啤酒。</span>",
+            null,
+            1,
+            0,
+            null,
+            {
+                "id": 1,
+                "atts": [],
+                "time": 60,
+                "transitionMode": null,
+                "nonTweenType": 0,
+                "mode": 0
+            },
+            {
+                "___cmdID": "210734351088_0.07049411362126934"
+            }
+        ],
+        [
+            11,
+            1,
+            null,
+            "",
+            3,
+            -3,
+            "<span style='color:#FfFffF'>接着……</span>",
+            null,
+            1,
+            0,
+            null,
+            {
+                "id": 1,
+                "atts": [],
+                "time": 60,
+                "transitionMode": null,
+                "nonTweenType": 0,
+                "mode": 0
+            },
+            {
+                "___cmdID": "210734329695_0.5302172610860374"
+            }
+        ],
+        [
+            11,
+            1,
+            null,
+            "",
+            3,
+            -3,
             "<span style='color:#FfFffF'>黄毛正在喂女主角喝酒，第1次……</span>",
             null,
             1,

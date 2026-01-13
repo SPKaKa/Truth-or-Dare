@@ -544,7 +544,8 @@
                             }
                         ],
                         "name": "场景事件",
-                        "id": null
+                        "id": null,
+                        "isOpen": true
                     },
                     {
                         "isDirectory": true,
@@ -557,7 +558,8 @@
                             }
                         ],
                         "name": "R18事件",
-                        "id": null
+                        "id": null,
+                        "isOpen": true
                     }
                 ],
                 "isOpen": true,
