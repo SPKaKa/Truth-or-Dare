@@ -11952,9 +11952,9 @@
                     null,
                     null,
                     {
-                        "texID": 55,
-                        "x": 192,
-                        "y": 576
+                        "texID": 53,
+                        "x": 288,
+                        "y": 240
                     }
                 ],
                 [
@@ -12164,6 +12164,7 @@
                 "44": true,
                 "48": true,
                 "50": true,
+                "53": true,
                 "55": true
             },
             "treeLayerMode": true

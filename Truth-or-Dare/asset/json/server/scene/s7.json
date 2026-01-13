@@ -3,7 +3,7 @@
         {
             "modelID": 1,
             "index": 0,
-            "name": "未命名0",
+            "name": "演出-大叔",
             "x": 456,
             "y": 312,
             "z": 0,
@@ -29,7 +29,9 @@
                     "id": 65
                 }
             },
-            "moduleDisplayList": [],
+            "moduleDisplayList": [
+                {}
+            ],
             "layerLevel": 1,
             "autoPlayEnable": true,
             "scale": 1,
@@ -37,7 +39,9 @@
             "mouseEventEnabledInEditor": true,
             "playerUID": 0,
             "hasCommand": [],
-            "moduleIDs": [],
+            "moduleIDs": [
+                7
+            ],
             "hideOriBox": null
         },
         {
@@ -141,7 +145,7 @@
                 }
             ],
             "avatarID": 2,
-            "avatarOri": 8,
+            "avatarOri": 2,
             "avatarAct": 1,
             "avatarFPS": 12,
             "avatarFrame": 1,
@@ -157,7 +161,9 @@
                     "id": 2
                 }
             },
-            "moduleDisplayList": [],
+            "moduleDisplayList": [
+                {}
+            ],
             "layerLevel": 1,
             "autoPlayEnable": true,
             "scale": 1,
@@ -165,15 +171,17 @@
             "mouseEventEnabledInEditor": true,
             "playerUID": 0,
             "hasCommand": [],
-            "moduleIDs": [],
+            "moduleIDs": [
+                7
+            ],
             "hideOriBox": null
         },
         null,
         {
             "modelID": 1,
             "index": 5,
-            "name": "未命名5",
-            "x": 552,
+            "name": "学生证",
+            "x": 504,
             "y": 408,
             "z": 0,
             "materialData": [
@@ -201,7 +209,7 @@
             "moduleDisplayList": [],
             "layerLevel": 1,
             "autoPlayEnable": true,
-            "scale": 0.45,
+            "scale": 0.41,
             "showOnEditor": true,
             "mouseEventEnabledInEditor": true,
             "playerUID": 0,
@@ -209,8 +217,86 @@
             "moduleIDs": [],
             "hideOriBox": null
         },
-        null,
-        null,
+        {
+            "modelID": 1,
+            "index": 6,
+            "name": "内衣",
+            "x": 456,
+            "y": 408,
+            "z": 0,
+            "materialData": [
+                {
+                    "materials": []
+                }
+            ],
+            "avatarID": 13010,
+            "avatarOri": 2,
+            "avatarAct": 1,
+            "avatarFPS": 12,
+            "avatarFrame": 1,
+            "avatarAlpha": 1,
+            "avatarHue": 0,
+            "shadowEnable": false,
+            "shadowWidth": 30,
+            "shadowHeight": 15,
+            "shadowAlpha": 0.5,
+            "displayList": {
+                "avatar": {
+                    "type": 1,
+                    "id": 13010
+                }
+            },
+            "moduleDisplayList": [],
+            "layerLevel": 1,
+            "autoPlayEnable": true,
+            "scale": 0.61,
+            "showOnEditor": true,
+            "mouseEventEnabledInEditor": true,
+            "playerUID": 0,
+            "hasCommand": [],
+            "moduleIDs": [],
+            "hideOriBox": null
+        },
+        {
+            "modelID": 1,
+            "index": 7,
+            "name": "门-KTV-大厅",
+            "x": 792,
+            "y": 360,
+            "z": 0,
+            "materialData": [
+                {
+                    "materials": []
+                }
+            ],
+            "avatarID": 5025,
+            "avatarOri": 2,
+            "avatarAct": 1,
+            "avatarFPS": 12,
+            "avatarFrame": 1,
+            "avatarAlpha": 1,
+            "avatarHue": 0,
+            "shadowEnable": false,
+            "shadowWidth": 30,
+            "shadowHeight": 15,
+            "shadowAlpha": 0.5,
+            "displayList": {
+                "avatar": {
+                    "type": 1,
+                    "id": 5025
+                }
+            },
+            "moduleDisplayList": [],
+            "layerLevel": 1,
+            "autoPlayEnable": true,
+            "scale": 1,
+            "showOnEditor": true,
+            "mouseEventEnabledInEditor": true,
+            "playerUID": 0,
+            "hasCommand": [],
+            "moduleIDs": [],
+            "hideOriBox": null
+        },
         null,
         null,
         null,
@@ -265,14 +351,50 @@
                 18,
                 "===DEBUG用，快速进入事件===",
                 {
-                    "___cmdID": "210675105725_0.38172904881684544"
+                    "___cmdID": "210675105725_0.38172904881684544",
+                    "disabled": true
+                }
+            ],
+            [
+                13,
+                3,
+                9,
+                0,
+                0,
+                1,
+                1,
+                1,
+                [
+                    0,
+                    100
+                ],
+                0,
+                -1,
+                [],
+                0,
+                0,
+                0,
+                null,
+                null,
+                null,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                {
+                    "___cmdID": "210753053201_0.04713695691195552",
+                    "disabled": true
                 }
             ],
             [
                 18,
                 "===DEBUG用 END===\n===上述全部要注掉===",
                 {
-                    "___cmdID": "210675122396_0.5515052201420609"
+                    "___cmdID": "210675122396_0.5515052201420609",
+                    "disabled": true
                 }
             ],
             [
@@ -351,6 +473,239 @@
                 }
             ],
             [
+                17,
+                60,
+                0,
+                false,
+                0,
+                {
+                    "___cmdID": "210752611257_0.895282091732508"
+                }
+            ],
+            [
+                22,
+                -2,
+                0,
+                [
+                    [
+                        34,
+                        3021,
+                        false,
+                        false,
+                        20,
+                        0,
+                        0,
+                        true
+                    ]
+                ],
+                true,
+                1,
+                false,
+                1,
+                {
+                    "___cmdID": "210752617183_0.4102869277151242"
+                }
+            ],
+            [
+                23,
+                {
+                    "___cmdID": "210752633622_0.6096110881951"
+                }
+            ],
+            [
+                22,
+                3,
+                0,
+                [
+                    [
+                        19
+                    ],
+                    [
+                        34,
+                        3026,
+                        false,
+                        false,
+                        20,
+                        0,
+                        0,
+                        true
+                    ],
+                    [
+                        12,
+                        0,
+                        14,
+                        7,
+                        true,
+                        0,
+                        0,
+                        true,
+                        false,
+                        false,
+                        true,
+                        2
+                    ]
+                ],
+                true,
+                1,
+                false,
+                1,
+                {
+                    "___cmdID": "210752781178_0.6096474946448427"
+                }
+            ],
+            [
+                23,
+                {
+                    "___cmdID": "210753097394_0.5989193202700871"
+                }
+            ],
+            [
+                11,
+                1,
+                null,
+                "",
+                3,
+                -3,
+                "<span style='color:#FfFffF'>把这里看到的事情都忘掉！</span>",
+                null,
+                1,
+                0,
+                null,
+                {
+                    "id": 1,
+                    "atts": [],
+                    "time": 60,
+                    "transitionMode": null,
+                    "nonTweenType": 0,
+                    "mode": 0
+                },
+                {
+                    "___cmdID": "210752859129_0.32759591528014487"
+                }
+            ],
+            [
+                11,
+                1,
+                null,
+                "",
+                3,
+                -3,
+                "<span style='color:#FfFffF'>其实我什么都没看到……</span>",
+                null,
+                1,
+                0,
+                null,
+                {
+                    "id": 1,
+                    "atts": [],
+                    "time": 60,
+                    "transitionMode": null,
+                    "nonTweenType": 0,
+                    "mode": 0
+                },
+                {
+                    "___cmdID": "210752845137_0.7777275430844328"
+                }
+            ],
+            [
+                11,
+                1,
+                null,
+                "",
+                3,
+                -3,
+                "<span style='color:#FfFffF'>为什么门没锁……希望没落下啥东西……</span>",
+                null,
+                1,
+                0,
+                null,
+                {
+                    "id": 1,
+                    "atts": [],
+                    "time": 60,
+                    "transitionMode": null,
+                    "nonTweenType": 0,
+                    "mode": 0
+                },
+                {
+                    "___cmdID": "210756161411_0.2763041476134833"
+                }
+            ],
+            [
+                22,
+                -2,
+                0,
+                [
+                    [
+                        16
+                    ],
+                    [
+                        39,
+                        0
+                    ],
+                    [
+                        3
+                    ],
+                    [
+                        39,
+                        1
+                    ]
+                ],
+                true,
+                1,
+                false,
+                1,
+                {
+                    "___cmdID": "210752875977_0.5269906466116876"
+                }
+            ],
+            [
+                23,
+                {
+                    "___cmdID": "210752875977_0.30775250912018226"
+                }
+            ],
+            [
+                22,
+                3,
+                0,
+                [
+                    [
+                        12,
+                        0,
+                        16,
+                        7,
+                        true,
+                        0,
+                        0,
+                        true,
+                        false,
+                        false,
+                        true,
+                        2
+                    ],
+                    [
+                        36,
+                        "asset/audio/se/FD/SE_Move1.ogg,1,1",
+                        0,
+                        0
+                    ]
+                ],
+                true,
+                1,
+                false,
+                1,
+                {
+                    "___cmdID": "210752916250_0.32981356265935013"
+                }
+            ],
+            [
+                23,
+                {
+                    "___cmdID": "210753129154_0.7919153024202581"
+                }
+            ],
+            [
                 13,
                 3,
                 9,
@@ -380,7 +735,31 @@
                 1,
                 0,
                 {
-                    "___cmdID": "210748913427_0.35225576083728605"
+                    "___cmdID": "210752594314_0.37946203017973557"
+                }
+            ],
+            [
+                11,
+                1,
+                null,
+                "",
+                3,
+                -3,
+                "<span style='color:#FfFffF'>（到底发生了什么？）</span>",
+                null,
+                1,
+                0,
+                null,
+                {
+                    "id": 1,
+                    "atts": [],
+                    "time": 60,
+                    "transitionMode": null,
+                    "nonTweenType": 0,
+                    "mode": 0
+                },
+                {
+                    "___cmdID": "210752955173_0.06726043296075668"
                 }
             ],
             [
@@ -700,7 +1079,7 @@
             },
             "through": {
                 "varType": 2,
-                "value": false,
+                "value": true,
                 "copy": false
             },
             "bridge": {
@@ -857,8 +1236,170 @@
                 "copy": false
             }
         },
-        null,
-        null,
+        {
+            "selectEnabled": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "through": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "bridge": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "fixOri": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "ignoreCantMove": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "moveAutoChangeAction": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "lockBehaviorLayer": {
+                "varType": 0,
+                "value": 0,
+                "copy": false
+            },
+            "keepMoveActWhenCollsionObstacleAndIgnoreCantMove": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "behaviorDir4": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "repeatedTouchEnabled": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "onlyPlayerTouch": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "waitTouchEvent": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "clickEventNoDistance": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "moveSpeed": {
+                "varType": 0,
+                "value": 150,
+                "copy": false
+            },
+            "defBehavior": {
+                "varType": 1,
+                "value": "",
+                "copy": false
+            },
+            "collisionGroup": {
+                "varType": 0,
+                "value": 0,
+                "copy": false
+            }
+        },
+        {
+            "selectEnabled": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "through": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "bridge": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "fixOri": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "ignoreCantMove": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "moveAutoChangeAction": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "lockBehaviorLayer": {
+                "varType": 0,
+                "value": 0,
+                "copy": false
+            },
+            "keepMoveActWhenCollsionObstacleAndIgnoreCantMove": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "behaviorDir4": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "repeatedTouchEnabled": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "onlyPlayerTouch": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "waitTouchEvent": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "clickEventNoDistance": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "moveSpeed": {
+                "varType": 0,
+                "value": 150,
+                "copy": false
+            },
+            "defBehavior": {
+                "varType": 1,
+                "value": "",
+                "copy": false
+            },
+            "collisionGroup": {
+                "varType": 0,
+                "value": 0,
+                "copy": false
+            }
+        },
         null,
         null,
         null,
@@ -950,12 +1491,26 @@
         null
     ],
     "modulesCustomAttributes": [
-        [],
         [
             {
-                "blendMode": {
-                    "varType": 0,
-                    "value": 3,
+                "ModuleActive": {
+                    "varType": 2,
+                    "value": true,
+                    "copy": false
+                },
+                "OverrideSEsetting": {
+                    "varType": 9,
+                    "value": [],
+                    "copy": false
+                },
+                "bOverrideDefault": {
+                    "varType": 2,
+                    "value": false,
+                    "copy": false
+                },
+                "OverrideDefaultSE": {
+                    "varType": 1,
+                    "value": "",
                     "copy": false
                 }
             }
@@ -969,7 +1524,39 @@
                 }
             }
         ],
-        [],
+        [
+            {
+                "blendMode": {
+                    "varType": 0,
+                    "value": 3,
+                    "copy": false
+                }
+            }
+        ],
+        [
+            {
+                "ModuleActive": {
+                    "varType": 2,
+                    "value": true,
+                    "copy": false
+                },
+                "OverrideSEsetting": {
+                    "varType": 9,
+                    "value": [],
+                    "copy": false
+                },
+                "bOverrideDefault": {
+                    "varType": 2,
+                    "value": false,
+                    "copy": false
+                },
+                "OverrideDefaultSE": {
+                    "varType": 1,
+                    "value": "",
+                    "copy": false
+                }
+            }
+        ],
         [],
         [],
         [],
@@ -997,8 +1584,8 @@
                 {
                     "type": 1,
                     "varID": 9,
-                    "compare": 3,
-                    "value": 2
+                    "compare": 4,
+                    "value": 6
                 }
             ],
             "customCommands": [
@@ -1010,7 +1597,31 @@
                         "",
                         3,
                         -3,
-                        "<span style='color:#FfFffF'>你找错人了，我不认识你……</span>",
+                        "<span style='color:#FfFffF'>快点从我的房间里出去！</span>",
+                        null,
+                        1,
+                        0,
+                        null,
+                        {
+                            "id": 1,
+                            "atts": [],
+                            "time": 60,
+                            "transitionMode": null,
+                            "nonTweenType": 0,
+                            "mode": 0
+                        },
+                        {
+                            "___cmdID": "210756205430_0.9006858709704468"
+                        }
+                    ],
+                    [
+                        11,
+                        1,
+                        null,
+                        "",
+                        3,
+                        -3,
+                        "<span style='color:#FfFffF'>好、好的……</span>",
                         null,
                         1,
                         0,
@@ -1104,19 +1715,751 @@
                     "type": 1,
                     "varID": 9,
                     "compare": 4,
-                    "value": 1
+                    "value": 3
                 }
             ],
             "customCommands": [
-                [],
+                [
+                    [
+                        0,
+                        0,
+                        4,
+                        [
+                            0,
+                            1,
+                            1,
+                            0
+                        ],
+                        0,
+                        0,
+                        [
+                            2,
+                            1,
+                            1,
+                            0
+                        ],
+                        0,
+                        [
+                            1,
+                            1,
+                            [
+                                0,
+                                0,
+                                1,
+                                1
+                            ]
+                        ],
+                        0,
+                        0,
+                        [
+                            1,
+                            1
+                        ],
+                        "",
+                        "",
+                        false,
+                        null,
+                        null,
+                        [
+                            2,
+                            {
+                                "type": 10,
+                                "posMode": 0,
+                                "customAttr": {},
+                                "soType": 0,
+                                "useVar": 0,
+                                "no": 0,
+                                "varID": 0,
+                                "soModuleAttr": {}
+                            },
+                            [
+                                {
+                                    "42657064543_0.724447104540606": 10,
+                                    "42657260229_0.9459348877505995": 0,
+                                    "42657330474_0.5456078300460445": {},
+                                    "42664713486_0.3887133368359288": 0,
+                                    "42664713486_0.09898355139063386": 0,
+                                    "42664713486_0.7762137906641664": 0,
+                                    "42664713486_0.9108713362269023": 0,
+                                    "103533776812_0.06948608738189344": {}
+                                }
+                            ]
+                        ],
+                        null,
+                        null,
+                        null,
+                        0,
+                        0,
+                        [
+                            0,
+                            {},
+                            ""
+                        ],
+                        [
+                            0,
+                            {},
+                            ""
+                        ],
+                        {
+                            "___cmdID": "210755324349_0.5327675665974059"
+                        }
+                    ],
+                    [
+                        11,
+                        1,
+                        null,
+                        "",
+                        3,
+                        -3,
+                        "<span style='color:#FfFffF'>好像是我们大学的学生证……</span>",
+                        null,
+                        1,
+                        0,
+                        null,
+                        {
+                            "id": 1,
+                            "atts": [],
+                            "time": 60,
+                            "transitionMode": null,
+                            "nonTweenType": 0,
+                            "mode": 0
+                        },
+                        {
+                            "___cmdID": "210756064461_0.4099084151193817"
+                        }
+                    ],
+                    [
+                        11,
+                        1,
+                        null,
+                        "",
+                        3,
+                        -3,
+                        "<span style='color:#FfFffF'>在上面看不太清楚，我要绕到对面去看看。</span>",
+                        null,
+                        1,
+                        0,
+                        null,
+                        {
+                            "id": 1,
+                            "atts": [],
+                            "time": 60,
+                            "transitionMode": null,
+                            "nonTweenType": 0,
+                            "mode": 0
+                        },
+                        {
+                            "___cmdID": "210755697131_0.7531419472813241"
+                        }
+                    ],
+                    [
+                        -1,
+                        {
+                            "___cmdID": "210755414494_0.12288359056847087"
+                        }
+                    ],
+                    [
+                        2,
+                        {
+                            "___cmdID": "210755414490_0.8411798581134802"
+                        }
+                    ],
+                    [
+                        0,
+                        0,
+                        4,
+                        [
+                            0,
+                            1,
+                            1,
+                            0
+                        ],
+                        0,
+                        0,
+                        [
+                            8,
+                            1,
+                            1,
+                            0
+                        ],
+                        0,
+                        [
+                            1,
+                            1,
+                            [
+                                0,
+                                0,
+                                1,
+                                1
+                            ]
+                        ],
+                        0,
+                        0,
+                        [
+                            1,
+                            1
+                        ],
+                        "",
+                        "",
+                        false,
+                        null,
+                        null,
+                        [
+                            2,
+                            {
+                                "type": 10,
+                                "posMode": 0,
+                                "customAttr": {},
+                                "soType": 0,
+                                "useVar": 0,
+                                "no": 0,
+                                "varID": 0,
+                                "soModuleAttr": {}
+                            },
+                            [
+                                {
+                                    "42657064543_0.724447104540606": 10,
+                                    "42657260229_0.9459348877505995": 0,
+                                    "42657330474_0.5456078300460445": {},
+                                    "42664713486_0.3887133368359288": 0,
+                                    "42664713486_0.09898355139063386": 0,
+                                    "42664713486_0.7762137906641664": 0,
+                                    "42664713486_0.9108713362269023": 0,
+                                    "103533776812_0.06948608738189344": {}
+                                }
+                            ]
+                        ],
+                        null,
+                        null,
+                        null,
+                        0,
+                        0,
+                        [
+                            0,
+                            {},
+                            ""
+                        ],
+                        [
+                            0,
+                            {},
+                            ""
+                        ],
+                        {
+                            "___cmdID": "210755691842_0.4025644438477365"
+                        }
+                    ],
+                    [
+                        11,
+                        1,
+                        null,
+                        "",
+                        3,
+                        -3,
+                        "<span style='color:#FfFffF'>嘿，这是我们学校的学生证……</span>",
+                        null,
+                        1,
+                        0,
+                        null,
+                        {
+                            "id": 1,
+                            "atts": [],
+                            "time": 60,
+                            "transitionMode": null,
+                            "nonTweenType": 0,
+                            "mode": 0
+                        },
+                        {
+                            "___cmdID": "210756098627_0.9663942656672602"
+                        }
+                    ],
+                    [
+                        11,
+                        1,
+                        null,
+                        "",
+                        3,
+                        -3,
+                        "<span style='color:#FfFffF'>这个女孩子看着眼熟……</span>",
+                        null,
+                        1,
+                        0,
+                        null,
+                        {
+                            "id": 1,
+                            "atts": [],
+                            "time": 60,
+                            "transitionMode": null,
+                            "nonTweenType": 0,
+                            "mode": 0
+                        },
+                        {
+                            "___cmdID": "210755722060_0.710659755133684"
+                        }
+                    ],
+                    [
+                        22,
+                        0,
+                        0,
+                        [
+                            [
+                                34,
+                                3020,
+                                false,
+                                false,
+                                20,
+                                0,
+                                0,
+                                true
+                            ],
+                            [
+                                12,
+                                0,
+                                10,
+                                7,
+                                true,
+                                0,
+                                0,
+                                true,
+                                false,
+                                false,
+                                true,
+                                2
+                            ],
+                            [
+                                16
+                            ]
+                        ],
+                        1,
+                        1,
+                        false,
+                        1,
+                        {
+                            "___cmdID": "210756170592_0.4183396970964801"
+                        }
+                    ],
+                    [
+                        23,
+                        {
+                            "___cmdID": "210756421787_0.4122407597059534"
+                        }
+                    ],
+                    [
+                        11,
+                        1,
+                        null,
+                        "",
+                        3,
+                        -3,
+                        "<span style='color:#FfFffF'>这、这是我的……</span>",
+                        null,
+                        1,
+                        0,
+                        null,
+                        {
+                            "id": 1,
+                            "atts": [],
+                            "time": 60,
+                            "transitionMode": null,
+                            "nonTweenType": 0,
+                            "mode": 0
+                        },
+                        {
+                            "___cmdID": "210756472483_0.285174053585195"
+                        }
+                    ],
+                    [
+                        11,
+                        1,
+                        null,
+                        "",
+                        3,
+                        -3,
+                        "<span style='color:#FfFffF'>我拿走了。</span>",
+                        null,
+                        1,
+                        0,
+                        null,
+                        {
+                            "id": 1,
+                            "atts": [],
+                            "time": 60,
+                            "transitionMode": null,
+                            "nonTweenType": 0,
+                            "mode": 0
+                        },
+                        {
+                            "___cmdID": "210756462787_0.3535081381593028"
+                        }
+                    ],
+                    [
+                        13,
+                        3,
+                        9,
+                        0,
+                        0,
+                        4,
+                        1,
+                        1,
+                        [
+                            0,
+                            100
+                        ],
+                        0,
+                        -1,
+                        [],
+                        0,
+                        0,
+                        0,
+                        null,
+                        null,
+                        null,
+                        0,
+                        0,
+                        0,
+                        1,
+                        1,
+                        1,
+                        0,
+                        {
+                            "___cmdID": "210756490235_0.42834498001729315"
+                        }
+                    ],
+                    [
+                        22,
+                        0,
+                        0,
+                        [
+                            [
+                                39,
+                                0
+                            ],
+                            [
+                                2
+                            ],
+                            [
+                                39,
+                                1
+                            ]
+                        ],
+                        1,
+                        1,
+                        false,
+                        1,
+                        {
+                            "___cmdID": "210756510179_0.1696952756209631"
+                        }
+                    ],
+                    [
+                        23,
+                        {
+                            "___cmdID": "210756784396_0.3161024423136547"
+                        }
+                    ],
+                    [
+                        11,
+                        1,
+                        null,
+                        "",
+                        3,
+                        -3,
+                        "<span style='color:#FfFffF'>这也、也是我的……</span>",
+                        null,
+                        1,
+                        0,
+                        null,
+                        {
+                            "id": 1,
+                            "atts": [],
+                            "time": 60,
+                            "transitionMode": null,
+                            "nonTweenType": 0,
+                            "mode": 0
+                        },
+                        {
+                            "___cmdID": "210756527627_0.2694016695664321"
+                        }
+                    ],
+                    [
+                        13,
+                        3,
+                        9,
+                        0,
+                        0,
+                        5,
+                        1,
+                        1,
+                        [
+                            0,
+                            100
+                        ],
+                        0,
+                        -1,
+                        [],
+                        0,
+                        0,
+                        0,
+                        null,
+                        null,
+                        null,
+                        0,
+                        0,
+                        0,
+                        1,
+                        1,
+                        1,
+                        0,
+                        {
+                            "___cmdID": "210756535483_0.5906165271696642"
+                        }
+                    ],
+                    [
+                        22,
+                        0,
+                        0,
+                        [
+                            [
+                                12,
+                                0,
+                                16,
+                                7,
+                                true,
+                                0,
+                                0,
+                                true,
+                                false,
+                                false,
+                                true,
+                                2
+                            ],
+                            [
+                                36,
+                                "asset/audio/se/FD/SE_Move1.ogg,1,1",
+                                0,
+                                0
+                            ]
+                        ],
+                        1,
+                        1,
+                        false,
+                        1,
+                        {
+                            "___cmdID": "210756544891_0.7590480227188894"
+                        }
+                    ],
+                    [
+                        23,
+                        {
+                            "___cmdID": "210756581262_0.25090410655880446"
+                        }
+                    ],
+                    [
+                        13,
+                        3,
+                        9,
+                        0,
+                        0,
+                        6,
+                        1,
+                        1,
+                        [
+                            0,
+                            100
+                        ],
+                        0,
+                        -1,
+                        [],
+                        0,
+                        0,
+                        0,
+                        null,
+                        null,
+                        null,
+                        0,
+                        0,
+                        0,
+                        1,
+                        1,
+                        1,
+                        0,
+                        {
+                            "___cmdID": "210756583509_0.13014346776573893"
+                        }
+                    ],
+                    [
+                        -1,
+                        {
+                            "___cmdID": "210755691842_0.2551741411218629"
+                        }
+                    ],
+                    [
+                        2,
+                        {
+                            "___cmdID": "210755691842_0.9421189432925625"
+                        }
+                    ],
+                    [
+                        -1,
+                        {
+                            "___cmdID": "210755291123_0.15332374199258147"
+                        }
+                    ]
+                ],
                 [],
                 [],
                 [],
                 []
             ]
         },
-        null,
-        null,
+        {
+            "condition": [
+                {
+                    "type": 1,
+                    "varID": 9,
+                    "compare": 1,
+                    "value": 1
+                },
+                {
+                    "type": 1,
+                    "varID": 9,
+                    "compare": 4,
+                    "value": 4
+                }
+            ],
+            "customCommands": [
+                [
+                    [
+                        11,
+                        1,
+                        null,
+                        "",
+                        3,
+                        -3,
+                        "<span style='color:#FfFffF'>这是我花钱买的！别碰！</span>",
+                        null,
+                        1,
+                        0,
+                        null,
+                        {
+                            "id": 1,
+                            "atts": [],
+                            "time": 60,
+                            "transitionMode": null,
+                            "nonTweenType": 0,
+                            "mode": 0
+                        },
+                        {
+                            "___cmdID": "210756009596_0.7714973785005426"
+                        }
+                    ],
+                    [
+                        11,
+                        1,
+                        null,
+                        "",
+                        3,
+                        -3,
+                        "<span style='color:#FfFffF'>鬼才会碰女人的内衣！</span>",
+                        null,
+                        1,
+                        0,
+                        null,
+                        {
+                            "id": 1,
+                            "atts": [],
+                            "time": 60,
+                            "transitionMode": null,
+                            "nonTweenType": 0,
+                            "mode": 0
+                        },
+                        {
+                            "___cmdID": "210756027795_0.2582171355644711"
+                        }
+                    ],
+                    [
+                        11,
+                        1,
+                        null,
+                        "",
+                        3,
+                        -3,
+                        "<span style='color:#FfFffF'>（其实我碰了……还是热的……像是刚被脱下来的……）</span>",
+                        null,
+                        1,
+                        0,
+                        null,
+                        {
+                            "id": 1,
+                            "atts": [],
+                            "time": 60,
+                            "transitionMode": null,
+                            "nonTweenType": 0,
+                            "mode": 0
+                        },
+                        {
+                            "___cmdID": "210756022946_0.10813565257314517"
+                        }
+                    ],
+                    [
+                        -1,
+                        {
+                            "___cmdID": "210755978877_0.5459336801857468"
+                        }
+                    ]
+                ],
+                [],
+                [],
+                [],
+                []
+            ]
+        },
+        {
+            "condition": [],
+            "customCommands": [
+                [
+                    [
+                        -1,
+                        {
+                            "___cmdID": "210640690855_0.6555048303035578"
+                        }
+                    ]
+                ],
+                [
+                    [
+                        60005,
+                        {
+                            "74577032484_0.13493609495640202": "asset/audio/se/FD/SE_Move1.ogg,1,1",
+                            "74578579319_0.15291120828407134": 1,
+                            "91116691228_0.19588751423957396": 1,
+                            "91116362027_0.0524615397494288": false,
+                            "74587606222_0.5579985331498136": false,
+                            "74587987674_0.5977703161602927": false
+                        },
+                        "210755853715_0.02263975360788595"
+                    ],
+                    [
+                        21,
+                        false,
+                        3,
+                        792,
+                        120,
+                        true,
+                        1,
+                        {
+                            "___cmdID": "210755853715_0.7708092382819371"
+                        }
+                    ],
+                    [
+                        -1,
+                        {
+                            "___cmdID": "210642847913_0.5338661466671526"
+                        }
+                    ]
+                ],
+                [],
+                [],
+                []
+            ]
+        },
         null,
         null,
         null,
@@ -1173,8 +2516,8 @@
         [],
         null,
         [],
-        null,
-        null,
+        [],
+        [],
         null,
         null,
         null,
@@ -1418,7 +2761,8 @@
         null,
         null,
         null,
-        1
+        null,
+        null
     ],
-    "id": 4
+    "id": 7
 }

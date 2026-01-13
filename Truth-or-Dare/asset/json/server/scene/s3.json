@@ -88,8 +88,8 @@
             "modelID": 7,
             "index": 2,
             "name": "灯光-饮料机-1",
-            "x": 164,
-            "y": 333,
+            "x": 168,
+            "y": 312,
             "z": 0,
             "materialData": [
                 {
@@ -340,7 +340,46 @@
             "moduleIDs": [],
             "hideOriBox": null
         },
-        null,
+        {
+            "modelID": 1,
+            "index": 8,
+            "name": "赢料机",
+            "x": 264,
+            "y": 408,
+            "z": 0,
+            "materialData": [
+                {
+                    "materials": []
+                }
+            ],
+            "avatarID": 5023,
+            "avatarOri": 2,
+            "avatarAct": 1,
+            "avatarFPS": 12,
+            "avatarFrame": 1,
+            "avatarAlpha": 1,
+            "avatarHue": 0,
+            "shadowEnable": false,
+            "shadowWidth": 30,
+            "shadowHeight": 15,
+            "shadowAlpha": 0.5,
+            "displayList": {
+                "avatar": {
+                    "type": 1,
+                    "id": 5023
+                }
+            },
+            "moduleDisplayList": [],
+            "layerLevel": 1,
+            "autoPlayEnable": true,
+            "scale": 1,
+            "showOnEditor": true,
+            "mouseEventEnabledInEditor": true,
+            "playerUID": 0,
+            "hasCommand": [],
+            "moduleIDs": [],
+            "hideOriBox": null
+        },
         {
             "modelID": 1,
             "index": 9,
@@ -461,10 +500,97 @@
             "moduleIDs": [],
             "hideOriBox": null
         },
-        null
+        null,
+        {
+            "modelID": 1,
+            "index": 13,
+            "name": "水池",
+            "x": 312,
+            "y": 408,
+            "z": 0,
+            "materialData": [
+                {
+                    "materials": []
+                }
+            ],
+            "avatarID": 5023,
+            "avatarOri": 2,
+            "avatarAct": 1,
+            "avatarFPS": 12,
+            "avatarFrame": 1,
+            "avatarAlpha": 1,
+            "avatarHue": 0,
+            "shadowEnable": false,
+            "shadowWidth": 30,
+            "shadowHeight": 15,
+            "shadowAlpha": 0.5,
+            "displayList": {
+                "avatar": {
+                    "type": 1,
+                    "id": 5023
+                }
+            },
+            "moduleDisplayList": [],
+            "layerLevel": 1,
+            "autoPlayEnable": true,
+            "scale": 1,
+            "showOnEditor": true,
+            "mouseEventEnabledInEditor": true,
+            "playerUID": 0,
+            "hasCommand": [],
+            "moduleIDs": [],
+            "hideOriBox": null
+        }
     ],
     "customCommands": [
         [
+            [
+                18,
+                "===DEBUG用，快速进入事件===",
+                {
+                    "___cmdID": "210757355357_0.08705903243111379"
+                }
+            ],
+            [
+                13,
+                3,
+                6,
+                0,
+                0,
+                3,
+                1,
+                1,
+                [
+                    0,
+                    100
+                ],
+                0,
+                -1,
+                [],
+                0,
+                0,
+                0,
+                null,
+                null,
+                null,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                {
+                    "___cmdID": "210757366348_0.843271759530547"
+                }
+            ],
+            [
+                18,
+                "===DEBUG用 END===\n===上述全部要注掉===",
+                {
+                    "___cmdID": "210757364339_0.9834006969455169"
+                }
+            ],
             [
                 32,
                 0,
@@ -1940,180 +2066,344 @@
                 "copy": false
             }
         },
+        {
+            "selectEnabled": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "through": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "bridge": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "fixOri": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "ignoreCantMove": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "moveAutoChangeAction": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "lockBehaviorLayer": {
+                "varType": 0,
+                "value": 0,
+                "copy": false
+            },
+            "keepMoveActWhenCollsionObstacleAndIgnoreCantMove": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "behaviorDir4": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "repeatedTouchEnabled": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "onlyPlayerTouch": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "waitTouchEvent": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "clickEventNoDistance": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "moveSpeed": {
+                "varType": 0,
+                "value": 150,
+                "copy": false
+            },
+            "defBehavior": {
+                "varType": 1,
+                "value": "",
+                "copy": false
+            },
+            "collisionGroup": {
+                "varType": 0,
+                "value": 0,
+                "copy": false
+            }
+        },
+        {
+            "selectEnabled": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "through": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "bridge": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "fixOri": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "ignoreCantMove": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "moveAutoChangeAction": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "lockBehaviorLayer": {
+                "varType": 0,
+                "value": 0,
+                "copy": false
+            },
+            "keepMoveActWhenCollsionObstacleAndIgnoreCantMove": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "behaviorDir4": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "repeatedTouchEnabled": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "onlyPlayerTouch": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "waitTouchEvent": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "clickEventNoDistance": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "moveSpeed": {
+                "varType": 0,
+                "value": 150,
+                "copy": false
+            },
+            "defBehavior": {
+                "varType": 1,
+                "value": "",
+                "copy": false
+            },
+            "collisionGroup": {
+                "varType": 0,
+                "value": 0,
+                "copy": false
+            }
+        },
+        {
+            "selectEnabled": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "through": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "bridge": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "fixOri": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "ignoreCantMove": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "moveAutoChangeAction": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "lockBehaviorLayer": {
+                "varType": 0,
+                "value": 0,
+                "copy": false
+            },
+            "keepMoveActWhenCollsionObstacleAndIgnoreCantMove": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "behaviorDir4": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "repeatedTouchEnabled": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "onlyPlayerTouch": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "waitTouchEvent": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "clickEventNoDistance": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "moveSpeed": {
+                "varType": 0,
+                "value": 150,
+                "copy": false
+            },
+            "defBehavior": {
+                "varType": 1,
+                "value": "",
+                "copy": false
+            },
+            "collisionGroup": {
+                "varType": 0,
+                "value": 0,
+                "copy": false
+            }
+        },
+        {
+            "selectEnabled": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "through": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "bridge": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "fixOri": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "ignoreCantMove": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "moveAutoChangeAction": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "lockBehaviorLayer": {
+                "varType": 0,
+                "value": 0,
+                "copy": false
+            },
+            "keepMoveActWhenCollsionObstacleAndIgnoreCantMove": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "behaviorDir4": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "repeatedTouchEnabled": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "onlyPlayerTouch": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "waitTouchEvent": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "clickEventNoDistance": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "moveSpeed": {
+                "varType": 0,
+                "value": 150,
+                "copy": false
+            },
+            "defBehavior": {
+                "varType": 1,
+                "value": "",
+                "copy": false
+            },
+            "collisionGroup": {
+                "varType": 0,
+                "value": 0,
+                "copy": false
+            }
+        },
         null,
         {
             "selectEnabled": {
                 "varType": 2,
-                "value": false,
-                "copy": false
-            },
-            "through": {
-                "varType": 2,
                 "value": true,
-                "copy": false
-            },
-            "bridge": {
-                "varType": 2,
-                "value": false,
-                "copy": false
-            },
-            "fixOri": {
-                "varType": 2,
-                "value": false,
-                "copy": false
-            },
-            "ignoreCantMove": {
-                "varType": 2,
-                "value": false,
-                "copy": false
-            },
-            "moveAutoChangeAction": {
-                "varType": 2,
-                "value": true,
-                "copy": false
-            },
-            "lockBehaviorLayer": {
-                "varType": 0,
-                "value": 0,
-                "copy": false
-            },
-            "keepMoveActWhenCollsionObstacleAndIgnoreCantMove": {
-                "varType": 2,
-                "value": false,
-                "copy": false
-            },
-            "behaviorDir4": {
-                "varType": 2,
-                "value": false,
-                "copy": false
-            },
-            "repeatedTouchEnabled": {
-                "varType": 2,
-                "value": false,
-                "copy": false
-            },
-            "onlyPlayerTouch": {
-                "varType": 2,
-                "value": true,
-                "copy": false
-            },
-            "waitTouchEvent": {
-                "varType": 2,
-                "value": true,
-                "copy": false
-            },
-            "clickEventNoDistance": {
-                "varType": 2,
-                "value": false,
-                "copy": false
-            },
-            "moveSpeed": {
-                "varType": 0,
-                "value": 150,
-                "copy": false
-            },
-            "defBehavior": {
-                "varType": 1,
-                "value": "",
-                "copy": false
-            },
-            "collisionGroup": {
-                "varType": 0,
-                "value": 0,
-                "copy": false
-            }
-        },
-        {
-            "selectEnabled": {
-                "varType": 2,
-                "value": false,
                 "copy": false
             },
             "through": {
                 "varType": 2,
                 "value": false,
-                "copy": false
-            },
-            "bridge": {
-                "varType": 2,
-                "value": false,
-                "copy": false
-            },
-            "fixOri": {
-                "varType": 2,
-                "value": false,
-                "copy": false
-            },
-            "ignoreCantMove": {
-                "varType": 2,
-                "value": false,
-                "copy": false
-            },
-            "moveAutoChangeAction": {
-                "varType": 2,
-                "value": true,
-                "copy": false
-            },
-            "lockBehaviorLayer": {
-                "varType": 0,
-                "value": 0,
-                "copy": false
-            },
-            "keepMoveActWhenCollsionObstacleAndIgnoreCantMove": {
-                "varType": 2,
-                "value": false,
-                "copy": false
-            },
-            "behaviorDir4": {
-                "varType": 2,
-                "value": false,
-                "copy": false
-            },
-            "repeatedTouchEnabled": {
-                "varType": 2,
-                "value": false,
-                "copy": false
-            },
-            "onlyPlayerTouch": {
-                "varType": 2,
-                "value": true,
-                "copy": false
-            },
-            "waitTouchEvent": {
-                "varType": 2,
-                "value": true,
-                "copy": false
-            },
-            "clickEventNoDistance": {
-                "varType": 2,
-                "value": false,
-                "copy": false
-            },
-            "moveSpeed": {
-                "varType": 0,
-                "value": 150,
-                "copy": false
-            },
-            "defBehavior": {
-                "varType": 1,
-                "value": "",
-                "copy": false
-            },
-            "collisionGroup": {
-                "varType": 0,
-                "value": 0,
-                "copy": false
-            }
-        },
-        {
-            "selectEnabled": {
-                "varType": 2,
-                "value": false,
-                "copy": false
-            },
-            "through": {
-                "varType": 2,
-                "value": true,
                 "copy": false
             },
             "bridge": {
@@ -2310,6 +2600,8 @@
         [],
         [],
         [],
+        [],
+        null,
         []
     ],
     "customAttributesCaches": [],
@@ -2525,13 +2817,9 @@
                         }
                     ],
                     [
-                        17,
-                        200,
-                        0,
-                        false,
-                        0,
+                        23,
                         {
-                            "___cmdID": "210551147330_0.6166518858543055"
+                            "___cmdID": "210756922813_0.3251251401835009"
                         }
                     ],
                     [
@@ -2951,7 +3239,87 @@
                 []
             ]
         },
-        null,
+        {
+            "condition": [
+                {
+                    "type": 1,
+                    "varID": 6,
+                    "compare": 0,
+                    "value": 3
+                }
+            ],
+            "customCommands": [
+                [
+                    [
+                        11,
+                        1,
+                        null,
+                        "",
+                        3,
+                        -3,
+                        "<span style='color:#FfFffF'>取了饮料</span>",
+                        null,
+                        1,
+                        0,
+                        null,
+                        {
+                            "id": 1,
+                            "atts": [],
+                            "time": 60,
+                            "transitionMode": null,
+                            "nonTweenType": 0,
+                            "mode": 0
+                        },
+                        {
+                            "___cmdID": "210757205184_0.34522763254778477"
+                        }
+                    ],
+                    [
+                        13,
+                        3,
+                        6,
+                        0,
+                        0,
+                        4,
+                        1,
+                        1,
+                        [
+                            0,
+                            100
+                        ],
+                        0,
+                        -1,
+                        [],
+                        0,
+                        0,
+                        0,
+                        null,
+                        null,
+                        null,
+                        0,
+                        0,
+                        0,
+                        1,
+                        1,
+                        1,
+                        0,
+                        {
+                            "___cmdID": "210757238910_0.4860502179552231"
+                        }
+                    ],
+                    [
+                        -1,
+                        {
+                            "___cmdID": "210756936762_0.4321768209345287"
+                        }
+                    ]
+                ],
+                [],
+                [],
+                [],
+                []
+            ]
+        },
         {
             "condition": [],
             "customCommands": [
@@ -3534,9 +3902,9 @@
                     [
                         21,
                         false,
-                        4,
+                        7,
                         744,
-                        312,
+                        360,
                         true,
                         2,
                         {
@@ -3938,6 +4306,88 @@
                 [],
                 []
             ]
+        },
+        null,
+        {
+            "condition": [
+                {
+                    "type": 1,
+                    "varID": 6,
+                    "compare": 0,
+                    "value": 4
+                }
+            ],
+            "customCommands": [
+                [
+                    [
+                        11,
+                        1,
+                        null,
+                        "",
+                        3,
+                        -3,
+                        "<span style='color:#FfFffF'>到了饮料</span>",
+                        null,
+                        1,
+                        0,
+                        null,
+                        {
+                            "id": 1,
+                            "atts": [],
+                            "time": 60,
+                            "transitionMode": null,
+                            "nonTweenType": 0,
+                            "mode": 0
+                        },
+                        {
+                            "___cmdID": "210757258251_0.014580584500822669"
+                        }
+                    ],
+                    [
+                        13,
+                        3,
+                        6,
+                        0,
+                        0,
+                        3,
+                        1,
+                        1,
+                        [
+                            0,
+                            100
+                        ],
+                        0,
+                        -1,
+                        [],
+                        0,
+                        0,
+                        0,
+                        null,
+                        null,
+                        null,
+                        0,
+                        0,
+                        0,
+                        1,
+                        1,
+                        1,
+                        0,
+                        {
+                            "___cmdID": "210757258251_0.1554890989214308"
+                        }
+                    ],
+                    [
+                        -1,
+                        {
+                            "___cmdID": "210756936762_0.4321768209345287"
+                        }
+                    ]
+                ],
+                [],
+                [],
+                [],
+                []
+            ]
         }
     ],
     "statusPages": [
@@ -3949,11 +4399,28 @@
         [],
         [],
         [],
+        [],
+        [],
+        [],
+        [],
         null,
-        [],
-        [],
         []
     ],
-    "statusPagesSelectedIndexs": [],
+    "statusPagesSelectedIndexs": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+    ],
     "id": 3
 }
