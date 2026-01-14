@@ -2,6 +2,76 @@
     "allowClient": false,
     "conditionSwitch": 1,
     "updateMode": false,
-    "commands": [],
+    "commands": [
+        [
+            11,
+            1,
+            null,
+            "",
+            3,
+            -3,
+            "<span style='color:#FfFffF'>女主从房间走出来，一脸茫然，黄毛被保安赶走了。</span>",
+            null,
+            1,
+            0,
+            null,
+            {
+                "id": 1,
+                "atts": [],
+                "time": 60,
+                "transitionMode": null,
+                "nonTweenType": 0,
+                "mode": 0
+            },
+            {
+                "___cmdID": "210819902237_0.30592706320042184"
+            }
+        ],
+        [
+            11,
+            1,
+            null,
+            "",
+            3,
+            -3,
+            "<span style='color:#FfFffF'>END-女主得救了</span>",
+            null,
+            1,
+            0,
+            null,
+            {
+                "id": 1,
+                "atts": [],
+                "time": 60,
+                "transitionMode": null,
+                "nonTweenType": 0,
+                "mode": 0
+            },
+            {
+                "___cmdID": "210819902237_0.990050408286671"
+            }
+        ],
+        [
+            17,
+            120,
+            0,
+            false,
+            0,
+            {
+                "___cmdID": "210819902237_0.5257404592525023"
+            }
+        ],
+        [
+            50008,
+            null,
+            "210819902237_0.7406125103025603"
+        ],
+        [
+            -1,
+            {
+                "___cmdID": "210819901581_0.6419694513989624"
+            }
+        ]
+    ],
     "id": 13
 }

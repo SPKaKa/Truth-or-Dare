@@ -13,8 +13,8 @@
             "队伍-辣妹临时离开队伍-再次回到队伍",
             "KTV收拾垃圾后判断是否全部收拾完",
             "KTV_女主被灌酒",
-            "R18-男主晕过去，起来看到的NTR",
-            ""
+            "R18-END-男主晕过去，起来看到的NTR",
+            "END-叫来了保安，赶走了黄毛"
         ],
         "15": [
             null,
@@ -556,12 +556,26 @@
                                 "id": 12,
                                 "children": [],
                                 "isOpen": true,
-                                "name": "R18-男主晕过去，起来看到的NTR"
+                                "name": "R18-END-男主晕过去，起来看到的NTR"
                             }
                         ],
                         "name": "R18事件",
                         "id": null,
                         "isOpen": true
+                    },
+                    {
+                        "isDirectory": true,
+                        "children": [
+                            {
+                                "id": 13,
+                                "children": [],
+                                "isOpen": true,
+                                "name": "END-叫来了保安，赶走了黄毛"
+                            }
+                        ],
+                        "isOpen": true,
+                        "name": "END事件（非R18）",
+                        "id": null
                     }
                 ],
                 "isOpen": true,

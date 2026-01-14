@@ -1,0 +1,173 @@
+{
+    "variable": {
+        "variables": [],
+        "switchs": [],
+        "strings": []
+    },
+    "saveIDs": [],
+    "globalData": {
+        "___useNewGlobalData": true,
+        "Setting": {
+            "KEY_BOARD": {
+                "UP": {
+                    "index": 1,
+                    "keys": [
+                        87,
+                        38
+                    ]
+                },
+                "DOWN": {
+                    "index": 2,
+                    "keys": [
+                        83,
+                        40
+                    ]
+                },
+                "LEFT": {
+                    "index": 3,
+                    "keys": [
+                        65,
+                        37
+                    ]
+                },
+                "RIGHT": {
+                    "index": 4,
+                    "keys": [
+                        68,
+                        39
+                    ]
+                },
+                "A": {
+                    "index": 5,
+                    "keys": [
+                        75,
+                        90,
+                        13,
+                        32
+                    ]
+                },
+                "B": {
+                    "index": 17,
+                    "keys": [
+                        76,
+                        88,
+                        27,
+                        96
+                    ]
+                },
+                "X": {
+                    "index": 18,
+                    "keys": [
+                        72,
+                        67
+                    ]
+                },
+                "Y": {
+                    "index": 19,
+                    "keys": [
+                        74,
+                        86
+                    ]
+                },
+                "START": {
+                    "index": 20,
+                    "keys": [
+                        13,
+                        32
+                    ]
+                },
+                "BACK": {
+                    "index": 21,
+                    "keys": [
+                        27,
+                        96
+                    ]
+                },
+                "L1": {
+                    "index": 22,
+                    "keys": [
+                        81,
+                        79
+                    ]
+                },
+                "L2": {
+                    "index": 23,
+                    "keys": [
+                        82,
+                        85
+                    ]
+                },
+                "R1": {
+                    "index": 24,
+                    "keys": [
+                        69,
+                        80
+                    ]
+                },
+                "R2": {
+                    "index": 25,
+                    "keys": [
+                        84,
+                        73
+                    ]
+                }
+            },
+            "GAMEPAD": {
+                "X": {
+                    "index": 1,
+                    "key": 2,
+                    "name": "X"
+                },
+                "Y": {
+                    "index": 2,
+                    "key": 3,
+                    "name": "Y"
+                },
+                "A": {
+                    "index": 3,
+                    "key": 0,
+                    "name": "A"
+                },
+                "B": {
+                    "index": 4,
+                    "key": 1,
+                    "name": "B"
+                },
+                "START": {
+                    "index": 5,
+                    "key": 9,
+                    "name": "START"
+                },
+                "BACK": {
+                    "index": 6,
+                    "key": 8,
+                    "name": "BACK"
+                },
+                "L1": {
+                    "index": 7,
+                    "key": 4,
+                    "name": "L1"
+                },
+                "L2": {
+                    "index": 8,
+                    "key": 6,
+                    "name": "L2"
+                },
+                "R1": {
+                    "index": 9,
+                    "key": 5,
+                    "name": "R1"
+                },
+                "R2": {
+                    "index": 10,
+                    "key": 7,
+                    "name": "R2"
+                }
+            },
+            "bgmVolume": 0.41,
+            "bgsVolume": 0.43,
+            "seVolume": 0.42,
+            "tsVolume": 0.44
+        }
+    }
+}
