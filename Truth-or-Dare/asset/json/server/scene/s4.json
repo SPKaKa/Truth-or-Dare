@@ -3107,39 +3107,6 @@
                         }
                     ],
                     [
-                        13,
-                        4,
-                        2004,
-                        0,
-                        0,
-                        1,
-                        1,
-                        1,
-                        [
-                            0,
-                            100
-                        ],
-                        0,
-                        -1,
-                        [],
-                        0,
-                        0,
-                        0,
-                        null,
-                        null,
-                        null,
-                        0,
-                        0,
-                        0,
-                        1,
-                        1,
-                        1,
-                        0,
-                        {
-                            "___cmdID": "210733805806_0.8967503218139932"
-                        }
-                    ],
-                    [
                         18,
                         "===做出类似else if的效果===",
                         {
@@ -6940,6 +6907,16 @@
         [],
         []
     ],
-    "statusPagesSelectedIndexs": [],
+    "statusPagesSelectedIndexs": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+    ],
     "id": 4
 }

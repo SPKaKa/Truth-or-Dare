@@ -513,11 +513,13 @@
                                     }
                                 ],
                                 "name": "队伍相关",
-                                "id": null
+                                "id": null,
+                                "isOpen": true
                             }
                         ],
                         "name": "通用事件",
-                        "id": null
+                        "id": null,
+                        "isOpen": true
                     },
                     {
                         "isDirectory": true,
