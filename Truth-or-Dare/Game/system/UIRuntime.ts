@@ -70,6 +70,13 @@ class GUI_3 extends GUI_BASE {
    返回标题界面按钮:UIButton;
    返回游戏按钮:UIButton;
    队伍编成按钮:UIButton;
+   结局:UIBitmap;
+   标题结局:UIString;
+   容器:UIRoot;
+   正常结局:UIString;
+   在家看手机NTR结局:UIString;
+   晕过去NTR结局:UIString;
+   辣妹结局:UIString;
    constructor(){
       super(3);
    }
@@ -78,7 +85,12 @@ class ListItem_3 extends UIListItemData {
    黑底:string;
    顶部菜单背景:string;
    菜单标志:string;
-
+   结局:string;
+   标题结局:string;
+   正常结局:string;
+   在家看手机NTR结局:string;
+   晕过去NTR结局:string;
+   辣妹结局:string;
 }
 
 /**

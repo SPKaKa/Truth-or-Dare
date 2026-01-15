@@ -746,7 +746,7 @@
                 null,
                 null,
                 null,
-                0,
+                1,
                 null,
                 0,
                 0,
@@ -6907,16 +6907,6 @@
         [],
         []
     ],
-    "statusPagesSelectedIndexs": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-    ],
+    "statusPagesSelectedIndexs": [],
     "id": 4
 }

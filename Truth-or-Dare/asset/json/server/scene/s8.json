@@ -1,9 +1,9 @@
 {
     "sceneObjects": [
         {
-            "modelID": 1,
+            "modelID": 7,
             "index": 0,
-            "name": "演出-大叔",
+            "name": "交互-椅子",
             "x": 456,
             "y": 312,
             "z": 0,
@@ -12,8 +12,8 @@
                     "materials": []
                 }
             ],
-            "avatarID": 65,
-            "avatarOri": 2,
+            "avatarID": 5023,
+            "avatarOri": 1,
             "avatarAct": 1,
             "avatarFPS": 12,
             "avatarFrame": 1,
@@ -26,12 +26,10 @@
             "displayList": {
                 "avatar": {
                     "type": 1,
-                    "id": 65
+                    "id": 5023
                 }
             },
-            "moduleDisplayList": [
-                {}
-            ],
+            "moduleDisplayList": [],
             "layerLevel": 1,
             "autoPlayEnable": true,
             "scale": 1,
@@ -39,9 +37,7 @@
             "mouseEventEnabledInEditor": true,
             "playerUID": 0,
             "hasCommand": [],
-            "moduleIDs": [
-                7
-            ],
+            "moduleIDs": [],
             "hideOriBox": null
         },
         {
@@ -136,8 +132,8 @@
             "modelID": 1,
             "index": 3,
             "name": "演出-辣妹",
-            "x": 456,
-            "y": 360,
+            "x": 840,
+            "y": 312,
             "z": 0,
             "materialData": [
                 {
@@ -177,86 +173,8 @@
             "hideOriBox": null
         },
         null,
-        {
-            "modelID": 1,
-            "index": 5,
-            "name": "学生证",
-            "x": 504,
-            "y": 408,
-            "z": 0,
-            "materialData": [
-                {
-                    "materials": []
-                }
-            ],
-            "avatarID": 13009,
-            "avatarOri": 2,
-            "avatarAct": 1,
-            "avatarFPS": 12,
-            "avatarFrame": 1,
-            "avatarAlpha": 1,
-            "avatarHue": 0,
-            "shadowEnable": false,
-            "shadowWidth": 30,
-            "shadowHeight": 15,
-            "shadowAlpha": 0.5,
-            "displayList": {
-                "avatar": {
-                    "type": 1,
-                    "id": 13009
-                }
-            },
-            "moduleDisplayList": [],
-            "layerLevel": 1,
-            "autoPlayEnable": true,
-            "scale": 0.41,
-            "showOnEditor": true,
-            "mouseEventEnabledInEditor": true,
-            "playerUID": 0,
-            "hasCommand": [],
-            "moduleIDs": [],
-            "hideOriBox": null
-        },
-        {
-            "modelID": 1,
-            "index": 6,
-            "name": "内衣",
-            "x": 456,
-            "y": 408,
-            "z": 0,
-            "materialData": [
-                {
-                    "materials": []
-                }
-            ],
-            "avatarID": 13010,
-            "avatarOri": 2,
-            "avatarAct": 1,
-            "avatarFPS": 12,
-            "avatarFrame": 1,
-            "avatarAlpha": 1,
-            "avatarHue": 0,
-            "shadowEnable": false,
-            "shadowWidth": 30,
-            "shadowHeight": 15,
-            "shadowAlpha": 0.5,
-            "displayList": {
-                "avatar": {
-                    "type": 1,
-                    "id": 13010
-                }
-            },
-            "moduleDisplayList": [],
-            "layerLevel": 1,
-            "autoPlayEnable": true,
-            "scale": 0.61,
-            "showOnEditor": true,
-            "mouseEventEnabledInEditor": true,
-            "playerUID": 0,
-            "hasCommand": [],
-            "moduleIDs": [],
-            "hideOriBox": null
-        },
+        null,
+        null,
         {
             "modelID": 1,
             "index": 7,
@@ -419,7 +337,7 @@
                 [
                     0,
                     1,
-                    9,
+                    12,
                     0
                 ],
                 0,
@@ -483,94 +401,17 @@
                 }
             ],
             [
-                22,
-                -2,
-                0,
-                [
-                    [
-                        34,
-                        3021,
-                        false,
-                        false,
-                        20,
-                        0,
-                        0,
-                        true
-                    ]
-                ],
-                true,
-                1,
-                false,
-                1,
-                {
-                    "___cmdID": "210752617183_0.4102869277151242"
-                }
-            ],
-            [
-                23,
-                {
-                    "___cmdID": "210752633622_0.6096110881951"
-                }
-            ],
-            [
-                22,
-                3,
-                0,
-                [
-                    [
-                        19
-                    ],
-                    [
-                        34,
-                        3026,
-                        false,
-                        false,
-                        20,
-                        0,
-                        0,
-                        true
-                    ],
-                    [
-                        12,
-                        0,
-                        14,
-                        7,
-                        true,
-                        0,
-                        0,
-                        true,
-                        false,
-                        false,
-                        true,
-                        2
-                    ]
-                ],
-                true,
-                1,
-                false,
-                1,
-                {
-                    "___cmdID": "210752781178_0.6096474946448427"
-                }
-            ],
-            [
-                23,
-                {
-                    "___cmdID": "210753097394_0.5989193202700871"
-                }
-            ],
-            [
                 11,
                 1,
                 null,
                 "",
                 3,
                 -3,
-                "<span style='color:#FfFffF'>把这里看到的事情都忘掉！</span>",
+                "<span style='color:#FfFffF'>（现在只能等了……）</span>",
                 null,
                 1,
                 0,
-                null,
+                "",
                 {
                     "id": 1,
                     "atts": [],
@@ -580,186 +421,7 @@
                     "mode": 0
                 },
                 {
-                    "___cmdID": "210752859129_0.32759591528014487"
-                }
-            ],
-            [
-                11,
-                1,
-                null,
-                "",
-                3,
-                -3,
-                "<span style='color:#FfFffF'>其实我什么都没看到……</span>",
-                null,
-                1,
-                0,
-                null,
-                {
-                    "id": 1,
-                    "atts": [],
-                    "time": 60,
-                    "transitionMode": null,
-                    "nonTweenType": 0,
-                    "mode": 0
-                },
-                {
-                    "___cmdID": "210752845137_0.7777275430844328"
-                }
-            ],
-            [
-                11,
-                1,
-                null,
-                "",
-                3,
-                -3,
-                "<span style='color:#FfFffF'>为什么门没锁……希望没落下啥东西……</span>",
-                null,
-                1,
-                0,
-                null,
-                {
-                    "id": 1,
-                    "atts": [],
-                    "time": 60,
-                    "transitionMode": null,
-                    "nonTweenType": 0,
-                    "mode": 0
-                },
-                {
-                    "___cmdID": "210756161411_0.2763041476134833"
-                }
-            ],
-            [
-                22,
-                -2,
-                0,
-                [
-                    [
-                        16
-                    ],
-                    [
-                        39,
-                        0
-                    ],
-                    [
-                        3
-                    ],
-                    [
-                        39,
-                        1
-                    ]
-                ],
-                true,
-                1,
-                false,
-                1,
-                {
-                    "___cmdID": "210752875977_0.5269906466116876"
-                }
-            ],
-            [
-                23,
-                {
-                    "___cmdID": "210752875977_0.30775250912018226"
-                }
-            ],
-            [
-                22,
-                3,
-                0,
-                [
-                    [
-                        12,
-                        0,
-                        16,
-                        7,
-                        true,
-                        0,
-                        0,
-                        true,
-                        false,
-                        false,
-                        true,
-                        2
-                    ],
-                    [
-                        36,
-                        "asset/audio/se/FD/SE_Move1.ogg,1,1",
-                        0,
-                        0
-                    ]
-                ],
-                true,
-                1,
-                false,
-                1,
-                {
-                    "___cmdID": "210752916250_0.32981356265935013"
-                }
-            ],
-            [
-                23,
-                {
-                    "___cmdID": "210753129154_0.7919153024202581"
-                }
-            ],
-            [
-                13,
-                3,
-                9,
-                0,
-                0,
-                2,
-                1,
-                1,
-                [
-                    0,
-                    100
-                ],
-                0,
-                -1,
-                [],
-                0,
-                0,
-                0,
-                null,
-                null,
-                null,
-                0,
-                0,
-                0,
-                1,
-                1,
-                1,
-                0,
-                {
-                    "___cmdID": "210752594314_0.37946203017973557"
-                }
-            ],
-            [
-                11,
-                1,
-                null,
-                "",
-                3,
-                -3,
-                "<span style='color:#FfFffF'>（到底发生了什么？）</span>",
-                null,
-                1,
-                0,
-                null,
-                {
-                    "id": 1,
-                    "atts": [],
-                    "time": 60,
-                    "transitionMode": null,
-                    "nonTweenType": 0,
-                    "mode": 0
-                },
-                {
-                    "___cmdID": "210752955173_0.06726043296075668"
+                    "___cmdID": "210888544907_0.15579131694408943"
                 }
             ],
             [
@@ -1154,170 +816,8 @@
             }
         },
         null,
-        {
-            "selectEnabled": {
-                "varType": 2,
-                "value": false,
-                "copy": false
-            },
-            "through": {
-                "varType": 2,
-                "value": false,
-                "copy": false
-            },
-            "bridge": {
-                "varType": 2,
-                "value": false,
-                "copy": false
-            },
-            "fixOri": {
-                "varType": 2,
-                "value": false,
-                "copy": false
-            },
-            "ignoreCantMove": {
-                "varType": 2,
-                "value": false,
-                "copy": false
-            },
-            "moveAutoChangeAction": {
-                "varType": 2,
-                "value": true,
-                "copy": false
-            },
-            "lockBehaviorLayer": {
-                "varType": 0,
-                "value": 0,
-                "copy": false
-            },
-            "keepMoveActWhenCollsionObstacleAndIgnoreCantMove": {
-                "varType": 2,
-                "value": false,
-                "copy": false
-            },
-            "behaviorDir4": {
-                "varType": 2,
-                "value": false,
-                "copy": false
-            },
-            "repeatedTouchEnabled": {
-                "varType": 2,
-                "value": false,
-                "copy": false
-            },
-            "onlyPlayerTouch": {
-                "varType": 2,
-                "value": true,
-                "copy": false
-            },
-            "waitTouchEvent": {
-                "varType": 2,
-                "value": true,
-                "copy": false
-            },
-            "clickEventNoDistance": {
-                "varType": 2,
-                "value": false,
-                "copy": false
-            },
-            "moveSpeed": {
-                "varType": 0,
-                "value": 150,
-                "copy": false
-            },
-            "defBehavior": {
-                "varType": 1,
-                "value": "",
-                "copy": false
-            },
-            "collisionGroup": {
-                "varType": 0,
-                "value": 0,
-                "copy": false
-            }
-        },
-        {
-            "selectEnabled": {
-                "varType": 2,
-                "value": false,
-                "copy": false
-            },
-            "through": {
-                "varType": 2,
-                "value": false,
-                "copy": false
-            },
-            "bridge": {
-                "varType": 2,
-                "value": false,
-                "copy": false
-            },
-            "fixOri": {
-                "varType": 2,
-                "value": false,
-                "copy": false
-            },
-            "ignoreCantMove": {
-                "varType": 2,
-                "value": false,
-                "copy": false
-            },
-            "moveAutoChangeAction": {
-                "varType": 2,
-                "value": true,
-                "copy": false
-            },
-            "lockBehaviorLayer": {
-                "varType": 0,
-                "value": 0,
-                "copy": false
-            },
-            "keepMoveActWhenCollsionObstacleAndIgnoreCantMove": {
-                "varType": 2,
-                "value": false,
-                "copy": false
-            },
-            "behaviorDir4": {
-                "varType": 2,
-                "value": false,
-                "copy": false
-            },
-            "repeatedTouchEnabled": {
-                "varType": 2,
-                "value": false,
-                "copy": false
-            },
-            "onlyPlayerTouch": {
-                "varType": 2,
-                "value": true,
-                "copy": false
-            },
-            "waitTouchEvent": {
-                "varType": 2,
-                "value": true,
-                "copy": false
-            },
-            "clickEventNoDistance": {
-                "varType": 2,
-                "value": false,
-                "copy": false
-            },
-            "moveSpeed": {
-                "varType": 0,
-                "value": 150,
-                "copy": false
-            },
-            "defBehavior": {
-                "varType": 1,
-                "value": "",
-                "copy": false
-            },
-            "collisionGroup": {
-                "varType": 0,
-                "value": 0,
-                "copy": false
-            }
-        },
+        null,
+        null,
         {
             "selectEnabled": {
                 "varType": 2,
@@ -1577,41 +1077,90 @@
             "condition": [
                 {
                     "type": 1,
-                    "varID": 9,
-                    "compare": 1,
-                    "value": 1
-                },
-                {
-                    "type": 1,
-                    "varID": 9,
-                    "compare": 4,
-                    "value": 6
+                    "varID": 12,
+                    "compare": 0,
+                    "value": 2
                 }
             ],
             "customCommands": [
                 [
                     [
-                        11,
-                        1,
-                        null,
-                        "",
+                        -1,
+                        {
+                            "___cmdID": "210891093791_0.9398324424197115"
+                        }
+                    ]
+                ],
+                [
+                    [
                         3,
-                        -3,
-                        "<span style='color:#FfFffF'>快点从我的房间里出去！</span>",
-                        null,
+                        0,
+                        -1,
+                        -1,
+                        {
+                            "___cmdID": "210891171171_0.3176783065281752"
+                        }
+                    ],
+                    [
+                        4,
+                        "坐下",
+                        -1,
+                        -1,
+                        0,
+                        0,
+                        [],
+                        {
+                            "___cmdID": "210891171171_0.5873790645782844"
+                        }
+                    ],
+                    [
+                        13,
+                        3,
+                        12,
+                        0,
+                        0,
+                        3,
                         1,
+                        1,
+                        [
+                            0,
+                            100
+                        ],
+                        0,
+                        -1,
+                        [],
+                        0,
+                        0,
                         0,
                         null,
+                        null,
+                        null,
+                        0,
+                        0,
+                        0,
+                        1,
+                        1,
+                        1,
+                        0,
                         {
-                            "id": 1,
-                            "atts": [],
-                            "time": 60,
-                            "transitionMode": null,
-                            "nonTweenType": 0,
-                            "mode": 0
-                        },
+                            "___cmdID": "210891565369_0.2099102551924572"
+                        }
+                    ],
+                    [
+                        22,
+                        -2,
+                        0,
+                        [
+                            [
+                                16
+                            ]
+                        ],
+                        1,
+                        1,
+                        false,
+                        1,
                         {
-                            "___cmdID": "210756205430_0.9006858709704468"
+                            "___cmdID": "210891171171_0.06095297760480656"
                         }
                     ],
                     [
@@ -1621,7 +1170,7 @@
                         "",
                         3,
                         -3,
-                        "<span style='color:#FfFffF'>好、好的……</span>",
+                        "<span style='color:#FfFffF'>……</span>",
                         null,
                         1,
                         0,
@@ -1635,17 +1184,198 @@
                             "mode": 0
                         },
                         {
-                            "___cmdID": "210748879584_0.6578419874963153"
+                            "___cmdID": "210891177946_0.5155799863751582"
+                        }
+                    ],
+                    [
+                        32,
+                        0,
+                        0,
+                        0,
+                        0,
+                        60,
+                        0,
+                        0,
+                        0,
+                        -1,
+                        {
+                            "___cmdID": "210891194530_0.5797098138379095"
+                        }
+                    ],
+                    [
+                        17,
+                        60,
+                        0,
+                        false,
+                        0,
+                        {
+                            "___cmdID": "210891204113_0.9057202962184538"
+                        }
+                    ],
+                    [
+                        11,
+                        1,
+                        null,
+                        "",
+                        3,
+                        -3,
+                        "<span style='color:#FfFffF'>……</span>",
+                        null,
+                        1,
+                        0,
+                        null,
+                        {
+                            "id": 1,
+                            "atts": [],
+                            "time": 60,
+                            "transitionMode": null,
+                            "nonTweenType": 0,
+                            "mode": 0
+                        },
+                        {
+                            "___cmdID": "210891207794_0.017740781971985697"
+                        }
+                    ],
+                    [
+                        11,
+                        1,
+                        null,
+                        "",
+                        3,
+                        -3,
+                        "<span style='color:#FfFffF'>……</span>",
+                        null,
+                        1,
+                        0,
+                        null,
+                        {
+                            "id": 1,
+                            "atts": [],
+                            "time": 60,
+                            "transitionMode": null,
+                            "nonTweenType": 0,
+                            "mode": 0
+                        },
+                        {
+                            "___cmdID": "210891213362_0.14262087372682752"
+                        }
+                    ],
+                    [
+                        11,
+                        1,
+                        null,
+                        "",
+                        3,
+                        -3,
+                        "<span style='color:#FfFffF'>喂！我什么都没做！</span>",
+                        null,
+                        1,
+                        0,
+                        null,
+                        {
+                            "id": 1,
+                            "atts": [],
+                            "time": 60,
+                            "transitionMode": null,
+                            "nonTweenType": 0,
+                            "mode": 0
+                        },
+                        {
+                            "___cmdID": "210891224089_0.4919614783145261"
+                        }
+                    ],
+                    [
+                        11,
+                        1,
+                        null,
+                        "",
+                        3,
+                        -3,
+                        "<span style='color:#FfFffF'>放开我！放开我！我认识你们老板！</span>",
+                        null,
+                        1,
+                        0,
+                        null,
+                        {
+                            "id": 1,
+                            "atts": [],
+                            "time": 60,
+                            "transitionMode": null,
+                            "nonTweenType": 0,
+                            "mode": 0
+                        },
+                        {
+                            "___cmdID": "210891212529_0.7274345575983074"
+                        }
+                    ],
+                    [
+                        17,
+                        60,
+                        0,
+                        false,
+                        0,
+                        {
+                            "___cmdID": "210891234881_0.34941275126893334"
+                        }
+                    ],
+                    [
+                        32,
+                        0,
+                        0,
+                        0,
+                        0,
+                        60,
+                        0.7,
+                        0.5,
+                        0.5,
+                        -1,
+                        {
+                            "___cmdID": "210891411594_0.10689884872660138"
+                        }
+                    ],
+                    [
+                        11,
+                        1,
+                        null,
+                        "",
+                        3,
+                        -3,
+                        "<span style='color:#FfFffF'>外面好像吵起来了……</span>",
+                        null,
+                        1,
+                        0,
+                        null,
+                        {
+                            "id": 1,
+                            "atts": [],
+                            "time": 60,
+                            "transitionMode": null,
+                            "nonTweenType": 0,
+                            "mode": 0
+                        },
+                        {
+                            "___cmdID": "210891417722_0.6459517163638169"
                         }
                     ],
                     [
                         -1,
                         {
-                            "___cmdID": "210748874466_0.7197061955551007"
+                            "___cmdID": "210891171171_0.5950739827740377"
+                        }
+                    ],
+                    [
+                        10,
+                        {
+                            "___cmdID": "210891171171_0.13124006704805735"
+                        }
+                    ],
+                    [
+                        -1,
+                        {
+                            "___cmdID": "210891093792_0.622502243241158"
                         }
                     ]
                 ],
-                [],
                 [],
                 [],
                 []
@@ -1674,9 +1404,9 @@
         {
             "condition": [
                 {
-                    "type": 1,
-                    "varID": 9,
-                    "compare": 0,
+                    "type": 2,
+                    "varID": 0,
+                    "compare": 1,
                     "value": 1
                 }
             ],
@@ -1703,31 +1433,88 @@
             ]
         },
         null,
+        null,
+        null,
         {
-            "condition": [
-                {
-                    "type": 1,
-                    "varID": 9,
-                    "compare": 1,
-                    "value": 1
-                },
-                {
-                    "type": 1,
-                    "varID": 9,
-                    "compare": 4,
-                    "value": 3
-                }
-            ],
+            "condition": [],
             "customCommands": [
+                [
+                    [
+                        -1,
+                        {
+                            "___cmdID": "210640690855_0.6555048303035578"
+                        }
+                    ]
+                ],
                 [
                     [
                         0,
                         0,
-                        4,
+                        2,
                         [
                             0,
                             1,
+                            12,
+                            0
+                        ],
+                        2,
+                        0,
+                        [
                             1,
+                            1,
+                            1,
+                            0
+                        ],
+                        0,
+                        [
+                            1,
+                            1,
+                            [
+                                0,
+                                0,
+                                1,
+                                1
+                            ]
+                        ],
+                        0,
+                        0,
+                        [
+                            1,
+                            1
+                        ],
+                        "",
+                        "",
+                        false,
+                        null,
+                        null,
+                        null,
+                        null,
+                        0,
+                        null,
+                        0,
+                        0,
+                        [
+                            0,
+                            {},
+                            ""
+                        ],
+                        [
+                            0,
+                            {},
+                            ""
+                        ],
+                        {
+                            "___cmdID": "210890741534_0.4218412021182789"
+                        }
+                    ],
+                    [
+                        0,
+                        0,
+                        2,
+                        [
+                            0,
+                            1,
+                            12,
                             0
                         ],
                         0,
@@ -1760,121 +1547,355 @@
                         false,
                         null,
                         null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        0,
+                        0,
                         [
-                            2,
-                            {
-                                "type": 10,
-                                "posMode": 0,
-                                "customAttr": {},
-                                "soType": 0,
-                                "useVar": 0,
-                                "no": 0,
-                                "varID": 0,
-                                "soModuleAttr": {}
-                            },
+                            0,
+                            {},
+                            ""
+                        ],
+                        [
+                            0,
+                            {},
+                            ""
+                        ],
+                        {
+                            "___cmdID": "210890779726_0.8811132095398158"
+                        }
+                    ],
+                    [
+                        11,
+                        1,
+                        null,
+                        "",
+                        3,
+                        -3,
+                        "<span style='color:#FfFffF'>（现在还是不要出去了……）</span>",
+                        null,
+                        1,
+                        0,
+                        null,
+                        {
+                            "id": 1,
+                            "atts": [],
+                            "time": 60,
+                            "transitionMode": null,
+                            "nonTweenType": 0,
+                            "mode": 0
+                        },
+                        {
+                            "___cmdID": "210890791899_0.395717158383597"
+                        }
+                    ],
+                    [
+                        22,
+                        -2,
+                        0,
+                        [
                             [
-                                {
-                                    "42657064543_0.724447104540606": 10,
-                                    "42657260229_0.9459348877505995": 0,
-                                    "42657330474_0.5456078300460445": {},
-                                    "42664713486_0.3887133368359288": 0,
-                                    "42664713486_0.09898355139063386": 0,
-                                    "42664713486_0.7762137906641664": 0,
-                                    "42664713486_0.9108713362269023": 0,
-                                    "103533776812_0.06948608738189344": {}
-                                }
+                                39,
+                                0
+                            ],
+                            [
+                                2
+                            ],
+                            [
+                                39,
+                                1
                             ]
                         ],
-                        null,
-                        null,
-                        null,
-                        0,
-                        0,
-                        [
-                            0,
-                            {},
-                            ""
-                        ],
-                        [
-                            0,
-                            {},
-                            ""
-                        ],
+                        true,
+                        1,
+                        false,
+                        1,
                         {
-                            "___cmdID": "210755324349_0.5327675665974059"
+                            "___cmdID": "210890806645_0.09847829399349206"
                         }
                     ],
                     [
-                        11,
-                        1,
-                        null,
-                        "",
-                        3,
-                        -3,
-                        "<span style='color:#FfFffF'>好像是我们大学的学生证……</span>",
-                        null,
-                        1,
-                        0,
-                        null,
+                        23,
                         {
-                            "id": 1,
-                            "atts": [],
-                            "time": 60,
-                            "transitionMode": null,
-                            "nonTweenType": 0,
-                            "mode": 0
-                        },
-                        {
-                            "___cmdID": "210756064461_0.4099084151193817"
+                            "___cmdID": "210890833784_0.7816877159598616"
                         }
                     ],
                     [
-                        11,
-                        1,
-                        null,
-                        "",
-                        3,
-                        -3,
-                        "<span style='color:#FfFffF'>在上面看不太清楚，我要绕到对面去看看。</span>",
-                        null,
-                        1,
-                        0,
-                        null,
+                        18,
+                        "===做出类似else if的效果===",
                         {
-                            "id": 1,
-                            "atts": [],
-                            "time": 60,
-                            "transitionMode": null,
-                            "nonTweenType": 0,
-                            "mode": 0
-                        },
+                            "___cmdID": "210890791899_0.9768159060155046"
+                        }
+                    ],
+                    [
+                        9,
+                        "结束",
                         {
-                            "___cmdID": "210755697131_0.7531419472813241"
+                            "___cmdID": "210890791899_0.5058822795766773"
                         }
                     ],
                     [
                         -1,
                         {
-                            "___cmdID": "210755414494_0.12288359056847087"
+                            "___cmdID": "210890789209_0.7611002308703998"
                         }
                     ],
                     [
                         2,
                         {
-                            "___cmdID": "210755414490_0.8411798581134802"
+                            "___cmdID": "210890789200_0.3765043462900963"
                         }
                     ],
                     [
                         0,
                         0,
-                        4,
+                        2,
                         [
                             0,
+                            1,
+                            12,
+                            0
+                        ],
+                        0,
+                        0,
+                        [
+                            3,
                             1,
                             1,
                             0
                         ],
                         0,
+                        [
+                            1,
+                            1,
+                            [
+                                0,
+                                0,
+                                1,
+                                1
+                            ]
+                        ],
+                        0,
+                        0,
+                        [
+                            1,
+                            1
+                        ],
+                        "",
+                        "",
+                        false,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        0,
+                        0,
+                        [
+                            0,
+                            {},
+                            ""
+                        ],
+                        [
+                            0,
+                            {},
+                            ""
+                        ],
+                        {
+                            "___cmdID": "210891590202_0.5026505722677435"
+                        }
+                    ],
+                    [
+                        22,
+                        -2,
+                        0,
+                        [
+                            [
+                                39,
+                                0
+                            ],
+                            [
+                                2
+                            ],
+                            [
+                                39,
+                                1
+                            ]
+                        ],
+                        true,
+                        1,
+                        false,
+                        1,
+                        {
+                            "___cmdID": "210891633314_0.6628711960979325"
+                        }
+                    ],
+                    [
+                        23,
+                        {
+                            "___cmdID": "210891633314_0.16237618117836394"
+                        }
+                    ],
+                    [
+                        22,
+                        -1,
+                        0,
+                        [
+                            [
+                                17
+                            ],
+                            [
+                                14,
+                                0,
+                                16,
+                                7,
+                                0,
+                                0,
+                                true,
+                                false,
+                                1,
+                                true
+                            ],
+                            [
+                                36,
+                                "asset/audio/se/FD/SE_Move1.ogg,1,1",
+                                0,
+                                0
+                            ]
+                        ],
+                        1,
+                        1,
+                        false,
+                        1,
+                        {
+                            "___cmdID": "210891680556_0.2671440208977731"
+                        }
+                    ],
+                    [
+                        23,
+                        {
+                            "___cmdID": "210891722153_0.4288249185700548"
+                        }
+                    ],
+                    [
+                        13,
+                        6,
+                        0,
+                        0,
+                        0,
+                        1,
+                        1,
+                        1,
+                        [
+                            0,
+                            100
+                        ],
+                        0,
+                        3,
+                        [],
+                        0,
+                        0,
+                        0,
+                        null,
+                        null,
+                        null,
+                        0,
+                        0,
+                        0,
+                        1,
+                        1,
+                        1,
+                        0,
+                        {
+                            "___cmdID": "210891739610_0.39627154043446455"
+                        }
+                    ],
+                    [
+                        11,
+                        1,
+                        null,
+                        "",
+                        3,
+                        -3,
+                        "<span style='color:#FfFffF'>辣妹进来，告知情况，她找来工作人员，把黄毛赶走了。</span>",
+                        null,
+                        1,
+                        0,
+                        null,
+                        {
+                            "id": 1,
+                            "atts": [],
+                            "time": 60,
+                            "transitionMode": null,
+                            "nonTweenType": 0,
+                            "mode": 0
+                        },
+                        {
+                            "___cmdID": "210891989426_0.5043628130635049"
+                        }
+                    ],
+                    [
+                        11,
+                        1,
+                        null,
+                        "",
+                        3,
+                        -3,
+                        "<span style='color:#FfFffF'>辣妹说对男主有些好感，问要不要做炮友。</span>",
+                        null,
+                        1,
+                        0,
+                        null,
+                        {
+                            "id": 1,
+                            "atts": [],
+                            "time": 60,
+                            "transitionMode": null,
+                            "nonTweenType": 0,
+                            "mode": 0
+                        },
+                        {
+                            "___cmdID": "210892010801_0.2545583136125893"
+                        }
+                    ],
+                    [
+                        11,
+                        1,
+                        null,
+                        "",
+                        3,
+                        -3,
+                        "<span style='color:#FfFffF'>男主说不用了。</span>",
+                        null,
+                        1,
+                        0,
+                        null,
+                        {
+                            "id": 1,
+                            "atts": [],
+                            "time": 60,
+                            "transitionMode": null,
+                            "nonTweenType": 0,
+                            "mode": 0
+                        },
+                        {
+                            "___cmdID": "210891590202_0.22802168641740184"
+                        }
+                    ],
+                    [
+                        0,
+                        0,
+                        2,
+                        [
+                            0,
+                            1,
+                            9,
+                            0
+                        ],
+                        5,
                         0,
                         [
                             8,
@@ -1904,31 +1925,140 @@
                         false,
                         null,
                         null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        0,
+                        0,
                         [
-                            2,
-                            {
-                                "type": 10,
-                                "posMode": 0,
-                                "customAttr": {},
-                                "soType": 0,
-                                "useVar": 0,
-                                "no": 0,
-                                "varID": 0,
-                                "soModuleAttr": {}
-                            },
+                            0,
+                            {},
+                            ""
+                        ],
+                        [
+                            0,
+                            {},
+                            ""
+                        ],
+                        {
+                            "___cmdID": "210892029570_0.7659992778139082"
+                        }
+                    ],
+                    [
+                        13,
+                        5,
+                        14013,
+                        0,
+                        0,
+                        "[@s14001]",
+                        1,
+                        1,
+                        [
+                            0,
+                            100
+                        ],
+                        0,
+                        -1,
+                        [],
+                        0,
+                        0,
+                        0,
+                        null,
+                        null,
+                        null,
+                        0,
+                        0,
+                        0,
+                        1,
+                        1,
+                        1,
+                        0,
+                        {
+                            "___cmdID": "210892055224_0.9273257135078194"
+                        }
+                    ],
+                    [
+                        -1,
+                        {
+                            "___cmdID": "210892046276_0.6120496018618402"
+                        }
+                    ],
+                    [
+                        2,
+                        {
+                            "___cmdID": "210892046274_0.5934253295209204"
+                        }
+                    ],
+                    [
+                        8,
+                        "大学学生卡",
+                        {
+                            "___cmdID": "210901760995_0.3983378299368072"
+                        }
+                    ],
+                    [
+                        3,
+                        0,
+                        -1,
+                        -1,
+                        {
+                            "___cmdID": "210892720152_0.09092682521276862"
+                        }
+                    ],
+                    [
+                        4,
+                        "选项内容-1",
+                        -1,
+                        -1,
+                        1,
+                        14013,
+                        [],
+                        {
+                            "___cmdID": "210892739792_0.3757252853708051"
+                        }
+                    ],
+                    [
+                        0,
+                        0,
+                        2,
+                        [
+                            0,
+                            1,
+                            9,
+                            0
+                        ],
+                        5,
+                        0,
+                        [
+                            8,
+                            1,
+                            1,
+                            0
+                        ],
+                        0,
+                        [
+                            1,
+                            1,
                             [
-                                {
-                                    "42657064543_0.724447104540606": 10,
-                                    "42657260229_0.9459348877505995": 0,
-                                    "42657330474_0.5456078300460445": {},
-                                    "42664713486_0.3887133368359288": 0,
-                                    "42664713486_0.09898355139063386": 0,
-                                    "42664713486_0.7762137906641664": 0,
-                                    "42664713486_0.9108713362269023": 0,
-                                    "103533776812_0.06948608738189344": {}
-                                }
+                                0,
+                                0,
+                                1,
+                                1
                             ]
                         ],
+                        0,
+                        0,
+                        [
+                            1,
+                            1
+                        ],
+                        "",
+                        "",
+                        true,
+                        null,
+                        null,
+                        null,
                         null,
                         null,
                         null,
@@ -1945,7 +2075,7 @@
                             ""
                         ],
                         {
-                            "___cmdID": "210755691842_0.4025644438477365"
+                            "___cmdID": "210892743945_0.10991094703029347"
                         }
                     ],
                     [
@@ -1955,7 +2085,7 @@
                         "",
                         3,
                         -3,
-                        "<span style='color:#FfFffF'>嘿，这是我们学校的学生证……</span>",
+                        "<span style='color:#FfFffF'>（我身上没有可以给她的东西……）</span>",
                         null,
                         1,
                         0,
@@ -1969,7 +2099,40 @@
                             "mode": 0
                         },
                         {
-                            "___cmdID": "210756098627_0.9663942656672602"
+                            "___cmdID": "210892958618_0.8017564533514818"
+                        }
+                    ],
+                    [
+                        9,
+                        "大学学生卡",
+                        {
+                            "___cmdID": "210901770019_0.6148961810819862"
+                        }
+                    ],
+                    [
+                        -1,
+                        {
+                            "___cmdID": "210892743946_0.4953718605910502"
+                        }
+                    ],
+                    [
+                        1,
+                        {
+                            "___cmdID": "210892750967_0.0235348555387489"
+                        }
+                    ],
+                    [
+                        16,
+                        14,
+                        false,
+                        null,
+                        0,
+                        {
+                            "mode": 0,
+                            "value": 1
+                        },
+                        {
+                            "___cmdID": "210902076018_0.8060522030463058"
                         }
                     ],
                     [
@@ -1979,7 +2142,7 @@
                         "",
                         3,
                         -3,
-                        "<span style='color:#FfFffF'>这个女孩子看着眼熟……</span>",
+                        "<span style='color:#FfFffF'>谢谢款待~~</span>",
                         null,
                         1,
                         0,
@@ -1993,40 +2156,79 @@
                             "mode": 0
                         },
                         {
-                            "___cmdID": "210755722060_0.710659755133684"
+                            "___cmdID": "210902109960_0.5044866461091377"
+                        }
+                    ],
+                    [
+                        11,
+                        1,
+                        null,
+                        "",
+                        3,
+                        -3,
+                        "<span style='color:#FfFffF'>走吧，她在等你。</span>",
+                        null,
+                        1,
+                        0,
+                        null,
+                        {
+                            "id": 1,
+                            "atts": [],
+                            "time": 60,
+                            "transitionMode": null,
+                            "nonTweenType": 0,
+                            "mode": 0
+                        },
+                        {
+                            "___cmdID": "210902097552_0.9700950962291828"
+                        }
+                    ],
+                    [
+                        13,
+                        6,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        1,
+                        [
+                            0,
+                            100
+                        ],
+                        0,
+                        3,
+                        [],
+                        0,
+                        0,
+                        0,
+                        null,
+                        null,
+                        null,
+                        0,
+                        0,
+                        0,
+                        1,
+                        1,
+                        1,
+                        0,
+                        {
+                            "___cmdID": "210902123354_0.19431113968496838"
                         }
                     ],
                     [
                         22,
-                        0,
+                        -1,
                         0,
                         [
                             [
-                                34,
-                                3020,
-                                false,
-                                false,
-                                20,
-                                0,
-                                0,
-                                true
+                                19
                             ],
                             [
-                                12,
+                                36,
+                                "asset/audio/se/FD/SE_Move1.ogg,1,1",
                                 0,
-                                10,
-                                7,
-                                true,
-                                0,
-                                0,
-                                true,
-                                false,
-                                false,
-                                true,
-                                2
-                            ],
-                            [
-                                16
+                                0
                             ]
                         ],
                         1,
@@ -2034,13 +2236,13 @@
                         false,
                         1,
                         {
-                            "___cmdID": "210756170592_0.4183396970964801"
+                            "___cmdID": "210902123354_0.9563420151868425"
                         }
                     ],
                     [
                         23,
                         {
-                            "___cmdID": "210756421787_0.4122407597059534"
+                            "___cmdID": "210902123354_0.24398695460651032"
                         }
                     ],
                     [
@@ -2050,7 +2252,7 @@
                         "",
                         3,
                         -3,
-                        "<span style='color:#FfFffF'>这、这是我的……</span>",
+                        "<span style='color:#FfFffF'>（真舒服啊……）</span>",
                         null,
                         1,
                         0,
@@ -2064,37 +2266,13 @@
                             "mode": 0
                         },
                         {
-                            "___cmdID": "210756472483_0.285174053585195"
-                        }
-                    ],
-                    [
-                        11,
-                        1,
-                        null,
-                        "",
-                        3,
-                        -3,
-                        "<span style='color:#FfFffF'>我拿走了。</span>",
-                        null,
-                        1,
-                        0,
-                        null,
-                        {
-                            "id": 1,
-                            "atts": [],
-                            "time": 60,
-                            "transitionMode": null,
-                            "nonTweenType": 0,
-                            "mode": 0
-                        },
-                        {
-                            "___cmdID": "210756462787_0.3535081381593028"
+                            "___cmdID": "210902123354_0.5513490330658972"
                         }
                     ],
                     [
                         13,
                         3,
-                        9,
+                        12,
                         0,
                         0,
                         4,
@@ -2121,38 +2299,37 @@
                         1,
                         0,
                         {
-                            "___cmdID": "210756490235_0.42834498001729315"
+                            "___cmdID": "210902123354_0.34386366745911356"
                         }
                     ],
                     [
-                        22,
-                        0,
-                        0,
-                        [
-                            [
-                                39,
-                                0
-                            ],
-                            [
-                                2
-                            ],
-                            [
-                                39,
-                                1
-                            ]
-                        ],
-                        1,
-                        1,
-                        false,
-                        1,
+                        -1,
                         {
-                            "___cmdID": "210756510179_0.1696952756209631"
+                            "___cmdID": "210892750968_0.32216745697301197"
                         }
                     ],
                     [
-                        23,
+                        2,
                         {
-                            "___cmdID": "210756784396_0.3161024423136547"
+                            "___cmdID": "210892743945_0.9918120658775169"
+                        }
+                    ],
+                    [
+                        -1,
+                        {
+                            "___cmdID": "210892739793_0.1955210945054442"
+                        }
+                    ],
+                    [
+                        4,
+                        "感谢她",
+                        -1,
+                        -1,
+                        0,
+                        0,
+                        [],
+                        {
+                            "___cmdID": "210892739792_0.5133103528358678"
                         }
                     ],
                     [
@@ -2162,7 +2339,7 @@
                         "",
                         3,
                         -3,
-                        "<span style='color:#FfFffF'>这也、也是我的……</span>",
+                        "<span style='color:#FfFffF'>不用谢！</span>",
                         null,
                         1,
                         0,
@@ -2176,16 +2353,40 @@
                             "mode": 0
                         },
                         {
-                            "___cmdID": "210756527627_0.2694016695664321"
+                            "___cmdID": "210893047793_0.7780580589420554"
+                        }
+                    ],
+                    [
+                        11,
+                        1,
+                        null,
+                        "",
+                        3,
+                        -3,
+                        "<span style='color:#FfFffF'>走吧，她在等你。</span>",
+                        null,
+                        1,
+                        0,
+                        null,
+                        {
+                            "id": 1,
+                            "atts": [],
+                            "time": 60,
+                            "transitionMode": null,
+                            "nonTweenType": 0,
+                            "mode": 0
+                        },
+                        {
+                            "___cmdID": "210893438726_0.6333727688051898"
                         }
                     ],
                     [
                         13,
-                        3,
-                        9,
+                        6,
                         0,
                         0,
-                        5,
+                        0,
+                        0,
                         1,
                         1,
                         [
@@ -2193,7 +2394,7 @@
                             100
                         ],
                         0,
-                        -1,
+                        3,
                         [],
                         0,
                         0,
@@ -2209,27 +2410,16 @@
                         1,
                         0,
                         {
-                            "___cmdID": "210756535483_0.5906165271696642"
+                            "___cmdID": "210893598714_0.6686524874556776"
                         }
                     ],
                     [
                         22,
-                        0,
+                        -1,
                         0,
                         [
                             [
-                                12,
-                                0,
-                                16,
-                                7,
-                                true,
-                                0,
-                                0,
-                                true,
-                                false,
-                                false,
-                                true,
-                                2
+                                19
                             ],
                             [
                                 36,
@@ -2243,22 +2433,46 @@
                         false,
                         1,
                         {
-                            "___cmdID": "210756544891_0.7590480227188894"
+                            "___cmdID": "210893660009_0.3713654318398938"
                         }
                     ],
                     [
                         23,
                         {
-                            "___cmdID": "210756581262_0.25090410655880446"
+                            "___cmdID": "210893660009_0.8948293766571687"
+                        }
+                    ],
+                    [
+                        11,
+                        1,
+                        null,
+                        "",
+                        3,
+                        -3,
+                        "<span style='color:#FfFffF'>呼……总算是有惊无险……</span>",
+                        null,
+                        1,
+                        0,
+                        null,
+                        {
+                            "id": 1,
+                            "atts": [],
+                            "time": 60,
+                            "transitionMode": null,
+                            "nonTweenType": 0,
+                            "mode": 0
+                        },
+                        {
+                            "___cmdID": "210893676699_0.4970855814016999"
                         }
                     ],
                     [
                         13,
                         3,
-                        9,
+                        12,
                         0,
                         0,
-                        6,
+                        4,
                         1,
                         1,
                         [
@@ -2282,148 +2496,66 @@
                         1,
                         0,
                         {
-                            "___cmdID": "210756583509_0.13014346776573893"
+                            "___cmdID": "210901819346_0.74888371844743"
                         }
                     ],
                     [
                         -1,
                         {
-                            "___cmdID": "210755691842_0.2551741411218629"
+                            "___cmdID": "210892739793_0.43247309167876224"
+                        }
+                    ],
+                    [
+                        10,
+                        {
+                            "___cmdID": "210892739792_0.7548630303451638"
+                        }
+                    ],
+                    [
+                        18,
+                        "===做出类似else if的效果===",
+                        {
+                            "___cmdID": "210891590202_0.9304626502757021"
+                        }
+                    ],
+                    [
+                        9,
+                        "结束",
+                        {
+                            "___cmdID": "210891590202_0.1829421658195849"
+                        }
+                    ],
+                    [
+                        -1,
+                        {
+                            "___cmdID": "210891590202_0.030513017085425753"
                         }
                     ],
                     [
                         2,
                         {
-                            "___cmdID": "210755691842_0.9421189432925625"
+                            "___cmdID": "210891590202_0.6813576790940452"
                         }
                     ],
                     [
                         -1,
                         {
-                            "___cmdID": "210755291123_0.15332374199258147"
-                        }
-                    ]
-                ],
-                [],
-                [],
-                [],
-                []
-            ]
-        },
-        {
-            "condition": [
-                {
-                    "type": 1,
-                    "varID": 9,
-                    "compare": 1,
-                    "value": 1
-                },
-                {
-                    "type": 1,
-                    "varID": 9,
-                    "compare": 4,
-                    "value": 4
-                }
-            ],
-            "customCommands": [
-                [
-                    [
-                        11,
-                        1,
-                        null,
-                        "",
-                        3,
-                        -3,
-                        "<span style='color:#FfFffF'>这是我花钱买的！别碰！</span>",
-                        null,
-                        1,
-                        0,
-                        null,
-                        {
-                            "id": 1,
-                            "atts": [],
-                            "time": 60,
-                            "transitionMode": null,
-                            "nonTweenType": 0,
-                            "mode": 0
-                        },
-                        {
-                            "___cmdID": "210756009596_0.7714973785005426"
+                            "___cmdID": "210890741534_0.11739847163247741"
                         }
                     ],
                     [
-                        11,
-                        1,
-                        null,
-                        "",
-                        3,
-                        -3,
-                        "<span style='color:#FfFffF'>鬼才会碰女人的内衣！</span>",
-                        null,
-                        1,
-                        0,
-                        null,
+                        2,
                         {
-                            "id": 1,
-                            "atts": [],
-                            "time": 60,
-                            "transitionMode": null,
-                            "nonTweenType": 0,
-                            "mode": 0
-                        },
-                        {
-                            "___cmdID": "210756027795_0.2582171355644711"
+                            "___cmdID": "210890741534_0.28596821299518194"
                         }
                     ],
                     [
-                        11,
-                        1,
-                        null,
-                        "",
-                        3,
-                        -3,
-                        "<span style='color:#FfFffF'>（其实我碰了……还是热的……像是刚被脱下来的……）</span>",
-                        null,
-                        1,
-                        0,
-                        null,
+                        18,
+                        "===做出类似else if的效果===\n===下方就是else的内容（全部不满足条件的时候，会触发的）===",
                         {
-                            "id": 1,
-                            "atts": [],
-                            "time": 60,
-                            "transitionMode": null,
-                            "nonTweenType": 0,
-                            "mode": 0
-                        },
-                        {
-                            "___cmdID": "210756022946_0.10813565257314517"
+                            "___cmdID": "210890741534_0.6862888525263273"
                         }
                     ],
-                    [
-                        -1,
-                        {
-                            "___cmdID": "210755978877_0.5459336801857468"
-                        }
-                    ]
-                ],
-                [],
-                [],
-                [],
-                []
-            ]
-        },
-        {
-            "condition": [],
-            "customCommands": [
-                [
-                    [
-                        -1,
-                        {
-                            "___cmdID": "210640690855_0.6555048303035578"
-                        }
-                    ]
-                ],
-                [
                     [
                         60005,
                         {
@@ -2434,7 +2566,7 @@
                             "74587606222_0.5579985331498136": false,
                             "74587987674_0.5977703161602927": false
                         },
-                        "210755853715_0.02263975360788595"
+                        "210890744226_0.1680099671969948"
                     ],
                     [
                         21,
@@ -2445,7 +2577,21 @@
                         true,
                         1,
                         {
-                            "___cmdID": "210755853715_0.7708092382819371"
+                            "___cmdID": "210890744226_0.9543263324278153"
+                        }
+                    ],
+                    [
+                        18,
+                        "===做出类似else if的效果===",
+                        {
+                            "___cmdID": "210890741534_0.36301921359519973"
+                        }
+                    ],
+                    [
+                        8,
+                        "结束",
+                        {
+                            "___cmdID": "210890741534_0.16500528648006996"
                         }
                     ],
                     [
@@ -2491,8 +2637,8 @@
         [],
         [],
         null,
-        [],
-        [],
+        null,
+        null,
         [],
         null,
         null,

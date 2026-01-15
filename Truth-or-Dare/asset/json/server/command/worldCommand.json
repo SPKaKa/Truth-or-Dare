@@ -14,7 +14,11 @@
             "KTV收拾垃圾后判断是否全部收拾完",
             "KTV_女主被灌酒",
             "R18-END-男主晕过去，起来看到的NTR",
-            "END-叫来了保安，赶走了黄毛"
+            "END-叫来了保安，赶走了黄毛",
+            "R18-找回了学生卡",
+            "END-辣妹结局",
+            "UI-结局刷新",
+            "R18-END-男主被赶走，回家看手机"
         ],
         "15": [
             null,
@@ -451,6 +455,12 @@
                                 "children": [],
                                 "isOpen": true,
                                 "name": "初始化-系统设置"
+                            },
+                            {
+                                "id": 16,
+                                "children": [],
+                                "isOpen": true,
+                                "name": "UI-结局刷新"
                             }
                         ],
                         "name": "系统事件",
@@ -557,6 +567,18 @@
                                 "children": [],
                                 "isOpen": true,
                                 "name": "R18-END-男主晕过去，起来看到的NTR"
+                            },
+                            {
+                                "id": 14,
+                                "children": [],
+                                "isOpen": true,
+                                "name": "R18-找回了学生卡"
+                            },
+                            {
+                                "id": 17,
+                                "children": [],
+                                "isOpen": true,
+                                "name": "R18-END-男主被赶走，回家看手机"
                             }
                         ],
                         "name": "R18事件",
@@ -571,6 +593,12 @@
                                 "children": [],
                                 "isOpen": true,
                                 "name": "END-叫来了保安，赶走了黄毛"
+                            },
+                            {
+                                "id": 15,
+                                "children": [],
+                                "isOpen": true,
+                                "name": "END-辣妹结局"
                             }
                         ],
                         "isOpen": true,

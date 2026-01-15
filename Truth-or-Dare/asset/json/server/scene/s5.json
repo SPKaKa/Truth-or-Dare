@@ -27,7 +27,7 @@
             "displayList": {
                 "avatar": {
                     "type": 1,
-                    "id": 12002
+                    "id": 12003
                 }
             },
             "moduleDisplayList": [],
@@ -233,6 +233,135 @@
                 -1,
                 {
                     "___cmdID": "210673655516_0.1779935636005705"
+                }
+            ],
+            [
+                0,
+                0,
+                2,
+                [
+                    0,
+                    1,
+                    13,
+                    0
+                ],
+                0,
+                0,
+                [
+                    0,
+                    1,
+                    1,
+                    0
+                ],
+                0,
+                [
+                    1,
+                    1,
+                    [
+                        0,
+                        0,
+                        1,
+                        1
+                    ]
+                ],
+                0,
+                0,
+                [
+                    1,
+                    1
+                ],
+                "",
+                "",
+                false,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                0,
+                0,
+                [
+                    0,
+                    {},
+                    ""
+                ],
+                [
+                    0,
+                    {},
+                    ""
+                ],
+                {
+                    "___cmdID": "210903952046_0.3148785918539827"
+                }
+            ],
+            [
+                11,
+                1,
+                null,
+                "",
+                3,
+                -3,
+                "<span style='color:#FfFffF'>……不知道后来怎么样了……</span>",
+                null,
+                1,
+                0,
+                null,
+                {
+                    "id": 1,
+                    "atts": [],
+                    "time": 60,
+                    "transitionMode": null,
+                    "nonTweenType": 0,
+                    "mode": 0
+                },
+                {
+                    "___cmdID": "210903987118_0.4415731390410056"
+                }
+            ],
+            [
+                13,
+                3,
+                13,
+                0,
+                0,
+                1,
+                1,
+                1,
+                [
+                    0,
+                    100
+                ],
+                0,
+                -1,
+                [],
+                0,
+                0,
+                0,
+                null,
+                null,
+                null,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                {
+                    "___cmdID": "210904081136_0.9173525617025178"
+                }
+            ],
+            [
+                -1,
+                {
+                    "___cmdID": "210903966626_0.42173620273486123"
+                }
+            ],
+            [
+                2,
+                {
+                    "___cmdID": "210903966625_0.781644771009729"
                 }
             ],
             [
@@ -753,12 +882,291 @@
     ],
     "statusPages": [
         null,
-        [],
+        [
+            {
+                "so": {
+                    "modelID": 1,
+                    "index": 1,
+                    "name": "手机",
+                    "x": 555,
+                    "y": 244,
+                    "z": 0,
+                    "materialData": [
+                        {
+                            "materials": []
+                        }
+                    ],
+                    "avatarID": 12003,
+                    "avatarOri": 2,
+                    "avatarAct": 1,
+                    "avatarFPS": 12,
+                    "avatarFrame": 1,
+                    "avatarAlpha": 1,
+                    "avatarHue": 0,
+                    "shadowEnable": false,
+                    "shadowWidth": 30,
+                    "shadowHeight": 15,
+                    "shadowAlpha": 0.5,
+                    "displayList": {
+                        "avatar": {
+                            "type": 1,
+                            "id": 12002
+                        }
+                    },
+                    "moduleDisplayList": [],
+                    "layerLevel": 1,
+                    "autoPlayEnable": true,
+                    "scale": 1,
+                    "showOnEditor": true,
+                    "mouseEventEnabledInEditor": true,
+                    "playerUID": 0,
+                    "hasCommand": [],
+                    "moduleIDs": [],
+                    "hideOriBox": null
+                },
+                "customAttribute": {
+                    "selectEnabled": {
+                        "varType": 2,
+                        "value": false,
+                        "copy": false
+                    },
+                    "through": {
+                        "varType": 2,
+                        "value": false,
+                        "copy": false
+                    },
+                    "bridge": {
+                        "varType": 2,
+                        "value": false,
+                        "copy": false
+                    },
+                    "fixOri": {
+                        "varType": 2,
+                        "value": false,
+                        "copy": false
+                    },
+                    "ignoreCantMove": {
+                        "varType": 2,
+                        "value": false,
+                        "copy": false
+                    },
+                    "moveAutoChangeAction": {
+                        "varType": 2,
+                        "value": true,
+                        "copy": false
+                    },
+                    "lockBehaviorLayer": {
+                        "varType": 0,
+                        "value": 0,
+                        "copy": false
+                    },
+                    "keepMoveActWhenCollsionObstacleAndIgnoreCantMove": {
+                        "varType": 2,
+                        "value": false,
+                        "copy": false
+                    },
+                    "behaviorDir4": {
+                        "varType": 2,
+                        "value": false,
+                        "copy": false
+                    },
+                    "repeatedTouchEnabled": {
+                        "varType": 2,
+                        "value": false,
+                        "copy": false
+                    },
+                    "onlyPlayerTouch": {
+                        "varType": 2,
+                        "value": true,
+                        "copy": false
+                    },
+                    "waitTouchEvent": {
+                        "varType": 2,
+                        "value": true,
+                        "copy": false
+                    },
+                    "clickEventNoDistance": {
+                        "varType": 2,
+                        "value": false,
+                        "copy": false
+                    },
+                    "moveSpeed": {
+                        "varType": 0,
+                        "value": 150,
+                        "copy": false
+                    },
+                    "defBehavior": {
+                        "varType": 1,
+                        "value": "",
+                        "copy": false
+                    },
+                    "collisionGroup": {
+                        "varType": 0,
+                        "value": 0,
+                        "copy": false
+                    }
+                },
+                "event": {
+                    "condition": [
+                        {
+                            "type": 1,
+                            "varID": 13,
+                            "compare": 0,
+                            "value": 1
+                        }
+                    ],
+                    "customCommands": [
+                        [
+                            [
+                                11,
+                                1,
+                                null,
+                                "",
+                                3,
+                                -3,
+                                "<span style='color:#FfFffF'>辣妹给我发了一段视频……总觉得不是很想看里面的内容……</span>",
+                                null,
+                                1,
+                                0,
+                                null,
+                                {
+                                    "id": 1,
+                                    "atts": [],
+                                    "time": 60,
+                                    "transitionMode": null,
+                                    "nonTweenType": 0,
+                                    "mode": 0
+                                },
+                                {
+                                    "___cmdID": "210904100098_0.893849608583926"
+                                }
+                            ],
+                            [
+                                3,
+                                0,
+                                -1,
+                                -1,
+                                {
+                                    "___cmdID": "210904128702_0.10680614320413984"
+                                }
+                            ],
+                            [
+                                4,
+                                "看手机",
+                                -1,
+                                -1,
+                                0,
+                                0,
+                                [],
+                                {
+                                    "___cmdID": "210904137967_0.8894887968947482"
+                                }
+                            ],
+                            [
+                                13,
+                                3,
+                                13,
+                                0,
+                                0,
+                                100,
+                                1,
+                                1,
+                                [
+                                    0,
+                                    100
+                                ],
+                                0,
+                                -1,
+                                [],
+                                0,
+                                0,
+                                0,
+                                null,
+                                null,
+                                null,
+                                0,
+                                0,
+                                0,
+                                1,
+                                1,
+                                1,
+                                0,
+                                {
+                                    "___cmdID": "210904165072_0.010637112694692474"
+                                }
+                            ],
+                            [
+                                16,
+                                17,
+                                false,
+                                null,
+                                0,
+                                {
+                                    "mode": 0,
+                                    "value": 1
+                                },
+                                {
+                                    "___cmdID": "210904150161_0.25356648862770603"
+                                }
+                            ],
+                            [
+                                -1,
+                                {
+                                    "___cmdID": "210904137968_0.44985725303336577"
+                                }
+                            ],
+                            [
+                                4,
+                                "不看手机",
+                                -1,
+                                -1,
+                                0,
+                                0,
+                                [],
+                                {
+                                    "___cmdID": "210904137967_0.07139172337163147"
+                                }
+                            ],
+                            [
+                                -1,
+                                {
+                                    "___cmdID": "210904137968_0.8271797286702451"
+                                }
+                            ],
+                            [
+                                10,
+                                {
+                                    "___cmdID": "210904137967_0.1546940961848322"
+                                }
+                            ],
+                            [
+                                -1,
+                                {
+                                    "___cmdID": "210904095113_0.7786522046858844"
+                                }
+                            ]
+                        ],
+                        [],
+                        [],
+                        [],
+                        []
+                    ]
+                },
+                "modulesCustomAttribute": []
+            }
+        ],
         [],
         [],
         [],
         []
     ],
-    "statusPagesSelectedIndexs": [],
+    "statusPagesSelectedIndexs": [
+        null,
+        1,
+        null,
+        null,
+        null,
+        null
+    ],
     "id": 5
 }
