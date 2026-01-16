@@ -591,11 +591,11 @@
                                 "font": "Source_Han_Sans",
                                 "wordWrap": true,
                                 "overflow": 0,
-                                "shadowEnabled": false,
+                                "shadowEnabled": true,
                                 "shadowColor": "#000000",
                                 "shadowDx": 1,
                                 "shadowDy": 1,
-                                "stroke": 0,
+                                "stroke": 1,
                                 "strokeColor": "#000000"
                             },
                             {
@@ -635,11 +635,11 @@
                                 "font": "Source_Han_Sans",
                                 "wordWrap": true,
                                 "overflow": 0,
-                                "shadowEnabled": false,
+                                "shadowEnabled": true,
                                 "shadowColor": "#000000",
                                 "shadowDx": 1,
                                 "shadowDy": 1,
-                                "stroke": 0,
+                                "stroke": 1,
                                 "strokeColor": "#000000"
                             },
                             {
@@ -679,11 +679,11 @@
                                 "font": "Source_Han_Sans",
                                 "wordWrap": true,
                                 "overflow": 0,
-                                "shadowEnabled": false,
+                                "shadowEnabled": true,
                                 "shadowColor": "#000000",
                                 "shadowDx": 1,
                                 "shadowDy": 1,
-                                "stroke": 0,
+                                "stroke": 1,
                                 "strokeColor": "#000000"
                             },
                             {
@@ -723,11 +723,11 @@
                                 "font": "Source_Han_Sans",
                                 "wordWrap": true,
                                 "overflow": 0,
-                                "shadowEnabled": false,
+                                "shadowEnabled": true,
                                 "shadowColor": "#000000",
                                 "shadowDx": 1,
                                 "shadowDy": 1,
-                                "stroke": 0,
+                                "stroke": 1,
                                 "strokeColor": "#000000"
                             }
                         ]
