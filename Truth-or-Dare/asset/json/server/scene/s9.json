@@ -1,0 +1,1036 @@
+{
+    "sceneObjects": [
+        {
+            "modelID": 1,
+            "index": 0,
+            "name": "未命名0",
+            "x": 456,
+            "y": 312,
+            "z": 0,
+            "materialData": [
+                {
+                    "materials": []
+                }
+            ],
+            "avatarID": 3,
+            "avatarOri": 6,
+            "avatarAct": 1,
+            "avatarFPS": 12,
+            "avatarFrame": 1,
+            "avatarAlpha": 1,
+            "avatarHue": 0,
+            "shadowEnable": false,
+            "shadowWidth": 30,
+            "shadowHeight": 15,
+            "shadowAlpha": 0.5,
+            "displayList": {
+                "avatar": {
+                    "type": 1,
+                    "id": 3
+                }
+            },
+            "moduleDisplayList": [],
+            "layerLevel": 1,
+            "autoPlayEnable": true,
+            "scale": 1,
+            "showOnEditor": true,
+            "mouseEventEnabledInEditor": true,
+            "playerUID": 0,
+            "hasCommand": [],
+            "moduleIDs": [],
+            "hideOriBox": null
+        },
+        {
+            "modelID": 7,
+            "index": 1,
+            "name": "灯光-饮料机-2",
+            "x": 360,
+            "y": 72,
+            "z": 0,
+            "materialData": [
+                {
+                    "materials": []
+                }
+            ],
+            "avatarID": 5024,
+            "avatarOri": 4,
+            "avatarAct": 1,
+            "avatarFPS": 12,
+            "avatarFrame": 1,
+            "avatarAlpha": 1,
+            "avatarHue": 0,
+            "shadowEnable": false,
+            "shadowWidth": 30,
+            "shadowHeight": 15,
+            "shadowAlpha": 0.5,
+            "displayList": {
+                "avatar": {
+                    "type": 1,
+                    "id": 5024
+                }
+            },
+            "moduleDisplayList": [
+                {}
+            ],
+            "layerLevel": 2,
+            "autoPlayEnable": true,
+            "scale": 1,
+            "showOnEditor": true,
+            "mouseEventEnabledInEditor": true,
+            "playerUID": 0,
+            "hasCommand": [],
+            "moduleIDs": [
+                8
+            ],
+            "hideOriBox": null
+        },
+        {
+            "modelID": 7,
+            "index": 2,
+            "name": "灯光-饮料机-2",
+            "x": 600,
+            "y": 72,
+            "z": 0,
+            "materialData": [
+                {
+                    "materials": []
+                }
+            ],
+            "avatarID": 5024,
+            "avatarOri": 4,
+            "avatarAct": 1,
+            "avatarFPS": 12,
+            "avatarFrame": 1,
+            "avatarAlpha": 1,
+            "avatarHue": 0,
+            "shadowEnable": false,
+            "shadowWidth": 30,
+            "shadowHeight": 15,
+            "shadowAlpha": 0.5,
+            "displayList": {
+                "avatar": {
+                    "type": 1,
+                    "id": 5024
+                }
+            },
+            "moduleDisplayList": [
+                {}
+            ],
+            "layerLevel": 2,
+            "autoPlayEnable": true,
+            "scale": 1,
+            "showOnEditor": true,
+            "mouseEventEnabledInEditor": true,
+            "playerUID": 0,
+            "hasCommand": [],
+            "moduleIDs": [
+                8
+            ],
+            "hideOriBox": null
+        },
+        {
+            "modelID": 1,
+            "index": 3,
+            "name": "未命名3",
+            "x": 504,
+            "y": 312,
+            "z": 0,
+            "materialData": [
+                {
+                    "materials": []
+                }
+            ],
+            "avatarID": 4,
+            "avatarOri": 4,
+            "avatarAct": 1,
+            "avatarFPS": 12,
+            "avatarFrame": 1,
+            "avatarAlpha": 1,
+            "avatarHue": 0,
+            "shadowEnable": false,
+            "shadowWidth": 30,
+            "shadowHeight": 15,
+            "shadowAlpha": 0.5,
+            "displayList": {
+                "avatar": {
+                    "type": 1,
+                    "id": 4
+                }
+            },
+            "moduleDisplayList": [],
+            "layerLevel": 1,
+            "autoPlayEnable": true,
+            "scale": 1,
+            "showOnEditor": true,
+            "mouseEventEnabledInEditor": true,
+            "playerUID": 0,
+            "hasCommand": [],
+            "moduleIDs": [],
+            "hideOriBox": null
+        },
+        {
+            "modelID": 1,
+            "index": 4,
+            "name": "未命名4",
+            "x": 474,
+            "y": 487,
+            "z": 0,
+            "materialData": [
+                {
+                    "materials": []
+                }
+            ],
+            "avatarID": 1,
+            "avatarOri": 8,
+            "avatarAct": 7,
+            "avatarFPS": 12,
+            "avatarFrame": 2,
+            "avatarAlpha": 1,
+            "avatarHue": 0,
+            "shadowEnable": false,
+            "shadowWidth": 30,
+            "shadowHeight": 15,
+            "shadowAlpha": 0.5,
+            "displayList": {
+                "avatar": {
+                    "type": 1,
+                    "id": 1
+                }
+            },
+            "moduleDisplayList": [],
+            "layerLevel": 1,
+            "autoPlayEnable": false,
+            "scale": 1,
+            "showOnEditor": true,
+            "mouseEventEnabledInEditor": true,
+            "playerUID": 0,
+            "hasCommand": [],
+            "moduleIDs": [],
+            "hideOriBox": null
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        {
+            "modelID": 1,
+            "index": 13,
+            "name": "垃圾-垃圾桶",
+            "x": 552,
+            "y": 552,
+            "z": 0,
+            "materialData": [
+                {
+                    "materials": []
+                }
+            ],
+            "avatarID": 13006,
+            "avatarOri": 2,
+            "avatarAct": 1,
+            "avatarFPS": 12,
+            "avatarFrame": 1,
+            "avatarAlpha": 1,
+            "avatarHue": 0,
+            "shadowEnable": false,
+            "shadowWidth": 30,
+            "shadowHeight": 15,
+            "shadowAlpha": 0.5,
+            "displayList": {
+                "avatar": {
+                    "type": 1,
+                    "id": 13006
+                }
+            },
+            "moduleDisplayList": [],
+            "layerLevel": 1,
+            "autoPlayEnable": true,
+            "scale": 1,
+            "showOnEditor": true,
+            "mouseEventEnabledInEditor": true,
+            "playerUID": 0,
+            "hasCommand": [],
+            "moduleIDs": [],
+            "hideOriBox": null
+        },
+        null,
+        null
+    ],
+    "customCommands": [
+        [
+            [
+                18,
+                "===DEBUG用，快速进入事件===",
+                {
+                    "___cmdID": "210675105725_0.38172904881684544",
+                    "disabled": true
+                }
+            ],
+            [
+                13,
+                3,
+                9,
+                0,
+                0,
+                1,
+                1,
+                1,
+                [
+                    0,
+                    100
+                ],
+                0,
+                -1,
+                [],
+                0,
+                0,
+                0,
+                null,
+                null,
+                null,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                {
+                    "___cmdID": "210753053201_0.04713695691195552",
+                    "disabled": true
+                }
+            ],
+            [
+                18,
+                "===DEBUG用 END===\n===上述全部要注掉===",
+                {
+                    "___cmdID": "210675122396_0.5515052201420609",
+                    "disabled": true
+                }
+            ],
+            [
+                32,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0.7,
+                0.5,
+                0.5,
+                -1,
+                {
+                    "___cmdID": "210748431810_0.08217983064497414"
+                }
+            ],
+            [
+                16,
+                12,
+                false,
+                null,
+                0,
+                {
+                    "mode": 0,
+                    "value": 1
+                },
+                {
+                    "___cmdID": "211148610815_0.49393645152888466"
+                }
+            ],
+            [
+                -1,
+                {
+                    "___cmdID": "210640109466_0.3493542607912339"
+                }
+            ]
+        ]
+    ],
+    "customAttributes": [
+        {
+            "selectEnabled": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "through": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "bridge": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "fixOri": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "ignoreCantMove": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "moveAutoChangeAction": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "lockBehaviorLayer": {
+                "varType": 0,
+                "value": 0,
+                "copy": false
+            },
+            "keepMoveActWhenCollsionObstacleAndIgnoreCantMove": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "behaviorDir4": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "repeatedTouchEnabled": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "onlyPlayerTouch": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "waitTouchEvent": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "clickEventNoDistance": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "moveSpeed": {
+                "varType": 0,
+                "value": 150,
+                "copy": false
+            },
+            "defBehavior": {
+                "varType": 1,
+                "value": "",
+                "copy": false
+            },
+            "collisionGroup": {
+                "varType": 0,
+                "value": 0,
+                "copy": false
+            }
+        },
+        {
+            "selectEnabled": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "through": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "bridge": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "fixOri": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "ignoreCantMove": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "moveAutoChangeAction": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "lockBehaviorLayer": {
+                "varType": 0,
+                "value": 0,
+                "copy": false
+            },
+            "keepMoveActWhenCollsionObstacleAndIgnoreCantMove": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "behaviorDir4": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "repeatedTouchEnabled": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "onlyPlayerTouch": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "waitTouchEvent": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "clickEventNoDistance": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "moveSpeed": {
+                "varType": 0,
+                "value": 150,
+                "copy": false
+            },
+            "defBehavior": {
+                "varType": 1,
+                "value": "",
+                "copy": false
+            },
+            "collisionGroup": {
+                "varType": 0,
+                "value": 0,
+                "copy": false
+            }
+        },
+        {
+            "selectEnabled": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "through": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "bridge": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "fixOri": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "ignoreCantMove": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "moveAutoChangeAction": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "lockBehaviorLayer": {
+                "varType": 0,
+                "value": 0,
+                "copy": false
+            },
+            "keepMoveActWhenCollsionObstacleAndIgnoreCantMove": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "behaviorDir4": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "repeatedTouchEnabled": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "onlyPlayerTouch": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "waitTouchEvent": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "clickEventNoDistance": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "moveSpeed": {
+                "varType": 0,
+                "value": 150,
+                "copy": false
+            },
+            "defBehavior": {
+                "varType": 1,
+                "value": "",
+                "copy": false
+            },
+            "collisionGroup": {
+                "varType": 0,
+                "value": 0,
+                "copy": false
+            }
+        },
+        {
+            "selectEnabled": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "through": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "bridge": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "fixOri": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "ignoreCantMove": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "moveAutoChangeAction": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "lockBehaviorLayer": {
+                "varType": 0,
+                "value": 0,
+                "copy": false
+            },
+            "keepMoveActWhenCollsionObstacleAndIgnoreCantMove": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "behaviorDir4": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "repeatedTouchEnabled": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "onlyPlayerTouch": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "waitTouchEvent": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "clickEventNoDistance": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "moveSpeed": {
+                "varType": 0,
+                "value": 150,
+                "copy": false
+            },
+            "defBehavior": {
+                "varType": 1,
+                "value": "",
+                "copy": false
+            },
+            "collisionGroup": {
+                "varType": 0,
+                "value": 0,
+                "copy": false
+            }
+        },
+        {
+            "selectEnabled": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "through": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "bridge": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "fixOri": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "ignoreCantMove": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "moveAutoChangeAction": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "lockBehaviorLayer": {
+                "varType": 0,
+                "value": 0,
+                "copy": false
+            },
+            "keepMoveActWhenCollsionObstacleAndIgnoreCantMove": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "behaviorDir4": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "repeatedTouchEnabled": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "onlyPlayerTouch": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "waitTouchEvent": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "clickEventNoDistance": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "moveSpeed": {
+                "varType": 0,
+                "value": 150,
+                "copy": false
+            },
+            "defBehavior": {
+                "varType": 1,
+                "value": "",
+                "copy": false
+            },
+            "collisionGroup": {
+                "varType": 0,
+                "value": 0,
+                "copy": false
+            }
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        {
+            "selectEnabled": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "through": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "bridge": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "fixOri": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "ignoreCantMove": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "moveAutoChangeAction": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "lockBehaviorLayer": {
+                "varType": 0,
+                "value": 0,
+                "copy": false
+            },
+            "keepMoveActWhenCollsionObstacleAndIgnoreCantMove": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "behaviorDir4": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "repeatedTouchEnabled": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "onlyPlayerTouch": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "waitTouchEvent": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "clickEventNoDistance": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "moveSpeed": {
+                "varType": 0,
+                "value": 150,
+                "copy": false
+            },
+            "defBehavior": {
+                "varType": 1,
+                "value": "",
+                "copy": false
+            },
+            "collisionGroup": {
+                "varType": 0,
+                "value": 0,
+                "copy": false
+            }
+        },
+        null,
+        null
+    ],
+    "modulesCustomAttributes": [
+        [
+            {
+                "ModuleActive": {
+                    "varType": 2,
+                    "value": true,
+                    "copy": false
+                },
+                "OverrideSEsetting": {
+                    "varType": 9,
+                    "value": [],
+                    "copy": false
+                },
+                "bOverrideDefault": {
+                    "varType": 2,
+                    "value": false,
+                    "copy": false
+                },
+                "OverrideDefaultSE": {
+                    "varType": 1,
+                    "value": "",
+                    "copy": false
+                }
+            }
+        ],
+        [
+            {
+                "blendMode": {
+                    "varType": 0,
+                    "value": 3,
+                    "copy": false
+                }
+            }
+        ],
+        [
+            {
+                "blendMode": {
+                    "varType": 0,
+                    "value": 3,
+                    "copy": false
+                }
+            }
+        ],
+        [
+            {
+                "ModuleActive": {
+                    "varType": 2,
+                    "value": true,
+                    "copy": false
+                },
+                "OverrideSEsetting": {
+                    "varType": 9,
+                    "value": [],
+                    "copy": false
+                },
+                "bOverrideDefault": {
+                    "varType": 2,
+                    "value": false,
+                    "copy": false
+                },
+                "OverrideDefaultSE": {
+                    "varType": 1,
+                    "value": "",
+                    "copy": false
+                }
+            }
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+    ],
+    "customAttributesCaches": [],
+    "modulesCustomAttributesCaches": [],
+    "events": [
+        {
+            "condition": [],
+            "customCommands": [
+                [],
+                [],
+                [],
+                [],
+                []
+            ]
+        },
+        {
+            "condition": [],
+            "customCommands": [
+                [],
+                [],
+                [],
+                [],
+                []
+            ]
+        },
+        {
+            "condition": [],
+            "customCommands": [
+                [],
+                [],
+                [],
+                [],
+                []
+            ]
+        },
+        {
+            "condition": [],
+            "customCommands": [
+                [],
+                [],
+                [],
+                [],
+                []
+            ]
+        },
+        {
+            "condition": [],
+            "customCommands": [
+                [],
+                [],
+                [],
+                [],
+                []
+            ]
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        {
+            "condition": [],
+            "customCommands": [
+                [
+                    [
+                        -1,
+                        {
+                            "___cmdID": "210699219032_0.21404830526039054"
+                        }
+                    ]
+                ],
+                [],
+                [],
+                [],
+                []
+            ]
+        },
+        null,
+        null
+    ],
+    "statusPages": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        [],
+        null,
+        null
+    ],
+    "statusPagesSelectedIndexs": [],
+    "id": 8
+}

@@ -9,7 +9,7 @@
         "参考场景",
         "KTV-房间-厕所边上的房间",
         "KTV-房间-隔壁房间",
-        null,
+        "KTV-房间-隔壁房间_副本",
         null,
         null,
         null,
@@ -67,7 +67,14 @@
                 {
                     "id": 8,
                     "name": "KTV-房间-隔壁房间",
-                    "children": []
+                    "children": [
+                        {
+                            "id": 9,
+                            "name": "KTV-房间-隔壁房间_副本",
+                            "children": []
+                        }
+                    ],
+                    "isOpen": true
                 }
             ],
             "isOpen": true

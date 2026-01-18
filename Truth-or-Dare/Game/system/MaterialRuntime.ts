@@ -262,3 +262,9 @@ class MaterialData25 extends MaterialData {
     w: number; //  
     h: number; //  
 }
+/**
+ * 材质26-
+ */
+class MaterialData26 extends MaterialData {
+    id: number = 26;
+}
